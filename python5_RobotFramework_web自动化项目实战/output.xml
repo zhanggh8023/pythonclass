@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.4.4 on win32)" generated="20180628 22:23:53.959">
+<suite name="python5 RF" source="D:\Eclipse-Workspace\python5_RF" id="s1">
+<suite name="测试用例" source="D:\Eclipse-Workspace\python5_RF\测试用例" id="s1-s1">
+<suite name="投资用例" source="D:\Eclipse-Workspace\python5_RF\测试用例\投资用例.robot" id="s1-s1-s1">
+<test name="投资成功用例" id="s1-s1-s1-t1">
+<kw name="登陆" type="setup" library="登陆页面">
+<arguments>
+<arg>http://120.79.176.157:8012/Index/login.html</arg>
+<arg>18684720553</arg>
+<arg>python</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180628 22:23:54.590" level="INFO">Opening browser 'chrome' to base url 'http://120.79.176.157:8012/Index/login.html'.</msg>
+<status starttime="20180628 22:23:54.589" status="PASS" endtime="20180628 22:24:03.081"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status starttime="20180628 22:24:03.084" status="PASS" endtime="20180628 22:24:04.291"></status>
+</kw>
+<kw name="输入用户名" library="登陆页面">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${登陆用户名输入框}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180628 22:24:04.307" level="INFO">Typing text '18684720553' into text field '//*[@name='phone']'.</msg>
+<status starttime="20180628 22:24:04.305" status="PASS" endtime="20180628 22:24:04.870"></status>
+</kw>
+<status starttime="20180628 22:24:04.301" status="PASS" endtime="20180628 22:24:04.875"></status>
+</kw>
+<kw name="输入密码" library="登陆页面">
+<arguments>
+<arg>${passwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${登陆密码输入框}</arg>
+<arg>${passwd}</arg>
+</arguments>
+<msg timestamp="20180628 22:24:04.882" level="INFO">Typing text 'python' into text field '//*[@name='password']'.</msg>
+<status starttime="20180628 22:24:04.878" status="PASS" endtime="20180628 22:24:05.353"></status>
+</kw>
+<status starttime="20180628 22:24:04.876" status="PASS" endtime="20180628 22:24:05.355"></status>
+</kw>
+<kw name="点击登陆按钮" library="登陆页面">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${登陆按钮}</arg>
+</arguments>
+<msg timestamp="20180628 22:24:05.360" level="INFO">Clicking element '//button'.</msg>
+<status starttime="20180628 22:24:05.358" status="PASS" endtime="20180628 22:24:05.583"></status>
+</kw>
+<status starttime="20180628 22:24:05.356" status="PASS" endtime="20180628 22:24:05.584"></status>
+</kw>
+<status starttime="20180628 22:23:54.587" status="PASS" endtime="20180628 22:24:05.585"></status>
+</kw>
+<kw name="点击抢投标按钮-进入标详情页面-随机选取一个" library="首页">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${抢投标匹配}</arg>
+<arg>40</arg>
+</arguments>
+<status starttime="20180628 22:24:05.587" status="PASS" endtime="20180628 22:24:27.255"></status>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${抢投标匹配}</arg>
+</arguments>
+<assign>
+<var>${标个数}</var>
+</assign>
+<msg timestamp="20180628 22:24:27.291" level="INFO">${标个数} = 3</msg>
+<status starttime="20180628 22:24:27.256" status="PASS" endtime="20180628 22:24:27.292"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>random.randint(0,${标个数})</arg>
+<arg>modules=random</arg>
+</arguments>
+<assign>
+<var>${random}</var>
+</assign>
+<msg timestamp="20180628 22:24:27.294" level="INFO">${random} = 2</msg>
+<status starttime="20180628 22:24:27.293" status="PASS" endtime="20180628 22:24:27.294"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${抢投标按钮}</arg>
+<arg>%s</arg>
+<arg>${random}</arg>
+</arguments>
+<assign>
+<var>${要投的标按钮}</var>
+</assign>
+<msg timestamp="20180628 22:24:27.296" level="FAIL">TypeError: Can't convert 'int' object to str implicitly</msg>
+<status starttime="20180628 22:24:27.295" status="FAIL" endtime="20180628 22:24:27.296"></status>
+</kw>
+<status starttime="20180628 22:24:05.586" status="FAIL" endtime="20180628 22:24:27.297"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status starttime="20180628 22:24:27.298" status="PASS" endtime="20180628 22:24:30.529"></status>
+</kw>
+<status critical="yes" starttime="20180628 22:23:54.579" status="FAIL" endtime="20180628 22:24:30.530">TypeError: Can't convert 'int' object to str implicitly</status>
+</test>
+<status starttime="20180628 22:23:54.129" status="FAIL" endtime="20180628 22:24:30.535"></status>
+</suite>
+<status starttime="20180628 22:23:54.123" status="FAIL" endtime="20180628 22:24:30.548"></status>
+</suite>
+<status starttime="20180628 22:23:54.044" status="FAIL" endtime="20180628 22:24:30.555"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="python5 RF" pass="0" id="s1" fail="1">python5 RF</stat>
+<stat name="测试用例" pass="0" id="s1-s1" fail="1">python5 RF.测试用例</stat>
+<stat name="投资用例" pass="0" id="s1-s1-s1" fail="1">python5 RF.测试用例.投资用例</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
