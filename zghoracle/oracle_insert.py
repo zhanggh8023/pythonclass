@@ -206,10 +206,13 @@ YJPT_DGHQCKFHZMXJL_sql="INSERT INTO YJPT_DGHQCKFHZMXJL(HXJYLSH, ZJYLSH, BCXH, HQ
 
 
 #汇率信息表
-#YJPT_HLXXB
+#YJPT_HLXXB 执行sql: INSERT INTO YJPT_HLXXB(YXJGDM,JRXKZH,NBJGH,YXJGMC,WB,BB,ZJJ,JZJ,HLRQ,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10)
 #  table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','CNY','RNB','6.98','6.3','0.2'+str(ii), 20170525)]
 
 
+#金融工具信息表
+#YJPT_JRGJXXB
+# table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','手机银行APP'+str(i),'JRGJ098'+str(ii),'债券','杭州银行留下支行'+str(i),'313340' + str(ii),'CN', '中国银行'+str(ii),'A++','国际信用','中央银行','银行账户','0.3'+str(ii),'68749',20180321,20180606,20180606,20280606,'浮动','是',468713,20181230,6541635,20181230)]
 
 
 
@@ -242,7 +245,7 @@ def JGHG_insert_data(table):
         ii=1000+i
 
         #插入数据格式（修改内容）
-        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','CNY','RNB','6.98','6.3','0.2'+str(ii), 20170525)]
+        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','手机银行APP'+str(i),'JRGJ098'+str(ii),'债券','杭州银行留下支行'+str(i),'313340' + str(ii),'CN', '中国银行'+str(ii),'A++','国际信用','中央银行','银行账户','0.3'+str(ii),'68749',20180321,20180606,20180606,20280606,'浮动','是',468713,20181230,6541635,20181230)]
 
         cursor.prepare(sql)#sql语句，需要与数据库字段相对应，value值长度与字段对应
         cursor.execute(None,table_data[0])#插入数据集
@@ -281,7 +284,7 @@ def auto_insert(table):
 
 
 
-JGHG_insert_data('YJPT_HLXXB')
+JGHG_insert_data('YJPT_JRGJXXB')
 
 
 
