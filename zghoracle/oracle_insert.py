@@ -188,6 +188,66 @@ YJPT_DGXDYWJJ_sql="INSERT INTO YJPT_DGXDYWJJ(XDJJH, DKFHZH, KHTYBH, KHMC, XDHTH,
 YJPT_DGHQCKFHZMXJL_sql="INSERT INTO YJPT_DGHQCKFHZMXJL(HXJYLSH, ZJYLSH, BCXH, HQCKZH, KHTYBH, YXJGDM, JRXKZH, NBJGH, MXKMBH, YXJGMC, MXKMMC, HXJYRQ, HXJYSJ, ZHMC, JYLX, JYJE, KHHJGH, YWBLJGH, ZHYE, DFZH, DFHM, DFXH, DFXM, JYQD, BZ, XZBZ, DBRXM, DBRZJLB, DBRZJHM, JYGYH, GYLSH, SQGYH, ZY, CBMBZ, JYJDBZ, CJRQ) VALUES(:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18,:19,:20,:21,:22,:23,:24,:25,:26,:27,:28,:29,:30,:31,:32,:33,:34,:35,:36)"
 # YJPT_DGHQCKFHZMXJL = [('646' + str(ii), '987465004' + str(ii), '648665004' + str(i), 'DKFH0992' + str(ii),'9000T09015' + str(ii), '313340' + str(ii), 'C0151V23309170' + str(ii), '99170' + str(ii),'KM302' + str(ii), '杭州银行股份有限公司西湖支行', '科目1' + str(i), 20180504, 165321, '小六子', '正常','69554' + str(ii), '313340' + str(ii), '313340' + str(ii), '69554' + str(ii),'DH8877FH0992' + str(ii), '付丽丽' + str(i),'369340' + str(ii), '建设银行' + str(i), '网银', 'RNB', '现', '番薯', '身份证','33016519861225' + str(ii), '170' + str(i), 'LS8833' + str(ii), '170' + str(i), '', '正常','借', 20181230)]
 
+#
+# JGHG_insert_data('YJPT_NBKMDZB')   内部科目对照表
+# table_data =  [('KM88646' + str(ii), '财务1' + str(i), '3', 'SJKM0831' + str(ii),'贷款1' + str(i),'12', '信贷', 20181004)]
+# 
+#
+# JGHG_insert_data('YJPT_GRHQCKFHZ')   个人活期存款分户账
+# table_data =  [('62306 531' + str(ii), 'KH34737' + str(ii), '94568' + str(i),'HZYH7367' + str(i),'46885' + str(ii),
+# 'XD5457' + str(ii),'杭州银行股份有限萧山分公司','预付账款','GRC003','CNY', 'KH34737' + str(ii),'I类','card','3350' + str(ii),
+# '是' ,'0.042','5000.85', 20180111 ,'XSFH4002' + str(i), 20201230,'正常',20181019,'人民币',20190105)]
+#
+#
+# JGHG_insert_data('YJPT_GRHQCKFHZMXJL')  个人活期存款分户账明细记录
+# table_data =  [('A1810' + str(ii), 'B1810' + str(ii), '10' + str(i) ,'6843 543' + str(ii),'KH34737' + str(ii), 'HZYH7367' + str(i),'B0018463' + str(ii) ,'IN97467' + str(ii) ,
+#                         'ZQ5472'+ str(ii),'杭州银行股份有限萧山分公司','短期投资',20180612, '173858' +str(i) , 'CNY','KH34737' + str(ii),'金融','2000' + str(ii),'XS9002', 'JR4274','1500' + str(ii),
+#                         '63523 762' + str(ii),'Micheal5' +str(i),'ZSYH6483' +str(i),'杭州银行股份有限舟山分公司','ATM','转','待办1' + str(i),'统一社会信用代码','HZYH8426' + str(ii),
+#                         '柜员1' + str(i),'005' + str(i),'65' + str(i),'摘要:HZYHJR','正常','贷',20190105)]
+#
+#
+# JGHG_insert_data('YJPT_DGHQCKFHZMXJL')    对公活期存款分户账明细记录
+# table_data =  [('H8542' + str(ii), 'Z6432' + str(ii), '761' + str(i) ,'6452 330' + str(ii),'KH00214' + str(ii), 'HZYH7367' + str(i),'B002420' + str(ii) ,'IN7001' + str(ii) ,
+#                         'RZ372'+ str(ii),'杭州银行股份有限萧山分公司','金融融资',20180612, '093742' , 'XX通信公司','融资','50000','HZYH7421','JRRZ900','90000','6721 340' + str(ii),
+#                         'XH金融','HZXH53273622','杭州银行股份有限西湖分公司','手机银行','CNY','现','DB1' + str(i), '组织机构代码','HZYH5321' + str(ii), '柜员A' + str(i),'009' + str(i),
+#                         '7009','摘要:HZYHJR','冲账','借',20180912)]
+#
+#
+# JGHG_insert_data('YJPT_DGDQCKFHZ')    对公定期存款分户账
+#  table_data =  [('67632' + str(ii), 'KH00214' + str(ii),'HZYH7367' + str(i),'Z6432' + str(ii),'IN7001' + str(ii),  'RZ372'+ str(ii),
+#                         '杭州银行股份有限萧山分公司','金融融资','CNY','093742','duigong','定期','36个月','0.42','是','200','70000',20150321,
+#                         'HZ782' ,'',20250901,'正常',20180912,'人民币',20190101)]
+#
+#
+# JGHG_insert_data('YJPT_DGDQCKFHZMXJL')   对公定期存款分户账明细记录
+#  table_data =  [('H8542' + str(ii), 'Z6432' + str(ii), '549' + str(i) ,'6452 679' + str(ii),'KH00214' + str(ii), 'HZYH7367' + str(i),'B002420' + str(ii) ,'IN8001' + str(ii) ,
+#                         'RZ372'+ str(ii),'杭州银行股份有限萧山分公司','金融融资',20181209, '093742' , 'CNY','XX通信公司','融资','50000','HZYH7421','JRRZ900','90000','6935 997' + str(ii),
+#                         'XH金融','HZXH53273622','杭州银行股份有限西湖分公司','手机银行','现','是','DB1' + str(i), '组织机构代码','DB7009' + str(ii), '柜员A' + str(i),'009' + str(i),
+#                         '摘要:HZYHJR','冲账','借',20190103)]
+#
+#
+# JGHG_insert_data('YJPT_NBFHZ')   内部分户账
+# table_data =  [('8542' + str(ii), 'HZYH7367' + str(i),'Z6432' + str(ii), 'IN8001' + str(ii), 'MX372'+ str(ii),'Tony' + str(i),
+#                         '杭州银行股份有限滨江分公司', '商业信贷','贷','CNY','549' + str(i) ,'借贷账户','50000','90000','是','按年结息',
+#                         '0.53',20180705,20200905,'正常',20190106)]
+#
+#
+# JGHG_insert_data('YJPT_NBFHZMXJL')   内部分户账明细记录
+# table_data =  [('H8542' + str(ii),'Z6432' + str(ii),'0051' + str(i), '98262'+ str(i),'HZYH7367' + str(i), 'JR70063' + str(ii),'IN8001' + str(ii),'MX372'+ str(ii),
+#                         '杭州银行股份有限滨江分公司', '商业信贷',20170425,130953,'CNY','Arimy' + str(i),'借贷','50000','90000','69243' + str(ii),'DFKM549' + str(i) ,'借贷',
+#                         'AB信贷股份有限公司','ZHYH8452' +str(ii),'手机银行','现','柜员D' +str(i),'9354' + str(i),20180705,20200905,'摘要AAAAAABBBBCCCC','补账','借',20190106)]
+# JGHG_insert_data('YJPT_GRXDFHZ')   个人信贷分户账
+# table_data =  [('DKFH742' + str(ii),'JD6432' + str(ii),'KH0051' + str(i), 'HZYH7367' + str(i), 'JR70063' + str(ii),'IN8001' + str(ii),'MX372'+ str(ii),
+#                         '杭州银行股份有限滨江分公司', '商业信贷','Arimy' + str(i),'CNY',20170425,'TJKM4693' + str(ii),'DK462' + str(ii),'Turo' + str(i),'关注',
+#                         '62431' + str(ii),'64528' + str(ii),'0.45','50000','90000','2000','3500','5700','1300','560',20200705,20190905,20170715,20250910,20190519,'正常',20190107)]
+#
+#
+# JGHG_insert_data('YJPT_DGXDFHZMXJL')   对公信贷分户账明细记录
+#  table_data =  [('H8542' + str(ii), 'Z6432' + str(ii), '549' + str(i) ,'6452 679' + str(ii),'KH00214' + str(ii), 'HZYH7367' + str(i),'B002420' + str(ii) ,'IN8001' + str(ii) ,
+#                         'RZ372' + str(ii),'JJH749' + str(ii),'杭州银行股份有限萧山分公司','金融融资',20181209, '093742' ,'DBG信息公司','融资','借','50000','90000','6935 997' + str(ii),
+#                         'XH金融','HZXH53273622','杭州银行股份有限西湖分公司','手机银行','CNY', '摘要:HZYHJR','正常','DB1' + str(i), '组织机构代码','DB7009' + str(ii), '柜员A' + str(i),'009' + str(i),'现',20190103)]
+#
+
 
 #担保关系
 # YJPT_DBGX 字段sql：INSERT INTO YJPT_DBGX(DBHTH,BDBHTH,YXJGDM,JRXKZH,NBJGH,DBLX,DBJE,DBQSRQ,DBDQRQ,DBZT,JLDBYGH,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/git_home/Ticket/.idea/Ticket.iml" filepath="D:/git_home/Ticket/.idea/Ticket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/classpython.iml" filepath="$PROJECT_DIR$/.idea/classpython.iml" />
+      <module fileurl="file://D:/git_home/face_recognition/.idea/face_recognition.iml" filepath="D:/git_home/face_recognition/.idea/face_recognition.iml" />
+      <module fileurl="file://D:/git_home/faceai/.idea/faceai.iml" filepath="D:/git_home/faceai/.idea/faceai.iml" />
+    </modules>
+  </component>
+</project>
