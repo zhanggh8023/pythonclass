@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+  	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+  	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    th,body{
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    </style>
+	</head>
+	<body>
+		<h1>添加图书</h1>
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr class="info">
+					<th>书名</th>
+					<th>作者</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+                    <form action="Add" method="post">
+					    <td><input type="text" name="bookname" placeholder="请输入书籍名称" autocomplete="off"/></td>
+					    <td><input type="text" name="author" placeholder="请输入书籍的作者" autocomplete="off"/></td>
+					    <td><input type="submit" name="添加"></td>
+                    </form>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
