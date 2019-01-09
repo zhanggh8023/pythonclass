@@ -1,4 +1,5 @@
-'''DECLARE count INTEGER;
+'''
+DECLARE count INTEGER;
 BEGIN-- Test statements here
   dbms_output.put_line ( 'start:' || SYSDATE );
   FOR count IN 500000..900000
@@ -11,7 +12,8 @@ BEGIN-- Test statements here
 END loop;
 dbms_output.put_line ( 'end:' || SYSDATE );
 
-end;'''
+end;
+'''
 
 
 
@@ -341,6 +343,27 @@ YJPT_DGHQCKFHZMXJL_sql="INSERT INTO YJPT_DGHQCKFHZMXJL(HXJYLSH, ZJYLSH, BCXH, HQ
 #table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i), 'DKHT66609' + str(ii),'LC09388'+str(i),'自营','买入','手机银行','交易账户','DKHT66609' + str(ii),'648654622'+str(i), 'RNB','国际信用'+str(i),'中央','是','保证金质押','(๑ŐдŐ)b'+str(i),'GY1' + str(i),'GY4' + str(i),'DSBH947'+str(ii),'光头强'+str(i),20180321,20180606,20280606,'买入','远期','RNB','665'+str(i),'CNY','4654'+str(i),'5000千万','成交确认',20181230,20181230,20181230,'是','3W13340' + str(ii),'D139940' + str(ii),'6855'+str(ii),'6855'+str(ii),'RNB','RNB','0.6'+str(i),'0.6'+str(i),'是','GG3HH40' + str(ii),'YW0998' + str(ii),'银湖智慧📱'+str(i),20180716)]
 
 
+# 客户理财账户信息表
+#YJPT_KHLCZHXXB 执行sql: INSERT INTO YJPT_KHLCZHXXB(YXJGDM,JRXKZH,NBJGH,MXKMBH,YXJGMC,MXKMMC,BZ,LCZH,KHTYBH,KHXM,GLHQCKZH,LCCPMC,HNBSM,FEZS,DJFE,HLZTZBZ,BQSY,LJSY,MRCB,BQQSRQ,BQDQRQ,KHRQ,SCDHRQ,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18,:19,:20,:21,:22,:23,:24)
+# table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'RNB','LC09388'+str(i),'KHTY0039'+str(i),'灭霸'+str(i),'3W13340' + str(ii),'小蝌蚪'+str(i), '小蝌蚪','96666',str(i),'是','66544'+str(i),'654115'+str(i),'65554' + str(i),20180321,20180606,20280606,20280606,20280606)]
+
+
+#	理财产品销售明细记录
+#YJPT_LCCPXSMX 执行sql: INSERT INTO YJPT_LCCPXSMX(JYH,HXJYLSH,ZJYLSH,BCXH,YXJGDM,JRXKZH,NBJGH,MXKMBH,YXJGMC,MXKMMC,LCZH,KHTYBH,KHXM,GLHQCKZH,LCCPMC,HNBSM,SGSHBZ,BZ,HXJYRQ,JYJE,JYFE,JYFY,JYQD,KHJLGH,KHJLXM,JYGYH,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18,:19,:20,:21,:22,:23,:24,:25,:26,:27)
+#   table_data =[( 'XS008'+str(ii),'646' + str(ii), '987465004' + str(ii), '648665004' + str(i),'313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'LC09388'+str(i),'KHTY0039'+str(i),'灭霸'+str(i),'3W13340' + str(ii),'小蝌蚪'+str(i), '小蝌蚪','申购','RNB',20180321,'65554' + str(i),'4654'+str(ii),'665'+str(ii),'柜面','KHJL098'+str(i),'GH09'+str(i),'GY2'+str(i),20280606)]
+
+
+#	理财产品信息表
+#YJPT_LCCPXXB 执行sql: INSERT INTO YJPT_LCCPXXB(YXJGDM,JRXKZH,NBJGH,MXKMBH,YXJGMC,MXKMMC,CPMC,CPDJBM,HNBSM,CPPP,CPQC,CPSPRSFZH,CPSPRXM,CPSJRSFZH,CPSJRXM,TZJLSFZH,TZJLXM,CPSYLX,CPQX,TZZLX,ZJTXDQ,CPTZGJHDQ,LCYWFWMS,CPYZMS,KJHSFS,CPZCPZFS,CPGLMS,SJGLLMC,CPDJFS,TZLX,HZMS,HZJGMC,TZZCZLJBL,SFYYQSYL,YJKHZGNSYL,YJKHZDNSYL,SFYSYLCSYJ,TZZFXPH,CPXSQY,MJBZ,DFBJBZ,DFSYBZ,QDXSJE,JHMJJE,MJQSRQ,TZBJDZR,TZSYDZR,XSSXFL,JNTGJGMC,JNTGJGDM,JWTGJGGB,JWTGJGMC,LCCPZJTGZH,LCCPZJTGZHMC,TGFL,CPFXDJ,FXJGTQZZQBS,KHSHQBS,CPZXBS,CPZXJGLX,CPZXXS,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18,:19,:20,:21,:22,:23,:24,:25,:26,:27,:28,:29,:30,:31,:32,:33,:34,:35,:36,:37,:38,:39,:40,:41,:42,:43,:44,:45,:46,:47,:48,:49,:50,:51,:52,:53,:54,:55,:56,:57,:58,:59,:60,:61,:62)
+#  table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'蜘蛛'+str(i),'LC0908'+str(i),'TY0039'+str(i),'犀牛'+str(i), 36,'33018319960625'+str(ii),'tager'+str(i), '33018319860915'+str(ii),'rabot'+str(i), '33018319761221'+str(ii),'会长'+str(i),'保本浮动收益类',48,'机构专属','境外','US'+str(i),'综合理财服务'+str(i),'封闭式净值型'+str(i),'表内','资产组合配置'+str(i),'银行','何华'+str(i),'综合定价','非标准化债权类','银保','画得很好'+str(i),'现金','是','0.6'+str(i),'0.2'+str(i),'是','稳健型','浙江','CNY','CNY','CNY','65465465','600000',20280606,'T500','T1','0.1'+str(i),'和众国际'+str(i),'HZ89'+str(i),'US','husaer'+str(i),'LCTG9065558'+str(ii),'小缸'+str(i),'0.01','三级','是','是','否','金融性公司','外部增级',20181230)]
+
+
+#	理财产品状态表
+#YJPT_LCCPZTB INSERT INTO YJPT_LCCPZTB(YXJGDM,JRXKZH,NBJGH,MXKMBH,YXJGMC,MXKMMC,LCCPMC,HNBSM,SJMJJE,CPQSRQ,CPYJZZRQ,FXDJR,YHDSJSXSR,DFKHSY,KHDSJNHSYL,CPDSJNHSYL,ZZDJR,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18)
+#        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'蜘蛛'+str(i),'T55039'+str(i),'60000000'+str(ii),20080606,20280606,20080606,'600000000'+str(i),'550000000','0.1'+str(i),'0.2'+str(i),'和众国际'+str(i),'HZ89'+str(i),'US','husaer'+str(i),20181230,20181230)]
+
+
+
 
 
 
@@ -368,7 +391,8 @@ def JGHG_insert_data(table):
         ii=1000+i
 
         #插入数据格式（修改内容）
-        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i), 'DKHT66609' + str(ii),'LC09388'+str(i),'自营','买入','手机银行','交易账户','DKHT66609' + str(ii),'648654622'+str(i), 'RNB','国际信用'+str(i),'中央','是','保证金质押','(๑ŐдŐ)b'+str(i),'GY1' + str(i),'GY4' + str(i),'DSBH947'+str(ii),'光头强'+str(i),20180321,20180606,20280606,'买入','远期','RNB','665'+str(i),'CNY','4654'+str(i),'5000千万','成交确认',20181230,20181230,20181230,'是','3W13340' + str(ii),'D139940' + str(ii),'6855'+str(ii),'6855'+str(ii),'RNB','RNB','0.6'+str(i),'0.6'+str(i),'是','GG3HH40' + str(ii),'YW0998' + str(ii),'银湖智慧📱'+str(i),20180716)]
+        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'蜘蛛'+str(i),'T55039'+str(i),'60000000'+str(ii),20080606,20280606,20080606,'600000000'+str(i),'550000000','0.1'+str(i),'0.2'+str(i),20181230,20181230)]
+
 
         cursor.prepare(sql)#sql语句，需要与数据库字段相对应，value值长度与字段对应
         cursor.execute(None,table_data[0])#插入数据集
@@ -407,7 +431,7 @@ def auto_insert(table):
 
 
 
-JGHG_insert_data('YJPT_ZJJYXXB')
+JGHG_insert_data('YJPT_LCCPZTB')
 
 
 
