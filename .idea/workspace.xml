@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zghoracle/oracle_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/zghoracle/oracle_insert.py" afterDir="false" />
       <change beforePath="D:/git_home/faceai/.idea/faceai.iml" beforeDir="false" afterPath="D:/git_home/faceai/.idea/faceai.iml" afterDir="false" />
       <change beforePath="D:/git_home/faceai/.idea/misc.xml" beforeDir="false" afterPath="D:/git_home/faceai/.idea/misc.xml" afterDir="false" />
@@ -20,6 +18,7 @@
     <SUITE FILE_PATH="coverage/classpython$price.coverage" NAME="price Coverage Results" MODIFIED="1546941293363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1546940408731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1546939077695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
+    <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1546997615480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-402259594">
@@ -51,7 +50,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="74" />
+          <entry key="py" value="314" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="2" />
         </counts>
@@ -59,7 +58,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="74" />
+          <entry key="Python" value="314" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -67,29 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/price.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/git_home/Ticket/Spiders/12306_captcha.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3651">
-              <caret line="193" column="2" lean-forward="true" selection-start-line="193" selection-start-column="2" selection-end-line="193" selection-end-column="2" />
+            <state relative-caret-position="104">
+              <caret line="339" column="570" selection-start-line="339" selection-start-column="570" selection-end-line="339" selection-end-column="570" />
               <folding>
                 <element signature="e#24995#25617#0" />
               </folding>
@@ -119,9 +100,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="399" />
+    <option name="y" value="1" />
     <option name="width" value="1205" />
     <option name="height" value="867" />
   </component>
@@ -195,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.12306">
+  <component name="RunManager" selected="Python.oracle_insert">
     <configuration name="12306" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Ticket" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,6 +213,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/Ticket/Spiders/12306_captcha.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oracle_insert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zghoracle" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zghoracle/oracle_insert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -289,9 +292,11 @@
       <item itemvalue="Python.12306_captcha" />
       <item itemvalue="Python.price" />
       <item itemvalue="Python.12306" />
+      <item itemvalue="Python.oracle_insert" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.oracle_insert" />
         <item itemvalue="Python.12306" />
         <item itemvalue="Python.price" />
         <item itemvalue="Python.12306_captcha" />
@@ -321,10 +326,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="399" y="1" width="1205" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18701799" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2139738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -335,13 +340,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="找到" order="7" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4978166" visible="true" weight="0.24156545" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4974293" visible="true" weight="0.24453552" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50131005" side_tool="true" weight="0.329235" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5025707" side_tool="true" weight="0.24156545" />
       <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.329235" />
       <window_info anchor="bottom" id="Python Console" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -511,8 +516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3651">
-          <caret line="193" column="2" lean-forward="true" selection-start-line="193" selection-start-column="2" selection-end-line="193" selection-end-column="2" />
+        <state relative-caret-position="104">
+          <caret line="339" column="570" selection-start-line="339" selection-start-column="570" selection-end-line="339" selection-end-column="570" />
           <folding>
             <element signature="e#24995#25617#0" />
           </folding>

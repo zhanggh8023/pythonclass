@@ -191,7 +191,7 @@ YJPT_DGHQCKFHZMXJL_sql="INSERT INTO YJPT_DGHQCKFHZMXJL(HXJYLSH, ZJYLSH, BCXH, HQ
 #
 # JGHG_insert_data('YJPT_NBKMDZB')   内部科目对照表
 # table_data =  [('KM88646' + str(ii), '财务1' + str(i), '3', 'SJKM0831' + str(ii),'贷款1' + str(i),'12', '信贷', 20181004)]
-# 
+#
 #
 # JGHG_insert_data('YJPT_GRHQCKFHZ')   个人活期存款分户账
 # table_data =  [('62306 531' + str(ii), 'KH34737' + str(ii), '94568' + str(i),'HZYH7367' + str(i),'46885' + str(ii),
@@ -336,7 +336,9 @@ YJPT_DGHQCKFHZMXJL_sql="INSERT INTO YJPT_DGHQCKFHZMXJL(HXJYLSH, ZJYLSH, BCXH, HQ
 # table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','手机银行APP'+str(i),'JRGJ098'+str(ii),'债券','杭州银行留下支行'+str(i),'313340' + str(ii),'CN', '中国银行'+str(ii),'A++','国际信用','中央银行','银行账户','0.3'+str(ii),'68749',20180321,20180606,20180606,20280606,'浮动','是',468713,20181230,6541635,20181230)]
 
 
-
+#资金交易信息表
+#YJPT_ZJJYXXB 执行sql: INSERT INTO YJPT_ZJJYXXB(YXJGDM,JRXKZH,NBJGH,MXKMBH,YXJGMC,MXKMMC,JYBH,LCCPDJBM,JYLX,JYZL,JRGJBH,JYZHLX,HTH,HTJE,BZ,JCZCKHMC,JCZCSSHY,JCZCSFWBHKH,JCZCZXFS,JCZCZXR,JYGY,SPR,JYDSDM,JYDSMC,JYRQ,QSRQ,DQRQ,MMBZ,JYQBZ,MRBZ,MRJE,MCBZ,MCJE,CJJG,YWZT,FHRQ,QXRQ,SJJGRQ,QSBZ,JFZH,DFZH,JFJE,DFJE,JFBZ,DFBZ,JFLL,DFLL,BZJJYBZ,GLBZJZH,GLYWBH,WBGLXTMC,CJRQ) VALUES (:1,:2,:3,:4,:5,:6,:7,:8,:9,:10,:11,:12,:13,:14,:15,:16,:17,:18,:19,:20,:21,:22,:23,:24,:25,:26,:27,:28,:29,:30,:31,:32,:33,:34,:35,:36,:37,:38,:39,:40,:41,:42,:43,:44,:45,:46,:47,:48,:49,:50,:51,:52)
+#table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i), 'DKHT66609' + str(ii),'LC09388'+str(i),'自营','买入','手机银行','交易账户','DKHT66609' + str(ii),'648654622'+str(i), 'RNB','国际信用'+str(i),'中央','是','保证金质押','(๑ŐдŐ)b'+str(i),'GY1' + str(i),'GY4' + str(i),'DSBH947'+str(ii),'光头强'+str(i),20180321,20180606,20280606,'买入','远期','RNB','665'+str(i),'CNY','4654'+str(i),'5000千万','成交确认',20181230,20181230,20181230,'是','3W13340' + str(ii),'D139940' + str(ii),'6855'+str(ii),'6855'+str(ii),'RNB','RNB','0.6'+str(i),'0.6'+str(i),'是','GG3HH40' + str(ii),'YW0998' + str(ii),'银湖智慧📱'+str(i),20180716)]
 
 
 
@@ -366,7 +368,7 @@ def JGHG_insert_data(table):
         ii=1000+i
 
         #插入数据格式（修改内容）
-        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'杭州银行股份有限公司西湖支行','手机银行APP'+str(i),'JRGJ098'+str(ii),'债券','RNB','杭州银行留下支行'+str(i),'3' + str(ii),'CN', '中国银行'+str(ii),'A++','国际信用','中央','银行','0.3'+str(ii),'68749',20180321,20180606,20180606,20280606,'浮动','是',468713,20181230,6541635,20181230)]
+        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i), 'DKHT66609' + str(ii),'LC09388'+str(i),'自营','买入','手机银行','交易账户','DKHT66609' + str(ii),'648654622'+str(i), 'RNB','国际信用'+str(i),'中央','是','保证金质押','(๑ŐдŐ)b'+str(i),'GY1' + str(i),'GY4' + str(i),'DSBH947'+str(ii),'光头强'+str(i),20180321,20180606,20280606,'买入','远期','RNB','665'+str(i),'CNY','4654'+str(i),'5000千万','成交确认',20181230,20181230,20181230,'是','3W13340' + str(ii),'D139940' + str(ii),'6855'+str(ii),'6855'+str(ii),'RNB','RNB','0.6'+str(i),'0.6'+str(i),'是','GG3HH40' + str(ii),'YW0998' + str(ii),'银湖智慧📱'+str(i),20180716)]
 
         cursor.prepare(sql)#sql语句，需要与数据库字段相对应，value值长度与字段对应
         cursor.execute(None,table_data[0])#插入数据集
@@ -405,7 +407,7 @@ def auto_insert(table):
 
 
 
-JGHG_insert_data('YJPT_JRGJXXB')
+JGHG_insert_data('YJPT_ZJJYXXB')
 
 
 
