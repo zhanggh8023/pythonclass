@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="跟新">
-      <change afterPath="D:/git_home/12306/check_ticket_status.py" afterDir="false" />
-      <change afterPath="D:/git_home/12306/res.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManageStudent/DB/createdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManageStudent/DB/createdb.py" afterDir="false" />
       <change beforePath="D:/git_home/12306/config/ticket_config.yaml" beforeDir="false" afterPath="D:/git_home/12306/config/ticket_config.yaml" afterDir="false" />
-      <change beforePath="D:/git_home/12306/run.py" beforeDir="false" afterPath="D:/git_home/12306/run.py" afterDir="false" />
-      <change beforePath="D:/git_home/Ticket/Spiders/12306_captcha.py" beforeDir="false" afterPath="D:/git_home/Ticket/Spiders/12306_captcha.py" afterDir="false" />
-      <change beforePath="D:/git_home/Ticket/Spiders/pic.jpg" beforeDir="false" afterPath="D:/git_home/Ticket/Spiders/pic.jpg" afterDir="false" />
+      <change beforePath="D:/git_home/12306/itchat.pkl" beforeDir="false" afterPath="D:/git_home/12306/itchat.pkl" afterDir="false" />
+      <change beforePath="D:/git_home/12306/tkcode.png" beforeDir="false" afterPath="D:/git_home/12306/tkcode.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +19,10 @@
     <SUITE FILE_PATH="coverage/classpython$price.coverage" NAME="price Coverage Results" MODIFIED="1546941293363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1547099360115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ManageStudent" />
     <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1547091566865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1547101362133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
+    <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1547110324998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
     <SUITE FILE_PATH="coverage/classpython$12306_autopay.coverage" NAME="12306_autopay Coverage Results" MODIFIED="1547088722623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1547026563180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
-    <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547101417877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
+    <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547110760123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -58,16 +52,16 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="1" />
-          <entry key="cdn_list" value="2" />
+          <entry key="cdn_list" value="5" />
           <entry key="html" value="1" />
           <entry key="iml" value="1" />
           <entry key="jpg" value="4" />
           <entry key="md" value="4" />
-          <entry key="py" value="55" />
+          <entry key="py" value="64" />
           <entry key="sql" value="5" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="8" />
           <entry key="xml" value="4" />
-          <entry key="yaml" value="4" />
+          <entry key="yaml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -77,57 +71,43 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="4" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="55" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="64" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="4" />
-          <entry key="YAML" value="4" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1020" />
+          <entry key="cdn_list" value="478" />
+          <entry key="py" value="1040" />
           <entry key="sql" value="48" />
           <entry key="txt" value="29" />
-          <entry key="yaml" value="16" />
+          <entry key="yaml" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="1020" />
+          <entry key="PLAIN_TEXT" value="507" />
+          <entry key="Python" value="1040" />
           <entry key="SQL" value="48" />
-          <entry key="YAML" value="16" />
+          <entry key="YAML" value="59" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/git_home/12306/config/ticket_config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://D:/git_home/12306/check_ticket_status.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://D:/git_home/12306/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="138">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="e#23#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,6 +144,8 @@
         <option value="$PROJECT_DIR$/ManageStudent/manage.py" />
         <option value="$PROJECT_DIR$/ManageStudent/DB/createdb.py" />
         <option value="D:/git_home/Ticket/Spiders/12306_captcha.py" />
+        <option value="D:/git_home/12306/run.py" />
+        <option value="D:/git_home/12306/cdn_list" />
         <option value="D:/git_home/12306/config/ticket_config.yaml" />
       </list>
     </option>
@@ -174,9 +156,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="399" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="396" />
     <option name="width" value="1205" />
     <option name="height" value="867" />
   </component>
@@ -214,6 +195,11 @@
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="12306" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="12306" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,11 +400,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547022382520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="跟新">
+      <created>1547101559238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547101559239</updated>
+    </task>
+    <task id="LOCAL-00006" summary="跟新">
+      <created>1547106038675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547106038675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="399" y="1" width="1205" height="867" extended-state="0" />
+    <frame x="396" y="0" width="1205" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21659389" />
@@ -433,13 +433,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4974293" visible="true" weight="0.26229507" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.49694324" visible="true" weight="0.2568306" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5025707" side_tool="true" weight="0.2631579" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50305676" side_tool="true" weight="0.26092896" />
       <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.329235" />
       <window_info anchor="bottom" id="Python Console" order="16" />
       <window_info anchor="right" id="数据库" />
@@ -697,9 +697,6 @@
     <entry file="file://D:/git_home/12306/damatuCode/ruokuai.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://D:/git_home/12306/cdn_list">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/git_home/12306/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -707,13 +704,6 @@
             <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/12306/init/select_ticket_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5785">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -746,24 +736,41 @@
     <entry file="file://D:/git_home/12306/res.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://D:/git_home/12306/check_ticket_status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/cdn_list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/git_home/12306/config/ticket_config.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        <state relative-caret-position="-1012">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/init/select_ticket_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/git_home/12306/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/12306/check_ticket_status.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="138">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#23#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
