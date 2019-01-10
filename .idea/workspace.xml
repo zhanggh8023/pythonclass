@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="修改火车票购买人信息">
+    <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="跟新">
+      <change afterPath="D:/git_home/12306/check_ticket_status.py" afterDir="false" />
+      <change afterPath="D:/git_home/12306/res.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/git_home/faceai/.idea/faceai.iml" beforeDir="false" afterPath="D:/git_home/faceai/.idea/faceai.iml" afterDir="false" />
-      <change beforePath="D:/git_home/faceai/.idea/misc.xml" beforeDir="false" afterPath="D:/git_home/faceai/.idea/misc.xml" afterDir="false" />
-      <change beforePath="D:/git_home/faceai/.idea/modules.xml" beforeDir="false" afterPath="D:/git_home/faceai/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageStudent/DB/createdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ManageStudent/DB/createdb.py" afterDir="false" />
+      <change beforePath="D:/git_home/12306/config/ticket_config.yaml" beforeDir="false" afterPath="D:/git_home/12306/config/ticket_config.yaml" afterDir="false" />
+      <change beforePath="D:/git_home/12306/run.py" beforeDir="false" afterPath="D:/git_home/12306/run.py" afterDir="false" />
+      <change beforePath="D:/git_home/Ticket/Spiders/12306_captcha.py" beforeDir="false" afterPath="D:/git_home/Ticket/Spiders/12306_captcha.py" afterDir="false" />
+      <change beforePath="D:/git_home/Ticket/Spiders/pic.jpg" beforeDir="false" afterPath="D:/git_home/Ticket/Spiders/pic.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +23,26 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/classpython$12306.coverage" NAME="12306 Coverage Results" MODIFIED="1546941486016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$price.coverage" NAME="price Coverage Results" MODIFIED="1546941293363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1547014720990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1546939077695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
-    <SUITE FILE_PATH="coverage/classpython$12306_autopay.coverage" NAME="12306_autopay Coverage Results" MODIFIED="1547025150699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1547099360115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ManageStudent" />
+    <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1547091566865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
+    <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1547101362133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
+    <SUITE FILE_PATH="coverage/classpython$12306_autopay.coverage" NAME="12306_autopay Coverage Results" MODIFIED="1547088722623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1547026563180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
+    <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547101417877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-402259594">
@@ -34,49 +57,77 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Dockerfile" value="1" />
+          <entry key="cdn_list" value="2" />
+          <entry key="html" value="1" />
           <entry key="iml" value="1" />
-          <entry key="jpg" value="1" />
-          <entry key="md" value="2" />
-          <entry key="py" value="25" />
-          <entry key="txt" value="3" />
+          <entry key="jpg" value="4" />
+          <entry key="md" value="4" />
+          <entry key="py" value="55" />
+          <entry key="sql" value="5" />
+          <entry key="txt" value="6" />
           <entry key="xml" value="4" />
-          <entry key="yaml" value="1" />
+          <entry key="yaml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Dockerfile" value="1" />
+          <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="1" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="25" />
+          <entry key="Image" value="4" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="55" />
+          <entry key="SQL" value="2" />
+          <entry key="Scratch" value="3" />
           <entry key="XML" value="4" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="871" />
-          <entry key="txt" value="19" />
-          <entry key="yaml" value="2" />
+          <entry key="py" value="1020" />
+          <entry key="sql" value="48" />
+          <entry key="txt" value="29" />
+          <entry key="yaml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="871" />
-          <entry key="YAML" value="2" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Python" value="1020" />
+          <entry key="SQL" value="48" />
+          <entry key="YAML" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/git_home/12306/config/ticket_config.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="297" column="11" lean-forward="true" selection-start-line="297" selection-start-column="11" selection-end-line="297" selection-end-column="11" />
+            <state relative-caret-position="145">
+              <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://D:/git_home/12306/check_ticket_status.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1081">
+              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/git_home/12306/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -97,19 +148,23 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/git_home/12306" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="D:/git_home/12306/config/ticketConf.py" />
-        <option value="D:/git_home/12306/config/ticket_config.yaml" />
         <option value="$PROJECT_DIR$/price.py" />
-        <option value="D:/git_home/Ticket/Spiders/12306_captcha.py" />
         <option value="D:/git_home/Ticket/Spiders/12306_autopay.py" />
         <option value="$PROJECT_DIR$/6000常用密码字典.txt" />
         <option value="$PROJECT_DIR$/zghoracle/oracle_insert.py" />
         <option value="$PROJECT_DIR$/zghoracle/insert_data.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdccf875-34fd-4d0c-bcfb-01ecd9124f5d/console.sql" />
+        <option value="$PROJECT_DIR$/ManageStudent/creat.sql" />
+        <option value="$PROJECT_DIR$/ManageStudent/manage.py" />
+        <option value="$PROJECT_DIR$/ManageStudent/DB/createdb.py" />
+        <option value="D:/git_home/Ticket/Spiders/12306_captcha.py" />
+        <option value="D:/git_home/12306/config/ticket_config.yaml" />
       </list>
     </option>
   </component>
@@ -158,17 +213,7 @@
             </path>
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="zghoracle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ticket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="Spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="12306" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,11 +222,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/git_home/Ticket" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="D:/git_home/12306" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_home\12306" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,29 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.oracle_insert">
-    <configuration name="12306" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Ticket" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../git_home/Ticket/Spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/Ticket/Spiders/12306.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.check_ticket_status">
     <configuration name="12306_autopay" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Ticket" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,20 +292,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="oracle_insert" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
+    <configuration name="check_ticket_status" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="12306" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zghoracle" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../git_home/12306" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zghoracle/oracle_insert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/12306/check_ticket_status.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,7 +314,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="price" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,12 +322,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ManageStudent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/price.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ManageStudent/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="12306" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../git_home/12306" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/12306/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,18 +360,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.12306_captcha" />
-      <item itemvalue="Python.price" />
-      <item itemvalue="Python.12306" />
-      <item itemvalue="Python.oracle_insert" />
       <item itemvalue="Python.12306_autopay" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.check_ticket_status" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.oracle_insert" />
-        <item itemvalue="Python.12306_autopay" />
+        <item itemvalue="Python.check_ticket_status" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python.12306_captcha" />
-        <item itemvalue="Python.12306" />
-        <item itemvalue="Python.price" />
+        <item itemvalue="Python.12306_autopay" />
       </list>
     </recent_temporary>
   </component>
@@ -369,9 +421,10 @@
     <frame x="399" y="1" width="1205" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21746725" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21659389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32928476" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -379,48 +432,51 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="找到" order="7" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4978166" visible="true" weight="0.2636612" />
+      <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4974293" visible="true" weight="0.26229507" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5021834" side_tool="true" weight="0.24453552" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5025707" side_tool="true" weight="0.2631579" />
       <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.329235" />
       <window_info anchor="bottom" id="Python Console" order="16" />
+      <window_info anchor="right" id="数据库" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32925764" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25414848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1600257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="找到" order="7" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4978166" weight="0.329235" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50131005" side_tool="true" weight="0.329235" />
-      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.329235" />
-      <window_info anchor="bottom" id="Python Console" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32928476" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="找到" order="8" weight="0.32928476" />
+      <window_info active="true" anchor="bottom" id="运行" order="9" sideWeight="0.4974293" visible="true" weight="0.2631579" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="检验" order="12" weight="0.329235" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5025707" side_tool="true" weight="0.2631579" />
+      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.49868995" weight="0.329235" />
+      <window_info anchor="bottom" id="Python Console" order="17" />
+      <window_info anchor="right" id="数据库" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32925764" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +488,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新插入表单格式" />
     <MESSAGE value="修改火车票购买人信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改火车票购买人信息" />
+    <MESSAGE value="跟新" />
+    <option name="LAST_COMMIT_MESSAGE" value="跟新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -446,9 +503,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/git_home/12306/init/select_ticket_info.py" />
-    <entry file="file://D:/git_home/12306/config/AutoSynchroTime.py" />
-    <entry file="file://D:/git_home/12306/config/ticketConf.py" />
     <entry file="file://D:/git_home/12306/requirements.txt" />
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-645839530/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -457,7 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/git_home/12306/config/ticket_config.yaml" />
     <entry file="file://D:/Python/Python36/Lib/os.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -478,10 +531,6 @@
           <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://D:/git_home/12306/run.py" />
-    <entry file="file://D:/git_home/Ticket/Spiders/pic.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/price.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -504,13 +553,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="151" column="20" lean-forward="true" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/Ticket/Spiders/12306_captcha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#94#124#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/Ticket/Spiders/12306_autopay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1631">
-          <caret line="693" column="11" lean-forward="true" selection-start-line="693" selection-start-column="11" selection-end-line="693" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -556,8 +594,176 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="297" column="11" lean-forward="true" selection-start-line="297" selection-start-column="11" selection-end-line="297" selection-end-column="11" />
+        <state relative-caret-position="414">
+          <caret line="317" column="6" selection-start-line="317" selection-start-column="6" selection-end-line="317" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdccf875-34fd-4d0c-bcfb-01ecd9124f5d/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4ecfef36-0a87-4c89-b0b6-891fb8d6e3f0/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6086">
+          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManageStudent/DB/createdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-713">
+          <caret line="11" column="122" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="122" />
+          <folding>
+            <element signature="e#126#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManageStudent/creat.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="29" lean-forward="true" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManageStudent/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1565" />
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/Ticket/Spiders/12306_autopay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="772" lean-forward="true" selection-start-line="772" selection-end-line="772" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/Ticket/Spiders/pic.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://D:/git_home/Ticket/Spiders/12306_captcha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="670" column="55" lean-forward="true" selection-start-line="670" selection-start-column="55" selection-end-line="670" selection-end-column="55" />
+          <folding>
+            <element signature="e#92#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/Update.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/station_name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ManageStudent/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/damatuCode/damatuWeb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414" />
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/damatuCode/ruokuai.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/cdn_list">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/init/select_ticket_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5785">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/config/configCommon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1794" />
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/config/emailConf.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/config/AutoSynchroTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="77" lean-forward="true" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/config/ticketConf.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/config/TicketEnmu.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/config/urlConf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621" />
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/res.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/git_home/12306/config/ticket_config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/git_home/12306/check_ticket_status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
         </state>
       </provider>
     </entry>

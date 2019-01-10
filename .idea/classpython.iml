@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="face_recognition" />
     <orderEntry type="module" module-name="faceai" />
     <orderEntry type="module" module-name="Ticket" />
+    <orderEntry type="module" module-name="12306" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

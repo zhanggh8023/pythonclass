@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="D:/git_home/12306" vcs="Git" />
     <mapping directory="D:/git_home/Ticket" vcs="Git" />
     <mapping directory="D:/git_home/face_recognition" vcs="Git" />
     <mapping directory="D:/git_home/faceai" vcs="Git" />

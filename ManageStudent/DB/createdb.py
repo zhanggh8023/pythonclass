@@ -9,7 +9,7 @@ from flask import render_template
 
 # 插入信息
 def insert(StuId,NAME):
-    conn1 = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn1 = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn1.cursor()  # 获取一个游标
     insert_sql = "INSERT INTO StudentTable(StuId,StuName) VALUES ('%s','%s');" %(StuId,NAME)
     cur.execute(insert_sql)
@@ -20,7 +20,7 @@ def insert(StuId,NAME):
 
 # 由学生id查询学生信息
 def selectStu(stuid,username):
-    conn = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn.cursor()  # 获取一个游标
     select_sql = "SELECT * FROM StudentTable WHERE StuName = '%s';" %(username)
     flag = False
@@ -38,7 +38,7 @@ def selectStu(stuid,username):
 
 # 添加图书
 def addBook(bookName,bookAuthor):
-    conn1 = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn1 = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn1.cursor()  # 获取一个游标
     insert_sql = "INSERT INTO BookTable(BookName,Author) VALUES ('%s','%s');" % (bookName, bookAuthor)
     cur.execute(insert_sql)
@@ -49,7 +49,7 @@ def addBook(bookName,bookAuthor):
 
 # 查询所有图书
 def queryAllBook():
-    conn = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn.cursor()  # 获取一个游标
     select_sql = "SELECT * FROM BookTable ;"
     # 执行sql语句
@@ -66,7 +66,7 @@ def queryAllBook():
 
 # 借阅图书
 def Borrow(username,stuid,bookName,bookAuthor):
-    conn1 = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn1 = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn1.cursor()  # 获取一个游标
     insert_sql = "INSERT INTO BorrowTable(StuId,StudentNAME,BookName,Author) VALUES ('%s','%s','%s','%s');" % (stuid,username,bookName, bookAuthor)
     cur.execute(insert_sql)
@@ -77,7 +77,7 @@ def Borrow(username,stuid,bookName,bookAuthor):
 
 # 查询所有借阅图书
 def queryBorrowBook():
-    conn = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn.cursor()  # 获取一个游标
     select_sql = "SELECT * FROM BorrowTable ;"
     # 执行sql语句
@@ -94,7 +94,7 @@ def queryBorrowBook():
 
 # 归还图书
 def ReturnBook(bookName):
-    conn1 = pymysql.connect(host='localhost', user='root', passwd='123456', db='student', port=3306, charset='utf8')
+    conn1 = pymysql.connect(host='119.3.6.221', user='root', passwd='citydo@123', db='zgh_jghg', port=3306, charset='utf8')
     cur = conn1.cursor()  # 获取一个游标
     delete_sql = "DELETE FROM BorrowTable WHERE BookName = '%s';" % (bookName)
     cur.execute(delete_sql)
