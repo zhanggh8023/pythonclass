@@ -1,6 +1,6 @@
 from flask import Flask,render_template
 from flask import request
-from DB import createdb
+from ManageStudent.DB import createdb
 from flask import session
 
 app = Flask(__name__)
