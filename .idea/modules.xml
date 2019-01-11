@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://D:/git_home/12306/.idea/12306.iml" filepath="D:/git_home/12306/.idea/12306.iml" />
-      <module fileurl="file://D:/git_home/Ticket/.idea/Ticket.iml" filepath="D:/git_home/Ticket/.idea/Ticket.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/classpython.iml" filepath="$PROJECT_DIR$/.idea/classpython.iml" />
-      <module fileurl="file://D:/git_home/face_recognition/.idea/face_recognition.iml" filepath="D:/git_home/face_recognition/.idea/face_recognition.iml" />
+      <module fileurl="file://D:/git_home/deep-learning/.idea/deep-learning.iml" filepath="D:/git_home/deep-learning/.idea/deep-learning.iml" />
       <module fileurl="file://D:/git_home/faceai/.idea/faceai.iml" filepath="D:/git_home/faceai/.idea/faceai.iml" />
+      <module fileurl="file://D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" filepath="D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" />
     </modules>
   </component>
 </project>
