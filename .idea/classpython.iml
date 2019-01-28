@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="12306" />
     <orderEntry type="module" module-name="python-wechat-itchat" />
     <orderEntry type="module" module-name="deep-learning" />
+    <orderEntry type="module" module-name="deep-learning" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

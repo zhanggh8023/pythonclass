@@ -33,7 +33,26 @@ mean,cov=[0,2],[(1,5),(5,1)]
 data = np.random.multivariate_normal(mean,cov,200)
 df =pd.DataFrame(data,columns=['x','y'])
 print(df)
+
+
 #观测两个变量之间的分布关系最好用散点图
+sns.jointplot(x='x',y='y',data=df)
+plt.show()
+
+
+x, y = np.random.multivariate_normal(mean,cov,1000).T
+with sns.axes_style('white'):
+    sns.jointplot(x=x,y=y,kind='hex',color='k')
+plt.show()
+
+iris=sns.load_dataset('iris')
+sns.palplot(iris)
+
+
+
+
+
+
 
 
 
