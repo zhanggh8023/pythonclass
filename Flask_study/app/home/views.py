@@ -14,10 +14,20 @@ from flask import Flask, render_template, request, redirect, url_for
 def index():
     return render_template("home/index.html")
 
+
+# 登录
 @home.route("/login/")
 def login():
     return render_template("home/login.html")
 
+
+#退出
 @home.route("/logout/")
 def logout():
     return redirect(url_for("home.login"))
+
+
+# 注册
+@home.route("/regist/")
+def regist():
+    return render_template("home/regist.html")
