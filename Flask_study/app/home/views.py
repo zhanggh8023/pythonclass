@@ -7,9 +7,17 @@
 
 
 from . import home
-
+from flask import Flask, render_template, request, redirect, url_for
 
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
 @home.route("/")
 def index():
-    return "<h1 style='color:green'>this is home!</h1>"
+    return render_template("home/index.html")
+
+@home.route("/login/")
+def login():
+    return render_template("home/login.html")
+
+@home.route("/logout/")
+def logout():
+    return redirect(url_for("home.login"))
