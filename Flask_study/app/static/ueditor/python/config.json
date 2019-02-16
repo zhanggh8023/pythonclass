@@ -41,7 +41,7 @@
   "scrawlInsertAlign": "none",
   /* 抓取远程图片配置 */
   "catcherLocalDomain": [
-     "127.0.0.1",
+    "127.0.0.1",
     "localhost",
     "img.baidu.com"
   ],

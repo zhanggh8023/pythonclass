@@ -5,6 +5,9 @@
     <title>热映电影</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='anim/css/style.css')}}">
 </head>
+<style>
+h1 {font-size:37px;}
+</style>
 <body>
 <!--轮播图 开始 -->
 <div class="main_banner">
@@ -12,10 +15,10 @@
         <canvas id="myCanvas" width="150" height="150"></canvas>
         <div class="main_banner_box" id="m_box">
             <a href="javascript:void(0)" class="banner_btn js_pre">
-                <span class="banner_btn_arrow"><i></i></span>
+                <span class="banner_btn_arrow"><h1 style="text-align:center;color: #8B8986" ><</h1></span>
             </a>
             <a href="javascript:void(0)" class="banner_btn btn_next js_next">
-                <span class="banner_btn_arrow"><i></i></span>
+                <span class="banner_btn_arrow"><h1 style="text-align:center;color: #8B8986"  >></h1></span>
             </a>
             <ul>
                 <li id="imgCard0">
