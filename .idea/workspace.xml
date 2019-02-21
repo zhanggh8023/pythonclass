@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/sco.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/sco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/sco1.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/sco1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/price/元素拖拽实现.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/元素拖拽实现.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +29,7 @@
     <SUITE FILE_PATH="coverage/classpython$The_Stolen_Crown.coverage" NAME="The_Stolen_Crown Coverage Results" MODIFIED="1548238749924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/The-Stolen-Crown-RPG" />
     <SUITE FILE_PATH="coverage/classpython$12306_autopay.coverage" NAME="12306_autopay Coverage Results" MODIFIED="1547088722623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$auto_reply.coverage" NAME="auto_reply Coverage Results" MODIFIED="1547193721424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
-    <SUITE FILE_PATH="coverage/classpython$.coverage" NAME="元素拖拽实现 Coverage Results" MODIFIED="1550657619064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
+    <SUITE FILE_PATH="coverage/classpython$.coverage" NAME="元素拖拽实现 Coverage Results" MODIFIED="1550743065396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1547091566865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
     <SUITE FILE_PATH="coverage/classpython$recon_web.coverage" NAME="recon-web Coverage Results" MODIFIED="1547628064014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Recon-ng" />
     <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1547026563180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
@@ -113,7 +111,7 @@
           <entry key="log" value="1" />
           <entry key="md" value="4" />
           <entry key="png" value="18" />
-          <entry key="py" value="208" />
+          <entry key="py" value="219" />
           <entry key="pyi" value="4" />
           <entry key="recon-cli" value="1" />
           <entry key="recon-web" value="1" />
@@ -136,7 +134,7 @@
           <entry key="Log" value="1" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="210" />
+          <entry key="Python" value="221" />
           <entry key="PythonStub" value="4" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="6" />
@@ -152,7 +150,7 @@
           <entry key="dummy" value="1" />
           <entry key="html" value="1181" />
           <entry key="json" value="12" />
-          <entry key="py" value="5639" />
+          <entry key="py" value="6135" />
           <entry key="sql" value="48" />
           <entry key="txt" value="125" />
           <entry key="yaml" value="59" />
@@ -164,7 +162,7 @@
           <entry key="HTML" value="1181" />
           <entry key="JSON" value="12" />
           <entry key="PLAIN_TEXT" value="604" />
-          <entry key="Python" value="5640" />
+          <entry key="Python" value="6136" />
           <entry key="SQL" value="48" />
           <entry key="YAML" value="59" />
         </counts>
@@ -188,8 +186,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/price/元素拖拽实现.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1310">
-              <caret line="103" column="8" lean-forward="true" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+            <state relative-caret-position="344">
+              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -229,7 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/price.py" />
         <option value="D:/git_home/12306/res.txt" />
         <option value="$PROJECT_DIR$/Recon-ng/recon-web" />
         <option value="$PROJECT_DIR$/Recon-ng/recon/core/web/__init__.py" />
@@ -279,6 +276,7 @@
         <option value="$PROJECT_DIR$/Flask_study/app/templates/home/404.html" />
         <option value="$PROJECT_DIR$/price/sco.py" />
         <option value="$PROJECT_DIR$/price/sco1.py" />
+        <option value="D:/Python/Python36/Lib/site-packages/pymouse/__init__.py" />
         <option value="$PROJECT_DIR$/price/元素拖拽实现.py" />
       </list>
     </option>
@@ -296,8 +294,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="645" />
-    <option name="width" value="965" />
+    <option name="x" value="621" />
+    <option name="width" value="989" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -365,19 +363,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\classpython\Flask_study\app\static\anim\images" />
-      <recent name="D:\classpython\Flask_study\app\static\anim\css" />
-      <recent name="D:\classpython\Flask_study\app\static\anim" />
-      <recent name="D:\classpython\Flask_study\app\static" />
-      <recent name="D:\classpython\Flask_study\app\home" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\classpython\Flask_study\app\static\tpl" />
       <recent name="D:\classpython\Flask_study\image_porject" />
       <recent name="D:\classpython\Flask_study\app\admin" />
       <recent name="D:\classpython\wifi_come" />
       <recent name="D:\classpython\image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\classpython\Flask_study\app\static\anim\images" />
+      <recent name="D:\classpython\Flask_study\app\static\anim\css" />
+      <recent name="D:\classpython\Flask_study\app\static\anim" />
+      <recent name="D:\classpython\Flask_study\app\static" />
+      <recent name="D:\classpython\Flask_study\app\home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,6 +405,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/price/元素拖拽实现.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="抢红包" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抢红包.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -481,28 +501,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask_study" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask_study/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sco1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -541,19 +539,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.manage" />
       <item itemvalue="Python.元素拖拽实现" />
       <item itemvalue="Python.FeatureLib" />
       <item itemvalue="Python tests.Unittests in sco.py" />
       <item itemvalue="Python.sco1" />
+      <item itemvalue="Python.抢红包" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.元素拖拽实现" />
+        <item itemvalue="Python.抢红包" />
         <item itemvalue="Python.sco1" />
         <item itemvalue="Python tests.Unittests in sco.py" />
         <item itemvalue="Python.FeatureLib" />
-        <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
   </component>
@@ -693,10 +691,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="645" y="0" width="965" height="867" extended-state="0" />
+    <frame x="621" y="0" width="989" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4986339" visible="true" weight="0.19447514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986339" visible="true" weight="0.18945102" />
       <window_info id="Structure" order="1" sideWeight="0.50136614" side_tool="true" weight="0.3048035" />
       <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -707,15 +705,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.48708922" visible="true" weight="0.27322406" />
+      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.48708922" visible="true" weight="0.26639345" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.329235" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5129108" side_tool="true" weight="0.27322406" />
-      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.329235" />
-      <window_info anchor="bottom" id="Python Console" order="16" weight="0.329235" />
+      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.32793522" />
+      <window_info anchor="bottom" id="Python Console" order="16" weight="0.32793522" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.3211876" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -789,41 +787,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/static/tpl/2-movie/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/static/tpl/2-movie/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="79" selection-start-line="79" selection-end-line="119" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/static/ueditor/php/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/static/ueditor/python/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1097,13 +1060,6 @@
     <entry file="file://$PROJECT_DIR$/zghmysql/db.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/price/baiduDownl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="58" column="20" selection-start-line="58" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/price/sco.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
@@ -1124,17 +1080,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/抢红包.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/site-packages/pymouse/windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#684#704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/site-packages/pymouse/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/Python/Python36/Lib/site-packages/selenium/webdriver/common/action_chains.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="248" column="54" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="54" />
+        <state relative-caret-position="163">
+          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/price/baiduDownl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="58" column="6" selection-start-line="58" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/price/元素拖拽实现.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1310">
-          <caret line="103" column="8" lean-forward="true" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        <state relative-caret-position="344">
+          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

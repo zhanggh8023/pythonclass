@@ -1,4 +1,5 @@
 from selenium import webdriver
+import pymouse
 from selenium.webdriver import ActionChains
 '''click(on_element=None) ——单击鼠标左键
 
@@ -50,9 +51,13 @@ button='//div[@class="landing_form_button"]//span'
 
 button_1='//div[@id="modelManage"]//button[@class="ant-btn addModel"]'#新建模型
 
-button_2='//*[@id="filter"]/span'#组件
+button_2='//*[@id="filter"]/img'#过滤组件
+button_21='//*[@id="relation"]/img'#关联组件
+button_22='//*[@id="perspective"]/img'#聚合组件
+button_23='//*[@id="removeDuplicate"]/img'#去重组件
+button_24='//*[@id="merge"]/img'#合并组件
+button_25='//*[@id="targetTable"]/img'#目标表组件
 button_3='//div[@id="model-svg-wrapper"]//*[name()="svg"]'#画布
-button_4='//div[@id="model-svg-wrapper"]//*[name()="svg"]/*[name()="g"][2]/*[name()="g"]/*[name()="g"][2]/*[name()="g"]'
 
 #等待账号输入框元素出现
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,name)))
@@ -66,7 +71,7 @@ WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPA
 #点击登录
 driver.find_element_by_xpath(button).click()
 
-sleep(5)
+sleep(1)
 #等待新建按钮元素出现
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_1)))
 #点击新建模型
@@ -78,50 +83,96 @@ driver.find_element_by_xpath(button_1).click()
 actions = ActionChains(driver)
 # # 起点
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_2)))
-# start = driver.find_element_by_xpath(button_2)
-# # 终点
-# WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_3)))
-# end = driver.find_element_by_xpath(button_3)
-#
-
-# actions.drag_and_drop(start, end).perform()
-
 button_5=driver.find_element_by_xpath(button_2)#过滤
+# button_6=driver.find_element_by_xpath(button_21)#关联
+# button_7=driver.find_element_by_xpath(button_22)#聚合
+# button_8=driver.find_element_by_xpath(button_23)#去重
+# button_9=driver.find_element_by_xpath(button_24)#合并
+# button_10=driver.find_element_by_xpath(button_25)#目标
 print(button_5)
-# actions.drag_and_drop_by_offset(button_5, 100, 500).perform()
 
-# WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_2)))
-# ActionChains(driver).move_to_element_with_offset(button_2, 50, 100)
-# # 执行
-# actions.perform()
+sleep(1)
+actions.click_and_hold(button_5).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+m = pymouse.PyMouse()
+m.click(700, 300, 1)
+print('拖入过滤')
+sleep(1)
+# actions.click_and_hold(button_6).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+# m = pymouse.PyMouse()
+# m.click(500, 350, 1)
+# print('拖入关联')
+# sleep(1)
+# actions.click_and_hold(button_7).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+# m = pymouse.PyMouse()
+# m.click(500, 400, 1)
+# print('拖入聚合')
+# sleep(1)
+# actions.click_and_hold(button_8).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+# m = pymouse.PyMouse()
+# m.click(500, 450, 1)
+# print('拖入去重')
+# sleep(1)
+# actions.click_and_hold(button_9).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+# m = pymouse.PyMouse()
+# m.click(500, 500, 1)
+# print('拖入合并')
+# sleep(1)
+# actions.click_and_hold(button_10).move_by_offset(-150,-150).release().perform()  # 5.与上一句相同，移动到指定坐标
+# m = pymouse.PyMouse()
+# print('拖入目标')
+# m.click(500, 550, 1)
+# sleep(1)
+
+gongg_xpath='//div[@class="leftMeau"]//span[text()="公共信息"]'
+pape_ganwei_xpath='//div[@class="leftMeau"]//div[text()="岗位信息表"]'
+#等待公共信息元素出现
+WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,gongg_xpath)))
+#点击公共信息
+driver.find_element_by_xpath(gongg_xpath).click()
+button_11=driver.find_element_by_xpath(pape_ganwei_xpath)#岗位信息表
+sleep(1)
+m.click(500, 400, 1)
+actions.click_and_hold(button_11).move_by_offset(650,-150).release().perform()
+print('拖入岗位信息表')
+m.click(500, 300, 1)
+sleep(1)
+
+xinx_xpath='//div[@id="model-svg-wrapper"]//*[name()="svg"]/*[name()="g"][2]/*[name()="g"]/*[name()="g"][2]/*[name()="g"][2]/*[name()="image"]'
+WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,xinx_xpath)))
+driver.find_element_by_xpath(xinx_xpath).click()
+sleep(1)
+
+#获取ID
+model_name_xpath='//div[@id="model-svg-wrapper"]//div[@class="model-name"]'
+WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,model_name_xpath)))
+edddd = driver.find_element_by_xpath(model_name_xpath).text
+
+button_4='//div[@id="model-svg-wrapper"]//*[name()="svg"]/*[name()="g"][2]/*[name()="g"]/*[name()="g"][2]/*[name()="g"]'
+button_41='//*[@id="node-11961"]/*[name()="circle"][2]'
+
+WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_41)))
+button_12=driver.find_element_by_xpath(button_41)#岗位信息表链接点
+WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_4)))
+button_13=driver.find_element_by_xpath(button_4)#岗位信息表链接点
+print(button_12,button_13)
+sleep(1)
+actions.click_and_hold(button_41).perform()
+print('连接过滤')
+m.click(500, 300, 1)
+sleep(1)
 
 
-# actions.drag_and_drop(button_5, button_3).perform()  # 1.移动dragger到目标1
-# sleep(2)
-# actions.click_and_hold(button_5).release(button_3).perform()  # 2.效果与上句相同，也能起到移动效果
-# sleep(2)
-# actions.click_and_hold(button_5).move_to_element(button_3).release().perform()  # 3.效果与上两句相同，也能起到移动的效果
-# sleep(2)
-actions.drag_and_drop_by_offset(button_5, 400, 150).perform()  # 4.移动到指定坐标
-actions.click_and_hold(button_5).move_by_offset(-150, -150).release().perform()  # 5.与上一句相同，移动到指定坐标
-sleep(2)
 
+driver.refresh()   #****刷新当前页面****
+print('****刷新当前页面****')
 
-driver.refresh()   #****刷新当前页面**
-print(3)
-
-
-# ii='//div[@id="root"]//div[@class="layout_main"]//div[@id="过滤"]/img'
-# WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,ii)))
-# photoSrc = driver.find_element_by_xpath(ii).get_attribute('src')
-# print(photoSrc)
 
 
 #获取模型ID
 model_name_xpath='//div[@id="model-svg-wrapper"]//div[@class="model-name"]'
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,model_name_xpath)))
-edddd = (driver.find_element_by_xpath(model_name_xpath).text)[3:]
-print(edddd)
+edddd = driver.find_element_by_xpath(model_name_xpath).text[3:]
+print('模型ID：'+edddd)
 
 
 # url='http://testjghg.citydo.com.cn/web/node/createComponent'
@@ -136,7 +187,40 @@ print(edddd)
 # print(ee)
 
 
-
-sleep(10)
+sleep(5)
 driver.close()
 driver.quit()
+
+
+
+
+
+
+
+
+
+
+# start = driver.find_element_by_xpath(button_2)
+# # 终点
+# WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_3)))
+# end = driver.find_element_by_xpath(button_3)
+#
+
+# actions.drag_and_drop(start, end).perform()
+
+# actions.drag_and_drop_by_offset(button_5, 100, 500).perform()
+
+# WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_2)))
+# ActionChains(driver).move_to_element_with_offset(button_2, 50, 100)
+# # 执行
+# actions.perform()
+
+
+# actions.drag_and_drop(button_5, button_3).perform()  # 1.移动dragger到目标1
+# sleep(2)
+# actions.click_and_hold(button_5).release(button_3).perform()  # 2.效果与上句相同，也能起到移动效果
+# sleep(2)
+# actions.click_and_hold(button_5).move_to_element(button_3).release().perform()  # 3.效果与上两句相同，也能起到移动的效果
+# sleep(2)
+
+# actions.drag_and_drop_by_offset(button_5, 200, -150).perform()  # 4.移动到指定坐标
