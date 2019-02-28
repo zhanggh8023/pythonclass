@@ -51,7 +51,7 @@ button='//div[@class="landing_form_button"]//span'
 
 button_1='//div[@id="modelManage"]//button[@class="ant-btn addModel"]'#新建模型
 
-button_2='//*[@id="filter"]/img'#过滤组件
+button_2='//div[@data-type="filter"]/img'#过滤组件
 button_21='//*[@id="relation"]/img'#关联组件
 button_22='//*[@id="perspective"]/img'#聚合组件
 button_23='//*[@id="removeDuplicate"]/img'#去重组件
@@ -132,7 +132,7 @@ driver.find_element_by_xpath(gongg_xpath).click()
 button_11=driver.find_element_by_xpath(pape_ganwei_xpath)#岗位信息表
 sleep(1)
 m.click(500, 400, 1)
-actions.click_and_hold(button_11).move_by_offset(650,-150).release().perform()
+actions.click_and_hold(button_11).move_by_offset(-150,-150).release().perform()
 print('拖入岗位信息表')
 m.click(500, 300, 1)
 sleep(1)
@@ -143,22 +143,25 @@ driver.find_element_by_xpath(xinx_xpath).click()
 sleep(1)
 
 #获取ID
-model_name_xpath='//div[@id="model-svg-wrapper"]//div[@class="model-name"]'
+model_name_xpath='//div[@id="model-svg-wrapper"]//*[name()="svg"]/*[name()="g"][2]/*[name()="g"]/*[name()="g"][2]/*[name()="g"][2]'
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,model_name_xpath)))
-edddd = driver.find_element_by_xpath(model_name_xpath).text
+gg = driver.find_element_by_xpath(model_name_xpath).get_attribute('data-id')
+print(gg)
 
 button_4='//div[@id="model-svg-wrapper"]//*[name()="svg"]/*[name()="g"][2]/*[name()="g"]/*[name()="g"][2]/*[name()="g"]'
-button_41='//*[@id="node-11961"]/*[name()="circle"][2]'
+button_41='//*[@id="node-'+ gg +'"]/*[name()="circle"][2]'
+print(button_41)
 
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_41)))
 button_12=driver.find_element_by_xpath(button_41)#岗位信息表链接点
+# button_12=driver.find_element(By.ID,'node-'+gg)
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,button_4)))
 button_13=driver.find_element_by_xpath(button_4)#岗位信息表链接点
 print(button_12,button_13)
-sleep(1)
-actions.click_and_hold(button_41).perform()
+
+actions.click_and_hold(button_12).move_by_offset(650,-150).release().perform()
 print('连接过滤')
-m.click(500, 300, 1)
+m.click(500, 500, 1)
 sleep(1)
 
 

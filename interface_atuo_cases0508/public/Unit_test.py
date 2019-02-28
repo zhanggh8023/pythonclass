@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+# @Author  : zgh
+# @Email   : 849080458@qq.com
+# @File    : manage.py
+# @Software: PyCharm
 
 import unittest
 from ddt import ddt,data,unpack

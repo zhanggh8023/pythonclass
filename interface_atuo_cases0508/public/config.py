@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+# @Author  : zgh
+# @Email   : 849080458@qq.com
+# @File    : manage.py
+# @Software: PyCharm
+
+
 import os
 import configparser
 

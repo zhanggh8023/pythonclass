@@ -1,4 +1,7 @@
-
+# @Author  : zgh
+# @Email   : 849080458@qq.com
+# @File    : manage.py
+# @Software: PyCharm
 
 
 from openpyxl import Workbook,load_workbook

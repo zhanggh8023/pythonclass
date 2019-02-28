@@ -5,16 +5,9 @@
 # @File    : models.py
 # @Software: PyCharm
 
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
-import pymysql
 
-# 定义数据库连接
-app = Flask(__name__)  # 创建实例化app对象
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:123456@172.16.20.130:3306/movie"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True  # 配置，如果设置True,将会追踪对象修改并且发送信号
-db = SQLAlchemy(app)  # 定义db，传入app对象
+from datetime import datetime
+from Flask_study.app import db
 
 
 # 定义会员数据模型

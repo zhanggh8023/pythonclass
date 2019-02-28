@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-
+# @Author  : zgh
+# @Email   : 849080458@qq.com
+# @File    : manage.py
+# @Software: PyCharm
 
 import os
 from interface_atuo_cases0508.public.config import readConfig

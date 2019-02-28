@@ -327,7 +327,7 @@ def JGHG_insert_data(table):
         ii=1000+i
 
         #插入数据格式（修改内容）
-        table_data =[( '313340' + str(ii),'C0151V23366170' + str(ii), '99166' + str(ii),'KM359' + str(ii),'杭州银行股份有限公司西湖支行','科目16' + str(i),'蜘蛛'+str(i),'T55039'+str(i),'60000000'+str(ii),20080606,20280606,20080606,'600000000'+str(i),'550000000','0.1'+str(i),'0.2'+str(i),20181230,20181230)]
+        table_data =[( '张三' + str(ii),'894913' + str(ii)+'@qq.com', '5465464'+ str(ii))]
 
 
         cursor.prepare(sql)#sql语句，需要与数据库字段相对应，value值长度与字段对应
@@ -335,8 +335,10 @@ def JGHG_insert_data(table):
         print('执行sql:', sql)
         print('插入内容：', table_data[0])
 
-    # 切记一定要执行
-    cursor.execute('commit')
+        # 切记一定要执行
+        cursor.execute('commit')
+
+
 
 
     # 关闭连接，释放资源
@@ -367,7 +369,7 @@ def auto_insert(table):
 
 
 
-JGHG_insert_data('YJPT_LCCPZTB')
+JGHG_insert_data('MMGLB')
 
 
 

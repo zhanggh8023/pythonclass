@@ -52,7 +52,7 @@ def save_images(image_list):
 
 
 if __name__ == '__main__':
-    file_path = ".\image\\微信图片_20190211105454.jpg"
+    file_path = ".\image\\123.jpg"
     image = Image.open(file_path)
     # image.show()
     image = fill_image(image)

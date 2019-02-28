@@ -7,6 +7,8 @@
 
 from . import admin
 from flask import render_template, redirect, url_for
+from Flask_study.app.admin.forms import LoginFrom
+
 
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
 
@@ -16,9 +18,12 @@ def index():
     return render_template("admin/index.html")
 
 #登录
-@admin.route("/login/")
+@admin.route("/login/",methods=["GET","POST"])
 def login():
-    return render_template("admin/login.html")
+    form = LoginFrom()
+    if form.validate_on_submit():
+        data= form.data
+    return render_template("admin/login.html",form=form)
 
 #退出
 @admin.route("/logout/")

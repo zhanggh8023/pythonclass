@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+# @Author  : zgh
+# @Email   : 849080458@qq.com
+# @File    : manage.py
+# @Software: PyCharm
 '''
 4-19 smtp&logging
 1:把发送邮件代码写成一个类，然后把这个类文件作为附件发给华华，邮箱：1255811581@qq.com
