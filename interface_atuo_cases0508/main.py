@@ -20,4 +20,4 @@ file_path=Allpath.html_path+'/'+now+'.html'
 with open(file_path, 'wb+') as file:
     runner=HTMLTestRunnerNew.HTMLTestRunner(stream=file, verbosity=2, title='python TextReport', description='现在应该萌萌哒')
     runner.run(suite)
-    #massageMail().Message(now,'849080458@qq.com')
+    massageMail().Message(now,'849080458@qq.com')

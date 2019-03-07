@@ -15,6 +15,7 @@
     <orderEntry type="module" module-name="deep-learning" />
     <orderEntry type="module" module-name="face_recognition" />
     <orderEntry type="module" module-name="FaceRecognition" />
+    <orderEntry type="module" module-name="app" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

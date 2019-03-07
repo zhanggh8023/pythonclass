@@ -59,5 +59,5 @@ class Log:
 
 if __name__=="__main__":
 
-    logger=Log("summer's log",os.path.dirname (os.getcwd ()) + '/Result/test_result_data/' )
-    logger.info("test_p")
+    logger=Log("summer's log",os.path.dirname (os.getcwd ()) + '/Result/log/' )
+    logger.error("test_p")

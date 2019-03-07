@@ -33,6 +33,8 @@ class User(db.Model):
         return "<User %r>" % self.name
 
 
+
+
 # 会员登录日志
 class Userlog(db.Model):
     __tablename__ = "userlog"  # 定义表名
@@ -157,6 +159,10 @@ class Admin(db.Model):
 
     def __repr__(self):
         return "<Role %r>" % self.name
+
+    def check_pwd(self,pwd):
+        from werkzeug.security import check_password_hash
+        return check_password_hash(self.pwd,pwd)
 
 
 # 管理员登录日志

@@ -6844,7 +6844,7 @@ area_code</ColNames>
     </column>
     <column id="1426" parent="324" name="from_uid">
       <Position>4</Position>
-      <Comment>评论用户id </Comment>
+      <Comment>评论用户id</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -7331,7 +7331,7 @@ area_code</ColNames>
     </column>
     <column id="1506" parent="332" name="dep_type">
       <Position>14</Position>
-      <Comment>部门判定标识 0-非部门用户 1-部门用户 </Comment>
+      <Comment>部门判定标识 0-非部门用户 1-部门用户</Comment>
       <DataType>int(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>

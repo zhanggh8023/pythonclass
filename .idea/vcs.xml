@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$USER_HOME$/Desktop/app" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/facenet" vcs="Git" />
     <mapping directory="D:/git_home/12306" vcs="Git" />
     <mapping directory="D:/git_home/DoraemonKit" vcs="Git" />

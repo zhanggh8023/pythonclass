@@ -20,7 +20,7 @@ config={'mail_host':'smtp.qq.com',
         'mail_pass':'*********',
         'receivers' : '*********',
         'From':'月野*兔',
-        'To':'华华老师',
+        'To':'华华',
         'subject' : 'Python SMTP 邮件发送代码',
         'MIMEText':'这是Python5,yyt的邮件发送，以及邮件类的代码附件测试……',
         'address':'python5_smtp.txt',
@@ -30,6 +30,7 @@ config={'mail_host':'smtp.qq.com',
 import smtplib
 import configparser
 import os
+import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
@@ -64,7 +65,7 @@ class massageMail:
         message.attach (MIMEText (data['MIMEText'], 'plain', 'utf-8'))
 
         # 构造附件1，传送当前目录下的 python5_smtp.txt 文件
-        att1 = MIMEText (open (address+ '/'+filename+'.html', 'rb').read (), 'base64', 'utf-8')
+        att1 = MIMEText (open (address+ '/2018-05-15_13_26_15.html', 'rb').read (), 'base64', 'utf-8')
         att1["Content-Type"] = 'application/octet-stream'
         # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
         att1["Content-Disposition"] = 'attachment; filename="python5_smtp.html"'
@@ -81,5 +82,6 @@ class massageMail:
 
 
 if __name__ == '__main__':
-    massageMail().Message()
+    now = time.strftime('%Y-%m-%d_%H_%M_%S')
+    massageMail().Message(now,'849080458@qq.com')
 

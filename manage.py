@@ -5,9 +5,9 @@
 # @File    : manage.py
 # @Software: PyCharm
 
-from Flask_study.app import app
+from app import app
 
 
 if __name__ == '__main__':
     print(app.url_map)  # 查看路由映射
-    app.run(host='0.0.0.0', port=80)# 启动web服务器+
+    app.run(host='0.0.0.0', port=80)# 启动web服务器

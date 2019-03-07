@@ -16,7 +16,7 @@ url_1=str(config ().read_config (Allpath.http_conf_path, 'HTTP', 'url'))
 mode = config ().read_config (Allpath.case_conf_path, 'FLAG', 'mode')
 print(url_1)
 case_list=config ().read_config (Allpath.case_conf_path, 'FLAG', 'case_list')
-#print(case_list)
+print(case_list)
 
 
 class readExcel:
