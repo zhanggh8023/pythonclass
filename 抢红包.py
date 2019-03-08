@@ -82,9 +82,10 @@ def main():
     while True:
         i=0
         # os.system('adb shell input swipe 1000 1600 1000 300')
-        print(os.system('adb shell input tap 500 1800'),'抢红包中。。。')
-        print(os.system('adb shell input tap 540 1500'),i==1)
-
+        # print(os.system('adb shell input tap 500 1800'),'抢红包中。。。')
+        print(os.system('adb shell input tap 540 1100'),i==1)
+        # print(os.system('adb  root'))
+        # print(os.system('adb shell 'sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "select * from main where name = \"android_id\";"''))
         if i==1:
             os.system('adb shell input keyevent 4')
             i=0

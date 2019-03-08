@@ -327,7 +327,7 @@ def JGHG_insert_data(table):
         ii=1000+i
 
         #插入数据格式（修改内容）
-        table_data =[( '张三' + str(ii),'894913' + str(ii)+'@qq.com', '5465464'+ str(ii))]
+        table_data =[( '张三'+ str(i) ,'13'+ str(i), str(i), '20190309')]
 
 
         cursor.prepare(sql)#sql语句，需要与数据库字段相对应，value值长度与字段对应
@@ -340,10 +340,11 @@ def JGHG_insert_data(table):
 
 
 
-
     # 关闭连接，释放资源
     cursor.close()
     connection.close()
+
+
 
 #定义一个函数传入表名称从数据库自动获取字段，拼接成sql
 def auto_insert(table):
@@ -368,8 +369,7 @@ def auto_insert(table):
     return table_sql
 
 
-
-JGHG_insert_data('MMGLB')
+JGHG_insert_data('YGB')
 
 
 
