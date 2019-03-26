@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/exls数据查询插入.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/exls数据查询插入.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/pandas_findexls.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/pandas_findexls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price/数据.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/price/数据.xlsx" afterDir="false" />
       <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +17,7 @@
     <SUITE FILE_PATH="coverage/classpython$class6_seaborn.coverage" NAME="class6_seaborn单变量 Coverage Results" MODIFIED="1548299597452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
     <SUITE FILE_PATH="coverage/classpython$setup.coverage" NAME="setup Coverage Results" MODIFIED="1552887391522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/eos" />
     <SUITE FILE_PATH="coverage/classpython$fist_flask.coverage" NAME="fist_flask Coverage Results" MODIFIED="1551856175735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
-    <SUITE FILE_PATH="coverage/classpython$exls.coverage" NAME="exls数据查询插入 Coverage Results" MODIFIED="1553595636121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
+    <SUITE FILE_PATH="coverage/classpython$exls.coverage" NAME="exls数据查询插入 Coverage Results" MODIFIED="1553596048498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$class7_.coverage" NAME="class7_回归分析 Coverage Results" MODIFIED="1548316363972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
     <SUITE FILE_PATH="coverage/classpython$dlib.coverage" NAME="人脸检测dlib Coverage Results" MODIFIED="1551316607379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$21.coverage" NAME="21点小游戏 Coverage Results" MODIFIED="1548657801376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -100,7 +96,7 @@
     <session id="-402259594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -211,8 +207,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/price/exls数据查询插入.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+            <state relative-caret-position="507">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <marker date="1553595510205" expanded="true" signature="2134:2248" ph="..." />
               </folding>
@@ -866,7 +862,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4832905" visible="true" weight="0.4043716" />
+      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4832905" weight="0.4043716" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
@@ -1258,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/price/exls数据查询插入.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="507">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <marker date="1553595510205" expanded="true" signature="2134:2248" ph="..." />
           </folding>
