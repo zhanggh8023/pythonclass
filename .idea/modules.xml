@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://D:/git_home/12306/.idea/12306.iml" filepath="D:/git_home/12306/.idea/12306.iml" />
       <module fileurl="file://D:/git_home/FaceRecognition/.idea/FaceRecognition.iml" filepath="D:/git_home/FaceRecognition/.idea/FaceRecognition.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/app/.idea/app.iml" filepath="$USER_HOME$/Desktop/app/.idea/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/classpython.iml" filepath="$PROJECT_DIR$/.idea/classpython.iml" />
       <module fileurl="file://D:/git_home/deep-learning/.idea/deep-learning.iml" filepath="D:/git_home/deep-learning/.idea/deep-learning.iml" />
+      <module fileurl="file://D:/git_home/eos/.idea/eos.iml" filepath="D:/git_home/eos/.idea/eos.iml" />
       <module fileurl="file://D:/git_home/face_recognition/.idea/face_recognition.iml" filepath="D:/git_home/face_recognition/.idea/face_recognition.iml" />
       <module fileurl="file://D:/git_home/faceai/.idea/faceai.iml" filepath="D:/git_home/faceai/.idea/faceai.iml" />
+      <module fileurl="file://D:/mayan-edms-master/.idea/mayan-edms-master.iml" filepath="D:/mayan-edms-master/.idea/mayan-edms-master.iml" />
+      <module fileurl="file://D:/open-paperless-master/.idea/open-paperless-master.iml" filepath="D:/open-paperless-master/.idea/open-paperless-master.iml" />
       <module fileurl="file://D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" filepath="D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" />
     </modules>
   </component>

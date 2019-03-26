@@ -16,6 +16,10 @@
     <orderEntry type="module" module-name="face_recognition" />
     <orderEntry type="module" module-name="FaceRecognition" />
     <orderEntry type="module" module-name="app" />
+    <orderEntry type="module" module-name="mayan-edms-master" />
+    <orderEntry type="module" module-name="mayan-edms-master" />
+    <orderEntry type="module" module-name="open-paperless-master" />
+    <orderEntry type="module" module-name="eos" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
