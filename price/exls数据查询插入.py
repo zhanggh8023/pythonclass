@@ -67,13 +67,14 @@ wb= load_workbook('数据.xlsx')
 
 data=[]
 data1=[]
+
 def red_GD():
     sheet = wb['工单拆分']
     # print(sheet)
     for i in range(3,sheet.max_row):
         number_id=sheet.cell(row=i,column=7).value
         data1.append(number_id)
-    print(data1)
+    # print(data1)
     # number_id=sheet['G3'].value
     # print(number_id)
     # return number_id
@@ -90,24 +91,20 @@ def red_ZZ():
 
 red_ZZ()
 red_GD()
-print(data)
 
-def writeExcel(ii,tt):
-    wb=load_workbook('数据.xlsx')
-    sheet = wb['日计划量']
-    sheet.cell(ii+3, 6).value =tt
-    wb.save('数据.xlsx')
 
-for ii in range(len(data)):
+
+for ii in range(len(data1)):
     for i in range(len(data)):
         sheet1=wb['总装']
+        sheet = wb['日计划量']
         ff=data[i]['data']
-        print(ff,data1[ii])
         if data1[ii]==ff:
             tt=sheet1.cell(row=data[i]['i'],column=2).value
-            writeExcel(ii,tt)
-            print('-------------------对比正确班组-------：'+tt)
+            print(ff,data1[ii])
+            print(str(ii)+'-------------------对比正确班组：'+tt)
+            sheet.cell(ii + 3, 6).value =tt
             break
-        # print('对比错误！-------'+ str(ii))
-
+wb.save('数据.xlsx')
+print(data,data1)
 
