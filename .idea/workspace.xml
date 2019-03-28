@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/app/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/admin/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price/exls数据查询插入.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/exls数据查询插入.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/price/数据.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/price/数据.xlsx" afterDir="false" />
       <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
     </list>
@@ -17,7 +27,7 @@
     <SUITE FILE_PATH="coverage/classpython$class6_seaborn.coverage" NAME="class6_seaborn单变量 Coverage Results" MODIFIED="1548299597452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
     <SUITE FILE_PATH="coverage/classpython$setup.coverage" NAME="setup Coverage Results" MODIFIED="1552887391522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/eos" />
     <SUITE FILE_PATH="coverage/classpython$fist_flask.coverage" NAME="fist_flask Coverage Results" MODIFIED="1551856175735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
-    <SUITE FILE_PATH="coverage/classpython$exls.coverage" NAME="exls数据查询插入 Coverage Results" MODIFIED="1553596048498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
+    <SUITE FILE_PATH="coverage/classpython$exls.coverage" NAME="exls数据查询插入 Coverage Results" MODIFIED="1553652407109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$class7_.coverage" NAME="class7_回归分析 Coverage Results" MODIFIED="1548316363972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
     <SUITE FILE_PATH="coverage/classpython$dlib.coverage" NAME="人脸检测dlib Coverage Results" MODIFIED="1551316607379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$21.coverage" NAME="21点小游戏 Coverage Results" MODIFIED="1548657801376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -40,7 +50,7 @@
     <SUITE FILE_PATH="coverage/classpython$face_recognition.coverage" NAME="人脸视频识别face_recognition Coverage Results" MODIFIED="1551316593670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1551752590153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
     <SUITE FILE_PATH="coverage/classpython$main.coverage" NAME="main Coverage Results" MODIFIED="1551340352534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508" />
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1552032816642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1553681107165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
     <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547276015069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
     <SUITE FILE_PATH="coverage/classpython$wechat_fri_fm.coverage" NAME="wechat_fri_fm Coverage Results" MODIFIED="1553501491242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
     <SUITE FILE_PATH="coverage/classpython$pandas_findexls.coverage" NAME="pandas_findexls Coverage Results" MODIFIED="1553581683045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -96,7 +106,7 @@
     <session id="-402259594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -111,11 +121,11 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,15 +138,16 @@
           <entry key="css" value="10" />
           <entry key="dat" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="html" value="87" />
+          <entry key="html" value="94" />
           <entry key="iml" value="1" />
           <entry key="jpg" value="9" />
           <entry key="js" value="2" />
           <entry key="json" value="2" />
           <entry key="log" value="7" />
           <entry key="md" value="6" />
+          <entry key="movie" value="1" />
           <entry key="png" value="19" />
-          <entry key="py" value="642" />
+          <entry key="py" value="644" />
           <entry key="pyi" value="4" />
           <entry key="recon-cli" value="1" />
           <entry key="recon-web" value="1" />
@@ -152,9 +163,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="10" />
-          <entry key="Database Element" value="3" />
+          <entry key="Database Element" value="4" />
           <entry key="Dockerfile" value="2" />
-          <entry key="HTML" value="87" />
+          <entry key="HTML" value="94" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="28" />
           <entry key="JSON" value="2" />
@@ -162,7 +173,7 @@
           <entry key="Log" value="7" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="644" />
+          <entry key="Python" value="646" />
           <entry key="PythonStub" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="Robot Feature" value="2" />
@@ -178,9 +189,9 @@
           <entry key="cdn_list" value="478" />
           <entry key="css" value="27" />
           <entry key="dummy" value="14" />
-          <entry key="html" value="2589" />
+          <entry key="html" value="3065" />
           <entry key="json" value="12" />
-          <entry key="py" value="11440" />
+          <entry key="py" value="11938" />
           <entry key="sql" value="48" />
           <entry key="txt" value="146" />
           <entry key="yaml" value="59" />
@@ -189,10 +200,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="27" />
-          <entry key="HTML" value="2589" />
+          <entry key="HTML" value="3065" />
           <entry key="JSON" value="12" />
           <entry key="PLAIN_TEXT" value="638" />
-          <entry key="Python" value="11441" />
+          <entry key="Python" value="11939" />
           <entry key="SQL" value="48" />
           <entry key="YAML" value="59" />
         </counts>
@@ -204,47 +215,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/price/exls数据查询插入.py">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="414">
+              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
               <folding>
-                <marker date="1553595510205" expanded="true" signature="2134:2248" ph="..." />
+                <marker date="1553681347026" expanded="true" signature="5435:6033" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/writeExcel.py">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="34" />
-              <folding>
-                <element signature="e#93#136#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-621">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/readExcel.py">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="63" />
-              <folding>
-                <element signature="e#117#126#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/Unit_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1265">
-              <caret line="63" column="24" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="24" />
+            <state relative-caret-position="176">
+              <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -254,8 +268,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -289,12 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/mailer/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/mayan_statistics/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/mayan_statistics/licenses.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/metadata/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/mirroring/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/motd/apps.py" />
         <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/ocr/apps.py" />
         <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/rest_api/apps.py" />
         <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/rest_api/licenses.py" />
@@ -340,6 +348,12 @@
         <option value="$PROJECT_DIR$/price/跨表数据添加.py" />
         <option value="$PROJECT_DIR$/price/pandas_findexls.py" />
         <option value="$PROJECT_DIR$/price/exls数据查询插入.py" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" />
+        <option value="$PROJECT_DIR$/Flask_study/manage.py" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" />
+        <option value="$PROJECT_DIR$/Flask_study/app/admin/views.py" />
       </list>
     </option>
   </component>
@@ -386,10 +400,10 @@
       <path value="D:/open-paperless-master/mayan/apps/mayan_statistics/static/statistics/packages/Chart.js-1.0.2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="583" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="725" />
     <option name="y" value="1" />
-    <option name="width" value="1031" />
+    <option name="width" value="889" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -409,14 +423,23 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="添加" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope '!predefined.scope.project.files.name!'; set:!predefined.scope.project.files.name!; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="classpython" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -427,18 +450,35 @@
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="price" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope '!predefined.scope.project.files.name!'; set:!predefined.scope.project.files.name!; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
             <path>
-              <item name="classpython" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -454,7 +494,7 @@
     <property name="last_opened_file_path" value="D:/git_home/eos" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -484,7 +524,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exls数据查询插入">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="跨表数据添加" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -639,6 +679,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask_study" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask_study/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pandas_findexls" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -688,9 +750,11 @@
       <item itemvalue="Python.跨表数据添加" />
       <item itemvalue="Python.exls数据查询插入" />
       <item itemvalue="Python.pandas_findexls" />
+      <item itemvalue="Python.manage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python.exls数据查询插入" />
         <item itemvalue="Python.pandas_findexls" />
         <item itemvalue="Python.跨表数据添加" />
@@ -848,10 +912,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="583" y="1" width="1031" height="867" extended-state="0" />
+    <frame x="725" y="1" width="889" height="867" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.19052523" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" weight="0.2026538" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
       <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -862,21 +926,21 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4832905" weight="0.4043716" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4832905" visible="true" weight="0.2636612" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.329235" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5167095" side_tool="true" weight="0.28070176" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5167095" side_tool="true" weight="0.28005466" />
       <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.3237705" />
       <window_info anchor="bottom" id="Python Console" order="16" weight="0.32786885" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.3211876" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32103825" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32394367" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32840616" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32328105" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32810616" />
       <window_info anchor="right" id="数据库" order="5" weight="0.3279743" />
       <window_info anchor="right" x="0" y="0" width="251" height="667" id="文档" order="6" side_tool="true" weight="0.32925764" />
     </layout>
@@ -920,6 +984,9 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/chinese-poetry" />
+      <path value="$PROJECT_DIR$/facenet" />
+      <path value="D:/git_home/eos" />
+      <path value="D:/git_home/spiltword/splitword" />
     </ignored-roots>
     <MESSAGE value="更新插入表单格式" />
     <MESSAGE value="修改火车票购买人信息" />
@@ -948,62 +1015,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/open-paperless-master/mayan/apps/dynamic_search/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/mimetype/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/mimetype/licenses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/navigation/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/permissions/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/smart_settings/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/user_management/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/metadata/classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/open-paperless-master/mayan/apps/cabinets/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1225,9 +1236,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/price/exls数据查询插入.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/writeExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#93#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/readExcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
+        <state relative-caret-position="340">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="63" />
           <folding>
             <element signature="e#117#126#0" expanded="true" />
@@ -1237,27 +1265,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/Unit_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
+        <state relative-caret-position="340">
           <caret line="63" column="24" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/writeExcel.py">
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#93#136#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="529">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/price/exls数据查询插入.py">
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="368">
+          <caret line="37" column="32" selection-start-line="31" selection-start-column="20" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3fe5fa59-c15e-49e5-b8b6-a999d31bbd19/schema/movie/table/movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="27" lean-forward="true" selection-end-line="173" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
           <folding>
-            <marker date="1553595510205" expanded="true" signature="2134:2248" ph="..." />
+            <marker date="1553681347026" expanded="true" signature="5435:6033" ph="..." />
           </folding>
         </state>
       </provider>
