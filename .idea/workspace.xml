@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flask_study/app/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/exls数据查询插入.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/exls数据查询插入.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/数据.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/price/数据.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zghmysql/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/zghmysql/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zghmysql/makesql.py" beforeDir="false" afterPath="$PROJECT_DIR$/zghmysql/makesql.py" afterDir="false" />
       <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +44,7 @@
     <SUITE FILE_PATH="coverage/classpython$face_recognition.coverage" NAME="人脸视频识别face_recognition Coverage Results" MODIFIED="1551316593670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1551752590153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
     <SUITE FILE_PATH="coverage/classpython$main.coverage" NAME="main Coverage Results" MODIFIED="1551340352534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508" />
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1553681107165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1553751487967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
     <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547276015069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
     <SUITE FILE_PATH="coverage/classpython$wechat_fri_fm.coverage" NAME="wechat_fri_fm Coverage Results" MODIFIED="1553501491242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
     <SUITE FILE_PATH="coverage/classpython$pandas_findexls.coverage" NAME="pandas_findexls Coverage Results" MODIFIED="1553581683045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -63,6 +57,7 @@
     <SUITE FILE_PATH="coverage/classpython$Unittests_for_Unit_test_testHttpRequset_test_get.coverage" NAME="Unittests for Unit_test.testHttpRequset.test_get Coverage Results" MODIFIED="1551767533707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
     <SUITE FILE_PATH="coverage/classpython$The_Stolen_Crown.coverage" NAME="The_Stolen_Crown Coverage Results" MODIFIED="1548238749924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/The-Stolen-Crown-RPG" />
     <SUITE FILE_PATH="coverage/classpython$blockchain.coverage" NAME="blockchain Coverage Results" MODIFIED="1551921802781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myblock" />
+    <SUITE FILE_PATH="coverage/classpython$makesql.coverage" NAME="makesql Coverage Results" MODIFIED="1553853230334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghmysql" />
     <SUITE FILE_PATH="coverage/classpython$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1552377655519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/open-paperless-master" />
     <SUITE FILE_PATH="coverage/classpython$keras.coverage" NAME="表情识别keras Coverage Results" MODIFIED="1551316672935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1551947070390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
@@ -99,6 +94,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="movie: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="数据库" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="172.16.20.130" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="movie: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="movie: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -108,13 +110,13 @@
         <counts>
           <entry key="project.closed" value="27" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="8" />
           <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
@@ -125,7 +127,7 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -134,20 +136,20 @@
           <entry key="admin" value="3" />
           <entry key="bat" value="1" />
           <entry key="cdn_list" value="5" />
-          <entry key="conf" value="17" />
+          <entry key="conf" value="19" />
           <entry key="css" value="10" />
           <entry key="dat" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="html" value="94" />
+          <entry key="html" value="100" />
           <entry key="iml" value="1" />
           <entry key="jpg" value="9" />
           <entry key="js" value="2" />
           <entry key="json" value="2" />
           <entry key="log" value="7" />
           <entry key="md" value="6" />
-          <entry key="movie" value="1" />
+          <entry key="movie" value="3" />
           <entry key="png" value="19" />
-          <entry key="py" value="644" />
+          <entry key="py" value="649" />
           <entry key="pyi" value="4" />
           <entry key="recon-cli" value="1" />
           <entry key="recon-web" value="1" />
@@ -163,17 +165,17 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="10" />
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="6" />
           <entry key="Dockerfile" value="2" />
-          <entry key="HTML" value="94" />
+          <entry key="HTML" value="100" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="28" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="Log" value="7" />
           <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="646" />
+          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="Python" value="651" />
           <entry key="PythonStub" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="Robot Feature" value="2" />
@@ -189,9 +191,9 @@
           <entry key="cdn_list" value="478" />
           <entry key="css" value="27" />
           <entry key="dummy" value="14" />
-          <entry key="html" value="3065" />
+          <entry key="html" value="3108" />
           <entry key="json" value="12" />
-          <entry key="py" value="11938" />
+          <entry key="py" value="12682" />
           <entry key="sql" value="48" />
           <entry key="txt" value="146" />
           <entry key="yaml" value="59" />
@@ -200,10 +202,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="27" />
-          <entry key="HTML" value="3065" />
+          <entry key="HTML" value="3108" />
           <entry key="JSON" value="12" />
           <entry key="PLAIN_TEXT" value="638" />
-          <entry key="Python" value="11939" />
+          <entry key="Python" value="12683" />
           <entry key="SQL" value="48" />
           <entry key="YAML" value="59" />
         </counts>
@@ -218,7 +220,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="805">
               <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
@@ -227,19 +229,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="1150">
               <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+            <state relative-caret-position="4945">
+              <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
               <folding>
-                <marker date="1553681347026" expanded="true" signature="5435:6033" ph="..." />
+                <marker date="1553752757296" expanded="true" signature="5467:7460" ph="..." />
               </folding>
             </state>
           </provider>
@@ -248,17 +250,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-621">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="506">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#7;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#8;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#9;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#10;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html">
+        <entry file="file://$PROJECT_DIR$/zghoracle/auto_oracle_insert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="64" column="61" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+            <state relative-caret-position="713">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+              <folding>
+                <element signature="e#158#174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zghmysql/makesql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="109" column="70" lean-forward="true" selection-start-line="109" selection-start-column="70" selection-end-line="109" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zghmysql/db.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -303,9 +351,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/ocr/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/rest_api/apps.py" />
-        <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/rest_api/licenses.py" />
         <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/sources/apps.py" />
         <option value="$USER_HOME$/Desktop/mayan-edms-master/mayan/apps/navigation/classes.py" />
         <option value="D:/mayan-edms-master/mayan/apps/sources/classes.py" />
@@ -352,8 +397,11 @@
         <option value="$PROJECT_DIR$/Flask_study/manage.py" />
         <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" />
         <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" />
         <option value="$PROJECT_DIR$/Flask_study/app/admin/views.py" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" />
+        <option value="$PROJECT_DIR$/zghmysql/db.conf" />
+        <option value="$PROJECT_DIR$/zghoracle/auto_oracle_insert.py" />
+        <option value="$PROJECT_DIR$/zghmysql/makesql.py" />
       </list>
     </option>
   </component>
@@ -400,10 +448,10 @@
       <path value="D:/open-paperless-master/mayan/apps/mayan_statistics/static/statistics/packages/Chart.js-1.0.2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="725" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="695" />
     <option name="y" value="1" />
-    <option name="width" value="889" />
+    <option name="width" value="919" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -480,6 +528,16 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="zghmysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="zghoracle" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -524,7 +582,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.makesql">
     <configuration name="跨表数据添加" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -679,6 +737,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="makesql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zghmysql" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zghmysql/makesql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -723,42 +803,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="signature_cloud" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python-wechat-itchat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../git_home/python-wechat-itchat" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/python-wechat-itchat/signature_cloud.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.signature_cloud" />
       <item itemvalue="Python.跨表数据添加" />
       <item itemvalue="Python.exls数据查询插入" />
       <item itemvalue="Python.pandas_findexls" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.makesql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.makesql" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.exls数据查询插入" />
         <item itemvalue="Python.pandas_findexls" />
         <item itemvalue="Python.跨表数据添加" />
-        <item itemvalue="Python.signature_cloud" />
       </list>
     </recent_temporary>
   </component>
@@ -912,10 +970,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="725" y="1" width="889" height="867" extended-state="1" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" weight="0.2026538" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.11568123" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
       <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -926,7 +984,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4832905" visible="true" weight="0.2636612" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.4832905" visible="true" weight="0.2631579" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
@@ -1015,62 +1073,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/open-paperless-master/mayan/apps/cabinets/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/checkouts/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/checkouts/dashboard_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/lock_manager/backends/file_lock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/document_comments/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/document_indexing/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/document_indexing/licenses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/open-paperless-master/mayan/apps/document_indexing/queues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python36/Lib/site-packages/common/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1247,9 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#93#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,9 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="63" />
-          <folding>
-            <element signature="e#117#126#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,45 +1266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="37" column="32" selection-start-line="31" selection-start-column="20" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3fe5fa59-c15e-49e5-b8b6-a999d31bbd19/schema/movie/table/movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="27" lean-forward="true" selection-end-line="173" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1319,12 +1280,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://3fe5fa59-c15e-49e5-b8b6-a999d31bbd19/schema/movie/table/movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/tag_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="27" selection-start-line="27" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghoracle/insert_data.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghmysql/db_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+        <state relative-caret-position="4945">
+          <caret line="224" column="39" selection-start-line="224" selection-start-column="39" selection-end-line="224" selection-end-column="39" />
           <folding>
-            <marker date="1553681347026" expanded="true" signature="5435:6033" ph="..." />
+            <marker date="1553752757296" expanded="true" signature="5467:7460" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#6;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#7;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#8;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#9;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#10;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghoracle/auto_oracle_insert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#158#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghmysql/db.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zghmysql/makesql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="109" column="70" lean-forward="true" selection-start-line="109" selection-start-column="70" selection-end-line="109" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
