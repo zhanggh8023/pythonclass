@@ -193,14 +193,14 @@ class Oplog(db.Model):
 
 
 if __name__ == "__main__":
-    # db.create_all()
-    # role = Role(
-    #     name="超级管理员",
-    #     auths=" ",
-    #
-    # )
-    # db.session.add(role)
-    # db.session.commit()
+    db.create_all()
+    role = Role(
+        name="超级管理员",
+        auths=" ",
+
+    )
+    db.session.add(role)
+    db.session.commit()
     from werkzeug.security import generate_password_hash  # 导入一个生成密码的工具
 
     admin = Admin(
