@@ -292,6 +292,29 @@ def preview_del(id=None):
     flash("删除预告成功！", "ok")
     return redirect(url_for("admin.preview_list", page=1))
 
+# 上映预告编辑
+@admin.route("/preview/edit/<int:id>/", methods=["GET", "POST"])
+@admin_login_req
+def preview_edit(id):
+    form = PreviewForm()
+    form.logo.validators=[]
+    preview = Preview.query.get_or_404(int(id))
+    if request.method == "GET":
+        form.title.data=preview.title
+    if form.validate_on_submit():
+        data = form.data
+        if form.logo.data.filename != "":
+            file_logo = secure_filename(form.logo.data.filename)
+            preview.logo = change_filename(file_logo)
+            form.logo.data.save(app.config["UP_DIR"] + preview.logo)
+        preview.title=data["title"]
+        db.session.add(preview)
+        db.session.commit()
+        flash("修改预告成功！", "ok")
+        return redirect(url_for("admin.preview_edit",id=id))
+    return render_template("admin/preview_edit.html", form=form,preview=preview)
+
+
 
 # 会员列表
 @admin.route("/user/list/")
