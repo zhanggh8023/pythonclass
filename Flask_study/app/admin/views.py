@@ -8,7 +8,7 @@
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
 from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm
-from Flask_study.app.models import Admin, Tag, Movie, Preview
+from Flask_study.app.models import Admin, Tag, Movie, Preview, User
 from functools import wraps
 from Flask_study.app import db, app
 from werkzeug.utils import secure_filename
@@ -317,15 +317,20 @@ def preview_edit(id):
 
 
 # 会员列表
-@admin.route("/user/list/")
+@admin.route("/user/list/<int:page>/",methods=["GET"])
 @admin_login_req
-def user_list():
-    return render_template("admin/user_list.html")
+def user_list(page=None):
+    if page is None:
+        page=1
+    page_data = User.query.order_by(
+        User.addtime.desc()
+    ).paginate(page=page,per_page=10)
+    return render_template("admin/user_list.html",page_data=page_data)
 
 
 # 查看会员
-@admin.route("/user/view/")
-def user_view():
+@admin.route("/user/view/<int:id>",methods=["GET"])
+def user_view(id=None):
     return render_template("admin/user_view.html")
 
 
