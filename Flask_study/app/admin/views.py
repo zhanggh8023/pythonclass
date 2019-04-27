@@ -331,7 +331,18 @@ def user_list(page=None):
 # 查看会员
 @admin.route("/user/view/<int:id>",methods=["GET"])
 def user_view(id=None):
-    return render_template("admin/user_view.html")
+    user = User.query.get_or_404(int(id))
+    return render_template("admin/user_view.html",user=user)
+
+# 会员删除
+@admin.route("/user/del/<int:id>/", methods=["GET"])
+@admin_login_req
+def user_del(id=None):
+    user = User.query.get_or_404(int(id))
+    db.session.delete(user)
+    db.session.commit()
+    flash("删除预告成功！", "ok")
+    return redirect(url_for("admin.user_list", page=1))
 
 
 # 评论列表
