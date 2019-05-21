@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:/git_home/FaceRecognition/.idea/FaceRecognition.iml" filepath="D:/git_home/FaceRecognition/.idea/FaceRecognition.iml" />
+      <module fileurl="file://D:/git_home/Douyin/.idea/Douyin.iml" filepath="D:/git_home/Douyin/.idea/Douyin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/classpython.iml" filepath="$PROJECT_DIR$/.idea/classpython.iml" />
-      <module fileurl="file://D:/git_home/face_recognition/.idea/face_recognition.iml" filepath="D:/git_home/face_recognition/.idea/face_recognition.iml" />
-      <module fileurl="file://D:/git_home/faceai/.idea/faceai.iml" filepath="D:/git_home/faceai/.idea/faceai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" filepath="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" />
       <module fileurl="file://D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" filepath="D:/git_home/python-wechat-itchat/.idea/python-wechat-itchat.iml" />
     </modules>
   </component>

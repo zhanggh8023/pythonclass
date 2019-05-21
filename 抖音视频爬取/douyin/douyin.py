@@ -168,10 +168,10 @@ class DouYin(object):
         print('搜索api需要登录，暂时使用UID下载\n分享用户页面，用浏览器打开短链接，原始链接中/share/user/后的数字即是UID')
         user_id = input('请输入ID (例如95006183):')
         user_id = user_id if user_id else '95006183'
-        watermark_flag = input('是否下载带水印的视频 (0-否(默认), 1-是):')
+        watermark_flag = '0'#input('是否下载带水印的视频 (0-否(默认), 1-是):')
         watermark_flag = watermark_flag if watermark_flag != '' else '0'
         watermark_flag = bool(int(watermark_flag))
-        type_flag = input('f-收藏的(默认), p-上传的:')
+        type_flag = 'p'#input('f-收藏的(默认), p-上传的:')
         type_flag = type_flag if type_flag != '' else 'f'
         save_dir = 'D:/Download/'  # input('保存路径 (例如"E:/Download/", 默认"./Download/"):')
         save_dir = save_dir if save_dir else "./Download/"
@@ -220,3 +220,33 @@ class DouYin(object):
 if __name__ == '__main__':
     douyin = DouYin()
     douyin.run()
+
+
+#通过
+'''
+105891291453
+
+
+'''
+
+#未通过
+'''
+68567413397
+67126621684
+72156383532
+62864520549
+64252901721
+98674543522
+96048636079
+62348878423
+64925523831
+62213988031
+94735438469
+70542844270
+91710706818
+70542844270
+58605236777
+73648692070
+98183725043
+
+'''

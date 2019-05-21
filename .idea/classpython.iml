@@ -6,15 +6,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="face_recognition" />
-    <orderEntry type="module" module-name="faceai" />
     <orderEntry type="module" module-name="Ticket" />
     <orderEntry type="module" module-name="python-wechat-itchat" />
-    <orderEntry type="module" module-name="face_recognition" />
-    <orderEntry type="module" module-name="FaceRecognition" />
     <orderEntry type="module" module-name="app" />
     <orderEntry type="module" module-name="open-paperless-master" />
     <orderEntry type="module" module-name="eos" />
+    <orderEntry type="module" module-name="edex-ui" />
+    <orderEntry type="module" module-name="interface_auto_cases_for_ZNKF" />
+    <orderEntry type="module" module-name="Douyin" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
