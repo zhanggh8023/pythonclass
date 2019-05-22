@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/fist_flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/first_flask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/抖音视频爬取/Douying" beforeDir="false" afterPath="$PROJECT_DIR$/抖音视频爬取/Douying" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/抖音视频爬取/Douying" beforeDir="false" />
       <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,6 +64,7 @@
     <SUITE FILE_PATH="coverage/classpython$signature_cloud.coverage" NAME="signature_cloud Coverage Results" MODIFIED="1553501602242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
     <SUITE FILE_PATH="coverage/classpython$service_caochong_thread.coverage" NAME="service_caochong_thread Coverage Results" MODIFIED="1547727852966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/spiltword/splitword" />
     <SUITE FILE_PATH="coverage/classpython$setup__1_.coverage" NAME="setup (1) Coverage Results" MODIFIED="1553500863455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/mayan-edms-master" />
+    <SUITE FILE_PATH="coverage/classpython$pyinstall.coverage" NAME="pyinstall Coverage Results" MODIFIED="1558497047490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
     <SUITE FILE_PATH="coverage/classpython$Unittests_for_Unit_test_testHttpRequset_test_get.coverage" NAME="Unittests for Unit_test.testHttpRequset.test_get Coverage Results" MODIFIED="1551767533707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
     <SUITE FILE_PATH="coverage/classpython$The_Stolen_Crown.coverage" NAME="The_Stolen_Crown Coverage Results" MODIFIED="1548238749924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/The-Stolen-Crown-RPG" />
     <SUITE FILE_PATH="coverage/classpython$blockchain.coverage" NAME="blockchain Coverage Results" MODIFIED="1551921802781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myblock" />
@@ -75,6 +72,7 @@
     <SUITE FILE_PATH="coverage/classpython$douyin2.coverage" NAME="douyin2 Coverage Results" MODIFIED="1554637943355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider" />
     <SUITE FILE_PATH="coverage/classpython$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1552377655519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/open-paperless-master" />
     <SUITE FILE_PATH="coverage/classpython$keras.coverage" NAME="表情识别keras Coverage Results" MODIFIED="1551316672935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
+    <SUITE FILE_PATH="coverage/classpython$Vibrato__1_.coverage" NAME="Vibrato (1) Coverage Results" MODIFIED="1558497068456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
     <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1551947070390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
     <SUITE FILE_PATH="coverage/classpython$constructors.coverage" NAME="constructors Coverage Results" MODIFIED="1548238433061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Python/Lib/site-packages/pandas/tests/extension/base" />
     <SUITE FILE_PATH="coverage/classpython$sco1.coverage" NAME="sco1 Coverage Results" MODIFIED="1550645674434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -160,10 +158,10 @@
           <entry key="js" value="3" />
           <entry key="json" value="2" />
           <entry key="log" value="8" />
-          <entry key="md" value="9" />
+          <entry key="md" value="10" />
           <entry key="movie" value="3" />
           <entry key="png" value="19" />
-          <entry key="py" value="765" />
+          <entry key="py" value="770" />
           <entry key="pyi" value="6" />
           <entry key="recon-cli" value="1" />
           <entry key="recon-web" value="2" />
@@ -188,9 +186,9 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
           <entry key="Log" value="8" />
-          <entry key="Markdown" value="9" />
+          <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="768" />
+          <entry key="Python" value="773" />
           <entry key="PythonStub" value="6" />
           <entry key="RNG Compact" value="1" />
           <entry key="Robot Feature" value="3" />
@@ -208,7 +206,7 @@
           <entry key="dummy" value="16" />
           <entry key="html" value="3577" />
           <entry key="json" value="12" />
-          <entry key="py" value="13914" />
+          <entry key="py" value="13949" />
           <entry key="sql" value="48" />
           <entry key="txt" value="208" />
           <entry key="yaml" value="59" />
@@ -220,7 +218,7 @@
           <entry key="HTML" value="3577" />
           <entry key="JSON" value="12" />
           <entry key="PLAIN_TEXT" value="702" />
-          <entry key="Python" value="13915" />
+          <entry key="Python" value="13950" />
           <entry key="SQL" value="48" />
           <entry key="YAML" value="59" />
         </counts>
@@ -231,7 +229,34 @@
     <favorites_list name="classpython" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1357">
+              <caret line="16" selection-start-line="16" selection-end-line="17" />
+              <folding>
+                <element signature="e#72#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -263,7 +288,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/抖音视频爬取" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -271,8 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/open-paperless-master/mayan/apps/document_indexing/licenses.py" />
-        <option value="D:/open-paperless-master/mayan/apps/document_indexing/queues.py" />
         <option value="D:/open-paperless-master/mayan/apps/document_parsing/apps.py" />
         <option value="D:/open-paperless-master/mayan/apps/documents/widgets.py" />
         <option value="D:/open-paperless-master/mayan/apps/documents/settings.py" />
@@ -322,6 +345,8 @@
         <option value="D:/git_home/Douyin/pyinstall.py" />
         <option value="$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py" />
         <option value="D:/git_home/Douyin/Vibrato.py" />
+        <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py" />
+        <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py" />
       </list>
     </option>
   </component>
@@ -399,6 +424,12 @@
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
               <item name="抖音视频爬取" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="抖音视频爬取" type="462c0819:PsiDirectoryNode" />
+              <item name="Douyin_one" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -443,7 +474,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Vibrato">
+  <component name="RunManager" selected="Python.Vibrato (1)">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="Mario-Level" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -488,6 +519,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Vibrato (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Vibrato" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -556,28 +609,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask_study" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask_study/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="openDoor (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -600,7 +631,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="openDoor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyinstall" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -608,12 +639,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\classpython\opendoor\openDoor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -729,19 +760,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.manage" />
-      <item itemvalue="Python.openDoor" />
       <item itemvalue="Python.openDoor (1)" />
       <item itemvalue="Python.douyin" />
       <item itemvalue="Python.Vibrato" />
+      <item itemvalue="Python.pyinstall" />
+      <item itemvalue="Python.Vibrato (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Vibrato (1)" />
+        <item itemvalue="Python.pyinstall" />
         <item itemvalue="Python.Vibrato" />
         <item itemvalue="Python.douyin" />
         <item itemvalue="Python.openDoor (1)" />
-        <item itemvalue="Python.manage" />
-        <item itemvalue="Python.openDoor" />
       </list>
     </recent_temporary>
   </component>
@@ -919,9 +950,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="632" y="0" width="975" height="867" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.26775956" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15745501" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
       <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -932,7 +964,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.47540984" visible="true" weight="0.27322406" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.47540984" visible="true" weight="0.27260458" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
@@ -1039,30 +1071,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Recon-ng/recon-web">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="88" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1212" selection-start-line="1212" selection-end-line="1212" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -1296,6 +1304,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/first_flask.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+          <folding>
+            <element signature="e#72#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
