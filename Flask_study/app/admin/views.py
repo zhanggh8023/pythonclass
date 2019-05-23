@@ -8,7 +8,7 @@
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
 from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm
-from Flask_study.app.models import Admin, Tag, Movie, Preview, User
+from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment
 from functools import wraps
 from Flask_study.app import db, app
 from werkzeug.utils import secure_filename
@@ -49,7 +49,6 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         data = form.data
-        print(data)
         admin = Admin.query.filter_by(name=data["account"]).first()
         if not admin.check_pwd(data["pwd"]):
             flash("密码错误！")
@@ -346,11 +345,22 @@ def user_del(id=None):
 
 
 # 评论列表
-@admin.route("/comment/list/")
+@admin.route("/comment/list/<int:page>/", methods=['GET'])
 @admin_login_req
-def comment_list():
-    return render_template("admin/comment_list.html")
-
+def comment_list(page=None):
+    if page is None:
+        page = 1
+    page_data = Comment.query.join(
+        Movie
+    ).join(
+        User
+    ).filter(
+        Movie.id == Comment.movie_id,
+        User.id == Comment.user_id
+    ).order_by(
+        Comment.addtime.desc()
+    ).paginate(page=page, per_page=10)
+    return render_template('admin/comment_list.html', page_data=page_data)
 
 # 收藏列表
 @admin.route("/moviecol/list/")
