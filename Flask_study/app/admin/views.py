@@ -8,7 +8,7 @@
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
 from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm
-from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment
+from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol
 from functools import wraps
 from Flask_study.app import db, app
 from werkzeug.utils import secure_filename
@@ -296,47 +296,48 @@ def preview_del(id=None):
     flash("删除预告成功！", "ok")
     return redirect(url_for("admin.preview_list", page=1))
 
+
 # 上映预告编辑
 @admin.route("/preview/edit/<int:id>/", methods=["GET", "POST"])
 @admin_login_req
 def preview_edit(id):
     form = PreviewForm()
-    form.logo.validators=[]
+    form.logo.validators = []
     preview = Preview.query.get_or_404(int(id))
     if request.method == "GET":
-        form.title.data=preview.title
+        form.title.data = preview.title
     if form.validate_on_submit():
         data = form.data
         if form.logo.data.filename != "":
             file_logo = secure_filename(form.logo.data.filename)
             preview.logo = change_filename(file_logo)
             form.logo.data.save(app.config["UP_DIR"] + preview.logo)
-        preview.title=data["title"]
+        preview.title = data["title"]
         db.session.add(preview)
         db.session.commit()
         flash("修改预告成功！", "ok")
-        return redirect(url_for("admin.preview_edit",id=id))
-    return render_template("admin/preview_edit.html", form=form,preview=preview)
-
+        return redirect(url_for("admin.preview_edit", id=id))
+    return render_template("admin/preview_edit.html", form=form, preview=preview)
 
 
 # 会员列表
-@admin.route("/user/list/<int:page>/",methods=["GET"])
+@admin.route("/user/list/<int:page>/", methods=["GET"])
 @admin_login_req
 def user_list(page=None):
     if page is None:
-        page=1
+        page = 1
     page_data = User.query.order_by(
         User.addtime.desc()
-    ).paginate(page=page,per_page=10)
-    return render_template("admin/user_list.html",page_data=page_data)
+    ).paginate(page=page, per_page=10)
+    return render_template("admin/user_list.html", page_data=page_data)
 
 
 # 查看会员
-@admin.route("/user/view/<int:id>",methods=["GET"])
+@admin.route("/user/view/<int:id>", methods=["GET"])
 def user_view(id=None):
     user = User.query.get_or_404(int(id))
-    return render_template("admin/user_view.html",user=user)
+    return render_template("admin/user_view.html", user=user)
+
 
 # 会员删除
 @admin.route("/user/del/<int:id>/", methods=["GET"])
@@ -367,11 +368,45 @@ def comment_list(page=None):
     ).paginate(page=page, per_page=10)
     return render_template('admin/comment_list.html', page_data=page_data)
 
-# 收藏列表
-@admin.route("/moviecol/list/")
+
+# 评论删除
+@admin.route("/comment/del/<int:id>/", methods=["GET"])
 @admin_login_req
-def moviecol_list():
-    return render_template("admin/moviecol_list.html")
+def comment_del(id=None):
+    comment = Comment.query.get_or_404(int(id))
+    db.session.delete(comment)
+    db.session.commit()
+    flash("删除评论成功！", "ok")
+    return redirect(url_for("admin.comment_list", page=1))
+
+
+# 收藏列表
+@admin.route("/moviecol/list/<int:page>/", methods=['GET'])
+@admin_login_req
+def moviecol_list(page=None):
+    if page is None:
+        page = 1
+    page_data = Moviecol.query.join(
+        Movie
+    ).join(
+        User
+    ).filter(
+        Movie.id == Moviecol.movie_id,
+        User.id == Moviecol.user_id
+    ).order_by(
+        Moviecol.addtime.desc()
+    ).paginate(page=page, per_page=10)
+    return render_template("admin/moviecol_list.html",page_data=page_data)
+
+# 收藏删除
+@admin.route("/moviecol/del/<int:id>/", methods=["GET"])
+@admin_login_req
+def moviecol_del(id=None):
+    moviecol = Moviecol.query.get_or_404(int(id))
+    db.session.delete(moviecol)
+    db.session.commit()
+    flash("删除评论成功！", "ok")
+    return redirect(url_for("admin.moviecol_list", page=1))
 
 
 # 操作日志列表
