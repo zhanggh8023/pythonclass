@@ -12,16 +12,15 @@
     <link rel="stylesheet" href="{{url_for('static',filename='admin/dist/css/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='admin/plugins/iCheck/square/blue.css')}}">
 </head>
+{% import "ul/message.html" as message %}
+
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
         <a href=""><b>微电影管理系统</b></a>
     </div>
     <div class="login-box-body">
-        {% for msg in get_flashed_messages() %}
-        <p class="login-box-msg" style="color: red">{{ msg }}</p>
-        {% endfor %}
-        <form  method="POST" id="form-data" novalidate>
+        <form method="POST" id="form-data" novalidate>
             <div class="form-group has-feedback">
                 {{ form.account }}
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -35,7 +34,7 @@
                 {{ form.pwd }}
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 {% for err in form.pwd.errors %}
-                <div class="col-md-12" >
+                <div class="col-md-12">
                     <p style="color:red">{{ err }}</p>
                 </div>
                 {% endfor %}
@@ -47,6 +46,12 @@
                     {{ form.submit }}
                     {{ form.csrf_token }}
                 </div>
+                {% for msg in get_flashed_messages(category_filter=["ok"]) %}
+                {{ message.message('ok',msg) }}
+                {% endfor %}
+                {% for msg in get_flashed_messages(category_filter=["err"]) %}
+                {{ message.message('err',msg) }}
+                {% endfor %}
             </div>
         </form>
     </div>
