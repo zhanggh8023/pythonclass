@@ -30,12 +30,20 @@
                 </div>
                 <div class="box-body table-responsive no-padding">
                     {% for msg in get_flashed_messages(category_filter=["ok"]) %}
+<<<<<<< HEAD
                     {{ message.message('ok',msg) }}
                     <!--<div class="alert alert-success alert-dismissible">-->
                         <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
                         <!--<h4><i class="icon fa fa-check"></i> 操作成功!</h4>-->
                         <!--{{ msg }}-->
                     <!--</div>-->
+=======
+                        <div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <h4><i class="icon fa fa-check"></i> 操作成功!</h4>
+                            {{ msg }}
+                        </div>
+>>>>>>> 018e39c2e8a80e250f103fb5a85ccf296d92a56e
                     {% endfor %}
                     <table class="table table-hover">
                         <tbody>
@@ -55,8 +63,7 @@
                             <td>{{ v.email }}</td>
                             <td>{{ v.phone }}</td>
                             <td>
-                                <img src="{{ url_for('static',filename='uploads/user/'+v.face) }}"
-                                     style="width: 50px" class="img-responsive center-block" alt="">
+                                <img src="{{ url_for('static',filename='uploads/user/'+v.face)}}" style="width: 50px" class="img-responsive center-block" alt="">
                             </td>
                             <td>{{ v.addtime }}</td>
                             <td>
