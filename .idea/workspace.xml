@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/抖音视频爬取/Douying" beforeDir="false" />
       <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
     </list>
@@ -48,7 +49,7 @@
     <SUITE FILE_PATH="coverage/classpython$face_recognition.coverage" NAME="人脸视频识别face_recognition Coverage Results" MODIFIED="1551316593670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1551752590153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
     <SUITE FILE_PATH="coverage/classpython$main.coverage" NAME="main Coverage Results" MODIFIED="1551340352534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508" />
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1557899633203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1558663869821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
     <SUITE FILE_PATH="coverage/classpython$douy.coverage" NAME="douy Coverage Results" MODIFIED="1554632580259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
     <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547276015069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
     <SUITE FILE_PATH="coverage/classpython$wechat_fri_fm.coverage" NAME="wechat_fri_fm Coverage Results" MODIFIED="1553501491242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
@@ -118,6 +119,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="55" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="1" />
@@ -139,7 +141,7 @@
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="75" />
+          <entry key="project.opened" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -152,7 +154,7 @@
           <entry key="css" value="10" />
           <entry key="dat" value="1" />
           <entry key="gradlew" value="1" />
-          <entry key="html" value="113" />
+          <entry key="html" value="119" />
           <entry key="iml" value="1" />
           <entry key="jpg" value="9" />
           <entry key="js" value="3" />
@@ -161,7 +163,7 @@
           <entry key="md" value="10" />
           <entry key="movie" value="3" />
           <entry key="png" value="19" />
-          <entry key="py" value="770" />
+          <entry key="py" value="775" />
           <entry key="pyi" value="6" />
           <entry key="recon-cli" value="1" />
           <entry key="recon-web" value="2" />
@@ -180,7 +182,7 @@
           <entry key="CSS" value="10" />
           <entry key="Database Element" value="7" />
           <entry key="Dockerfile" value="3" />
-          <entry key="HTML" value="113" />
+          <entry key="HTML" value="119" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="28" />
           <entry key="JSON" value="2" />
@@ -188,7 +190,7 @@
           <entry key="Log" value="8" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="773" />
+          <entry key="Python" value="778" />
           <entry key="PythonStub" value="6" />
           <entry key="RNG Compact" value="1" />
           <entry key="Robot Feature" value="3" />
@@ -204,21 +206,21 @@
           <entry key="cdn_list" value="478" />
           <entry key="css" value="27" />
           <entry key="dummy" value="16" />
-          <entry key="html" value="3577" />
+          <entry key="html" value="3686" />
           <entry key="json" value="12" />
-          <entry key="py" value="13949" />
+          <entry key="py" value="13995" />
           <entry key="sql" value="48" />
-          <entry key="txt" value="208" />
+          <entry key="txt" value="225" />
           <entry key="yaml" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="27" />
-          <entry key="HTML" value="3577" />
+          <entry key="HTML" value="3686" />
           <entry key="JSON" value="12" />
-          <entry key="PLAIN_TEXT" value="702" />
-          <entry key="Python" value="13950" />
+          <entry key="PLAIN_TEXT" value="719" />
+          <entry key="Python" value="13996" />
           <entry key="SQL" value="48" />
           <entry key="YAML" value="59" />
         </counts>
@@ -229,29 +231,42 @@
     <favorites_list name="classpython" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
+        <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="254">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="403" column="12" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="16" />
+              <folding>
+                <element signature="e#144#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1357">
-              <caret line="16" selection-start-line="16" selection-end-line="17" />
-              <folding>
-                <element signature="e#72#83#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1458">
+              <caret line="74" column="6" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -288,7 +303,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/抖音视频爬取" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -296,8 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/open-paperless-master/mayan/apps/document_parsing/apps.py" />
-        <option value="D:/open-paperless-master/mayan/apps/documents/widgets.py" />
         <option value="D:/open-paperless-master/mayan/apps/documents/settings.py" />
         <option value="D:/open-paperless-master/mayan/apps/converter/classes.py" />
         <option value="$PROJECT_DIR$/微信僵尸粉检测.py" />
@@ -336,8 +349,6 @@
         <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/preview_list.html" />
         <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/preview_edit.html" />
         <option value="$PROJECT_DIR$/Tianyanc.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/admin/views.py" />
         <option value="$PROJECT_DIR$/openDoor.py" />
         <option value="$PROJECT_DIR$/Flask_study/manage.py" />
         <option value="$PROJECT_DIR$/Flask_study/app/__init__.py" />
@@ -347,6 +358,10 @@
         <option value="D:/git_home/Douyin/Vibrato.py" />
         <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py" />
         <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html" />
+        <option value="$PROJECT_DIR$/Flask_study/app/admin/views.py" />
+        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html" />
       </list>
     </option>
   </component>
@@ -422,6 +437,28 @@
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
               <item name="抖音视频爬取" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -474,7 +511,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Vibrato (1)">
+  <component name="RunManager" selected="Python.manage">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="Mario-Level" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -609,7 +646,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="openDoor (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -617,12 +654,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/opendoor" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask_study" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opendoor/openDoor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask_study/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -760,19 +797,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.openDoor (1)" />
       <item itemvalue="Python.douyin" />
       <item itemvalue="Python.Vibrato" />
       <item itemvalue="Python.pyinstall" />
       <item itemvalue="Python.Vibrato (1)" />
+      <item itemvalue="Python.manage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python.Vibrato (1)" />
         <item itemvalue="Python.pyinstall" />
         <item itemvalue="Python.Vibrato" />
         <item itemvalue="Python.douyin" />
-        <item itemvalue="Python.openDoor (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -914,7 +951,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558494419069</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="完成收藏列表代码更新">
+      <created>1558667603129</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1558667603129</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -950,10 +994,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="632" y="0" width="975" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15745501" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.23060109" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
       <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -964,7 +1008,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.47540984" visible="true" weight="0.27260458" />
+      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.47540984" visible="true" weight="0.27185792" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
@@ -1054,7 +1098,8 @@
     <MESSAGE value="新增添加预告、预告列表代码" />
     <MESSAGE value="新增门禁请求代码" />
     <MESSAGE value="更新单个抖音下载" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新单个抖音下载" />
+    <MESSAGE value="完成收藏列表代码更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成收藏列表代码更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,34 +1116,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/preview_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="15" lean-forward="true" selection-end-line="107" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/site-packages/wtforms/fields/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="320" column="17" selection-start-line="320" selection-start-column="17" selection-end-line="320" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2898">
-          <caret line="18" column="88" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Python36/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1123,13 +1140,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/git_home/Mario-Level/mario_level_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/git_home/Mario-Level/mario_level_1.py" />
     <entry file="file://D:/git_home/edex-ui/README.md" />
     <entry file="file://D:/git_home/faceai/faceai/compose.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1178,20 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="505" selection-start-line="505" selection-end-line="505" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -1254,20 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://D:/git_home/Douyin/form.py" />
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="348" column="30" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="60" column="104" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/preview_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1288,13 +1271,6 @@
     </entry>
     <entry file="file://D:/git_home/Douyin/pyinstall.py" />
     <entry file="file://D:/git_home/Douyin/Vibrato.py" />
-    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1313,23 +1289,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1357">
+        <state relative-caret-position="-1402">
           <caret line="16" selection-start-line="16" selection-end-line="17" />
           <folding>
             <element signature="e#72#83#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/tag_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="29" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2277" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="403" column="12" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="16" />
+          <folding>
+            <element signature="e#144#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="74" column="6" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
         </state>
       </provider>
     </entry>
