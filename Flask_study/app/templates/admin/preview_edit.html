@@ -19,20 +19,29 @@
                 </div>
                 <form role="form" method="post" enctype="multipart/form-data" novalidate>
                     <div class="box-body">
+                        <div class="form-group">
+                            <label for="input_title">{{ form.title.label }}</label>
+                            {{ form.title }}
+                            {% for err in form.logo.errors %}
+                            <div class="col-md-12">
+                                <p style="color:red">{{ err }}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
                         {% for msg in get_flashed_messages(category_filter=["ok"]) %}
                         {{ message.message('ok',msg) }}
                         <!--<div class="alert alert-success alert-dismissible">-->
-                            <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
-                            <!--<h4><i class="icon fa fa-check"></i> 操作成功!</h4>-->
-                            <!--{{ msg }}-->
+                        <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
+                        <!--<h4><i class="icon fa fa-check"></i> 操作成功!</h4>-->
+                        <!--{{ msg }}-->
                         <!--</div>-->
                         {% endfor %}
                         {% for msg in get_flashed_messages(category_filter=["err"]) %}
                         {{ message.message('err',msg) }}
                         <!--<div class="alert alert-danger alert-dismissible">-->
-                            <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
-                            <!--<h4><i class="icon fa fa-ban"></i> 操作失败!</h4>-->
-                            <!--{{ msg }}-->
+                        <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
+                        <!--<h4><i class="icon fa fa-ban"></i> 操作失败!</h4>-->
+                        <!--{{ msg }}-->
                         <!--</div>-->
                         {% endfor %}
                         <div class="form-group">
@@ -43,7 +52,8 @@
                                 <p style="color:red">{{ err }}</p>
                             </div>
                             {% endfor %}
-                            <img src="{{ url_for('static',filename='uploads/'+preview.logo)}}" style="margin-top:5px;" class="img-responsive"
+                            <img src="{{ url_for('static',filename='uploads/'+preview.logo)}}" style="margin-top:5px;"
+                                 class="img-responsive"
                                  alt="">
                         </div>
                     </div>

@@ -7,7 +7,7 @@
 
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
-from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm
+from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm, PwdForm
 from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol
 from functools import wraps
 from Flask_study.app import db, app
@@ -51,7 +51,7 @@ def login():
         data = form.data
         admin = Admin.query.filter_by(name=data["account"]).first()
         if not admin.check_pwd(data["pwd"]):
-            flash("密码错误！")
+            flash("密码错误！","err")
             return redirect(url_for("admin.login"))
         session["admin"] = data["account"]
         return redirect(request.args.get("next") or url_for("admin.index"))
@@ -67,10 +67,20 @@ def logout():
 
 
 # 修改密码
-@admin.route("/pwd/")
+@admin.route("/pwd/", methods=["GET", "POST"])
 @admin_login_req
 def pwd():
-    return render_template("admin/pwd.html")
+    form = PwdForm()
+    if form.validate_on_submit():
+        data = form.data
+        admin = Admin.query.filter_by(name=session['admin']).first()
+        from werkzeug.security import generate_password_hash
+        admin.pwd = generate_password_hash(data['new_pwd'])
+        db.session.add(admin)
+        db.session.commit()  # 提交新密码保存，然后跳转到登录界面
+        flash('密码修改成功，请重新登录！', category='ok')
+        return redirect(url_for('admin.logout'))
+    return render_template('admin/pwd.html', form=form)
 
 
 # 添加标签
@@ -396,7 +406,8 @@ def moviecol_list(page=None):
     ).order_by(
         Moviecol.addtime.desc()
     ).paginate(page=page, per_page=10)
-    return render_template("admin/moviecol_list.html",page_data=page_data)
+    return render_template("admin/moviecol_list.html", page_data=page_data)
+
 
 # 收藏删除
 @admin.route("/moviecol/del/<int:id>/", methods=["GET"])
