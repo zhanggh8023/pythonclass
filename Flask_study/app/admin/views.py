@@ -7,8 +7,8 @@
 
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
-from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm, PwdForm
-from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol, Oplog, Adminlog, Userlog
+from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm, PwdForm, AuthFrom
+from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol, Oplog, Adminlog, Userlog, Auth
 from functools import wraps
 from Flask_study.app import db, app
 from werkzeug.utils import secure_filename
@@ -32,7 +32,6 @@ def admin_login_req(f):
         if "admin" not in session:
             return redirect(url_for("admin.login", next=request.url))
         return f(*args, **kwargs)
-
     return decorated_function
 
 
@@ -489,21 +488,70 @@ def userloginlog_list(page=None):
     ).order_by(
         Userlog.addtime.desc()
     ).paginate(page=page, per_page=10)
-    return render_template("admin/userloginlog_list.html",page_data=page_data)
+    return render_template("admin/userloginlog_list.html", page_data=page_data)
 
 
 # 添加权限
-@admin.route("/auth/add/")
+@admin.route("/auth/add/", methods=["GET", "POST"])
 @admin_login_req
 def auth_add():
-    return render_template("admin/auth_add.html")
+    form = AuthFrom()
+    if form.validate_on_submit():
+        data = form.data
+        if Auth.query.filter_by(url=data['url']).count() == 1:
+            flash('权限链接地址已存在！', category='err')
+            return redirect(url_for('admin.auth_add'))
+        auth = Auth(
+            name=data["name"],
+            url=data["url"]
+        )
+        db.session.add(auth)
+        db.session.commit()
+        flash("添加权限成功！", "ok")
+    return render_template("admin/auth_add.html", form=form)
+
+
+# 编辑权限
+@admin.route("/auth/edit/", methods=["GET", "POST"])
+@admin_login_req
+def auth_edit():
+    form = AuthFrom()
+    if form.validate_on_submit():
+        data = form.data
+        if Auth.query.filter_by(url=data['url']).count() == 1:
+            flash('权限链接地址已存在！', category='err')
+            return redirect(url_for('admin.auth_edit'))
+        auth = Auth(
+            name=data["name"],
+            url=data["url"]
+        )
+        db.session.add(auth)
+        db.session.commit()
+        flash("编辑权限成功！", "ok")
+    return render_template("admin/auth_list.html", form=form)
 
 
 # 权限列表
-@admin.route("/auth/list/")
+@admin.route("/auth/list/<int:page>/", methods=['GET'])
 @admin_login_req
-def auth_list():
-    return render_template("admin/auth_list.html")
+def auth_list(page=None):
+    if page is None:
+        page = 1
+    page_data = Auth.query.order_by(
+        Auth.addtime.desc()
+    ).paginate(page=page, per_page=10)
+    return render_template("admin/auth_list.html", page_data=page_data)
+
+
+# 权限删除
+@admin.route("/auth/del/<int:id>/", methods=["GET"])
+@admin_login_req
+def auth_del(id=None):
+    auth = Auth.query.get_or_404(int(id))
+    db.session.delete(auth)
+    db.session.commit()
+    flash("删除权限成功！", "ok")
+    return redirect(url_for("admin.auth_list", page=1))
 
 
 # 添加角色
