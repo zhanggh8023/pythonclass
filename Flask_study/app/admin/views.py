@@ -8,13 +8,23 @@
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request
 from Flask_study.app.admin.forms import LoginForm, TagForm, MovieForm, PreviewForm, PwdForm
-from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol
+from Flask_study.app.models import Admin, Tag, Movie, Preview, User, Comment, Moviecol,Oplog, Adminlog, Userlog
 from functools import wraps
 from Flask_study.app import db, app
 from werkzeug.utils import secure_filename
 import os
 import uuid
 import datetime
+
+
+#上下文应用处理器
+@admin.context_processor
+def tpl_extra():
+    data=dict(
+        online_time=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    )
+    return data
+
 
 
 def admin_login_req(f):
@@ -54,6 +64,7 @@ def login():
             flash("密码错误！","err")
             return redirect(url_for("admin.login"))
         session["admin"] = data["account"]
+        session["admin_id"] = admin.id
         return redirect(request.args.get("next") or url_for("admin.index"))
     return render_template("admin/login.html", form=form)
 
@@ -63,6 +74,7 @@ def login():
 @admin_login_req
 def logout():
     session.pop("admin", None)
+    session.pop("admin_id", None)
     return redirect(url_for("admin.login"))
 
 
@@ -100,6 +112,13 @@ def tag_add():
         db.session.add(tag)
         db.session.commit()
         flash("添加标签成功！", "ok")
+        oplog=Oplog(
+            admin_id=session["admin_id"],
+            ip=request.remote_addr,
+            reason="添加标签%s"% data["name"]
+        )
+        db.session.add(oplog)
+        db.session.commit()
         redirect(url_for("admin.tag_add"))
     return render_template("admin/tag_add.html", form=form)
 
@@ -255,7 +274,7 @@ def movie_edit(id=None):
         movie.release_time = data["release_time"]
         db.session.add(movie)
         db.session.commit()
-        flash("添加电影成功！", "ok")
+        flash("编辑电影成功！", "ok")
         return redirect(url_for("admin.movie_edit", id=movie.id))
     return render_template("admin/movie_edit.html", form=form, movie=movie)
 

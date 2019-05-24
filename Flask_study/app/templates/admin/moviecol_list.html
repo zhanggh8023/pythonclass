@@ -30,9 +30,6 @@
                     </div>
                 </div>
                 <div class="box-body table-responsive no-padding">
-                    {% for msg in get_flashed_messages(category_filter=["ok"]) %}
-                    {{ message.message('ok',msg) }}
-                    {% endfor %}
                     <table class="table table-hover">
                         <tbody>
                         <tr>
@@ -54,6 +51,9 @@
                                 <a href="{{ url_for('admin.moviecol_del',id=v.id)}}" class="label label-danger">删除</a>
                             </td>
                         </tr>
+                        {% endfor %}
+                        {% for msg in get_flashed_messages(category_filter=["ok"]) %}
+                        {{ message.message('ok',msg) }}
                         {% endfor %}
                         </tbody>
                     </table>
