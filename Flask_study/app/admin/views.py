@@ -144,6 +144,11 @@ def movie_add():
     form = MovieForm()
     if form.validate_on_submit():
         data = form.data
+        # 提交的片名在数据库中已存在
+        if Movie.query.filter_by(title=data['title']).count() == 1:
+            flash('电影片名已存在，请检查', category='err')
+            return redirect(url_for('admin.movie_add'))
+
         file_url = secure_filename(form.url.data.filename)
         file_logo = secure_filename(form.logo.data.filename)
         if not os.path.exists(app.config["UP_DIR"]):
