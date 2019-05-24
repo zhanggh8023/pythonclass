@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <title>antd</title>
+    <link rel="https://unpkg.com/antd@3.9.3/dist/antd.min.css" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://unpkg.com/antd@3.9.3/dist/antd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/antd/3.18.1/antd.min.js"></script>
+    <script src="https://cdn.bootcss.com/antd/3.18.1/antd.js"></script>
+    <link href="https://cdn.bootcss.com/antd/3.18.1/antd.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/antd/3.18.1/antd.min.css" rel="stylesheet">
+</head>
+ 
+<body>
+    <script type="text/babel">
+        class MessageBox extends React.Component{  
+			componentDidMount(){
+				renderMessage(){  
+					antd.message.success('1');
+					antd.message.warning('1');
+					antd.message.error('1');
+				}
+			}
+           
+
+            render = ()=>{  
+                return (<div>{renderMessage()}</div> )  
+            }  
+        }
+
+      document.getElementById("app")
+      ReactDOM.render( <MessageBox/>,  
+            document.getElementById('app'),
+        )
+    </script>
+    <div id="app"></div>
+</body>
+ 
+</html>
