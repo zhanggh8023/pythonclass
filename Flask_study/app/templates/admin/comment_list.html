@@ -1,6 +1,9 @@
 {% extends "admin/admin.html" %}
+<<<<<<< HEAD
 {% import "ul/admin_page.html" as pg %}
 {% import "ul/message.html" as message %}
+=======
+>>>>>>> 018e39c2e8a80e250f103fb5a85ccf296d92a56e
 
 {% block content %}
 <!--内容-->
@@ -41,10 +44,10 @@
                     {% for v in page_data.items %}
                     <div class="box-comment">
                         <img class="img-circle img-sm"
-                             src="{{url_for('static',filename='uploads/user/'+v.user.face)}}" alt="User Image">
+                             src="{{url_for('static',filename='uploads/users/'+ v.user.face)}}" alt="User Image">
                         <div class="comment-text">
                                     <span class="username">
-                                        {{ v.user.name}}
+                                        {{ v.user.name }}
                                         <span class="text-muted pull-right">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                             &nbsp;
@@ -55,11 +58,34 @@
                             <br><a href="{{ url_for('admin.comment_del',id=v.id)}}" class="label label-danger pull-right">删除</a>
                         </div>
                     </div>
-
+                    <div class="box-comment">
+                        <img class="img-circle img-sm"
+                             src="{{url_for('static',filename='admin/dist/img/user5-128x128.jpg')}}" alt="User Image">
+                        <div class="comment-text">
+                                    <span class="username">
+                                        小丽
+                                        <span class="text-muted pull-right">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            &nbsp;
+                                            2017-01-01 12:00:00
+                                        </span>
+                                    </span>
+                            关于电影<a>《环太平洋》</a>的评论：xxx
+                            <br><a class="label label-danger pull-right">删除</a>
+                        </div>
+                    </div>
                     {% endfor %}
                 </div>
                 <div class="box-footer clearfix">
-                    {{ pg.page(page_data,'admin.comment_list') }}
+                    <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">下一页</a></li>
+                        <li><a href="#">尾页</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

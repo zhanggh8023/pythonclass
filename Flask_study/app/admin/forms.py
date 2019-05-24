@@ -12,7 +12,6 @@ from Flask_study.app.models import Admin, Tag
 
 tags = Tag.query.all()
 
-
 class LoginForm(FlaskForm):
     '''管理员登录'''
     account = StringField(
