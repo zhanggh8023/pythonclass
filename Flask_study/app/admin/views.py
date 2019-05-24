@@ -49,7 +49,6 @@ def login ():
     form = LoginForm()
     if form.validate_on_submit():
         data = form.data
-        print(data)
         admin = Admin.query.filter_by(name=data["account"]).first()
         if not admin.check_pwd(data["pwd"]):
             flash("密码错误！")
@@ -323,6 +322,7 @@ def user_del (id=None):
 
 
 # 评论列表
+<<<<<<< HEAD
 @admin.route("/comment/list/<int:page>/", methods=["GET"])
 @admin_login_req
 def comment_list (page=None):
@@ -333,6 +333,24 @@ def comment_list (page=None):
         Comment.addtime.desc()).paginate(page=page, per_page=10)
     return render_template("admin/comment_list.html", page_data=page_data)
 
+=======
+@admin.route("/comment/list/<int:page>/", methods=['GET'])
+@admin_login_req
+def comment_list(page=None):
+    if page is None:
+        page = 1
+    page_data = Comment.query.join(
+        Movie
+    ).join(
+        User
+    ).filter(
+        Movie.id == Comment.movie_id,
+        User.id == Comment.user_id
+    ).order_by(
+        Comment.addtime.desc()
+    ).paginate(page=page, per_page=10)
+    return render_template('admin/comment_list.html', page_data=page_data)
+>>>>>>> 7e62af8ebdc7cbd7f735913f80b5b8c528e4773a
 
 # 收藏列表
 @admin.route("/moviecol/list/")
