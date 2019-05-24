@@ -305,23 +305,23 @@ def preview_edit (id):
 def user_list (page=None):
     if page is None:
         page = 1
-<<<<<<< HEAD
+
     page_data = User.query.order_by(
         User.addtime.desc()
     ).paginate(page=page, per_page=10)
-=======
+
     page_data = User.query.order_by(User.addtime.desc()).paginate(page=page, per_page=10)
->>>>>>> 018e39c2e8a80e250f103fb5a85ccf296d92a56e
+
     return render_template("admin/user_list.html", page_data=page_data)
 
 
 # 查看会员
 @admin.route("/user/view/<int:id>", methods=["GET"])
-<<<<<<< HEAD
+
 def user_view(id=None):
-=======
+
 def user_view (id=None):
->>>>>>> 018e39c2e8a80e250f103fb5a85ccf296d92a56e
+
     user = User.query.get_or_404(int(id))
     return render_template("admin/user_view.html", user=user)
 
