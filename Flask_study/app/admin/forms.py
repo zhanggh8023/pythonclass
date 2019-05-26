@@ -6,12 +6,12 @@
 # @Software: PyCharm
 
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField,FileField,TextAreaField,SelectField
+from wtforms import StringField, PasswordField, SubmitField,FileField,TextAreaField,SelectField,SelectMultipleField
 from wtforms.validators import DataRequired,ValidationError
-from Flask_study.app.models import Admin, Tag
+from Flask_study.app.models import Admin, Tag, Auth
 
 tags = Tag.query.all()
-
+auths_list=Auth.query.all()
 
 class LoginForm(FlaskForm):
     '''管理员登录'''
@@ -249,6 +249,7 @@ class PwdForm(FlaskForm):
             raise ValidationError('旧密码错误！')
 
 
+#权限
 class AuthFrom(FlaskForm):
     name = StringField(
         label="权限名称",
@@ -279,7 +280,37 @@ class AuthFrom(FlaskForm):
         }
     )
 
-
+#角色
+class RoleForm(FlaskForm):
+    name = StringField(
+        label="角色名称",
+        validators=[
+            DataRequired("请输入角色名称！")
+        ],
+        description="角色名称",
+        render_kw={
+            "class": "form-control",
+            "placeholder": "请输入角色名称！"
+        }
+    )
+    auths = SelectMultipleField(
+        label="权限列表",
+        validators=[
+            DataRequired("请输入权限列表！")
+        ],
+        coerce=int,
+        choices=[(v.id,v.name) for v in auths_list ],
+        description="权限列表",
+        render_kw={
+            "class": "form-control",
+        }
+    )
+    submit = SubmitField(
+        '编辑',
+        render_kw={
+            "class": "btn btn-primary"
+        }
+    )
 
 
 
