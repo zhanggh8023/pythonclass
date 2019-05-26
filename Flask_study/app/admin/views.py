@@ -384,7 +384,7 @@ def user_del(id=None):
 
 
 # 评论列表
-@admin.route("/comment/list/<int:page>/", methods=['GET'])
+@admin.route("/comment/list/<int:page>/", methods=["GET"])
 @admin_login_req
 def comment_list(page=None):
     if page is None:
@@ -411,6 +411,7 @@ def comment_del(id=None):
     db.session.commit()
     flash("删除评论成功！", "ok")
     return redirect(url_for("admin.comment_list", page=1))
+
 
 
 # 收藏列表
