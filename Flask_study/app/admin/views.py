@@ -553,14 +553,14 @@ def role_edit (id=None):
 
 
 # 添加管理员
-@admin.route("/admin/add/")
+@admin.route("/admin/add/", methods=["GET", "POST"])
 @admin_login_req
 def admin_add ():
     return render_template("admin/admin_add.html")
 
 
 # 管理员列表
-@admin.route("/admin/list/")
+@admin.route("/admin/list/<int:page>/", methods=['GET'])
 @admin_login_req
 def admin_list ():
     return render_template("admin/admin_list.html")

@@ -313,8 +313,23 @@ class RoleForm(FlaskForm):
     )
 
 
-
-
+class AdminForm(FlaskForm):
+    name = StringField(
+        label="管理员名称",
+        validators=[DataRequired("请输入管理员名称！")],
+        description="管理员名称",
+        render_kw={"class": "form-control", "placeholder": "请输入管理员名称！"}
+    )
+    pwd = PasswordField(
+        label="密码",
+        validators=[DataRequired("请输入密码！")],
+        description="密码",
+        render_kw={"class": "form-control","placeholder":"请输入密码！", }
+    )
+    submit = SubmitField(
+        '登录',
+        render_kw={"class": "btn btn-primary btn-block btn-flat",}
+    )
 
 
 
