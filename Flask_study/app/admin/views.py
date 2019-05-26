@@ -511,25 +511,6 @@ def auth_add():
     return render_template("admin/auth_add.html", form=form)
 
 
-# 编辑权限
-@admin.route("/auth/edit/", methods=["GET", "POST"])
-@admin_login_req
-def auth_edit():
-    form = AuthFrom()
-    if form.validate_on_submit():
-        data = form.data
-        if Auth.query.filter_by(url=data['url']).count() == 1:
-            flash('权限链接地址已存在！', category='err')
-            return redirect(url_for('admin.auth_edit'))
-        auth = Auth(
-            name=data["name"],
-            url=data["url"]
-        )
-        db.session.add(auth)
-        db.session.commit()
-        flash("编辑权限成功！", "ok")
-    return render_template("admin/auth_list.html", form=form)
-
 
 # 权限列表
 @admin.route("/auth/list/<int:page>/", methods=['GET'])
