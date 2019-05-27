@@ -7,9 +7,9 @@
 
 
 from . import home
-from flask import Flask, render_template, request, redirect, url_for, flash
-from Flask_study.app.home.forms import RegistForm
-from Flask_study.app.models import User
+from flask import Flask, render_template, request, redirect, url_for, flash, session,request
+from Flask_study.app.home.forms import RegistForm,LoginForm
+from Flask_study.app.models import User,Userlog
 from werkzeug.security import generate_password_hash
 from Flask_study.app import db
 import uuid
@@ -22,9 +22,29 @@ import uuid
 
 
 # 登录
-@home.route("/login/")
+@home.route("/login/", methods=["GET", "POST"])
 def login():
-    return render_template("home/login.html")
+    form =LoginForm()
+    if form.validate_on_submit():
+        data = form.data
+        if User.query.filter_by(name=data['name']).count() != 1:
+            flash('账号不存在，请重新输入！', category='err')
+            return redirect(url_for("home.login"))
+        user=User.query.filter_by(name=data["name"]).first()
+        if not user.check_pwd(data["pwd"]):
+            flash("密码错误！","err")
+            return redirect(url_for("home.login"))
+        session["user"]=user.name
+        session["user_id"]=user.id
+        userlog=Userlog(
+            user_id=user.id,
+            ip=request.remote_addr
+        )
+        db.session.add(userlog)
+        db.session.commit()
+        flash("登录成功！", "ok")
+        return redirect(url_for("home.user"))
+    return render_template("home/login.html",form=form)
 
 
 # 退出
@@ -39,6 +59,15 @@ def regist():
     form = RegistForm()
     if form.validate_on_submit():
         data = form.data
+        if User.query.filter_by(name=data['name']).count() == 1:
+            flash('昵称已存在，请重新输入！', category='err')
+            return redirect(url_for('regist'))
+        if User.query.filter_by(email=data['email']).count() == 1:
+            flash('邮箱已存在，请重新输入！', category='err')
+            return redirect(url_for('home.regist'))
+        if User.query.filter_by(phone=data['phone']).count() == 1:
+            flash('手机号码已存在，请重新输入！', category='err')
+            return redirect(url_for('home.regist'))
         user = User(
             name=data['name'],
             email=data['email'],

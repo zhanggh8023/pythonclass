@@ -68,7 +68,6 @@ class RegistForm(FlaskForm):
         render_kw={
             "class": "form-control input-lg",
             "placeholder": "请输入确认密码!",
-            # "required": "required"
         }
     )
     submit = SubmitField(
@@ -78,24 +77,15 @@ class RegistForm(FlaskForm):
         }
     )
 
-    def validata_name(self,field):
-        name=field.data
-        user=User.query.filter_by(name=name).count()
-        if user==1:
-            raise ValidationError("昵称已经存在！！！")
 
-    def validata_email(self,field):
-        email=field.data
-        user=User.query.filter_by(email=email).count()
-        if user==1:
-            raise ValidationError("邮箱已经存在！！！")
+class LoginForm(FlaskForm):
+    name = StringField(label="账号", validators=[DataRequired("请输入账号!!!")], description="账号",
+        render_kw={"class": "form-control input-lg", "placeholder": "请输入账号!", })
 
-    def validata_phone(self, field):
-        phone = field.data
-        user = User.query.filter_by(phone=phone).count()
-        if user == 1:
-            raise ValidationError("手机号码已经存在！！！")
+    pwd = PasswordField(label="密码", validators=[DataRequired("请输入密码!!!")], description="密码",
+        render_kw={"class": "form-control input-lg", "placeholder": "请输入密码!",})
 
+    submit = SubmitField('登录', render_kw={"class": "btn btn-lg btn-primary btn-block", })
 
 
 
