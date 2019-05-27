@@ -46,14 +46,14 @@ def admin_auth (f):
             Admin.id == session['admin_id']
         ).first()
         auths = admin.role.auths
-        print(auths)
-        print('*'*100)
+        # print(auths)
+        # print('*'*100)
         auths = list(map(lambda v: int(v), auths.split(',')))
         auth_list = Auth.query.all()
         urls = [v.url for v in auth_list for val in auths if val == v.id]
         rule = request.url_rule
-        print(urls)
-        print(rule)
+        # print(urls)
+        # print(rule)
         if str(rule) not in urls:
             abort(404)
         return f(*args, **kwargs)
