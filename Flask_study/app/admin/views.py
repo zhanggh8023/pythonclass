@@ -55,6 +55,7 @@ def admin_auth (f):
         # print(urls)
         # print(rule)
         if str(rule) not in urls:
+            flash('您没有权限！请咨询管理员。', 'ok')
             abort(404)
         return f(*args, **kwargs)
     return decorated_function

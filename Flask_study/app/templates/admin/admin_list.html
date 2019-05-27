@@ -51,7 +51,7 @@
                             <td>{{ v.role.name }}</td>
                             <td>{{ v.addtime }}</td>
                         </tr>
-                        {% endfor %}}
+                        {% endfor %}
                         {% for msg in get_flashed_messages(category_filter=["ok"]) %}
                         {{ message.message('ok',msg) }}
                         {% endfor %}
