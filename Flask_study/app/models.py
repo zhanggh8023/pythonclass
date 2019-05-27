@@ -140,7 +140,7 @@ class Role(db.Model):
     name = db.Column(db.String(100), unique=True)  # 名称
     auths = db.Column(db.String(600))
     addtime = db.Column(db.DateTime, index=True, default=datetime.now)  # 添加时间
-
+    roles = db.relationship("Admin", backref='role')
     def __repr__(self):
         return "<Role %r>" % self.name
 
