@@ -26,6 +26,9 @@
 {% for msg in get_flashed_messages(category_filter=["ok"]) %}
 {{ message.message('ok',msg) }}
 {% endfor %}
+{% for msg in get_flashed_messages(category_filter=["err"]) %}
+{{ message.message('err',"2") }}
+{% endfor %}
 <body>
 <!--导航-->
 <nav class="navbar navbar-default navbar-fixed-top" style="z-index:-1;">

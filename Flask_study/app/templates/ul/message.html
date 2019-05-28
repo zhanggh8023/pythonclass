@@ -14,12 +14,15 @@
     <link href="https://cdn.bootcss.com/antd/3.18.1/antd.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
 {% if hh=='ok' %}
-<script type="text/babel">
+<script type="text/babel" >
     class MessageBox extends React.Component {
         renderMessage = () => {
-            antd.message.success('{{ msg }}');
+            antd.message.config({
+                top:70,
+            })
+            antd.message.success('{{ msg }}',0);
         }
         render = () => {
             return (<div>{this.renderMessage()}</div>)
@@ -35,7 +38,10 @@
 <script type="text/babel">
     class MessageBox extends React.Component {
         renderMessage = () => {
-            antd.message.error('{{ msg }}');
+            antd.message.config({
+                top:70,
+            })
+            antd.message.error('{{ msg }}',0);
         }
         render = () => {
             return (<div>{this.renderMessage()}</div>)

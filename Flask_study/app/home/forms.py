@@ -55,7 +55,6 @@ class RegistForm(FlaskForm):
         render_kw={
             "class": "form-control input-lg",
             "placeholder": "请输入密码!",
-            # "required": "required"
         }
     )
     repwd = PasswordField(
@@ -76,6 +75,27 @@ class RegistForm(FlaskForm):
             "class": "btn btn-lg btn-success btn-block",
         }
     )
+
+    def validate_name(self, field):
+        name = field.data
+        num = User.query.filter_by(name=name).count()
+        if num == 1:
+            raise ValidationError('昵称已经存在，请重新输入')
+        pass
+
+    def validate_email(self, field):
+        email = field.data
+        num = User.query.filter_by(email=email).count()
+        if num == 1:
+            raise ValidationError('邮箱已经存在，请重新输入')
+        pass
+
+    def validate_phone(self, field):
+        phone = field.data
+        num = User.query.filter_by(phone=phone).count()
+        if num == 1:
+            raise ValidationError('手机号已经存在，请重新输入')
+        pass
 
 
 class LoginForm(FlaskForm):

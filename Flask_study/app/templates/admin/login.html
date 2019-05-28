@@ -46,9 +46,6 @@
                     {{ form.submit }}
                     {{ form.csrf_token }}
                 </div>
-                {% for msg in get_flashed_messages(category_filter=["ok"]) %}
-                {{ message.message('ok',msg) }}
-                {% endfor %}
                 {% for msg in get_flashed_messages(category_filter=["err"]) %}
                 {{ message.message('err',msg) }}
                 {% endfor %}
