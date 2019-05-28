@@ -19,18 +19,18 @@
                             {{ form.name }}
                         </div>
                         {% for err in form.name.errors %}
-                        <div class="col-md-12">
-                            <p style="color:red">{{ err }}</p>
-                        </div>
+                            <div class="col-md-12">
+                                <p style="color:red">{{ err }}</p>
+                            </div>
                         {% endfor %}
                         <div class="form-group">
                             <label for="input_password"><span class="glyphicon glyphicon-lock"></span>{{ form.pwd.label }}</label>
                             {{ form.pwd }}
                         </div>
                         {% for err in form.pwd.errors %}
-                        <div class="col-md-12">
-                            <p style="color:red">{{ err }}</p>
-                        </div>
+                            <div class="col-md-12">
+                                <p style="color:red">{{ err }}</p>
+                            </div>
                         {% endfor %}
                         {{ form.csrf_token }}
                         {{ form.submit }}

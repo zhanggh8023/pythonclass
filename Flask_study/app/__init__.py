@@ -17,6 +17,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:123456@172.16.20.1
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True  # 配置，如果设置True,将会追踪对象修改并且发送信号
 app.config["SECRET_KEY"] = "7c9d7c8e53614affba09ddc9947e4329"
 app.config["UP_DIR"] = os.path.join(os.path.abspath(os.path.dirname(__file__)),"static/uploads/")
+app.config["FC_DIR"] = os.path.join(os.path.abspath(os.path.dirname(__file__)),"static/uploads/user/")
 app.debug = True
 db = SQLAlchemy(app)  # 定义db，传入app对象
 

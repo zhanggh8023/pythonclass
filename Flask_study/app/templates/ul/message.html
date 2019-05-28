@@ -22,7 +22,7 @@
             antd.message.config({
                 top:70,
             })
-            antd.message.success('{{ msg }}',0);
+            antd.message.success('{{ msg }}');
         }
         render = () => {
             return (<div>{this.renderMessage()}</div>)
@@ -41,7 +41,7 @@
             antd.message.config({
                 top:70,
             })
-            antd.message.error('{{ msg }}',0);
+            antd.message.error('{{ msg }}');
         }
         render = () => {
             return (<div>{this.renderMessage()}</div>)
