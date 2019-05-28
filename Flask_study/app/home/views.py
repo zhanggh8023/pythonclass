@@ -8,7 +8,7 @@
 
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
-from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm
+from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm,PwdForm
 from Flask_study.app.models import User, Userlog
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
@@ -142,10 +142,22 @@ def user():
 
 
 # 密码
-@home.route("/pwd/")
+@home.route("/pwd/", methods=["GET", "POST"])
 @user_login_req
 def pwd():
-    return render_template("home/pwd.html")
+    form = PwdForm()
+    if form.validate_on_submit():
+        data = form.data
+        user = User.query.filter_by(name=session['user']).first()
+        if not user.check_pwd(data['old_pwd']):
+            flash("旧密码错误!!","err")
+            return redirect(url_for('home.pwd'))
+        user.pwd = generate_password_hash(data['new_pwd'])
+        db.session.add(user)
+        db.session.commit()  # 提交新密码保存，然后跳转到登录界面
+        flash('密码修改成功，请重新登录！', category='ok')
+        return redirect(url_for('home.logout'))
+    return render_template("home/pwd.html",form=form)
 
 
 # 评论

@@ -27,7 +27,7 @@
 {{ message.message('ok',msg) }}
 {% endfor %}
 {% for msg in get_flashed_messages(category_filter=["err"]) %}
-{{ message.message('err',"2") }}
+{{ message.message('err',msg) }}
 {% endfor %}
 <body>
 <!--导航-->
