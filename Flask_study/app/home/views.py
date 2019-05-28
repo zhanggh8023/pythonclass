@@ -9,7 +9,7 @@
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
 from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm
-from Flask_study.app.models import User, Userlog
+from Flask_study.app.models import User, Userlog,Preview
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
 from Flask_study.app import db, app
@@ -20,9 +20,6 @@ import uuid
 
 
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
-# @home.route("/")
-# def index():
-#     return render_template("home/index.html")
 
 # 登录装饰器
 def user_login_req(f):
@@ -40,6 +37,13 @@ def change_filename(filename):
     fileinfo = os.path.split(filename)
     filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4().hex) + fileinfo[-1]
     return filename
+
+
+# 电影列表
+@home.route("/")
+@user_login_req
+def index():
+    return render_template("home/index.html")
 
 
 # 登录
@@ -161,13 +165,6 @@ def pwd():
     return render_template("home/pwd.html", form=form)
 
 
-# 评论
-@home.route("/comments/")
-@user_login_req
-def comments():
-    return render_template("home/comments.html")
-
-
 # 登录日志
 @home.route("/loginlog/<int:page>/", methods=['GET'])
 @user_login_req
@@ -182,24 +179,27 @@ def loginlog(page=None):
     return render_template("home/loginlog.html", page_data=page_data)
 
 
+# 评论
+@home.route("/comments/")
+@user_login_req
+def comments():
+    return render_template("home/comments.html")
+
+
+#上映预告
+@home.route("/animation/")
+def animation():
+    data=Preview.query.all()
+    return render_template("home/animation.html",data=data)
+
+
+
 # 电影收藏
 @home.route("/moviecol/")
 @user_login_req
 def moviecol():
     return render_template("home/moviecol.html")
 
-
-# 电影列表
-@home.route("/")
-@user_login_req
-def index():
-    return render_template("home/index.html")
-
-
-# 电影收藏
-@home.route("/animation/")
-def animation():
-    return render_template("home/animation.html")
 
 
 # 搜索
