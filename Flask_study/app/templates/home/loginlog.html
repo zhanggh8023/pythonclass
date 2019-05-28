@@ -10,6 +10,8 @@
 
 {% block content %}
 {% include "home/menu.html" %}
+{% import "ul/home_page.html" as pg %}
+
 <div class="col-md-9">
     <div class="panel panel-warning">
         <div class="panel-heading">
@@ -23,38 +25,18 @@
                     <td style="width:30%">登录IP</td>
                     <td style="width:30%">登录地址</td>
                 </tr>
+                {% for v in page_data.items %}
                 <tr>
-                    <td>1</td>
-                    <td>2017-01-01 12:00:00</td>
-                    <td>192.168.4.1</td>
-                    <td>云南昆明</td>
+                    <td>{{ v.id }}</td>
+                    <td>{{ v.addtime }}</td>
+                    <td>{{ v.ip }}</td>
+                    <td>{{ v.ip }}</td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2017-01-01 12:00:00</td>
-                    <td>192.168.4.1</td>
-                    <td>云南昆明</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2017-01-01 12:00:00</td>
-                    <td>192.168.4.1</td>
-                    <td>云南昆明</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2017-01-01 12:00:00</td>
-                    <td>192.168.4.1</td>
-                    <td>云南昆明</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2017-01-01 12:00:00</td>
-                    <td>192.168.4.1</td>
-                    <td>云南昆明</td>
-                </tr>
-
+                {% endfor %}
             </table>
+            <div class="col-md-12 text-center" style="margin-top:6px;">
+                {{ pg.page(page_data,'home.loginlog') }}
+            </div>
         </div>
     </div>
 </div>

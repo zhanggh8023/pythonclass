@@ -8,7 +8,7 @@
 
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
-from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm,PwdForm
+from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm
 from Flask_study.app.models import User, Userlog
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
@@ -17,6 +17,7 @@ from functools import wraps
 import os
 import datetime
 import uuid
+
 
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
 # @home.route("/")
@@ -150,14 +151,14 @@ def pwd():
         data = form.data
         user = User.query.filter_by(name=session['user']).first()
         if not user.check_pwd(data['old_pwd']):
-            flash("旧密码错误!!","err")
+            flash("旧密码错误!!", "err")
             return redirect(url_for('home.pwd'))
         user.pwd = generate_password_hash(data['new_pwd'])
         db.session.add(user)
         db.session.commit()  # 提交新密码保存，然后跳转到登录界面
         flash('密码修改成功，请重新登录！', category='ok')
         return redirect(url_for('home.logout'))
-    return render_template("home/pwd.html",form=form)
+    return render_template("home/pwd.html", form=form)
 
 
 # 评论
@@ -168,10 +169,17 @@ def comments():
 
 
 # 登录日志
-@home.route("/loginlog/")
+@home.route("/loginlog/<int:page>/", methods=['GET'])
 @user_login_req
-def loginlog():
-    return render_template("home/loginlog.html")
+def loginlog(page=None):
+    if page is None:
+        page = 1
+    page_data = Userlog.query.filter_by(
+        user_id=int(session["user_id"])
+    ).order_by(
+        Userlog.addtime.desc()
+    ).paginate(page=page, per_page=10)
+    return render_template("home/loginlog.html", page_data=page_data)
 
 
 # 电影收藏
