@@ -9,7 +9,7 @@
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
 from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm
-from Flask_study.app.models import User, Userlog,Preview
+from Flask_study.app.models import User, Userlog,Preview,Tag
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
 from Flask_study.app import db, app
@@ -41,9 +41,21 @@ def change_filename(filename):
 
 # 电影列表
 @home.route("/")
-@user_login_req
 def index():
-    return render_template("home/index.html")
+    tags= Tag.query.all()
+    tid = request.args.get("tid",0)
+    star = request.args.get("star", 0)
+    time = request.args.get("time", 0)
+    pm = request.args.get("pm", 0)
+    cm = request.args.get("cm", 0)
+    p=dict(
+        tid=tid,
+        star=star,
+        time=time,
+        pm=pm,
+        cm=cm,
+    )
+    return render_template("home/index.html",tags=tags,p=p)
 
 
 # 登录
