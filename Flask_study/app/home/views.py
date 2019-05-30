@@ -9,7 +9,7 @@
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
 from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm
-from Flask_study.app.models import User, Userlog,Preview,Tag
+from Flask_study.app.models import User, Userlog, Preview, Tag, Movie
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
 from Flask_study.app import db, app
@@ -22,9 +22,9 @@ import uuid
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
 
 # 登录装饰器
-def user_login_req(f):
+def user_login_req (f):
     @wraps(f)
-    def decorated_function(*args, **kwargs):
+    def decorated_function (*args, **kwargs):
         if "user" not in session:
             return redirect(url_for("home.login", next=request.url))
         return f(*args, **kwargs)
@@ -33,7 +33,7 @@ def user_login_req(f):
 
 
 # 修改文件名称
-def change_filename(filename):
+def change_filename (filename):
     fileinfo = os.path.split(filename)
     filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4().hex) + fileinfo[-1]
     return filename
@@ -41,26 +41,54 @@ def change_filename(filename):
 
 # 电影列表
 @home.route("/")
-def index():
-    tags= Tag.query.all()
-    tid = request.args.get("tid",0)
+def index ():
+    tags = Tag.query.all()
+    page_data = Movie.query
+
+
+    tid = request.args.get('tid', 0)
+    if int(tid) != 0:
+        page_data = page_data.filter_by(tag_id=int(tid))
+
+    star = request.args.get('star', 0)
+    if int(star) != 0:
+        page_data = page_data.filter_by(star=int(star))
+
+    time = request.args.get('time', 0)
+    if int(time) != 0:
+        if int(time) == 1:
+            page_data = page_data.order_by(Movie.addtime.desc())
+        else:
+            page_data = page_data.order_by(Movie.addtime.asc())
+    pm = request.args.get('pm', 0)
+    if int(pm) != 0:
+        if int(pm) == 1:
+            page_data = page_data.order_by(Movie.playnum.desc())
+        else:
+            page_data = page_data.order_by(Movie.playnum.asc())
+
+    cm = request.args.get('cm', 0)
+    if int(cm) != 0:
+        if int(cm) == 1:
+            page_data = page_data.order_by(Movie.commentnum.desc())
+        else:
+            page_data = page_data.order_by(Movie.commentnum.asc())
+
+    page= request.args.get('page',1)
+    page_data=page_data.paginate(page=int(page),per_page=10)
+
+    tid = request.args.get("tid", 0)
     star = request.args.get("star", 0)
     time = request.args.get("time", 0)
     pm = request.args.get("pm", 0)
     cm = request.args.get("cm", 0)
-    p=dict(
-        tid=tid,
-        star=star,
-        time=time,
-        pm=pm,
-        cm=cm,
-    )
-    return render_template("home/index.html",tags=tags,p=p)
+    p = dict(tid=tid, star=star, time=time, pm=pm, cm=cm, )
+    return render_template("home/index.html", tags=tags, p=p,page_data=page_data)
 
 
 # 登录
 @home.route("/login/", methods=["GET", "POST"])
-def login():
+def login ():
     form = LoginForm()
     if form.validate_on_submit():
         data = form.data
@@ -73,10 +101,7 @@ def login():
             return redirect(url_for("home.login"))
         session["user"] = user.name
         session["user_id"] = user.id
-        userlog = Userlog(
-            user_id=user.id,
-            ip=request.remote_addr
-        )
+        userlog = Userlog(user_id=user.id, ip=request.remote_addr)
         db.session.add(userlog)
         db.session.commit()
         flash("登录成功！", "ok")
@@ -86,7 +111,7 @@ def login():
 
 # 退出
 @home.route("/logout/")
-def logout():
+def logout ():
     session.pop("user", None)
     session.pop("user_id", None)
     return redirect(url_for("home.login"))
@@ -94,17 +119,12 @@ def logout():
 
 # 注册
 @home.route("/regist/", methods=["GET", "POST"])
-def regist():
+def regist ():
     form = RegistForm()
     if form.validate_on_submit():
         data = form.data
-        user = User(
-            name=data['name'],
-            email=data['email'],
-            phone=data['phone'],
-            pwd=generate_password_hash(data['pwd']),
-            uuid=uuid.uuid4().hex
-        )
+        user = User(name=data['name'], email=data['email'], phone=data['phone'],
+            pwd=generate_password_hash(data['pwd']), uuid=uuid.uuid4().hex)
         db.session.add(user)
         db.session.commit()
         flash("注册成功！！", "ok")
@@ -114,7 +134,7 @@ def regist():
 # 会员修改资料
 @home.route("/user/", methods=["GET", "POST"])
 @user_login_req
-def user():
+def user ():
     form = UserdatailForm()
     user = User.query.get(int(session["user_id"]))
     form.face.validators = []
@@ -161,7 +181,7 @@ def user():
 # 密码
 @home.route("/pwd/", methods=["GET", "POST"])
 @user_login_req
-def pwd():
+def pwd ():
     form = PwdForm()
     if form.validate_on_submit():
         data = form.data
@@ -180,47 +200,42 @@ def pwd():
 # 登录日志
 @home.route("/loginlog/<int:page>/", methods=['GET'])
 @user_login_req
-def loginlog(page=None):
+def loginlog (page=None):
     if page is None:
         page = 1
-    page_data = Userlog.query.filter_by(
-        user_id=int(session["user_id"])
-    ).order_by(
-        Userlog.addtime.desc()
-    ).paginate(page=page, per_page=10)
+    page_data = Userlog.query.filter_by(user_id=int(session["user_id"])).order_by(Userlog.addtime.desc()).paginate(
+        page=page, per_page=10)
     return render_template("home/loginlog.html", page_data=page_data)
 
 
 # 评论
 @home.route("/comments/")
 @user_login_req
-def comments():
+def comments ():
     return render_template("home/comments.html")
 
 
-#上映预告
+# 上映预告
 @home.route("/animation/")
-def animation():
-    data=Preview.query.all()
-    return render_template("home/animation.html",data=data)
-
+def animation ():
+    data = Preview.query.all()
+    return render_template("home/animation.html", data=data)
 
 
 # 电影收藏
 @home.route("/moviecol/")
 @user_login_req
-def moviecol():
+def moviecol ():
     return render_template("home/moviecol.html")
-
 
 
 # 搜索
 @home.route("/search/")
-def search():
+def search ():
     return render_template("home/search.html")
 
 
 # 详情
 @home.route("/play/")
-def play():
+def play ():
     return render_template("home/play.html")
