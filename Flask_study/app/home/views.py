@@ -230,8 +230,10 @@ def moviecol():
 
 
 # 搜索
-@home.route("/search/")
-def search():
+@home.route("/search/<int:page>/")
+def search(page=None):
+    if page is None:
+        page = 1
     return render_template("home/search.html")
 
 
