@@ -34,7 +34,6 @@ def get_data():
     data_dict = [dict(zip([col[0] for col in desc], row)) for row in cursor.fetchall()]  # 列表表达式把数据组装起来
 
     print(data_dict)
-    return data_dict
 
     # 切记一定要执行
     cursor.execute('commit')
@@ -44,3 +43,4 @@ def get_data():
 
     # 关闭连接
     connector.close()
+    return data_dict
