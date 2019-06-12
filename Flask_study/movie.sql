@@ -11,7 +11,7 @@
  Target Server Version : 50560
  File Encoding         : 65001
 
- Date: 27/05/2019 16:23:27
+ Date: 11/06/2019 14:59:36
 */
 
 SET NAMES utf8mb4;
@@ -33,7 +33,7 @@ CREATE TABLE `admin`  (
   INDEX `role_id`(`role_id`) USING BTREE,
   INDEX `ix_admin_addtime`(`addtime`) USING BTREE,
   CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of admin
@@ -54,7 +54,7 @@ CREATE TABLE `adminlog`  (
   INDEX `admin_id`(`admin_id`) USING BTREE,
   INDEX `ix_adminlog_addtime`(`addtime`) USING BTREE,
   CONSTRAINT `adminlog_ibfk_1` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 55 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of adminlog
@@ -97,6 +97,18 @@ INSERT INTO `adminlog` VALUES (39, 4, '172.16.16.47', '2019-05-27 15:59:47');
 INSERT INTO `adminlog` VALUES (40, 3, '172.16.16.47', '2019-05-27 16:02:22');
 INSERT INTO `adminlog` VALUES (41, 4, '172.16.16.47', '2019-05-27 16:04:23');
 INSERT INTO `adminlog` VALUES (42, 3, '172.16.16.47', '2019-05-27 16:16:21');
+INSERT INTO `adminlog` VALUES (43, 4, '172.16.16.47', '2019-05-28 09:18:30');
+INSERT INTO `adminlog` VALUES (44, 3, '172.16.16.47', '2019-05-28 10:19:13');
+INSERT INTO `adminlog` VALUES (45, 3, '172.16.16.47', '2019-05-28 10:20:28');
+INSERT INTO `adminlog` VALUES (46, 3, '172.16.16.47', '2019-05-28 10:21:49');
+INSERT INTO `adminlog` VALUES (47, 3, '172.16.16.47', '2019-05-28 10:35:19');
+INSERT INTO `adminlog` VALUES (48, 3, '172.16.16.47', '2019-05-28 10:35:42');
+INSERT INTO `adminlog` VALUES (49, 3, '172.16.16.47', '2019-05-28 10:36:02');
+INSERT INTO `adminlog` VALUES (50, 3, '172.16.16.47', '2019-05-28 10:39:41');
+INSERT INTO `adminlog` VALUES (51, 3, '172.16.16.47', '2019-05-28 10:40:05');
+INSERT INTO `adminlog` VALUES (52, 3, '172.16.16.47', '2019-05-28 10:40:58');
+INSERT INTO `adminlog` VALUES (53, 3, '172.16.16.47', '2019-05-28 15:51:23');
+INSERT INTO `adminlog` VALUES (54, 3, '172.16.16.47', '2019-05-29 09:22:55');
 
 -- ----------------------------
 -- Table structure for auth
@@ -122,14 +134,14 @@ INSERT INTO `auth` VALUES (8, '标签删除', '/admin/tag/del/<int:id>/', '2019-
 INSERT INTO `auth` VALUES (9, '编辑标签', '/admin/tag/edit/<int:id>/', '2019-05-27 15:12:47');
 INSERT INTO `auth` VALUES (10, '添加电影', '/admin/movie/add/', '2019-05-27 15:13:14');
 INSERT INTO `auth` VALUES (11, '电影列表', '/admin/movie/list/<int:page>', '2019-05-27 15:13:26');
-INSERT INTO `auth` VALUES (12, '删除电影', '/admin/movie/del/<int:id>', '2019-05-27 15:13:40');
-INSERT INTO `auth` VALUES (13, '编辑电影', '/admin/movie/edit/<int:id>', '2019-05-27 15:13:51');
+INSERT INTO `auth` VALUES (12, '删除电影', '/admin/movie/del/<int:id>/', '2019-05-27 15:13:40');
+INSERT INTO `auth` VALUES (13, '编辑电影', '/admin/movie/edit/<int:id>/', '2019-05-27 15:13:51');
 INSERT INTO `auth` VALUES (14, '上映预告添加', '/admin/preview/add/', '2019-05-27 15:14:04');
 INSERT INTO `auth` VALUES (15, '上映预告列表', '/admin/preview/list/<int:page>/', '2019-05-27 15:14:17');
-INSERT INTO `auth` VALUES (16, '预告删除', '/admin/preview/del/<int:id>', '2019-05-27 15:14:28');
-INSERT INTO `auth` VALUES (17, '上映预告编辑', '/admin/preview/edit/<int:id>', '2019-05-27 15:14:37');
+INSERT INTO `auth` VALUES (16, '预告删除', '/admin/preview/del/<int:id>/', '2019-05-27 15:14:28');
+INSERT INTO `auth` VALUES (17, '上映预告编辑', '/admin/preview/edit/<int:id>/', '2019-05-27 15:14:37');
 INSERT INTO `auth` VALUES (18, '会员列表', '/admin/user/list/<int:page>/', '2019-05-27 15:14:47');
-INSERT INTO `auth` VALUES (19, '查看会员', '/admin/user/view/<int:id>', '2019-05-27 15:14:59');
+INSERT INTO `auth` VALUES (19, '查看会员', '/admin/user/view/<int:id>/', '2019-05-27 15:14:59');
 INSERT INTO `auth` VALUES (20, '会员删除', '/admin/user/del/<int:id>/', '2019-05-27 15:15:12');
 INSERT INTO `auth` VALUES (21, '评论列表', '/admin/comment/list/<int:page>/', '2019-05-27 15:15:21');
 INSERT INTO `auth` VALUES (22, '评论删除', '/admin/comment/del/<int:id>/', '2019-05-27 15:15:32');
@@ -270,7 +282,7 @@ CREATE TABLE `oplog`  (
   INDEX `admin_id`(`admin_id`) USING BTREE,
   INDEX `ix_oplog_addtime`(`addtime`) USING BTREE,
   CONSTRAINT `oplog_ibfk_1` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of oplog
@@ -280,6 +292,18 @@ INSERT INTO `oplog` VALUES (2, 3, '172.16.16.47', '添加标签排行榜', '2019
 INSERT INTO `oplog` VALUES (3, 3, '172.16.16.47', '添加标签微视频', '2019-05-24 16:03:55');
 INSERT INTO `oplog` VALUES (4, 3, '172.16.16.47', '添加标签123', '2019-05-24 16:04:29');
 INSERT INTO `oplog` VALUES (5, 3, '172.16.16.47', '添加标签古典', '2019-05-24 17:15:44');
+INSERT INTO `oplog` VALUES (6, 3, '172.16.16.47', '添加标签ddd', '2019-05-27 18:09:56');
+INSERT INTO `oplog` VALUES (7, 3, '172.16.16.47', '添加标签欧美', '2019-05-28 10:32:45');
+INSERT INTO `oplog` VALUES (8, 3, '172.16.16.47', '添加标签12', '2019-05-28 11:54:03');
+INSERT INTO `oplog` VALUES (9, 3, '172.16.16.47', '添加标签111', '2019-05-28 11:56:15');
+INSERT INTO `oplog` VALUES (10, 3, '172.16.16.47', '添加标签12321', '2019-05-28 12:03:12');
+INSERT INTO `oplog` VALUES (11, 3, '172.16.16.47', '添加标签1232111', '2019-05-28 12:03:44');
+INSERT INTO `oplog` VALUES (12, 3, '172.16.16.47', '添加标签12321114', '2019-05-28 12:04:32');
+INSERT INTO `oplog` VALUES (13, 3, '172.16.16.47', '添加标签123211145', '2019-05-28 12:05:07');
+INSERT INTO `oplog` VALUES (14, 3, '172.16.16.47', '添加标签1232111456', '2019-05-28 12:05:54');
+INSERT INTO `oplog` VALUES (15, 3, '172.16.16.47', '添加标签12321114565', '2019-05-28 12:06:07');
+INSERT INTO `oplog` VALUES (16, 3, '172.16.16.47', '添加标签2', '2019-05-28 13:42:58');
+INSERT INTO `oplog` VALUES (17, 3, '172.16.16.47', '添加标签3', '2019-05-28 13:43:24');
 
 -- ----------------------------
 -- Table structure for preview
@@ -294,12 +318,17 @@ CREATE TABLE `preview`  (
   UNIQUE INDEX `title`(`title`) USING BTREE,
   UNIQUE INDEX `logo`(`logo`) USING BTREE,
   INDEX `ix_preview_addtime`(`addtime`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of preview
 -- ----------------------------
-INSERT INTO `preview` VALUES (1, '变形金刚', '201905231157499f1b700a260a47e3b3cf65ea2a4b1f561348814017665.jpg', '2019-05-23 11:57:49');
+INSERT INTO `preview` VALUES (1, '钢铁侠', '201905290930573f755debe445400196e27346b95db9f91348814002177.jpg', '2019-05-29 09:30:57');
+INSERT INTO `preview` VALUES (2, '舞动', '201905290931031718d31464b34ae6981e80ddd3ca9c131348814017665.jpg', '2019-05-29 09:31:03');
+INSERT INTO `preview` VALUES (3, '复仇者联盟', '20190529093118aa82c03d94444024bf7fcd0c19369e241348814031329.jpg', '2019-05-29 09:31:18');
+INSERT INTO `preview` VALUES (4, '复仇者联盟1', '20190529093126b914143a5a004ede832e368a781b209d1348814045192.jpg', '2019-05-29 09:31:26');
+INSERT INTO `preview` VALUES (5, '复仇者联盟2', '20190529093134d6273675584847e1bb86f0e5dfaabaa61348814045192.jpg', '2019-05-29 09:31:34');
+INSERT INTO `preview` VALUES (6, '复仇者联盟3', '20190529093140032c78e1c7474e5b8cf347ac3eb3d8411348814061388.jpg', '2019-05-29 09:31:40');
 
 -- ----------------------------
 -- Table structure for role
@@ -332,12 +361,11 @@ CREATE TABLE `tag`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `name`(`name`) USING BTREE,
   INDEX `ix_tag_addtime`(`addtime`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tag
 -- ----------------------------
-INSERT INTO `tag` VALUES (3, '斯蒂芬', '2019-05-23 11:48:10');
 INSERT INTO `tag` VALUES (4, '武侠', '2019-05-23 14:45:20');
 INSERT INTO `tag` VALUES (5, '动作', '2019-05-23 14:45:28');
 INSERT INTO `tag` VALUES (7, '魔幻', '2019-05-23 17:13:31');
@@ -348,6 +376,7 @@ INSERT INTO `tag` VALUES (14, '经典', '2019-05-24 15:43:20');
 INSERT INTO `tag` VALUES (15, '排行榜', '2019-05-24 15:45:52');
 INSERT INTO `tag` VALUES (16, '微视频', '2019-05-24 16:03:55');
 INSERT INTO `tag` VALUES (18, '古典', '2019-05-24 17:15:44');
+INSERT INTO `tag` VALUES (20, '欧美', '2019-05-28 10:32:45');
 
 -- ----------------------------
 -- Table structure for user
@@ -370,7 +399,7 @@ CREATE TABLE `user`  (
   UNIQUE INDEX `face`(`face`) USING BTREE,
   UNIQUE INDEX `uuid`(`uuid`) USING BTREE,
   INDEX `ix_user_addtime`(`addtime`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 64 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of user
@@ -388,6 +417,8 @@ INSERT INTO `user` VALUES (10, '机柜号', 'pbkdf2:sha256:50000$56hTmVhd$fa3c7d
 INSERT INTO `user` VALUES (11, '珀尔', 'pbkdf2:sha256:50000$56hTmVhd$fa3c7d54ead0495e344f', 'user@user11.com', '12800128011', '个人简介', '11.jpg', '2019-04-29 13:14:45', '94150271639b4e04855c365691cf3a47');
 INSERT INTO `user` VALUES (12, '条纹', 'pbkdf2:sha256:50000$56hTmVhd$fa3c7d54ead0495e344f', 'user@user12.com', '12800128012', '个人简介', '12.jpg', '2019-03-30 13:14:49', '137b329d6e874e93b74082b2c133fad0');
 INSERT INTO `user` VALUES (13, '与虎添翼', 'pbkdf2:sha256:50000$56hTmVhd$fa3c7d54ead0495e344f', 'user@user13.com', '12800128013', '个人简介', '13.jpg', '2019-02-23 13:14:55', 'c116ef9e419c447fa06991237f4ece87');
+INSERT INTO `user` VALUES (62, 'zgh', 'pbkdf2:sha256:50000$H276zNWV$83b26c3eae6838d4c9bfe930d24861408cbfc8ea83efc24c300ffc091fa1c6cc', '111@qq.com', '13111111111', '十年窗下无人问，一举成名天下知，历史悠悠亘古变，独依红颜梦凡尘。', '14.jpg', '2019-05-28 11:23:50', '067dc25c4f584699a23d00df3230e141');
+INSERT INTO `user` VALUES (63, 'niuniu', 'pbkdf2:sha256:50000$Ef74s8BY$e5664d68ff22cada62d72dbf942efde88789787484b168ce829a744aca4d8f19', '2@qq.com', '13222222222', '666666', '201905281740581fd2ab9a9e834790827e3ebce18210d512.jpg', '2019-05-28 17:40:31', 'fbf8427e3ab1464ab264b8922a259ae8');
 
 -- ----------------------------
 -- Table structure for userlog
@@ -402,7 +433,7 @@ CREATE TABLE `userlog`  (
   INDEX `user_id`(`user_id`) USING BTREE,
   INDEX `ix_userlog_addtime`(`addtime`) USING BTREE,
   CONSTRAINT `userlog_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 51 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of userlog
@@ -426,5 +457,36 @@ INSERT INTO `userlog` VALUES (16, 4, '6.25.55.87', '2018-10-21 16:16:16');
 INSERT INTO `userlog` VALUES (17, 5, '45.25.34.7', '2018-10-21 16:16:16');
 INSERT INTO `userlog` VALUES (18, 3, '136.25.34.8', '2018-10-21 16:16:16');
 INSERT INTO `userlog` VALUES (19, 7, '136.5.34.32', '2018-10-21 16:16:16');
+INSERT INTO `userlog` VALUES (20, 62, '172.16.16.47', '2019-05-28 11:25:10');
+INSERT INTO `userlog` VALUES (21, 62, '172.16.16.47', '2019-05-28 11:42:54');
+INSERT INTO `userlog` VALUES (22, 62, '172.16.16.47', '2019-05-28 11:45:16');
+INSERT INTO `userlog` VALUES (23, 62, '172.16.16.47', '2019-05-28 11:47:23');
+INSERT INTO `userlog` VALUES (24, 62, '172.16.16.47', '2019-05-28 11:51:09');
+INSERT INTO `userlog` VALUES (25, 62, '172.16.16.47', '2019-05-28 11:51:47');
+INSERT INTO `userlog` VALUES (26, 62, '172.16.16.47', '2019-05-28 11:52:10');
+INSERT INTO `userlog` VALUES (27, 62, '172.16.16.47', '2019-05-28 15:30:36');
+INSERT INTO `userlog` VALUES (28, 62, '172.16.16.47', '2019-05-28 15:34:23');
+INSERT INTO `userlog` VALUES (29, 62, '172.16.16.47', '2019-05-28 16:54:18');
+INSERT INTO `userlog` VALUES (30, 62, '172.16.16.47', '2019-05-28 16:55:00');
+INSERT INTO `userlog` VALUES (31, 62, '172.16.16.47', '2019-05-28 16:59:35');
+INSERT INTO `userlog` VALUES (32, 62, '172.16.16.47', '2019-05-28 17:03:37');
+INSERT INTO `userlog` VALUES (33, 62, '172.16.16.47', '2019-05-28 17:04:18');
+INSERT INTO `userlog` VALUES (34, 62, '172.16.16.47', '2019-05-28 17:05:34');
+INSERT INTO `userlog` VALUES (35, 62, '172.16.16.47', '2019-05-28 17:06:38');
+INSERT INTO `userlog` VALUES (36, 62, '172.16.16.47', '2019-05-28 17:38:35');
+INSERT INTO `userlog` VALUES (37, 62, '172.16.16.47', '2019-05-28 17:38:55');
+INSERT INTO `userlog` VALUES (38, 63, '172.16.16.47', '2019-05-28 17:40:43');
+INSERT INTO `userlog` VALUES (39, 63, '172.16.16.47', '2019-05-28 17:41:16');
+INSERT INTO `userlog` VALUES (40, 63, '172.16.16.47', '2019-05-28 17:41:31');
+INSERT INTO `userlog` VALUES (41, 62, '172.16.16.47', '2019-05-28 17:41:44');
+INSERT INTO `userlog` VALUES (42, 63, '172.16.16.47', '2019-05-28 18:06:01');
+INSERT INTO `userlog` VALUES (43, 63, '172.16.16.47', '2019-05-28 18:06:16');
+INSERT INTO `userlog` VALUES (44, 63, '172.16.16.47', '2019-05-28 18:07:18');
+INSERT INTO `userlog` VALUES (45, 63, '172.16.16.47', '2019-05-28 18:09:24');
+INSERT INTO `userlog` VALUES (46, 62, '172.16.16.47', '2019-05-29 09:22:06');
+INSERT INTO `userlog` VALUES (47, 62, '172.16.16.47', '2019-05-29 09:38:28');
+INSERT INTO `userlog` VALUES (48, 62, '172.16.16.47', '2019-05-29 09:41:56');
+INSERT INTO `userlog` VALUES (49, 62, '172.16.16.47', '2019-05-29 10:20:31');
+INSERT INTO `userlog` VALUES (50, 62, '172.16.16.47', '2019-05-29 17:53:54');
 
 SET FOREIGN_KEY_CHECKS = 1;
