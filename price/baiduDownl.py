@@ -28,7 +28,7 @@ time.sleep(1)
 driver.find_element_by_xpath(hh).click()#点击进入
 time.sleep(2)
 
-前三张取地址
+#前三张取地址
 for j in range(1,4):
     ii = '//div[@class="ppt-page-item ppt-bd reader-pageNo-'+ str(j)+'"]//img'
 
