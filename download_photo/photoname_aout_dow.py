@@ -11,8 +11,8 @@ import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import os
-
+import os,sys,io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='gb18030') #改变标准输出的默认编码
 
 
 driver=webdriver.Chrome()
@@ -42,23 +42,29 @@ driver.find_element_by_id('kw').send_keys('明星')
 driver.find_element_by_id('su').click()
 time.sleep(2)
 
-name_list=[]
 
 def GetName():
+    name_list = []
     for i in range(1,13):
         hh='//div[@class="op_exactqa_itemsArea c-row "]//div['+ str(i) +']/p/a'
-    #等待登录按钮元素出现
-        WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,hh)))
-        #target = driver.find_element_by_xpath(hh)#找到这个元素。
-        #driver.execute_script("arguments[0].scrollIntoView();", target) #利用js。拖动到可见的元素去
+        #等待登录按钮元素出现
+        WebDriverWait(driver,10,1).until(EC.visibility_of_all_elements_located((By.XPATH,hh)))
+        # target = driver.find_element_by_xpath(hh)#找到这个元素。
+        # driver.execute_script("arguments[0].scrollIntoView();", target) #利用js。拖动到可见的元素去
         print(hh)
         ii=driver.find_element_by_xpath(hh).get_attribute('title')
         print(ii)
         name_list.append(ii)
+        with open("name1.txt", "a", newline='') as f:
+            f.write(str(ii) + '\r\n')
+    print("write success！")
 
-for o in range(1000):
-    tt='//span[text()="下一页"]'
-    driver.find_element_by_id(tt).click()
+for o in range(2,10000):
+    GetName()
+    tt='//span[@class="op_exactqa_mingxing"]//span[text()="'+ str(o) +'"]'
+    print(tt)
+    driver.find_element_by_xpath(tt).click()
+    time.sleep(0.5)
 
 
 
