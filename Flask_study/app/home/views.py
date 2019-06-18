@@ -234,10 +234,25 @@ def moviecol():
 def search(page=None):
     if page is None:
         page = 1
-    return render_template("home/search.html")
+    key = request.args.get("key","")
+    movie_count=Movie.query.filter(
+        Movie.title.ilike('%'+key+'%')
+    ).count()
+    page_data = Movie.query.filter(
+        Movie.title.ilike('%'+key+'%')
+    ).order_by(
+        Movie.addtime.desc()
+    ).paginate(
+        page=page, per_page=10)
+    return render_template("home/search.html",movie_count=movie_count,key=key,page_data=page_data)
 
 
 # 详情
-@home.route("/play/")
-def play():
-    return render_template("home/play.html")
+@home.route("/play/<int:id>/")
+def play(id=None):
+    movie=Movie.query.join(Tag).filter(
+        Tag.id==Movie.tag_id,
+        Movie.id==int(id)
+    ).first_or_404()
+
+    return render_template("home/play.html",movie=movie)
