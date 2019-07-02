@@ -8,8 +8,8 @@
 
 from . import home
 from flask import Flask, render_template, request, redirect, url_for, flash, session, request
-from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm
-from Flask_study.app.models import User, Userlog, Preview, Tag, Movie
+from Flask_study.app.home.forms import RegistForm, LoginForm, UserdatailForm, PwdForm, CommentForm
+from Flask_study.app.models import User, Userlog, Preview, Tag, Movie, Comment
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
 from Flask_study.app import db, app
@@ -22,9 +22,9 @@ import uuid
 # 2. 创建蓝图的视图函数 (通过蓝图装饰路由)
 
 # 登录装饰器
-def user_login_req(f):
+def user_login_req (f):
     @wraps(f)
-    def decorated_function(*args, **kwargs):
+    def decorated_function (*args, **kwargs):
         if "user" not in session:
             return redirect(url_for("home.login", next=request.url))
         return f(*args, **kwargs)
@@ -33,15 +33,15 @@ def user_login_req(f):
 
 
 # 修改文件名称
-def change_filename(filename):
+def change_filename (filename):
     fileinfo = os.path.split(filename)
     filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + str(uuid.uuid4().hex) + fileinfo[-1]
     return filename
 
 
 # 电影列表
-@home.route("/<int:page>/",methods=["GET"])
-def index(page=None):
+@home.route("/<int:page>/", methods=["GET"])
+def index (page=None):
     tags = Tag.query.all()
     page_data = Movie.query
 
@@ -74,7 +74,7 @@ def index(page=None):
             page_data = page_data.order_by(Movie.commentnum.asc())
 
     if page is None:
-        page=1
+        page = 1
     page_data = page_data.paginate(page=int(page), per_page=10)
 
     tid = request.args.get("tid", 0)
@@ -88,7 +88,7 @@ def index(page=None):
 
 # 登录
 @home.route("/login/", methods=["GET", "POST"])
-def login():
+def login ():
     form = LoginForm()
     if form.validate_on_submit():
         data = form.data
@@ -111,7 +111,7 @@ def login():
 
 # 退出
 @home.route("/logout/")
-def logout():
+def logout ():
     session.pop("user", None)
     session.pop("user_id", None)
     return redirect(url_for("home.login"))
@@ -119,7 +119,7 @@ def logout():
 
 # 注册
 @home.route("/regist/", methods=["GET", "POST"])
-def regist():
+def regist ():
     form = RegistForm()
     if form.validate_on_submit():
         data = form.data
@@ -134,7 +134,7 @@ def regist():
 # 会员修改资料
 @home.route("/user/", methods=["GET", "POST"])
 @user_login_req
-def user():
+def user ():
     form = UserdatailForm()
     user = User.query.get(int(session["user_id"]))
     form.face.validators = []
@@ -181,7 +181,7 @@ def user():
 # 密码
 @home.route("/pwd/", methods=["GET", "POST"])
 @user_login_req
-def pwd():
+def pwd ():
     form = PwdForm()
     if form.validate_on_submit():
         data = form.data
@@ -200,7 +200,7 @@ def pwd():
 # 登录日志
 @home.route("/loginlog/<int:page>/", methods=['GET'])
 @user_login_req
-def loginlog(page=None):
+def loginlog (page=None):
     if page is None:
         page = 1
     page_data = Userlog.query.filter_by(user_id=int(session["user_id"])).order_by(Userlog.addtime.desc()).paginate(
@@ -211,13 +211,13 @@ def loginlog(page=None):
 # 评论
 @home.route("/comments/")
 @user_login_req
-def comments():
+def comments ():
     return render_template("home/comments.html")
 
 
 # 上映预告
 @home.route("/animation/")
-def animation():
+def animation ():
     data = Preview.query.all()
     return render_template("home/animation.html", data=data)
 
@@ -225,34 +225,55 @@ def animation():
 # 电影收藏
 @home.route("/moviecol/")
 @user_login_req
-def moviecol():
+def moviecol ():
     return render_template("home/moviecol.html")
 
 
 # 搜索
 @home.route("/search/<int:page>/")
-def search(page=None):
+def search (page=None):
     if page is None:
         page = 1
-    key = request.args.get("key","")
-    movie_count=Movie.query.filter(
-        Movie.title.ilike('%'+key+'%')
-    ).count()
-    page_data = Movie.query.filter(
-        Movie.title.ilike('%'+key+'%')
-    ).order_by(
-        Movie.addtime.desc()
-    ).paginate(
+    key = request.args.get("key", "")
+    movie_count = Movie.query.filter(Movie.title.ilike('%' + key + '%')).count()
+    page_data = Movie.query.filter(Movie.title.ilike('%' + key + '%')).order_by(Movie.addtime.desc()).paginate(
         page=page, per_page=10)
-    return render_template("home/search.html",movie_count=movie_count,key=key,page_data=page_data)
+    return render_template("home/search.html", movie_count=movie_count, key=key, page_data=page_data)
 
 
 # 详情
-@home.route("/play/<int:id>/")
-def play(id=None):
-    movie=Movie.query.join(Tag).filter(
-        Tag.id==Movie.tag_id,
-        Movie.id==int(id)
+@home.route("/play/<int:id>/<int:page>/", methods=["GET", "POST"])
+def play (id=None,page=None):
+    movie = Movie.query.join(Tag).filter(
+        Tag.id == Movie.tag_id,
+        Movie.id == int(id)
     ).first_or_404()
+    if page is None:
+        page = 1
+    page_data = Comment.query.join(
+        Movie
+    ).join(
+        User
+    ).filter(
+        Movie.id == movie.id,
+        User.id ==session["user_id"]
+    ).order_by(
+        Comment.addtime.desc()
+    ).paginate(page=page,per_page=10)
 
-    return render_template("home/play.html",movie=movie)
+    movie.playnum = movie.playnum + 1
+    form = CommentForm()
+    if "user" in session and form.validate_on_submit():
+        data = form.data
+        comment = Comment(
+            content=data["content"],
+            movie_id=movie.id,
+            user_id=session["user_id"])
+        db.session.add(comment)
+        db.session.commit()
+        movie.commentnum = movie.commentnum + 1
+        flash("添加评论成功！", "ok")
+        return redirect(url_for('home.play', id=movie.id,page=1))
+    db.session.add(movie)
+    db.session.commit()
+    return render_template("home/play.html", movie=movie, form=form,page_data=page_data)
