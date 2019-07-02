@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="">
+    <list default="true" id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3fe5fa59-c15e-49e5-b8b6-a999d31bbd19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ecfef36-0a87-4c89-b0b6-891fb8d6e3f0/storage_v2/_src_/schema/zgh_jghg.4LHVgA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ecfef36-0a87-4c89-b0b6-891fb8d6e3f0/storage_v2/_src_/schema/zgh_jghg.4LHVgA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/抖音视频爬取/Douying" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py" beforeDir="false" afterPath="$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py" afterDir="false" />
-      <change beforePath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" beforeDir="false" afterPath="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_the_animal/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/identify_the_animal/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub11.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub11.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub13.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/identify_the_animal/notebooks/Sub13.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wenkuDownl.py" beforeDir="false" afterPath="$PROJECT_DIR$/wenkuDownl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,390 +27,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/classpython$price.coverage" NAME="price Coverage Results" MODIFIED="1547617587589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$OpenCV.coverage" NAME="视频检测人脸OpenCV Coverage Results" MODIFIED="1551316457654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
-    <SUITE FILE_PATH="coverage/classpython$class6_seaborn.coverage" NAME="class6_seaborn单变量 Coverage Results" MODIFIED="1548299597452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
-    <SUITE FILE_PATH="coverage/classpython$setup.coverage" NAME="setup Coverage Results" MODIFIED="1552887391522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/eos" />
-    <SUITE FILE_PATH="coverage/classpython$fist_flask.coverage" NAME="fist_flask Coverage Results" MODIFIED="1551856175735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
-    <SUITE FILE_PATH="coverage/classpython$douyin_pro.coverage" NAME="douyin_pro Coverage Results" MODIFIED="1554631286914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
-    <SUITE FILE_PATH="coverage/classpython$exls.coverage" NAME="exls数据查询插入 Coverage Results" MODIFIED="1553652407109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$douyin_download.coverage" NAME="douyin_download Coverage Results" MODIFIED="1554629383633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/douyin/trunk" />
-    <SUITE FILE_PATH="coverage/classpython$QueueTyc.coverage" NAME="QueueTyc Coverage Results" MODIFIED="1555918730578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/tianyancha" />
-    <SUITE FILE_PATH="coverage/classpython$class7_.coverage" NAME="class7_回归分析 Coverage Results" MODIFIED="1548316363972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/机器学习数据及教材" />
-    <SUITE FILE_PATH="coverage/classpython$dlib.coverage" NAME="人脸检测dlib Coverage Results" MODIFIED="1551316607379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
-    <SUITE FILE_PATH="coverage/classpython$openDoor.coverage" NAME="openDoor Coverage Results" MODIFIED="1557194920053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$21.coverage" NAME="21点小游戏 Coverage Results" MODIFIED="1548657801376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$douyin_video.coverage" NAME="douyin_video Coverage Results" MODIFIED="1554631303851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/DouYin_Video/trunk/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$models.coverage" NAME="models Coverage Results" MODIFIED="1554775003641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study/app" />
-    <SUITE FILE_PATH="coverage/classpython$face_detection_cli.coverage" NAME="face_detection_cli Coverage Results" MODIFIED="1549863883534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/face_recognition/face_recognition" />
-    <SUITE FILE_PATH="coverage/classpython$keras_tensorfilw.coverage" NAME="性别识别keras_tensorfilw Coverage Results" MODIFIED="1551316716241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
-    <SUITE FILE_PATH="coverage/classpython$run.coverage" NAME="run Coverage Results" MODIFIED="1551835654742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/interface_register" />
-    <SUITE FILE_PATH="coverage/classpython$12306_autopay.coverage" NAME="12306_autopay Coverage Results" MODIFIED="1547088722623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$manage__2_.coverage" NAME="manage (2) Coverage Results" MODIFIED="1552376381342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/mayan-edms-master" />
-    <SUITE FILE_PATH="coverage/classpython$auto_reply.coverage" NAME="auto_reply Coverage Results" MODIFIED="1547193721424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
-    <SUITE FILE_PATH="coverage/classpython$config.coverage" NAME="config Coverage Results" MODIFIED="1551338730062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$logger.coverage" NAME="logger Coverage Results" MODIFIED="1551754251254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$.coverage" NAME="微信自动检测被删情况 Coverage Results" MODIFIED="1553575558776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$Unittests_in_Unit_test_py.coverage" NAME="Unittests in Unit_test.py Coverage Results" MODIFIED="1557134923244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$12306_captcha.coverage" NAME="12306_captcha Coverage Results" MODIFIED="1547091566865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$baiduwenku_pro_1.coverage" NAME="baiduwenku_pro_1 Coverage Results" MODIFIED="1554630200692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
-    <SUITE FILE_PATH="coverage/classpython$recon_web.coverage" NAME="recon-web Coverage Results" MODIFIED="1547628064014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Recon-ng" />
-    <SUITE FILE_PATH="coverage/classpython$douyin.coverage" NAME="douyin Coverage Results" MODIFIED="1558433198377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/douyin" />
-    <SUITE FILE_PATH="coverage/classpython$FeatureLib.coverage" NAME="FeatureLib Coverage Results" MODIFIED="1550566174836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/FaceRecognition" />
-    <SUITE FILE_PATH="coverage/classpython$douyintest.coverage" NAME="douyintest Coverage Results" MODIFIED="1554624458564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
-    <SUITE FILE_PATH="coverage/classpython$Unittests_for_test_face_recognition_Test_face_recognition_test_fd_command_line_interface_cnn_model.coverage" NAME="Unittests for test_face_recognition.Test_face_recognition.test_fd_command_line_interface_cnn_model Coverage Results" MODIFIED="1549863766463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/face_recognition/tests" />
-    <SUITE FILE_PATH="coverage/classpython$views.coverage" NAME="views Coverage Results" MODIFIED="1551856056222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study/app/admin" />
-    <SUITE FILE_PATH="coverage/classpython$face_recognition.coverage" NAME="人脸视频识别face_recognition Coverage Results" MODIFIED="1551316593670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
-    <SUITE FILE_PATH="coverage/classpython$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1551752590153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$main.coverage" NAME="main Coverage Results" MODIFIED="1551340352534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508" />
-<<<<<<< HEAD
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1558674392600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
-=======
-<<<<<<< HEAD
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1558671796979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
-=======
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1558663869821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
->>>>>>> 416b76d23580412648d68c0ec6b8ac064cc2adb9
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-    <SUITE FILE_PATH="coverage/classpython$douy.coverage" NAME="douy Coverage Results" MODIFIED="1554632580259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
-    <SUITE FILE_PATH="coverage/classpython$check_ticket_status.coverage" NAME="check_ticket_status Coverage Results" MODIFIED="1547276015069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/12306" />
-    <SUITE FILE_PATH="coverage/classpython$wechat_fri_fm.coverage" NAME="wechat_fri_fm Coverage Results" MODIFIED="1553501491242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
-    <SUITE FILE_PATH="coverage/classpython$pandas_findexls.coverage" NAME="pandas_findexls Coverage Results" MODIFIED="1553581683045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$amemv_video_ripper.coverage" NAME="amemv-video-ripper Coverage Results" MODIFIED="1554628392852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/amemv-crawler/trunk" />
-    <SUITE FILE_PATH="coverage/classpython$smtp.coverage" NAME="smtp Coverage Results" MODIFIED="1551754757573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$Tianyanc.coverage" NAME="Tianyanc Coverage Results" MODIFIED="1555925243319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$douyintest002.coverage" NAME="douyintest002 Coverage Results" MODIFIED="1554638001060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider" />
-    <SUITE FILE_PATH="coverage/classpython$DouYin.coverage" NAME="DouYin Coverage Results" MODIFIED="1554615978913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取" />
-    <SUITE FILE_PATH="coverage/classpython$Unittests_in_sco_py.coverage" NAME="Unittests in sco.py Coverage Results" MODIFIED="1550644014574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$openDoor__1_.coverage" NAME="openDoor (1) Coverage Results" MODIFIED="1558315417083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opendoor" />
-    <SUITE FILE_PATH="coverage/classpython$12306.coverage" NAME="12306 Coverage Results" MODIFIED="1546941486016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Ticket/Spiders" />
-    <SUITE FILE_PATH="coverage/classpython$signature_cloud.coverage" NAME="signature_cloud Coverage Results" MODIFIED="1553501602242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/python-wechat-itchat" />
-    <SUITE FILE_PATH="coverage/classpython$service_caochong_thread.coverage" NAME="service_caochong_thread Coverage Results" MODIFIED="1547727852966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/spiltword/splitword" />
-    <SUITE FILE_PATH="coverage/classpython$setup__1_.coverage" NAME="setup (1) Coverage Results" MODIFIED="1553500863455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/mayan-edms-master" />
-    <SUITE FILE_PATH="coverage/classpython$pyinstall.coverage" NAME="pyinstall Coverage Results" MODIFIED="1558497047490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
-    <SUITE FILE_PATH="coverage/classpython$Unittests_for_Unit_test_testHttpRequset_test_get.coverage" NAME="Unittests for Unit_test.testHttpRequset.test_get Coverage Results" MODIFIED="1551767533707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_atuo_cases0508/public" />
-    <SUITE FILE_PATH="coverage/classpython$The_Stolen_Crown.coverage" NAME="The_Stolen_Crown Coverage Results" MODIFIED="1548238749924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/The-Stolen-Crown-RPG" />
-    <SUITE FILE_PATH="coverage/classpython$blockchain.coverage" NAME="blockchain Coverage Results" MODIFIED="1551921802781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myblock" />
-    <SUITE FILE_PATH="coverage/classpython$makesql.coverage" NAME="makesql Coverage Results" MODIFIED="1554519870528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghmysql" />
-    <SUITE FILE_PATH="coverage/classpython$douyin2.coverage" NAME="douyin2 Coverage Results" MODIFIED="1554637943355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider" />
-    <SUITE FILE_PATH="coverage/classpython$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1552377655519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/open-paperless-master" />
-    <SUITE FILE_PATH="coverage/classpython$keras.coverage" NAME="表情识别keras Coverage Results" MODIFIED="1551316672935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
-    <SUITE FILE_PATH="coverage/classpython$Vibrato__1_.coverage" NAME="Vibrato (1) Coverage Results" MODIFIED="1558497068456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
-    <SUITE FILE_PATH="coverage/classpython$oracle_insert.coverage" NAME="oracle_insert Coverage Results" MODIFIED="1551947070390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghoracle" />
-    <SUITE FILE_PATH="coverage/classpython$constructors.coverage" NAME="constructors Coverage Results" MODIFIED="1548238433061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Python/Lib/site-packages/pandas/tests/extension/base" />
-    <SUITE FILE_PATH="coverage/classpython$sco1.coverage" NAME="sco1 Coverage Results" MODIFIED="1550645674434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$Vibrato.coverage" NAME="Vibrato Coverage Results" MODIFIED="1558433706574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Douyin" />
-    <SUITE FILE_PATH="coverage/classpython$mario_level_1.coverage" NAME="mario_level_1 Coverage Results" MODIFIED="1556264947948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/Mario-Level" />
-    <SUITE FILE_PATH="coverage/classpython$pymongo1.coverage" NAME="pymongo1 Coverage Results" MODIFIED="1551231397504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
-    <SUITE FILE_PATH="coverage/classpython$face_recognition_cli.coverage" NAME="face_recognition_cli Coverage Results" MODIFIED="1549863825996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/git_home/face_recognition/face_recognition" />
-    <SUITE FILE_PATH="coverage/classpython$Cut_image.coverage" NAME="Cut_image Coverage Results" MODIFIED="1551144196306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/classpython$douyintest009_yufei.coverage" NAME="douyintest009_yufei Coverage Results" MODIFIED="1554638205385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="数据库" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="172.16.20.130" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="数据库" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="172.16.20.130" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="数据库" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="172.16.20.130" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="movie: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
+    <SUITE FILE_PATH="coverage/classpython$wenkuDownl.coverage" NAME="wenkuDownl Coverage Results" MODIFIED="1562046543383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1561029417011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
+    <SUITE FILE_PATH="coverage/classpython$system.coverage" NAME="system Coverage Results" MODIFIED="1562048155827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/animal_system" />
+    <SUITE FILE_PATH="coverage/classpython$classpython.coverage" NAME="classpython Coverage Results" MODIFIED="1562052673961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-402259594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="55" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="4" />
-          <entry key="project.open.time.15" value="9" />
-          <entry key="project.open.time.16" value="7" />
-          <entry key="project.open.time.17" value="5" />
-          <entry key="project.open.time.18" value="9" />
-          <entry key="project.open.time.19" value="3" />
-          <entry key="project.open.time.20" value="4" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="76" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="3" />
-          <entry key="admin" value="3" />
-          <entry key="bat" value="1" />
-          <entry key="cdn_list" value="5" />
-          <entry key="conf" value="22" />
-          <entry key="css" value="10" />
-          <entry key="dat" value="1" />
-          <entry key="gradlew" value="1" />
-          <entry key="html" value="119" />
-          <entry key="iml" value="1" />
-          <entry key="jpg" value="9" />
-          <entry key="js" value="3" />
-          <entry key="json" value="2" />
-          <entry key="log" value="8" />
-          <entry key="md" value="10" />
-          <entry key="movie" value="3" />
-          <entry key="png" value="19" />
-          <entry key="py" value="775" />
-          <entry key="pyi" value="6" />
-          <entry key="recon-cli" value="1" />
-          <entry key="recon-web" value="2" />
-          <entry key="rnc" value="1" />
-          <entry key="robot" value="3" />
-          <entry key="sql" value="8" />
-          <entry key="txt" value="21" />
-          <entry key="user" value="1" />
-          <entry key="xml" value="4" />
-          <entry key="yaml" value="8" />
-          <entry key="yml" value="3" />
+          <entry key="ipynb" value="4" />
+          <entry key="jpg" value="1" />
+          <entry key="py" value="6" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="10" />
-          <entry key="Database Element" value="7" />
-          <entry key="Dockerfile" value="3" />
-          <entry key="HTML" value="119" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="28" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="3" />
-          <entry key="Log" value="8" />
-          <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="778" />
-          <entry key="PythonStub" value="6" />
-          <entry key="RNG Compact" value="1" />
-          <entry key="Robot Feature" value="3" />
-          <entry key="SQL" value="2" />
-          <entry key="Scratch" value="6" />
-          <entry key="XML" value="4" />
-          <entry key="YAML" value="11" />
+          <entry key="IPNB" value="4" />
+          <entry key="Image" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1" />
-          <entry key="cdn_list" value="478" />
-          <entry key="css" value="27" />
-          <entry key="dummy" value="16" />
-          <entry key="html" value="3686" />
-          <entry key="json" value="12" />
-          <entry key="py" value="13995" />
-          <entry key="sql" value="48" />
-          <entry key="txt" value="225" />
-          <entry key="yaml" value="59" />
+          <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="27" />
-          <entry key="HTML" value="3686" />
-          <entry key="JSON" value="12" />
-          <entry key="PLAIN_TEXT" value="719" />
-          <entry key="Python" value="13996" />
-          <entry key="SQL" value="48" />
-          <entry key="YAML" value="59" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="classpython" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-=======
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="343" column="16" lean-forward="true" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
-              <folding>
-                <element signature="e#144#163#0" expanded="true" />
-              </folding>
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="403" column="12" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="16" />
-              <folding>
-                <element signature="e#144#163#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="74" column="6" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="83" />
->>>>>>> 416b76d23580412648d68c0ec6b8ac064cc2adb9
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>HX</find>
-      <find>zip</find>
-      <find>127.0.0.1</find>
-      <find>5000</find>
-      <find>47</find>
-      <find>127</find>
-      <find>actstream</find>
-      <find>sh</find>
-      <find>moves</find>
-      <find>unicode</find>
-    </findStrings>
-    <dirStrings>
-      <dir>D:\classpython\Flask_study</dir>
-      <dir>D:\classpython\app</dir>
-      <dir>C:\Users\84908\Desktop\MayanEDMS-CN</dir>
-      <dir>D:\mayan-edms-master</dir>
-    </dirStrings>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/open-paperless-master/mayan/apps/documents/settings.py" />
-        <option value="D:/open-paperless-master/mayan/apps/converter/classes.py" />
-        <option value="$PROJECT_DIR$/微信僵尸粉检测.py" />
-        <option value="D:/git_home/python-wechat-itchat/wechat_fri_fm.py" />
-        <option value="D:/Python/Python36/Lib/site-packages/echarts/__init__.py" />
-        <option value="$PROJECT_DIR$/interface_atuo_cases0508/public/writeExcel.py" />
-        <option value="$PROJECT_DIR$/price/跨表数据添加.py" />
-        <option value="$PROJECT_DIR$/price/pandas_findexls.py" />
-        <option value="$PROJECT_DIR$/price/exls数据查询插入.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/tag_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/movie_edit.html" />
-        <option value="$PROJECT_DIR$/zghmysql/db.conf" />
-        <option value="$PROJECT_DIR$/zghoracle/auto_oracle_insert.py" />
-        <option value="$PROJECT_DIR$/zghmysql/makesql.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/DouYin.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyintest.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin2.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyintest009_yufei.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyintest002.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin_device.txt" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/amemv-crawler/trunk/share-url.txt" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin/trunk/douyin_download.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin_pro.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/DouYin_Video/trunk/Spiders/douyin_video.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_spider/trunk/feed_spider.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douy.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider/douyintest009_yufei.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider/douyintest002.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Python-spider-lean/douyin-spider/douyin.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/models.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/admin/forms.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/preview_add.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/preview_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/preview_edit.html" />
-        <option value="$PROJECT_DIR$/Tianyanc.py" />
-        <option value="$PROJECT_DIR$/openDoor.py" />
-        <option value="$PROJECT_DIR$/Flask_study/manage.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/__init__.py" />
-        <option value="$PROJECT_DIR$/interface_atuo_cases0508/conf/smtpconf.conf" />
-        <option value="D:/git_home/Douyin/pyinstall.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py" />
-        <option value="D:/git_home/Douyin/Vibrato.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py" />
-        <option value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html" />
-        <option value="$PROJECT_DIR$/Flask_study/app/admin/views.py" />
-        <option value="$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html" />
+        <option value="$PROJECT_DIR$/wenkuDownl.py" />
+        <option value="$PROJECT_DIR$/identify_the_animal/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb" />
       </list>
     </option>
   </component>
@@ -414,22 +97,19 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="632" />
-    <option name="width" value="975" />
-    <option name="height" value="867" />
+    <option name="x" value="778" />
+    <option name="width" value="1149" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
         <expanded-state>
           <State />
-          <State>
-            <id>Python</id>
-          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyCompatibilityInspection</id>
+            <id>Angular</id>
           </State>
         </selected-state>
       </profile-state>
@@ -441,91 +121,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-=======
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> 416b76d23580412648d68c0ec6b8ac064cc2adb9
-              <item name="抖音视频爬取" type="462c0819:PsiDirectoryNode" />
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Flask_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ul" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope '!predefined.scope.project.files.name!'; set:!predefined.scope.project.files.name!; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="classpython" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -534,29 +136,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="D:/git_home/Douyin" />
+    <property name="last_opened_file_path" value="D:/MyPython" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\classpython\opendoor" />
       <recent name="D:\classpython" />
-      <recent name="D:\classpython\抖音视频爬取\Python-spider-lean" />
-      <recent name="D:\classpython\抖音视频爬取\Douyin_spider" />
-      <recent name="D:\classpython\抖音视频爬取" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\classpython" />
-      <recent name="D:\classpython\robot" />
-      <recent name="D:\classpython\image" />
-      <recent name="D:\classpython\Flask_study\app\static\anim\images" />
-      <recent name="D:\classpython\Flask_study\app\static\anim\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -571,95 +159,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Vibrato (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Jupyter Notebook.classpython">
+    <configuration name="classpython" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Vibrato" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Douyin" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../git_home/Douyin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../git_home/Douyin/Vibrato.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -669,7 +185,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -677,29 +193,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="douyin" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抖音视频爬取/douyin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -713,7 +207,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask_study" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -728,20 +222,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pyinstall" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="system" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/animal_system" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/animal_system/system.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -750,382 +244,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
-      <module name="Mario-Level" />
+    <configuration name="wenkuDownl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <module name="Mario-Level" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wenkuDownl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.douyin" />
-      <item itemvalue="Python.Vibrato" />
-      <item itemvalue="Python.pyinstall" />
-      <item itemvalue="Python.Vibrato (1)" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.wenkuDownl" />
+      <item itemvalue="Python.system" />
+      <item itemvalue="Jupyter Notebook.classpython" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.system" />
+        <item itemvalue="Python.wenkuDownl" />
         <item itemvalue="Python.manage" />
-        <item itemvalue="Python.Vibrato (1)" />
-        <item itemvalue="Python.pyinstall" />
-        <item itemvalue="Python.Vibrato" />
-        <item itemvalue="Python.douyin" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SvnConfiguration" cleanupOnStartRun="true">
+  <component name="SvnConfiguration">
     <configuration>C:\Users\84908\AppData\Roaming\Subversion</configuration>
-    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="362af91a-6b47-4385-a6a5-fb3a41d9ad5d" name="默认的" comment="" />
-      <created>1546938080036</created>
+      <changelist id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="" />
+      <created>1561028540898</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1546938080036</updated>
+      <updated>1561028540898</updated>
     </task>
-    <task id="LOCAL-00001" summary="更新插入表单格式">
-      <created>1546942888679</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1546942888679</updated>
-    </task>
-    <task id="LOCAL-00002" summary="更新插入表单格式">
-      <created>1547001776927</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1547001776927</updated>
-    </task>
-    <task id="LOCAL-00003" summary="更新插入表单格式">
-      <created>1547021222326</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1547021222327</updated>
-    </task>
-    <task id="LOCAL-00004" summary="更新插入表单格式">
-      <created>1547022382520</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1547022382520</updated>
-    </task>
-    <task id="LOCAL-00005" summary="跟新">
-      <created>1547101559238</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1547101559239</updated>
-    </task>
-    <task id="LOCAL-00006" summary="跟新">
-      <created>1547106038675</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1547106038675</updated>
-    </task>
-    <task id="LOCAL-00007" summary="跟新">
-      <created>1547207111820</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1547207111821</updated>
-    </task>
-    <task id="LOCAL-00008" summary="跟新">
-      <created>1547280072166</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1547280072166</updated>
-    </task>
-    <task id="LOCAL-00009" summary="跟新">
-      <created>1547687558307</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1547687558308</updated>
-    </task>
-    <task id="LOCAL-00010" summary="新增小项目：21点游戏，批量修改文件名称">
-      <created>1548658888895</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1548658888895</updated>
-    </task>
-    <task id="LOCAL-00011" summary="新增Flask学习文档，安卓端模拟按键抢红包">
-      <created>1549865193732</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1549865193733</updated>
-    </task>
-    <task id="LOCAL-00012" summary="新增Flask—微电影网站学习目录以及源码">
-      <created>1549957635140</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1549957635141</updated>
-    </task>
-    <task id="LOCAL-00013" summary="更新">
-      <created>1549957744392</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1549957744392</updated>
-    </task>
-    <task id="LOCAL-00014" summary="完成会员注册页面搭建代码">
-      <created>1549965833761</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1549965833761</updated>
-    </task>
-    <task id="LOCAL-00015" summary="完成标签页面增删改代码、新增标签编辑页面">
-      <created>1552028031717</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1552028031717</updated>
-    </task>
-    <task id="LOCAL-00016" summary="新增添加预告、预告列表代码">
-      <created>1555049542854</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1555049542854</updated>
-    </task>
-    <task id="LOCAL-00017" summary="新增门禁请求代码">
-      <created>1557198086266</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1557198086267</updated>
-    </task>
-    <task id="LOCAL-00018" summary="更新单个抖音下载">
-      <created>1558494419069</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1558494419069</updated>
-    </task>
-    <task id="LOCAL-00019" summary="完成收藏列表代码更新">
-      <created>1558667603129</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1558667603129</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Unittests_for_test_face_recognition_Test_face_recognition_test_fd_command_line_interface_cnn_model - 2019.02.11 at 13h 43m 12s.xml">
-      <configuration name="Unittests for test_face_recognition.Test_face_recognition.test_fd_command_line_interface_cnn_model" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_sco_py - 2019.02.20 at 14h 25m 49s.xml">
-      <configuration name="Unittests in sco.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_sco_py - 2019.02.20 at 14h 26m 42s.xml">
-      <configuration name="Unittests in sco.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_sco_py - 2019.02.20 at 14h 27m 17s.xml">
-      <configuration name="Unittests in sco.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Unit_test_testHttpRequset_test_get - 2019.03.05 at 14h 32m 21s.xml">
-      <configuration name="Unittests for Unit_test.testHttpRequset.test_get" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Unit_test_py - 2019.03.05 at 14h 33m 12s.xml">
-      <configuration name="Unittests in Unit_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Unit_test_py - 2019.05.06 at 17h 29m 04s.xml">
-      <configuration name="Unittests in Unit_test.py" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="632" y="0" width="975" height="867" extended-state="0" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-    <editor active="true" />
->>>>>>> 416b76d23580412648d68c0ec6b8ac064cc2adb9
+    <frame x="778" y="0" width="1149" height="1047" extended-state="0" />
     <layout>
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.23606557" />
-=======
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.23060109" />
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-      <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
-      <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2543618" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
-      <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info active="true" anchor="bottom" id="运行" order="8" sideWeight="0.47540984" visible="true" weight="0.27185792" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
-      <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.329235" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.329235" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.52459013" side_tool="true" weight="0.2704918" />
-      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.3237705" />
-      <window_info anchor="bottom" id="Python Console" order="16" weight="0.32786885" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32103825" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="运行" order="7" weight="0.24780701" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32894737" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="调试" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32894737" />
+      <window_info anchor="right" x="0" y="0" width="237" height="847" id="文档" side_tool="true" weight="0.32966024" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32328105" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32690248" />
-      <window_info anchor="right" id="数据库" order="5" weight="0.3279743" />
-      <window_info anchor="right" x="0" y="0" width="251" height="667" id="文档" order="6" side_tool="true" weight="0.32925764" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.24563445" />
-      <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.12082262" />
-      <window_info id="Favorites" order="2" sideWeight="0.50136614" side_tool="true" weight="0.16855896" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
-      <window_info anchor="bottom" id="找到" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.4832905" visible="true" weight="0.21994536" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
-      <window_info anchor="bottom" id="检验" order="11" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.329235" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5167095" side_tool="true" weight="0.28005466" />
-      <window_info anchor="bottom" id="调试" order="15" sideWeight="0.49868995" weight="0.3237705" />
-      <window_info anchor="bottom" id="Python Console" order="16" weight="0.32786885" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32103825" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32328105" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32712457" />
-      <window_info anchor="right" id="数据库" order="5" weight="0.3279743" />
-      <window_info anchor="right" x="0" y="0" width="251" height="667" id="文档" order="6" side_tool="true" weight="0.32925764" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1133,355 +328,76 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/chinese-poetry" />
-      <path value="$PROJECT_DIR$/facenet" />
-      <path value="D:/git_home/eos" />
-      <path value="D:/git_home/spiltword/splitword" />
-      <path value="D:/git_home/tianyancha" />
-      <path value="$USER_HOME$/Desktop/app" />
-      <path value="D:/git_home/12306" />
-      <path value="D:/git_home/DoraemonKit" />
-      <path value="D:/git_home/Mario-Level" />
-      <path value="D:/git_home/The-Stolen-Crown-RPG" />
-      <path value="D:/git_home/Ticket" />
-      <path value="D:/git_home/birdseye" />
-      <path value="D:/git_home/deep-learning" />
-      <path value="D:/git_home/edex-ui" />
-      <path value="D:/git_home/face_recognition" />
-      <path value="D:/git_home/faceai" />
-      <path value="D:/git_home/python-wechat-itchat" />
-      <path value="D:/git_home/Douyin" />
-      <path value="$PROJECT_DIR$/抖音视频爬取/Douying" />
-    </ignored-roots>
-    <MESSAGE value="更新插入表单格式" />
-    <MESSAGE value="修改火车票购买人信息" />
-    <MESSAGE value="跟新" />
-    <MESSAGE value="新增小项目：21点游戏，批量修改文件名称" />
-    <MESSAGE value="新增Flask学习文档，安卓端模拟按键抢红包" />
-    <MESSAGE value="新增Flask—微电影网站学习目录以及源码" />
-    <MESSAGE value="更新" />
-    <MESSAGE value="完成会员登录页面搭建代码" />
-    <MESSAGE value="完成会员注册页面搭建代码" />
-    <MESSAGE value="完成标签页面增删改代码、新增标签编辑页面" />
-    <MESSAGE value="新增添加预告、预告列表代码" />
-    <MESSAGE value="新增门禁请求代码" />
-    <MESSAGE value="更新单个抖音下载" />
-    <MESSAGE value="完成收藏列表代码更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成收藏列表代码更新" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Python36/Lib/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="989" selection-start-line="989" selection-end-line="989" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/tianyancha/QueueTyc.py" />
-    <entry file="file://$PROJECT_DIR$/Tianyanc.py" />
-    <entry file="das://3fe5fa59-c15e-49e5-b8b6-a999d31bbd19/schema/movie/table/user" />
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/preview_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zghoracle/oracle_insert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="110" column="85" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/Mario-Level/mario_level_1.py" />
-    <entry file="file://D:/git_home/edex-ui/README.md" />
-    <entry file="file://D:/git_home/faceai/faceai/compose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python5_RobotFramework_web自动化项目实战/测试数据/登陆_测试数据.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/urllib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/site-packages/urllib3/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/git_home/python-wechat-itchat/wechat_fri_fm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/interface_register/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1103" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/Result/htmlreport/2018-05-15_13_26_15.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/Result/log/Api_Autotest_log_2019-03-06.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/Unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1310" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/site-packages/requests/adapters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="505" selection-start-line="505" selection-end-line="505" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/smtp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/conf/smtpconf.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opendoor/openDoor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/conf/case.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/conf/Allpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zghoracle/insert_data.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zghoracle/auto_oracle_insert.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/interface_auto_cases0505.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/git_home/Douyin/form.py" />
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="343" column="16" lean-forward="true" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
-          <folding>
-            <element signature="e#144#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="60" column="104" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/preview_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/douyin/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Python36/Lib/site-packages/PyQt5/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/git_home/Douyin/pyinstall.py" />
-    <entry file="file://D:/git_home/Douyin/Vibrato.py" />
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="805">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-=======
-        <state relative-caret-position="217">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
+        <state relative-caret-position="334">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-=======
->>>>>>> 416b76d23580412648d68c0ec6b8ac064cc2adb9
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/douyin/douyin.py">
+    <entry file="file://$PROJECT_DIR$/download_photo/Get_photo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="229" column="3" lean-forward="true" selection-start-line="229" selection-start-column="3" selection-end-line="229" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/first_flask.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/Vibrato.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1402">
-          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        <state relative-caret-position="621">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="e#72#83#0" expanded="true" />
+            <element signature="e#149#179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/pyinstall.py">
+    <entry file="file://$PROJECT_DIR$/animal_system/mind.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animal_system/system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="506">
+          <caret line="97" column="26" lean-forward="true" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/抖音视频爬取/Douyin_one/form.py">
+    <entry file="file://$PROJECT_DIR$/animal_system/data.txt">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-1357">
-          <caret line="16" selection-start-line="16" selection-end-line="17" />
-=======
-        <state relative-caret-position="-422" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/__init__.py">
+    <entry file="file://$PROJECT_DIR$/wenkuDownl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/tag_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="29" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2277" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/admin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="403" column="12" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
           <folding>
-            <element signature="e#144#163#0" expanded="true" />
+            <element signature="e#166#181#0" expanded="true" />
           </folding>
->>>>>>> 4bb3a379689a1bc17a0b8afe9f0866afd8746e20
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/comment_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="83" />
+    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask_study/app/templates/admin/moviecol_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="74" column="6" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/Sub13.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/Sub11.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>

@@ -115,10 +115,10 @@ def parserPage (url, file_name):  # js地址
                 text = '\n'
 
             print(text, end='')
-            with open(file_name + '.doc', 'a') as fd:
+            with open(file_name + '.doc', 'a',encoding='utf-8') as fd:
                 fd.write(text)
 
 
 if __name__ == '__main__':
-    url = 'https://wenku.baidu.com/view/fcc4ea10c850ad02de8041c5.html?from=search'#input('请输入网址：')
+    url = 'https://wenku.baidu.com/view/6cb8518008a1284ac85043b3.html?pn=50'#input('请输入网址：')
     parserJS(url)
