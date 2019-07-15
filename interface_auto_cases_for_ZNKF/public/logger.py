@@ -7,6 +7,7 @@
 import logging
 import time
 import os
+
 class Log:
 
     def __init__(self,log_name,log_path):

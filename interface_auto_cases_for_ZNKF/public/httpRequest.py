@@ -41,11 +41,11 @@ class httpRequest:
             request=requests.get(url,data).json()
         elif method=='POST':
             logger.info('现在开始进行post请求')
-            # print(headers)
+            # print(headers)# body格式
             request=requests.post(url,json=data,headers=headers).json()
         elif method=='POST1':
             logger.info('现在开始进行post请求')
-            # print(headers)
+            # print(headers)# 参数格式
             request=requests.post(url,data,headers).json()
         else:
             logger.info('请求方法未知！请核对后在尝试！')
