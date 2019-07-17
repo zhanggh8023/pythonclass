@@ -1,31 +1,9 @@
 # -*- coding: utf-8 -*-
 # @Author  : zgh
 # @Email   : 849080458@qq.com
-# @File    : manage.py
+# @File    : smtp.py
 # @Software: PyCharm
-'''
-4-19 smtp&logging
-1:把发送邮件代码写成一个类，然后把这个类文件作为附件发给华华，邮箱：1255811581@qq.com
 
-2:把你自己写的日志模块写成一个类，要求自己能够随时定义日志收集级别以及日志输出级别，要求同时输出到控制台以及指定文件。
-1）级别指定，不管是日志收集还是日志输出，要求做成可配置（用到配置文件）
-2）输入格式formatter,要求做成可配置，我想输出什么格式就是什么格式（用到配置文件）
-'''
-
-'''
-*****邮件会跑到垃圾邮件里面
-[STMPMASSAGEMIAL]
-config={'mail_host':'smtp.qq.com',
-        'mail_user':'*********',
-        'mail_pass':'*********',
-        'receivers' : '*********',
-        'From':'月野*兔',
-        'To':'华华',
-        'subject' : 'Python SMTP 邮件发送代码',
-        'MIMEText':'这是Python5,yyt的邮件发送，以及邮件类的代码附件测试……',
-        'address':'python5_smtp.txt',
-        }
-'''
 
 import smtplib
 import configparser
@@ -34,7 +12,8 @@ import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-from interface_atuo_cases0508.conf import Allpath
+from interface_auto_cases_for_ZNKF.conf import Allpath
+
 
 class massageMail:
     def read_config (self,conf_path, section, option):
@@ -45,6 +24,7 @@ class massageMail:
 
     def Message(self,filename,receivers,):
         data=massageMail().read_config(Allpath.smtp_conf_path,'STMPMASSAGEMIAL','config')
+        print(data)
 
         # Python 发送带附件的邮件
         mail_host = data['mail_host']  # 设置服务器
@@ -64,11 +44,11 @@ class massageMail:
         # 邮件正文内容
         message.attach (MIMEText (data['MIMEText'], 'plain', 'utf-8'))
 
-        # 构造附件1，传送当前目录下的 python5_smtp.txt 文件
-        att1 = MIMEText (open (address+ '/2018-05-15_13_26_15.html', 'rb').read (), 'base64', 'utf-8')
+        # 构造附件1，传送当前目录下的 smtp.txt 文件
+        att1 = MIMEText (open (address+ '/'+filename+'.html', 'rb').read (), 'base64', 'utf-8')
         att1["Content-Type"] = 'application/octet-stream'
         # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
-        att1["Content-Disposition"] = 'attachment; filename="python5_smtp.html"'
+        att1["Content-Disposition"] = 'attachment; filename="znkf_interface_smtp.html"'
         message.attach (att1)
 
         try:
@@ -83,5 +63,5 @@ class massageMail:
 
 if __name__ == '__main__':
     now = time.strftime('%Y-%m-%d_%H_%M_%S')
-    massageMail().Message(now,'849080458@qq.com')
+    massageMail().Message(now,'[1441548753@qq.com,849080458@qq.com]')
 

@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 # @Author  : zgh
 # @Email   : 849080458@qq.com
-# @File    : manage.py
+# @File    : logger.py
 # @Software: PyCharm
 
 import logging
 import time
 import os
+
 class Log:
 
     def __init__(self,log_name,log_path):

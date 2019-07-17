@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 # @Author  : zgh
 # @Email   : 849080458@qq.com
-# @File    : manage.py
+# @File    : config.py
 # @Software: PyCharm
 
 
 import os
 import configparser
 
+
+#获取配置文件中的值，传入参数：项目路径，配置文件，标签
 class config:
     def read_config(self,conf_path,section,option):
         rc=configparser.RawConfigParser()

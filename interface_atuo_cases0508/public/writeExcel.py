@@ -1,12 +1,13 @@
+# -*- coding: utf-8 -*-
 # @Author  : zgh
 # @Email   : 849080458@qq.com
-# @File    : manage.py
+# @File    : writeExcel.py
 # @Software: PyCharm
 
 
 from openpyxl import Workbook,load_workbook
-from interface_atuo_cases0508.conf import Allpath
-from interface_atuo_cases0508.public.logger import Log
+from interface_auto_cases_for_ZNKF.conf import Allpath
+from interface_auto_cases_for_ZNKF.public.logger import Log
 
 logger=Log('auto_cases',Allpath.log_path)
 
@@ -21,10 +22,10 @@ class writeExcel:
         try:
             wb_new = load_workbook(self.file)
             sheet = wb_new[self.sheet]
-            sheet.cell(i, 7).value = dcit['code']
-            sheet.cell(i, 8).value = dcit['sql_result']
-            sheet.cell(i, 9).value = dcit['result']
-            sheet.cell(i, 10).value = dcit['msg']
+            sheet.cell(i, 8).value = dcit['code']
+            # sheet.cell(i,9).value = dcit['sql_result']
+            sheet.cell(i, 10).value = dcit['result']
+            # sheet.cell(i, 11).value = dcit['msg']
             wb_new.save(self.file)
             logger.info('执行写入excel成功！')
         except Exception as e:
@@ -67,4 +68,4 @@ class writeExcel:
 if __name__ == '__main__':
     header = ['学号', '姓名', '性别', '班级']
     data = [['001', 'sunny', 'F', 'python5'], ['002', '小胖雨', 'M', 'python5']]
-    print(writeExcel(Allpath.test_data_path,'test_cases1').write_Excel(1,{'code':1,'sql_result':000,'Result':333,'msg':555}))
+    print(writeExcel(Allpath.test_data_path,'Sheet1').write_Excel(1,{'code':'zgh','sql_result':000,'result':333,'msg':555}))
