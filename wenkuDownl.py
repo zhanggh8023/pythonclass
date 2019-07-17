@@ -120,5 +120,5 @@ def parserPage (url, file_name):  # js地址
 
 
 if __name__ == '__main__':
-    url = 'https://wenku.baidu.com/view/6cb8518008a1284ac85043b3.html?pn=50'#input('请输入网址：')
+    url = 'https://wenku.baidu.com/view/f6ab2857590216fc700abb68a98271fe910eafc9.html'#input('请输入网址：')
     parserJS(url)
