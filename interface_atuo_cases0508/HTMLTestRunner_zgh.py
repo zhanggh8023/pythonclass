@@ -277,8 +277,12 @@ class Template_mixin(object):
         <script type="text/javascript">
         var myChartline = echarts.init(document.getElementById('chartline'));
         var optionline = {
-                color:['#06ff26','#001686','#f31616'],
-                tooltip: {
+            title : {
+                text: '近十次接口测试情况展示',
+                subtext: '成功表示：接口验证通过；失败表示：接口验证失败；错误表示：接口验证报错。'
+            },
+            color:['#06ff26','#001686','#f31616'],
+            tooltip: {
                 trigger: 'axis',
                 axisPointer: {
                     type: 'cross',
@@ -288,21 +292,24 @@ class Template_mixin(object):
                 }
             },
             toolbox: {
+                show : true,
                 feature: {
+                    mark : {show: true},
                     dataView: {show: true, readOnly: false},
                     magicType: {show: true, type: ['line', 'bar']},
                     restore: {show: true},
                     saveAsImage: {show: true}
                 }
             },
+            calculable : true,
             legend: {
                 data:['错误','成功','失败'],
-                backgroundColor:['#d63131','#449dd4','#af29e4']
+                //backgroundColor:['#d63131','#449dd4','#af29e4']
             },
             xAxis: [
                 {
                     type: 'category',
-                    data: [' 第一次','第二次','第三次','第四次','第五次','第六次','第七次','第八次','第九次','第十次'],
+                    data: [' 近一次','近二次','近三次','近四次','近五次','近六次','近七次','近八次','近九次','近十次'],
                     axisPointer: {
                         type: 'shadow'
                     }
@@ -311,12 +318,12 @@ class Template_mixin(object):
             yAxis: [
                 {
                     type: 'value',
-                    name: '百分比',
+                    name: '',
                     min: 0,
-                    max: 100,
-                    interval: 20,
+                    max: 500,
+                    interval: 50,
                     axisLabel: {
-                        formatter: '{value} %%'
+                        formatter: '{value}'
                     }
                 },
                 {
@@ -335,7 +342,7 @@ class Template_mixin(object):
                     name:'成功',
                     type:'bar',
                     data:[%(Pass)s]
-                //data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                    //data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0]
                 },
                 {
                     name:'失败',

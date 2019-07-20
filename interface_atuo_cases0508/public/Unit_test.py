@@ -36,13 +36,15 @@ class testHttpRequset(unittest.TestCase):
     @data(*data2)#用data 来装饰我的测试用例
     #加一个* 号可以进行区分单个执行
     @unpack
-    def test_get(self,id,method,url,data,code,case_name):
+    def test_get(self,id,method,url,data,code,case_name,sql):
         logger.info('正在执行第%s条用例'%id)
         result_dict = {}
-        print(url,method,data)
-        result=httpRequest().httpGet(url,method,data)
+        print(url,method,data,sql)
+        result=httpRequest().httpGet(url,method,data,sql)
         result_dict['code']=result['code']
-
+        if 'data' in result.keys():
+            print(result['data'])
+            result_dict['data']=result['data']
         try:
             self.assertEqual(result['code'],str(code))
             result_dict['result']='pass'
@@ -61,4 +63,5 @@ class testHttpRequset(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 

@@ -41,10 +41,10 @@ class readExcel:
                 case_name=sheet.cell(row=i + 2, column=3).value
                 url=url_1+sheet.cell(row=i + 2, column=4).value
                 data=eval(sheet.cell(row=i+2,column=5).value)#取值excel中的字典
-                #print(url)
                 sql=eval(sheet.cell(row=i+2,column=6).value)
+                print(sql)
                 code=sheet.cell(row=i+2,column=7).value
-                dict={'id':i+1,'case_name':case_name,'url':url,'method':method,'data':data,'code':code}
+                dict={'id':i+1,'case_name':case_name,'url':url,'method':method,'sql':sql,'data':data,'code':code}
                 data_list.append(dict)
             #self.update_phone(initphone)#把最后的值更新到excel中
 
@@ -53,13 +53,14 @@ class readExcel:
             for i in range(sheet.max_row - 1):
                 id=sheet.cell(row=i + 2, column=1).value
                 if id in case_list:
+                    print(i)
                     method = sheet.cell(row=i + 2, column=2).value
-                    cases_name = sheet.cell(row=i + 2, column=3).value
+                    case_name = sheet.cell(row=i + 2, column=3).value
                     url = url_1+str(sheet.cell(row=i + 2, column=4).value)
                     data=eval(sheet.cell(row=i+2,column=5).value)#取值excel中的字典
                     sql=eval(sheet.cell(row=i+2,column=6).value)
                     code=sheet.cell(row=i+2,column=7).value
-                    dict={'id':i+1,'case_name':case_name,'url':url,'method':method,'data':data,'code':code}
+                    dict={'id':i+1,'case_name':case_name,'url':url,'method':method,'sql':sql,'data':data,'code':code}
                     data_list.append(dict)
         print(data_list)
         return data_list

@@ -28,11 +28,12 @@ class getMysqlInfo:
             result=cursor.fetchall()
         elif code==0:#查询一条信息
             result=cursor.fetchone()
-        cursor.close()
+            # print(result)
+        #cursor.close()
         cnn.close()
         return result
 
 
 if __name__ == '__main__':
-    sql_result=getMysqlInfo(Allpath.db_conf_path).get_mysql_info("select * from staff_summary_afterwards where keywords=%s","你好",0)
+    sql_result=getMysqlInfo(Allpath.db_conf_path).get_mysql_info("select * from organization where name=%s","测试新增机构2",0)
     print(sql_result)
