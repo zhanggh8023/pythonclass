@@ -118,7 +118,7 @@ def readexcel():
     data=[]
     for i in range(2,sheet.max_row + 1):
         dict = {"serveNo": "1563432328318457114", 'name': '', 'identity': ''}
-        dict['name'] = sheet.cell(row=2, column=1).value
+        dict['name'] = sheet.cell(row=i, column=1).value
         dict['identity']=(sheet.cell(row=i, column=2).value)
         data.append(dict)
     print(data)
