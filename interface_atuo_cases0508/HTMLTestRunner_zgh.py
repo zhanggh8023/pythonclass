@@ -8,7 +8,7 @@ Version 1.0.0.0 -zhanggh
 *新增判断成功、错误、失败、所有、概要独立显示
 *预留最近10天结果存储方法
 
-Version 0.8.2.1 -Findyou
+Version 0.8.2.1
 * 支持中文，汉化
 * 调整样式，美化（需要连入网络，使用的百度的Bootstrap.js）
 * 增加 通过分类显示、测试人员、通过率的展示
@@ -20,6 +20,7 @@ Version in 0.8.1
 * Validated XHTML (Wolfgang Borgert).
 * Added description of test classes and test cases.
 Version in 0.8.0
+
 * Define Template_mixin class for customization.
 * Workaround a IE 6 bug that it does not treat <script> block as CDATA.
 Version in 0.7.1
@@ -28,7 +29,6 @@ Version in 0.7.1
 """
 __author__ = "zhanggh"
 __version__ = "1.0.0.0"
-
 
 # TODO: color stderr
 # TODO: simplify javascript using ,ore than 1 class in the class attribute?
@@ -39,6 +39,8 @@ import sys
 import time
 import unittest
 from xml.sax import saxutils
+from public.writeExcel import writeexcel
+from public.readExcel import readexcel
 
 PY3K = (sys.version_info[0] > 2)
 if PY3K:
@@ -320,15 +322,15 @@ class Template_mixin(object):
                     type: 'value',
                     name: '',
                     min: 0,
-                    max: 500,
-                    interval: 50,
+                    max: 300,
+                    interval: 30,
                     axisLabel: {
                         formatter: '{value}'
                     }
                 },
                 {
                     type: 'value',
-                    name: '成功率',
+                    name: '错误率',
                     min: 0,
                     max: 10,
                     interval: 2,
@@ -341,20 +343,21 @@ class Template_mixin(object):
                 {
                     name:'成功',
                     type:'bar',
-                    data:[%(Pass)s]
-                    //data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0]
+                    //data:[%(Pass)s]
+                    data:%(Pass)s
                 },
                 {
                     name:'失败',
                     type:'bar',
-                    data:[%(fail)s]
+                    //data:[%(fail)s]
+                    data:%(fail)s
                 },
                 {
                     name:'错误',
                     type:'line',
                     yAxisIndex: 1,
-                    data:[%(error)s]
-                    //data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+                    //data:[%(error)s]
+                    data:%(error_1)s
                 }
             ]
         };
@@ -367,7 +370,7 @@ class Template_mixin(object):
             var option = {
                 color:['#06ff26','#001686','#f31616'],
                 title : {
-                    text: '测试执行情况',
+                    text: '近十次测试执行情况',
                     x:'center'
                 },
                 tooltip : {
@@ -381,7 +384,7 @@ class Template_mixin(object):
                 },
                 series : [
                     {
-                        name: '测试执行情况',
+                        name: '近十次测试执行情况',
                         type: 'pie',
                         radius : '60%%',
                         center: ['50%%', '60%%'],
@@ -638,8 +641,7 @@ class Template_mixin(object):
     </span></a></div>
     """
 
-
-# -------------------- The end of the Template class -------------------
+    # -------------------- The end of the Template class -------------------
     def __getattribute__(self, item):
         value = object.__getattribute__(self, item)
         if PY3K:
@@ -811,7 +813,6 @@ class HTMLTestRunner(Template_mixin):
 
         self.startTime = datetime.datetime.now()
 
-
     def run(self, test):
         "Run the given test case or test suite."
         result = _TestResult(self.verbosity)
@@ -822,7 +823,6 @@ class HTMLTestRunner(Template_mixin):
         print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime - self.startTime), file=sys.stderr)
 
         return result
-
 
     def sortResult(self, result_list):
         # unittest does not seems to run in any particular order.
@@ -847,23 +847,35 @@ class HTMLTestRunner(Template_mixin):
         startTime = str(self.startTime)[:19]
         duration = str(self.stopTime - self.startTime)
         status = []
-        status.append('共 %s' % (result.success_count + result.failure_count + result.error_count))
-        if result.success_count: status.append('通过 %s' % result.success_count)
-        if result.failure_count: status.append('失败 %s' % result.failure_count)
-        if result.error_count: status.append('错误 %s' % result.error_count)
+        count = {'sum': 0, 'ok': 0, 'fail': 0, 'error': 0,'error_1':0}
+        status.append('共 %s 条接口用例' % (result.success_count + result.failure_count + result.error_count))
+        count['sum'] = result.success_count + result.failure_count + result.error_count
+        if result.success_count:
+            status.append('通过 %s 条' % result.success_count)
+            count['ok'] = result.success_count
+        if result.failure_count:
+            status.append('失败 %s 条' % result.failure_count)
+            count['fail'] = result.failure_count
+        if result.error_count:
+            status.append('错误 %s 条' % result.error_count)
+            count['error'] = result.error_count
+            count['error_1']=str("%.2f%%" % (float(result.error_count) / float(result.success_count + result.failure_count + result.error_count) * 100))
         if status:
             status = '，'.join(status)
             self.passrate = str("%.2f%%" % (float(result.success_count) / float(
                 result.success_count + result.failure_count + result.error_count) * 100))
         else:
             status = 'none'
+        writeexcel(count)
+        writeexcel({"restult": str({'testname': self.tester, 'time': startTime, 'sumtime': duration, 'testresult': status,
+                                'tonggl': self.passrate})})
+
         return [
             (u'测试人员', self.tester),
             (u'开始时间', startTime),
             (u'合计耗时', duration),
             (u'测试结果', status + "，通过率= " + self.passrate),
         ]
-
 
     def generateReport(self, test, result):
         report_attrs = self.getReportAttributes(result)
@@ -887,7 +899,7 @@ class HTMLTestRunner(Template_mixin):
     def _generate_stylesheet(self):
         return self.STYLESHEET_TMPL
 
-    # 增加Tester显示 -Findyou
+    # 增加Tester显示
     def _generate_heading(self, report_attrs):
         a_lines = []
         for name, value in report_attrs:
@@ -956,9 +968,10 @@ class HTMLTestRunner(Template_mixin):
 
     def _generate_chart(self, result):
         chart = self.ECHARTS_SCRIPT % dict(
-            Pass=str(result.success_count),
-            fail=str(result.failure_count),
-            error=str(result.error_count),
+            Pass=str(readexcel()['ok']),
+            fail=str(readexcel()['fail']),
+            error=str(readexcel()['error']),
+            error_1=str(readexcel()['error_1']),
         )
         return chart
 

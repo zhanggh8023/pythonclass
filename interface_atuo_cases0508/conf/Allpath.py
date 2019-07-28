@@ -5,14 +5,14 @@
 # @Software: PyCharm
 
 import os
-from interface_auto_cases_for_ZNKF.public.config import readConfig
+from public.config import readConfig
 
 
-#项目地址
+
 path_conf_path=os.path.join(os.path.split(os.path.realpath(__file__))[0],'path.conf')
 #print(path_conf_path)
 
-
+#项目地址
 project_path=readConfig().get_value(path_conf_path,"PROJECT_PATH","project_path")
 print(project_path)
 

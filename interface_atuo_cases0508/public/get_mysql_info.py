@@ -4,9 +4,9 @@
 # @File    : manage.py
 # @Software: PyCharm
 
-from interface_auto_cases_for_ZNKF.public.config import config
-import mysql.connector
-from interface_auto_cases_for_ZNKF.conf import Allpath
+from public.config import config
+import pymysql
+from conf import Allpath
 
 class getMysqlInfo:
     def __init__(self,config_path):
@@ -16,7 +16,7 @@ class getMysqlInfo:
 
     def get_cnn(self):
         # 出入获取的配置文件，建立游标
-        cnn=mysql.connector.connect(**self.config)
+        cnn=pymysql.connect(**self.config)
         return cnn
 
     def get_mysql_info(self,my_sql,condition,code):
@@ -29,7 +29,7 @@ class getMysqlInfo:
         elif code==0:#查询一条信息
             result=cursor.fetchone()
             # print(result)
-        #cursor.close()
+        # cursor.close()
         cnn.close()
         return result
 

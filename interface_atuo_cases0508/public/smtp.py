@@ -12,8 +12,11 @@ import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-from interface_auto_cases_for_ZNKF.conf import Allpath
+from conf import Allpath
+from public.readExcel import readexcel
+from public.logger import Log
 
+logger=Log('auto_cases',Allpath.log_path)
 
 class massageMail:
     def read_config (self,conf_path, section, option):
@@ -25,6 +28,7 @@ class massageMail:
     def Message(self,filename,receivers,):
         data=massageMail().read_config(Allpath.smtp_conf_path,'STMPMASSAGEMIAL','config')
         print(data)
+        text=eval(readexcel()['restult'])
 
         # Python 发送带附件的邮件
         mail_host = data['mail_host']  # 设置服务器
@@ -37,12 +41,12 @@ class massageMail:
         # 创建一个带附件的实例
         message = MIMEMultipart ()
         message['From'] = Header (data['From'], 'utf-8')  # 邮件名字
-        message['To'] = Header (data['To'], 'utf-8')
+        message['To'] = Header (receivers, 'utf-8')
         subject = data['subject']
         message['Subject'] = Header (subject, 'utf-8')
 
         # 邮件正文内容
-        message.attach (MIMEText (data['MIMEText'], 'plain', 'utf-8'))
+        message.attach (MIMEText ('\n测试人员:'+str(text['testname'])+'\n开始时间:'+str(text['time'])+'\n合计耗时:'+str(text['sumtime'])+'\n测试结果:'+str(text['testresult'])+'\n通过率:'+str(text['tonggl'])+'\n\n'+data['MIMEText']+'\n\n'+"接口自动化测试报告【Python】：http://47.110.131.231:8500/", 'plain', 'utf-8'))
 
         # 构造附件1，传送当前目录下的 smtp.txt 文件
         att1 = MIMEText (open (address+ '/'+filename+'.html', 'rb').read (), 'base64', 'utf-8')
@@ -55,13 +59,13 @@ class massageMail:
             s = smtplib.SMTP_SSL (mail_host, 465)  # 连接上邮箱服务器
             s.login (mail_user, mail_pass)
             s.sendmail (mail_user, receivers.split(','), message.as_string ())
-            print ("邮件发送成功")
+            logger.info ("邮件发送成功")
         except smtplib.SMTPException as e:
-            print ("Error: 无法发送邮件")
+            logger.info ("Error: 无法发送邮件")
             raise e
 
 
 if __name__ == '__main__':
     now = time.strftime('%Y-%m-%d_%H_%M_%S')
-    massageMail().Message(now,'[1441548753@qq.com,849080458@qq.com]')
+    massageMail().Message(now,'849080458@qq.com')
 
