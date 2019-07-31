@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="》屏蔽打印信息">
-      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identify_the_animal/fist_part/class1.py" beforeDir="false" afterPath="$PROJECT_DIR$/identify_the_animal/fist_part/class1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identify_the_animal" beforeDir="false" />
       <change beforePath="D:/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_ZNKF/Result/htmlreport/report/index.html" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/Result/htmlreport/report/index.html" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_ZNKF/Result/log/Api_Autotest_log_2019-07-26.log" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/Result/log/Api_Autotest_log_2019-07-26.log" afterDir="false" />
@@ -30,6 +27,7 @@
     <SUITE FILE_PATH="coverage/classpython$3.coverage" NAME="3 Coverage Results" MODIFIED="1564112176632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1564458109073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_ZNKF" />
     <SUITE FILE_PATH="coverage/classpython$openDoor.coverage" NAME="openDoor Coverage Results" MODIFIED="1562924896890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opendoor" />
+    <SUITE FILE_PATH="coverage/classpython$class1__1_.coverage" NAME="class1 (1) Coverage Results" MODIFIED="1564564158066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/identify_the_animal/fist_part" />
     <SUITE FILE_PATH="coverage/classpython$wenkuDownl.coverage" NAME="wenkuDownl Coverage Results" MODIFIED="1563258779968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$setup__1_.coverage" NAME="setup (1) Coverage Results" MODIFIED="1564470497976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Python37/Lib/site-packages/fastai" />
     <SUITE FILE_PATH="coverage/classpython$system.coverage" NAME="system Coverage Results" MODIFIED="1562048155827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/animal_system" />
@@ -51,7 +49,7 @@
     <SUITE FILE_PATH="coverage/classpython$pytest_for_Unit_test_testHttpRequset.coverage" NAME="pytest for Unit_test.testHttpRequset Coverage Results" MODIFIED="1563328611334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
     <SUITE FILE_PATH="coverage/classpython$pytest_in_Unit_test_py.coverage" NAME="pytest in Unit_test.py Coverage Results" MODIFIED="1563328912946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
     <SUITE FILE_PATH="coverage/classpython$writeExcel.coverage" NAME="writeExcel Coverage Results" MODIFIED="1563277993981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
-    <SUITE FILE_PATH="coverage/classpython$classpython.coverage" NAME="classpython Coverage Results" MODIFIED="1564552062536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/classpython$classpython.coverage" NAME="classpython Coverage Results" MODIFIED="1564564012054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-402259594">
@@ -80,7 +78,7 @@
         <counts>
           <entry key="conf" value="33" />
           <entry key="html" value="9" />
-          <entry key="ipynb" value="16" />
+          <entry key="ipynb" value="17" />
           <entry key="jpg" value="2" />
           <entry key="log" value="6" />
           <entry key="md" value="4" />
@@ -93,7 +91,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="9" />
-          <entry key="IPNB" value="16" />
+          <entry key="IPNB" value="17" />
           <entry key="Image" value="5" />
           <entry key="Log" value="6" />
           <entry key="Markdown" value="4" />
@@ -107,12 +105,12 @@
           <entry key="conf" value="88" />
           <entry key="dummy" value="8" />
           <entry key="py" value="2855" />
-          <entry key="txt" value="187" />
+          <entry key="txt" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="283" />
+          <entry key="PLAIN_TEXT" value="294" />
           <entry key="Python" value="2855" />
         </counts>
       </usages-collector>
@@ -124,10 +122,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/identify_the_animal/fist_part/class1.py">
+        <entry file="file://$PROJECT_DIR$/identify_the_animal_star/fist_part/class1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="276">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="e#191#219#0" expanded="true" />
               </folding>
@@ -216,7 +214,6 @@
         <option value="D:/interface_auto_cases_for_ZNKF/conf/case.conf" />
         <option value="D:/Python/Python36/Lib/site-packages/transforms/__init__.py" />
         <option value="$PROJECT_DIR$/identify_the_animal/IdentifyTheAnimal/first_part.py" />
-        <option value="$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb" />
         <option value="D:/interface_auto_cases_for_ZNKF/main.py" />
         <option value="D:/Python37/Lib/site-packages/fastai/imports/__init__.py" />
         <option value="D:/Python37/Lib/site-packages/transforms/safe_html.py" />
@@ -226,6 +223,7 @@
         <option value="D:/identify_the_animal/notebooks/Sub10.ipynb" />
         <option value="D:/identify_the_animal/fist_part/class1.py" />
         <option value="$PROJECT_DIR$/identify_the_animal/fist_part/class1.py" />
+        <option value="$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb" />
       </list>
     </option>
   </component>
@@ -274,23 +272,6 @@
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="identify_the_animal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="identify_the_animal" type="462c0819:PsiDirectoryNode" />
-              <item name="fist_part" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="identify_the_animal" type="462c0819:PsiDirectoryNode" />
-              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -302,7 +283,7 @@
     <property name="last_opened_file_path" value="D:/Python37/Lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -328,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.class1">
+  <component name="RunManager" selected="Python.class1 (1)">
     <configuration name="classpython" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -413,6 +394,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="class1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/identify_the_animal/fist_part" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/identify_the_animal/fist_part/class1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="class1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="identify_the_animal" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -427,28 +430,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../identify_the_animal/fist_part/class1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="first_part" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/identify_the_animal/IdentifyTheAnimal" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/identify_the_animal/IdentifyTheAnimal/first_part.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -527,18 +508,18 @@
       <item itemvalue="Jupyter Notebook.classpython" />
       <item itemvalue="Python.未命名" />
       <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python.first_part" />
       <item itemvalue="Python.setup" />
       <item itemvalue="Python.class1" />
       <item itemvalue="Python.setup (1)" />
+      <item itemvalue="Python.class1 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.class1 (1)" />
         <item itemvalue="Python.class1" />
         <item itemvalue="Python.setup (1)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.setup" />
-        <item itemvalue="Python.first_part" />
       </list>
     </recent_temporary>
   </component>
@@ -658,7 +639,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564563582717</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="》更新">
+      <created>1564563739188</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564563739188</updated>
+    </task>
+    <task id="LOCAL-00017" summary="》深度学习">
+      <created>1564564378695</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564564378695</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -704,13 +699,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="1244" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.25591215" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.25591215" />
       <window_info id="Structure" order="1" sideWeight="0.501634" side_tool="true" weight="0.25895315" />
       <window_info id="Favorites" order="2" sideWeight="0.501634" side_tool="true" weight="0.25895315" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991554" visible="true" weight="0.3125" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991554" visible="true" weight="0.3125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -771,6 +767,7 @@
       <path value="$PROJECT_DIR$/interface_auto_cases_for_ZNKF" />
       <path value="$PROJECT_DIR$/identify_the_animal" />
       <path value="$PROJECT_DIR$/抖音视频爬取" />
+      <path value="D:/identify_the_animal" />
     </ignored-roots>
     <MESSAGE value="镇魂街漫画爬虫" />
     <MESSAGE value="autocase_znkf" />
@@ -786,7 +783,9 @@
     <MESSAGE value="》更新内容" />
     <MESSAGE value="Pytorch深度学习" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="》更新" />
+    <MESSAGE value="》深度学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="》深度学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -842,7 +841,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb" />
+    <entry file="file://$PROJECT_DIR$/identify_the_animal_star/notebooks/EnsembleSub10Sub11Sub13Sub16Sub18.ipynb" />
     <entry file="file://D:/interface_auto_cases_for_ZNKF/public/smtp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -875,7 +874,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/identify_the_animal/IdentifyTheAnimal/first_part.py" />
-    <entry file="file://$PROJECT_DIR$/identify_the_animal/notebooks/Sub10.ipynb" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/pycharm_load_entry_point.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1073,10 +1071,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/identify_the_animal/fist_part/class1.py">
+    <entry file="file://$PROJECT_DIR$/identify_the_animal_star/notebooks/Sub10.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identify_the_animal_star/fist_part/class1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="276">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding>
             <element signature="e#191#219#0" expanded="true" />
           </folding>
