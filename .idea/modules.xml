@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/classpython.iml" filepath="$PROJECT_DIR$/.idea/classpython.iml" />
+      <module fileurl="file://D:/identify_the_animal/.idea/identify_the_animal.iml" filepath="D:/identify_the_animal/.idea/identify_the_animal.iml" />
+      <module fileurl="file://D:/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" filepath="D:/interface_auto_cases_for_ZNKF/.idea/interface_auto_cases_for_ZNKF.iml" />
     </modules>
   </component>
 </project>

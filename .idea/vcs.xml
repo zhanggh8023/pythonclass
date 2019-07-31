@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/animal_system" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/identify_the_animal" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/interface_auto_cases_for_ZNKF" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/抖音视频爬取" vcs="Git" />
+    <mapping directory="D:/identify_the_animal" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_ZNKF" vcs="Git" />
   </component>
 </project>
