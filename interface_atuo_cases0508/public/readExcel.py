@@ -14,10 +14,10 @@ from public.logger import Log
 logger = Log('auto_cases', Allpath.log_path)
 url_1 = str(config().read_config(Allpath.http_conf_path, 'HTTP', 'url'))
 mode = config().read_config(Allpath.case_conf_path, 'FLAG', 'mode')
-logger.info("用例执行模式：0全部执行，1执行指定配置接口:%s" % mode)
+logger.info("用例执行模式（0全部执行，1执行指定配置接口）：%s" % mode)
 logger.info("服务地址配置：%s" % url_1)
 case_list = config().read_config(Allpath.case_conf_path, 'FLAG', 'case_list')
-logger.info("用例列表：%s" % case_list)
+logger.info("配置用例列表：%s" % case_list)
 
 
 class readExcel:

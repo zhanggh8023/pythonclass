@@ -2,6 +2,11 @@
 
 """
 Change History
+Version 1.1.0.0 -zhanggh
+*新增历史十次的测试结果展示
+*修改excel读取写入方法
+*添加错误率百分比
+
 Version 1.0.0.0 -zhanggh
 *新增报表格式
 *添加饼状图显示百分比
@@ -280,8 +285,8 @@ class Template_mixin(object):
         var myChartline = echarts.init(document.getElementById('chartline'));
         var optionline = {
             title : {
-                text: '近十次接口测试情况展示',
-                subtext: '成功表示：接口验证通过；失败表示：接口验证失败；错误表示：接口验证报错。'
+                text: '近十次情况展示',
+                subtext: '成功表示：验证通过；失败表示：验证失败；错误表示：验证报错。'
             },
             color:['#06ff26','#001686','#f31616'],
             tooltip: {
@@ -311,7 +316,7 @@ class Template_mixin(object):
             xAxis: [
                 {
                     type: 'category',
-                    data: [' 近一次','近二次','近三次','近四次','近五次','近六次','近七次','近八次','近九次','近十次'],
+                    data: ['最先','九次','八次','七次','六次','五次','四次','三次','两次','最近'],
                     axisPointer: {
                         type: 'shadow'
                     }
@@ -333,7 +338,7 @@ class Template_mixin(object):
                     name: '错误率',
                     min: 0,
                     max: 10,
-                    interval: 2,
+                    interval: 1,
                     axisLabel: {
                         formatter: '{value} %%'
                     }
@@ -874,7 +879,7 @@ class HTMLTestRunner(Template_mixin):
             (u'测试人员', self.tester),
             (u'开始时间', startTime),
             (u'合计耗时', duration),
-            (u'测试结果', status + "，通过率= " + self.passrate),
+            (u'本次结果', status + "，通过率= " + self.passrate),
         ]
 
     def generateReport(self, test, result):
@@ -967,11 +972,12 @@ class HTMLTestRunner(Template_mixin):
         return report
 
     def _generate_chart(self, result):
+        redata=readexcel()
         chart = self.ECHARTS_SCRIPT % dict(
-            Pass=str(readexcel()['ok']),
-            fail=str(readexcel()['fail']),
-            error=str(readexcel()['error']),
-            error_1=str(readexcel()['error_1']),
+            Pass=str(redata['ok']),
+            fail=str(redata['fail']),
+            error=str(redata['error']),
+            error_1=str(redata['error_1']),
         )
         return chart
 

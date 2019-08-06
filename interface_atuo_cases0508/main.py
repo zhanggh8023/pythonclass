@@ -10,9 +10,12 @@ from public.readExcel import readexcel
 from public.smtp import massageMail
 from public.logger import Log
 import requests
+import random
+
 
 logger=Log('auto_cases',Allpath.log_path)
-
+#去随机数赋值图片名称
+name=str(random.randint(0,10))
 
 
 # 2019年7月22日 10:40:51新增执行前清理原始用例结果记录
@@ -37,22 +40,22 @@ with open(file_path, 'wb+') as file:
 text=eval(readexcel()['restult'])
 logger.info('获取表单内容成功：%s' % text)
 #钉钉智能消息机器人
-url='https://oapi.dingtalk.com/robot/send?access_token=70ad4ab3cf005507ac40a6ed64ea50eb5e3c7c52b7abadac876974ab7f6b46a8'
+# url='https://oapi.dingtalk.com/robot/send?access_token=70ad4ab3cf005507ac40a6ed64ea50eb5e3c7c52b7abadac876974ab7f6b46a8'
 #测试地址
-# url='https://oapi.dingtalk.com/robot/send?access_token=c1ec1c545b7e7770c48464cfaa81182b15573063bdaf6bb30989bdf660b5307f'
+url='https://oapi.dingtalk.com/robot/send?access_token=c1ec1c545b7e7770c48464cfaa81182b15573063bdaf6bb30989bdf660b5307f'
 headers={"Content-Type":"application/json"}
 data={
      "msgtype": "markdown",
      "markdown": {
          "title": "智能客服接口自动化测试报告",
-         "text": "#### 智能客服接口自动化测试报告【Python】\n" +
+         "text": "#### 智能客服接口自动化测试报告【V0.3_kh】\n" +
                  "> 【测试人员】:"+str(text['testname']) + "\n" +
                  "\n> 【开始时间】:"+str(text['time']) + "\n" +
                  "\n> 【合计耗时】:"+str(text['sumtime']) + "\n" +
-                 "\n> 【测试结果】:"+str(text['testresult']) + "\n" +
+                 "\n> 【本次结果】:"+str(text['testresult']) + "\n" +
                  "\n> 【通过率】:"+str(text['tonggl']) + "\n" +
-                 "> ![screenshot](http://47.110.131.231:8500/cs.jpg)\n" +
-                 "> ###### " + now + " 发布 [在线查看报告详情](http://47.110.131.231:8500/) \n"
+                 "> ![screenshot](http://47.110.131.231:8500/" + name + ".jpg)\n" +
+                 "> ###### " + now[0:10] + " 发布 [在线查看报告详情](http://47.110.131.231:8500/) \n"
      },
     "at": {
         "atMobiles": [
@@ -62,13 +65,14 @@ data={
         "isAtAll": "false"
     }
  }
-request = requests.post(url, json=data, headers=headers).json()
-logger.info('钉钉机器人消息请求成功%s' % request)
+# request = requests.post(url, json=data, headers=headers).json()
+# logger.info("钉钉机器人消息请求内容%s" % data)
+# logger.info('钉钉机器人消息请求成功%s' % request)
 
 shutil.copyfile(Allpath.html_path+'/'+now+'.html',Allpath.html_path+'/report/index.html')
 # 当前时间，邮件对象
-name=['zhanggh@citydo.com.cn','sunb@citydo.com.cn','liyj@citydo.com.cn','zhanghx@citydo.com.cn','liyang@citydo.com.cn','wangm@citydo.com.cn','zhuxsz@citydo.com.cn','panyw@citydo.com.cn','xiongh@citydo.com.cn','chenrj@citydo.com.cn','chenq0148@citydo.com.cn','jinjl@citydo.com.cn','sunh@citydo.com.cn','chengf@citydo.com.cn','liuwenchao@citydo.com.cn','yangnk@citydo.com.cn','zhaoky@citydo.com.cn','xujm@citydo.com.cn','caoyq@citydo.com.cn','less@citydo.com.cn']
-# name=['zhanggh@citydo.com.cn','sunb@citydo.com.cn']
-for i in range(len(name)):
-    logger.info('发送邮箱为：%s' % name[i])
-    massageMail().Message(now,name[i])
+# #name=['zhanggh@citydo.com.cn','sunb@citydo.com.cn','liyj@citydo.com.cn','zhanghx@citydo.com.cn','liyang@citydo.com.cn','wangm@citydo.com.cn','zhuxsz@citydo.com.cn','panyw@citydo.com.cn','xiongh@citydo.com.cn','chenrj@citydo.com.cn','chenq0148@citydo.com.cn','jinjl@citydo.com.cn','sunh@citydo.com.cn','chengf@citydo.com.cn','liuwenchao@citydo.com.cn','yangnk@citydo.com.cn','zhaoky@citydo.com.cn','xujm@citydo.com.cn','caoyq@citydo.com.cn','less@citydo.com.cn']
+# name=['zhanggh@citydo.com.cn',]
+# for i in range(len(name)):
+#     logger.info('发送邮箱为：%s' % name[i])
+#     massageMail().Message(now,name[i])

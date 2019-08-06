@@ -35,5 +35,5 @@ class getMysqlInfo:
 
 
 if __name__ == '__main__':
-    sql_result=getMysqlInfo(Allpath.db_conf_path).get_mysql_info("select * from organization where name=%s","测试新增机构2",0)
+    sql_result=getMysqlInfo(Allpath.db_conf_path).get_mysql_info("select * from chat where tenant_id=%s ORDER BY id DESC","_1NTMWLA",0)
     print(sql_result)

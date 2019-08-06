@@ -85,15 +85,15 @@ def writeexcel(dict):
         i = sheet.max_row + 1
         if 'restult' in dict.keys():
             sheet.cell(2, 1).value = dict['restult']
-
+            logger.info('执行excel写入统计测试记录成功！')
         else:
             sheet.cell(i, 2).value = dict['sum']
             sheet.cell(i, 3).value = dict['ok']
             sheet.cell(i, 4).value = dict['fail']
             sheet.cell(i, 5).value = dict['error']
             sheet.cell(i, 6).value = dict['error_1']
+            logger.info('执行excel写入数据测试记录成功！')
         wb_new.save(file)
-        logger.info('执行excel写入测试记录成功！')
     except Exception as e:
         logger.info('执行excel写入测试记录失败！%s' % e)
         raise e

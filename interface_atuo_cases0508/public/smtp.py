@@ -27,7 +27,6 @@ class massageMail:
 
     def Message(self,filename,receivers,):
         data=massageMail().read_config(Allpath.smtp_conf_path,'STMPMASSAGEMIAL','config')
-        print(data)
         text=eval(readexcel()['restult'])
 
         # Python 发送带附件的邮件
@@ -46,7 +45,7 @@ class massageMail:
         message['Subject'] = Header (subject, 'utf-8')
 
         # 邮件正文内容
-        message.attach (MIMEText ('\n测试人员:'+str(text['testname'])+'\n开始时间:'+str(text['time'])+'\n合计耗时:'+str(text['sumtime'])+'\n测试结果:'+str(text['testresult'])+'\n通过率:'+str(text['tonggl'])+'\n\n'+data['MIMEText']+'\n\n'+"接口自动化测试报告【Python】：http://47.110.131.231:8500/", 'plain', 'utf-8'))
+        message.attach (MIMEText ('\n测试人员:'+str(text['testname'])+'\n开始时间:'+str(text['time'])+'\n合计耗时:'+str(text['sumtime'])+'\n本次结果:'+str(text['testresult'])+'\n通过率:'+str(text['tonggl'])+'\n\n'+data['MIMEText']+'\n\n'+"接口自动化测试报告【Python】：http://47.110.131.231:8500/", 'plain', 'utf-8'))
 
         # 构造附件1，传送当前目录下的 smtp.txt 文件
         att1 = MIMEText (open (address+ '/'+filename+'.html', 'rb').read (), 'base64', 'utf-8')

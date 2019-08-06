@@ -21,7 +21,7 @@ data1 = [{"id": 1, "url": "http://47.97.152.55//v1/staff/login", "method": "POST
           "data": {"username": "emhhbmcwMDE=", "password": "MTIzNDU2", "forceFlag": "true"}}]
 h = readExcel(Allpath.test_data_path, 'Sheet1')
 data2 = h.read_Excel()
-print(data2)
+# print(data2)
 t = writeExcel(Allpath.test_data_path, 'Sheet1')
 mode = config().read_config(Allpath.case_conf_path, 'FLAG', 'mode')
 ID = config().read_config(Allpath.case_conf_path, 'FLAG', 'case_list')

@@ -14,19 +14,29 @@ from public.get_mysql_info import getMysqlInfo
 logger = Log('auto_cases', Allpath.log_path)
 
 
-# 登录获取cookie
+# 登录获取客服cookie
 def get_login_cookie():
     url1 = "http://47.97.152.55/v1/staff/login"
     data1 = {"username": "emhhbmcwMDE=", "password": "MTIzNDU2", "forceFlag": "true"}
     session = requests.Session()
     request = requests.post(url1, data1).json()
-    logger.info("登录请求返回：%s" % request)
+    logger.info("客服登录请求返回：%s" % request)
     cookie_jar = session.post(url1, data1).cookies
     # print(cookie_jar)
     cookie = requests.utils.dict_from_cookiejar(cookie_jar)
-    logger.info("返回cookie：%s" % cookie)
+    logger.info("客服返回cookie：%s" % cookie)
     return cookie
 
+# 登录获取客户cookie
+def get_login_khcookie():
+    url1 = "http://47.97.152.55/v1/tenants/_1NTMWLA/sessions"
+    data1 = {"windowId":"WIN00000001","os":'null',"device":'null',"channel":"pc","msg_signature":"","timestamp":"","nonce":"","userinfo":"","ip":"","browserid":""}
+    session = requests.Session()
+    cookie_jar = session.post(url1, json=data1).cookies
+    # print(cookie_jar)
+    cookie = requests.utils.dict_from_cookiejar(cookie_jar)
+    logger.info("客户返回cookie：%s" % cookie)
+    return cookie
 
 # 退出登录
 def get_logout(url, data, headers):
@@ -41,13 +51,39 @@ class httpRequest:
         headers = {"Host": "47.97.152.55", "Connection": "keep-alive", "Origin": "http://47.97.152.55",
                    "X-TraceId": "b2486a20-a9d1-11e9-a2b4-5fa2b013c14c",
                    "Referer": "http://47.97.152.55/customerService/SystemManagement/Online", }
+        header={"Host": "47.97.152.55", "Connection": "keep-alive", "Origin": "http://47.97.152.55",
+                   "X-TraceId": "b2486a20-a9d1-11e9-a2b4-5fa2b013c14c",
+                   "Referer": "http://47.97.152.55/customerService/SystemManagement/Online", }
         oo = get_login_cookie()
+        pp= get_login_khcookie()
         headers["Cookie"] = 's_authorization=' + oo["s_authorization"]
+        header["Cookie"] = 'v_authorization=' + pp["v_authorization"]
         # headers["Content-Type"] = "application/json"
-        logger.info("当前headers配置：%s" % headers)
+        logger.info("当前客服headers配置：%s" % headers)
+        logger.info("当前客客户header配置：%s" % header)
         if method == 'GET':
             logger.info('现在开始进行get请求')
             request = requests.get(url, data, headers=headers).json()
+
+        elif method == 'GET_kh':
+            logger.info('现在开始进行get请求')
+            if data['1'] == 8:
+                sql_result = getMysqlInfo(Allpath.db_conf_path).get_mysql_info(sql['my_sql'], sql['condition'], sql['code'])
+                url1 = url % sql_result[8]
+                logger.info('现在开始进行数据库请求获取第8位uid：{},当前请求地址：{}'.format(sql_result, url1))
+                request = requests.get(url1, data, headers=header).json()
+            elif data['1'] == 0:
+                # print(header)
+                request = requests.get(url, headers=header).json()
+            else:
+                request = requests.get(url, data, headers=headers).json()
+        elif method == 'POST_kh':
+            logger.info('现在开始进行post请求')
+            data['from']=pp["visitor_id"]
+            # print(data)
+            # body格式
+            request = requests.post(url, json=data, headers=header).json()
+            request['code']=request['data']['message']
         elif method == 'POST':
             logger.info('现在开始进行post请求')
             # body格式
@@ -104,18 +140,30 @@ class httpRequest:
                 request = requests.put(url, data=json.dumps(data), headers=headers).json()
         elif method == 'DELETE':
             logger.info('现在开始进行delete请求')
-            sql_result = getMysqlInfo(Allpath.db_conf_path).get_mysql_info(sql['my_sql'], sql['condition'], sql['code'])
-            logger.info('数据库返回:' + str(sql_result))
-            logger.info("excel取值获取数据库返回第%s位：" % data['1'])
             # excel的data中指定：0表示正常请求，1取数据库返回第一个值，2指定数据库返回第二个值
             if data['1'] == 1:
+                sql_result = getMysqlInfo(Allpath.db_conf_path).get_mysql_info(sql['my_sql'], sql['condition'],
+                                                                               sql['code'])
+                logger.info('数据库返回:' + str(sql_result))
+                logger.info("excel取值获取数据库返回第%s位：" % data['1'])
                 url_del = url + str(sql_result[0])
                 logger.info("请求URL：%s" % url_del)
                 request = requests.delete(url_del, headers=headers).json()
             elif data['1'] == 2:
+                sql_result = getMysqlInfo(Allpath.db_conf_path).get_mysql_info(sql['my_sql'], sql['condition'],
+                                                                               sql['code'])
+                logger.info('数据库返回:' + str(sql_result))
+                logger.info("excel取值获取数据库返回第%s位：" % data['1'])
                 url_del = url + str(sql_result[1])
                 logger.info("请求URL：%s" % url_del)
                 request = requests.delete(url_del, headers=headers).json()
+            elif data['1']==0:
+                logger.info("客户进行关闭会话请求！")
+                sql_result = getMysqlInfo(Allpath.db_conf_path).get_mysql_info(sql['my_sql'], sql['condition'],
+                                                                               sql['code'])
+                logger.info('数据库返回:' + str(sql_result))
+                url1=url.format(sql_result[4],pp["visitor_id"])
+                request = requests.delete(url1,headers=header).json()
             else:
                 request = requests.delete(url, headers=headers).json()
 
@@ -125,11 +173,13 @@ class httpRequest:
 
 
 if __name__ == '__main__':
-    data = {"0": {"status": "online"}, "1": {"status": "rest"}, "2": {"status": "offline"}}
+    data = {"from":"v_a_a3a3faee9aa7442daf7f423251b35480","sentTime":1563873893952,"messageType":"event/switchToStaff","messageBody":{"skillGroupId":"dc14c144-a9bb-4beb-ad0a-2df4be155623","reason":"unknown"},"requestId":"babae400-ad2b-11e9-8277-a7ffccc9e79a","sendingStatus":"sending"}
 
-    url = 'http://47.97.152.55/v1/tenants/_1NTMWLA/staffs/s_819aee8ed8554b9f82e8d6302c8d2411/online'  # http://47.97.152.55//v1/staff/login'
-    sql = {"1": 1}
 
-    # DELETE,PUT,POST_del,POST_word,POST2,POST1,POST,POST_file,GET
-    hh = httpRequest().httpGet(url, 'PUT', data, sql)
+    url = 'http://47.97.152.55/v1/tenants/_1NTMWLA/sessions/cf8ccbbb575c4df7bd8de0c4eac9bb7d/messages/visitor'  # http://47.97.152.55//v1/staff/login'
+    sql = {"my_sql": "select * from chat where tenant_id=%s ORDER BY id DESC LIMIT 1 ", "condition": "_1NTMWLA","result": "1", "code": 0}
+
+
+    # DELETE,PUT,POST_del,POST_word,POST2,POST1,POST,POST_file,GET,GET_kh
+    hh = httpRequest().httpGet(url, 'POST', data, sql)
     print(hh)
