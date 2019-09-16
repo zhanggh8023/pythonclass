@@ -39,10 +39,7 @@ with open(file_path, 'wb+') as file:
 
 text=eval(readexcel()['restult'])
 logger.info('获取表单内容成功：%s' % text)
-#钉钉智能消息机器人
-# url='https://oapi.dingtalk.com/robot/send?access_token=70ad4ab3cf005507ac40a6ed64ea50eb5e3c7c52b7abadac876974ab7f6b46a8'
-#测试地址
-url='https://oapi.dingtalk.com/robot/send?access_token=c1ec1c545b7e7770c48464cfaa81182b15573063bdaf6bb30989bdf660b5307f'
+
 headers={"Content-Type":"application/json"}
 data={
      "msgtype": "markdown",
