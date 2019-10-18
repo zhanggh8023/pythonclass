@@ -61,7 +61,7 @@ for i in range(4,189):
     Downloadphoto(photoSrc,zjmc,i)
 
 #最后一张
-photoSrc = driver.find_element_by_xpath('//div[@class="ppt-page-item reader-pageNo-189 ppt-bd hide hidden-doc-banner"]//img').get_attribute('src')
+photoSrc = driver.find_element_by_xpath('//div[@class="ppt-page-item reader-pageNo-189 ppt-bd hide hidden-doc-banner"]//img').get_attribute('data-src')
 Downloadphoto(photoSrc,zjmc,189)
 
 
