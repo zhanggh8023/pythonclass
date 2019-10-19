@@ -63,7 +63,7 @@ class EnterpriseInfoSpider:
             # 创建表头字段
             col = 0
             for field in self.fields:
-                self.table.write(0, col, field.encode('utf-8').decode('gbk'))
+                self.table.write(0, col, field.encode('gbk').decode('gbk'))
                 col += 1
 
             self.workbook.save(self.excelPath)
@@ -91,7 +91,7 @@ class EnterpriseInfoSpider:
             totalPage = self.getTotalPage(self.getCatalogPageCode(keyword, 1))
             if totalPage == -1:
                 # 请求下一轮查询的关键字
-                keyword = input("爬取结束,请输入关键字：").encode("utf-8").decode("gbk")
+                keyword = input("爬取结束,请输入关键字：").encode("gbk").decode("gbk")
                 continue
 
             # 模拟翻页操作
@@ -180,6 +180,8 @@ class EnterpriseInfoSpider:
 
 ########
 # 爬虫入口
+#QCCSESSID=qiu3li5od6vqbc7ticagcdkf55; zg_did=%7B%22did%22%3A%20%2216ddf6e758610-004156de1bf394-b363e65-1fa400-16ddf6e7587f%22%7D; UM_distinctid=16ddf6e76551f2-05cf771d78f1ad-b363e65-1fa400-16ddf6e76561c7; CNZZDATA1254842228=1156582865-1571409785-%7C1571409785; hasShow=1; _uab_collina=157141162179223579793437; acw_tc=701dc8d015714116448377003ea1ff161ac2a19c178e879cff99b9bc6a; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1571411622; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1571411963; zg_de1d1a35bfa24ce29bbf2c7eb17e6c4f=%7B%22sid%22%3A%201571411621261%2C%22updated%22%3A%201571411963122%2C%22info%22%3A%201571411621268%2C%22superProperty%22%3A%20%22%7B%7D%22%2C%22platform%22%3A%20%22%7B%7D%22%2C%22utm%22%3A%20%22%7B%7D%22%2C%22referrerDomain%22%3A%20%22%22%7D
+
 ########
 spider = EnterpriseInfoSpider()
 spider.init()
