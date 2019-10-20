@@ -7,6 +7,10 @@
 #数据集下载：https://www.kaggle.com/vic006/beginner
 
 
+import torch
+torch.cuda.current_device()
+torch.cuda._initialized = True
+
 from fastai.imports import *
 
 from fastai.old.fastai.transforms import *
@@ -18,10 +22,10 @@ from fastai.old.fastai.plots import *
 
 from sklearn import metrics
 
-PATH = 'D:/Beginner/'
+PATH = 'f:/Beginner/'
 
 arch = resnet50
-sz = 350;
+sz = 350
 bs = 32
 
 label_csv = f'{PATH}meta-data/train.csv'
@@ -47,30 +51,31 @@ def get_data(sz, bs, val_idxs):
 
 val_idxs = [0]
 
-data = get_data(sz, bs, val_idxs)
-learn = ConvLearner.pretrained(arch, data, precompute=True)
+with torch.no_grad():
+    data = get_data(sz, bs, val_idxs)
+    learn = ConvLearner.pretrained(arch, data, precompute=True)
 
-learn.fit(1e-2, 2, cycle_len=1)
+    learn.fit(1e-2, 2, cycle_len=1)
 
-learn.precompute = False
-learn.fit(1e-2, 5, cycle_len=1)
+    learn.precompute = False
+    learn.fit(1e-2, 5, cycle_len=1)
 
-learn.set_data(get_data(450, bs=32, val_idxs=val_idxs))
-learn.fit(1e-2, 3, cycle_len=1)
+    learn.set_data(get_data(450, bs=32, val_idxs=val_idxs))
+    learn.fit(1e-2, 3, cycle_len=1)
 
-learn.fit(1e-2, 3, cycle_len=1, cycle_mult=2)
+    learn.fit(1e-2, 3, cycle_len=1, cycle_mult=2)
 
-log_preds, y = learn.TTA(is_test=True)  # use test dataset rather than validation dataset
-probs = np.mean(np.exp(log_preds), 0)
+    log_preds, y = learn.TTA(is_test=True)  # use test dataset rather than validation dataset
+    probs = np.mean(np.exp(log_preds), 0)
 
 
-df = pd.DataFrame(probs)
-df.columns = data.classes
+    df = pd.DataFrame(probs)
+    df.columns = data.classes
 
-df.insert(0, 'image_id', [o.split('/')[1] for o in data.test_ds.fnames])
-df.loc[:, 'img_num'] = [int(f.split('-')[1].split('.')[0]) for f in data.test_ds.fnames]
+    df.insert(0, 'image_id', [o.split('/')[1] for o in data.test_ds.fnames])
+    df.loc[:, 'img_num'] = [int(f.split('-')[1].split('.')[0]) for f in data.test_ds.fnames]
 
-df = df.sort_values(by='img_num')
-df.drop('img_num', axis=1, inplace=True)
+    df = df.sort_values(by='img_num')
+    df.drop('img_num', axis=1, inplace=True)
 
-df.to_csv('D:/Beginner/submissions/sub10.csv', index=False)
+    df.to_csv('D:/Beginner/submissions/sub10.csv', index=False)

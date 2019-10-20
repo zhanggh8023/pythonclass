@@ -40,6 +40,10 @@ time.sleep(3)
 mypath_1='//td[@id="adv-setting-1"]//input[@id="adv_keyword"]'
 #等待输入元素出现
 WebDriverWait(driver,10,0.5).until(EC.visibility_of_all_elements_located((By.XPATH,mypath_1)))
+
+p=driver.find_element_by_xpath(mypath_1).get_attribute('class')
+print(p,1)
+
 #输入输入内容
 driver.find_element_by_xpath(mypath_1).send_keys('python元素定位')
 time.sleep(3)

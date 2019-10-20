@@ -82,7 +82,7 @@ def wr_excel(dict):
     wb_new = load_workbook('enterprise_data.xlsx')
     sheet = wb_new['Sheet1']
     for i in range(len(data)):
-        if dict['企业名称']== data[i][i]:
+        if dict['企业名称']== data[i][i] :
             sheet.cell(i+2, 3).value = dict['企业名称']
             sheet.cell(i+2, 4).value = dict['统一社会信用代码']
             sheet.cell(i+2, 5).value = dict['注册号']
@@ -192,6 +192,7 @@ class Tianyancha:
                 print('登陆成功。')
             except:
                 print('登陆过于频繁，请1分钟后再次尝试。')
+                time.sleep(60)
 
 
             # TODO: 如果搜索有误，手工定义URL2地址。有无改善方案？
