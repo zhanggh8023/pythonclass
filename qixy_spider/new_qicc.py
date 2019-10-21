@@ -144,7 +144,6 @@ class Tianyancha:
             driver.get(url1)
             time.sleep(1)
             content = driver.page_source.encode('utf-8')
-            soup1 = BeautifulSoup(content, 'lxml')
             # TODO：是否要将登录状态监测统一到login函数中
             try:
                 # TODO：'中信证券股份有限公司'无法正确检索
