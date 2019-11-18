@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>安全核验接口自动化测试报告【Python】</title>
+    <meta name="generator" content="HTMLTestRunner 1.0.0.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+    body        { font-family: Microsoft YaHei,Tahoma, arial, helvetica, sans-serif; font-size: 80%; }
+    table       { font-size: 100%; }
+    pre         { white-space: pre-wrap;word-wrap: break-word; }
+
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+    .heading {
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+    }
+
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+
+    .heading .description {
+        margin-top: 2ex;
+        margin-bottom: 3ex;
+    }
+
+    /* -- css div popup ------------------------------------------------------------------------ */
+    a.popup_link {
+    }
+
+    a.popup_link:hover {
+        color: red;
+    }
+
+    .popup_window {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /*border: solid #627173 1px; */
+        padding: 10px;
+        /* */
+        font-family: "Lucida Console", "Courier New", Courier, monospace;
+        text-align: left;
+        font-size: 8pt;
+        /* width: 500px;*/
+    }
+
+    }
+    /* -- report ------------------------------------------------------------------------ */
+    #show_detail_line {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+    }
+    #result_table {
+        width: 99%;
+    }
+    #header_row {
+        font-weight: bold;
+        color: #303641;
+
+    }
+    #total_row  { font-weight: bold; }
+    .passClass  {  }
+    .failClass  { background-color: #ffefa4; }
+    .errorClass {  }
+    .passCase   { color: #6c6; }
+    .failCase   { color: #FF6600; font-weight: bold; }
+    .errorCase  { color: #c00; font-weight: bold; }
+    .hiddenRow  { display: none; }
+    .testcase   { margin-left: 2em; }
+
+
+    /* -- ending ---------------------------------------------------------------------- */
+    #ending {
+    }
+
+    #div_base {
+                position:absolute;
+                top:0%;
+                left:5%;
+                right:5%;
+                width: auto;
+                height: auto;
+                margin: -15px 0 0 0;
+    }
+</style>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+    output_list = Array();
+/*level 调整增加只显示通过用例的分类
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+4:Error  
+*/
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+     
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+            
+            if (id.substr(0,2) == 'ft' || id.substr(0,2) == 'pt'){
+                if (level == 0) {
+                    tr.className = 'hiddenRow';
+                }
+                else if (level == 1) {
+                    button = tr.children[1].children[0].innerText;
+                    if(button == "失败"){
+                        tr.className = '';
+                    }else{
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                else if(level == 2){
+                    button = tr.children[1].children[0].innerText;
+                    if(button == "通过"){
+                        tr.className = '';
+                    }else{
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                else if(level == 3){
+                    tr.className = '';
+                }
+                else if(level == 4){
+                    button = tr.children[1].children[0].innerText;
+                    if(button == "错误"){
+                        tr.className = '';
+                    }else{
+                        tr.className = 'hiddenRow';
+                    }
+                }
+            }
+        }
+        //加入【详细】切换文字变化 
+        detail_class=document.getElementsByClassName('detail');
+        //console.log(detail_class.length)
+        if (level == 3) {
+            for (var i = 0; i < detail_class.length; i++){
+                detail_class[i].innerHTML="收起"
+            }
+        }
+        else{
+                for (var i = 0; i < detail_class.length; i++){
+                detail_class[i].innerHTML="详细"
+            }
+        }
+    }
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            //ID修改 点 为 下划线 -Findyou
+            tid0 = 't' + cid.substr(1) + '_' + (i+1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            //修改点击无法收起的BUG，加入【详细】切换文字变化 
+            if (toHide) {
+                document.getElementById('div_'+tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+                document.getElementById(cid).innerText = "详细"
+            }
+            else {
+                document.getElementById(tid).className = '';
+                document.getElementById(cid).innerText = "收起"
+            }
+        }
+    }
+
+    function showTestDetail(div_id){
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block' ) {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+    function html_escape(s) {
+        s = s.replace(/&/g,'&amp;');
+        s = s.replace(/</g,'&lt;');
+        s = s.replace(/>/g,'&gt;');
+        return s;
+    }
+    </script>
+
+    <div id="div_base">
+        
+    <div class='page-header'>
+        <h1>安全核验接口自动化测试报告【Python】</h1>
+    <p class='attribute'><strong>测试人员:</strong> 质量保障部—章广华</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-11-18 11:00:19</p>
+<p class='attribute'><strong>合计耗时:</strong> 0:00:22.125367</p>
+<p class='attribute'><strong>本次结果:</strong> 共 34 条接口用例，通过 28 条，失败 6 条，通过率= 82.35%</p>
+
+    <div style="float: left;width:50%;"><p class='description'>该测试报告仅体现某接口请求以及参数值验证情况。</p></div>
+    </div>
+    <div id="chartline" style="width:50%;height:400px;float:left;"></div>
+    <div id="chart"style="width:50%;height:400px;float:right;"></div>
+
+        
+    <div class="btn-group btn-group-sm">
+         <!-- <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button> -->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>-->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>-->
+        <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 82.35% </a>
+        <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 28 </a>
+        <a class="btn btn-danger" onclick='javascript:showCase(1)'>失败  6 </a>
+        <a class="btn btn-warning" onclick='javascript:showCase(4)'>错误 0 </a>  
+        <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 34 </a>
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-condensed table-bordered table-hover">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+    <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+        <td>用例集/测试用例</td>
+        <td>总计</td>
+        <td>通过</td>
+        <td>失败</td>
+        <td>错误</td>
+        <td>详细</td>
+        <td>截图</td>
+    </tr>
+    
+<tr class='failClass warning'>
+    <td>public.Unit_test.testHttpRequset</td>
+    <td class="text-center">34</td>
+    <td class="text-center">28</td>
+    <td class="text-center">6</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',34)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_01_多人脸检测_人脸分析正确_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_1: 2019-11-18 11:00:19,562-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:19,565-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-18 11:00:19,566-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:19,567-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:19,569-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:20,494-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:20,567-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:20,568-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1574046020996/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1574046020996/1.jpg', 'age': '16', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}成功", 'result': 'pass'}
+2019-11-18 11:00:20,870-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_02_多人脸检测_人脸分析图片过大_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_2: 2019-11-18 11:00:20,873-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:20,877-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-18 11:00:20,881-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-18 11:00:20,884-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:20,886-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/lyj.jpg
+2019-11-18 11:00:21,019-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-18 11:00:21,072-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:21,073-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-18 11:00:21,373-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_03_人脸比对上传图片_左边_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_3: 2019-11-18 11:00:21,374-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:21,375-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-18 11:00:21,375-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:21,376-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:21,376-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:21,459-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:21,509-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:21,509-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1574046022723A.jpg成功', 'result': 'pass'}
+2019-11-18 11:00:21,811-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_04_人脸比对上传图片_右边_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_4: 2019-11-18 11:00:21,813-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:21,815-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-18 11:00:21,817-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:21,820-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:21,824-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:21,938-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:21,980-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:21,981-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1574046023201B.jpg成功', 'result': 'pass'}
+2019-11-18 11:00:22,282-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_5' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_05_人脸比对上传图片_id内容错误_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
+    <div id='div_ft1_5' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
+    <div id='div_ft1_5' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_5: 2019-11-18 11:00:22,283-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:22,283-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-18 11:00:22,284-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:22,285-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:22,286-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:22,383-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-18 11:00:22,425-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:22,426-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 1 != 0
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_6' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_06_人脸比对上传图片_文件类型错误_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div id='div_ft1_6' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div id='div_ft1_6' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_6: 2019-11-18 11:00:22,427-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:22,428-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-18 11:00:22,429-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-18 11:00:22,430-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:22,430-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.bat
+2019-11-18 11:00:22,522-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-18 11:00:22,565-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:22,566-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 1 != 0
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_07_人脸比对_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_7: 2019-11-18 11:00:22,567-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:22,568-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-18 11:00:22,568-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-18 11:00:22,569-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:22,570-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:24,703-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:24,746-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:24,747-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '100成功', 'result': 'pass'}
+2019-11-18 11:00:25,047-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_08_人脸比对_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
+    <div id='div_pt1_8' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_8: 2019-11-18 11:00:25,048-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:25,048-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-18 11:00:25,049-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-18 11:00:25,049-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:25,050-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:26,562-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-18 11:00:26,603-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:26,604-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '检测到有多人脸 无法比对', 'result': 'pass'}
+2019-11-18 11:00:26,906-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_09_人脸关键点定位_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_9: 2019-11-18 11:00:26,909-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:26,910-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-18 11:00:26,912-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:26,913-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:26,915-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:27,534-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:27,576-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:27,577-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/landmarks/output/1574046028273/0.jpg成功', 'result': 'pass'}
+2019-11-18 11:00:27,877-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_10' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_10_人脸关键点定位_错误文件类型_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
+    <div id='div_ft1_10' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
+    <div id='div_ft1_10' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_10: 2019-11-18 11:00:27,878-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:27,878-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-18 11:00:27,879-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-18 11:00:27,880-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:27,880-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.bat
+2019-11-18 11:00:28,484-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-18 11:00:28,526-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:28,527-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 1 != 0
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_11' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_11_情绪识别_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_11'>通过</button>
+    <div id='div_pt1_11' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_11'>通过</button>
+    <div id='div_pt1_11' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_11: 2019-11-18 11:00:28,528-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:28,529-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-18 11:00:28,530-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-18 11:00:28,531-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:28,531-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.jpg
+2019-11-18 11:00:29,358-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:29,401-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:29,401-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'expression': '悲伤', 'prob': 73}成功", 'result': 'pass'}
+2019-11-18 11:00:29,702-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_12' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_12_情绪识别_错误文件类型_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_12'>失败</button>
+    <div id='div_ft1_12' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_12'>失败</button>
+    <div id='div_ft1_12' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_12: 2019-11-18 11:00:29,703-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:29,703-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-18 11:00:29,704-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-18 11:00:29,704-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:29,705-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/zgh.bat
+2019-11-18 11:00:30,272-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-18 11:00:30,317-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:30,318-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 1 != 0
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_13' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_13_语音识别ASR_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
+    <div id='div_pt1_13' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
+    <div id='div_pt1_13' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_13: 2019-11-18 11:00:30,319-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:30,320-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-18 11:00:30,320-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:30,321-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:30,321-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:32,225-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:32,270-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:32,271-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '你 行 了 中 \n成功', 'result': 'pass'}
+2019-11-18 11:00:32,571-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_14' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_14_语音识别ASR_错误文件类型_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_14'>通过</button>
+    <div id='div_pt1_14' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_14'>通过</button>
+    <div id='div_pt1_14' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_14: 2019-11-18 11:00:32,572-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:32,573-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-18 11:00:32,573-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy3.wav'}
+2019-11-18 11:00:32,574-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:32,574-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy3.wav
+2019-11-18 11:00:32,700-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:10023
+2019-11-18 11:00:32,748-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:32,750-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 10023, 'data': '音频格式不正确，必须是M4A格式的文件', 'result': 'pass'}
+2019-11-18 11:00:33,050-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_15' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_15_声纹活体数字_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_15'>通过</button>
+    <div id='div_pt1_15' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_15'>通过</button>
+    <div id='div_pt1_15' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_15: 2019-11-18 11:00:33,051-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:33,052-[INFO]-logger.py-auto_cases-日志信息:正在执行第15条用例
+2019-11-18 11:00:33,052-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/voiceLiveNumber；method：POST；data：{}；sql：{}
+2019-11-18 11:00:33,053-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:33,054-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-18 11:00:33,095-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:33,139-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:33,139-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '029346857成功', 'result': 'pass'}
+2019-11-18 11:00:33,441-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_16' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_16_动作活体指令_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_16'>通过</button>
+    <div id='div_pt1_16' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_16'>通过</button>
+    <div id='div_pt1_16' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_16: 2019-11-18 11:00:33,441-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:33,442-[INFO]-logger.py-auto_cases-日志信息:正在执行第16条用例
+2019-11-18 11:00:33,442-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/liveInstruction；method：POST；data：{}；sql：{}
+2019-11-18 11:00:33,443-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:33,444-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-18 11:00:33,517-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:33,559-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:33,559-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'id': 1, 'instruction': '左右摇头'}成功", 'result': 'pass'}
+2019-11-18 11:00:33,861-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_17' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_17_声音鉴定_跟读文案_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_17'>通过</button>
+    <div id='div_pt1_17' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_17'>通过</button>
+    <div id='div_pt1_17' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_17: 2019-11-18 11:00:33,864-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:33,867-[INFO]-logger.py-auto_cases-日志信息:正在执行第17条用例
+2019-11-18 11:00:33,870-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/voiceIdentifyInstruction；method：POST；data：{}；sql：{}
+2019-11-18 11:00:33,875-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:33,876-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-18 11:00:33,957-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:34,000-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:34,001-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "['生活不可能像你想象得那么好，但也不会像你想象得那么遭。', '我觉得人的脆弱和坚强都超乎自己的想象。', '有时，我可能脆弱得一句话就泪流满面；有时，也发现自己咬着牙走了很长的路。']成功", 'result': 'pass'}
+2019-11-18 11:00:34,301-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_18' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_18_查询页面场景id_1多人脸检测_人脸分析_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_18'>通过</button>
+    <div id='div_pt1_18' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_18'>通过</button>
+    <div id='div_pt1_18' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_18: 2019-11-18 11:00:34,302-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:34,302-[INFO]-logger.py-auto_cases-日志信息:正在执行第18条用例
+2019-11-18 11:00:34,303-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '1'}；sql：{}
+2019-11-18 11:00:34,304-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:34,304-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:34,360-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:34,404-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:34,405-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 1, 'title': '人流预警监控'}]成功", 'result': 'pass'}
+2019-11-18 11:00:34,705-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_19' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_19_查询页面场景id_2人脸比对_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_19'>通过</button>
+    <div id='div_pt1_19' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_19'>通过</button>
+    <div id='div_pt1_19' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_19: 2019-11-18 11:00:34,706-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:34,707-[INFO]-logger.py-auto_cases-日志信息:正在执行第19条用例
+2019-11-18 11:00:34,707-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '2'}；sql：{}
+2019-11-18 11:00:34,708-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:34,708-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:34,774-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:34,819-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:34,819-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 3, 'title': '实人认证'}, {'id': 4, 'title': '刷脸登录/支付'}, {'id': 5, 'title': '门禁考勤'}]成功", 'result': 'pass'}
+2019-11-18 11:00:35,119-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_20' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_20_查询页面场景id_3人脸关键点_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_20'>通过</button>
+    <div id='div_pt1_20' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_20'>通过</button>
+    <div id='div_pt1_20' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_20: 2019-11-18 11:00:35,120-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:35,121-[INFO]-logger.py-auto_cases-日志信息:正在执行第20条用例
+2019-11-18 11:00:35,121-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '3'}；sql：{}
+2019-11-18 11:00:35,122-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:35,122-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:35,208-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:35,251-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:35,252-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 6, 'title': '人脸美颜'}, {'id': 7, 'title': '智能相册分类'}]成功", 'result': 'pass'}
+2019-11-18 11:00:35,553-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_21' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_21_查询页面场景id_4情绪识别_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_21'>通过</button>
+    <div id='div_pt1_21' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_21'>通过</button>
+    <div id='div_pt1_21' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_21: 2019-11-18 11:00:35,554-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:35,555-[INFO]-logger.py-auto_cases-日志信息:正在执行第21条用例
+2019-11-18 11:00:35,555-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '4'}；sql：{}
+2019-11-18 11:00:35,556-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:35,556-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:35,617-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:35,662-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:35,664-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 8, 'title': '情绪反馈'}, {'id': 9, 'title': '情绪互动'}]成功", 'result': 'pass'}
+2019-11-18 11:00:35,970-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_22' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_22_查询页面场景id_5动作活体_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_22' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_22'>通过</button>
+    <div id='div_pt1_22' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_22' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_22'>通过</button>
+    <div id='div_pt1_22' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_22: 2019-11-18 11:00:35,971-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:35,971-[INFO]-logger.py-auto_cases-日志信息:正在执行第22条用例
+2019-11-18 11:00:35,972-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '5'}；sql：{}
+2019-11-18 11:00:35,972-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:35,972-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:36,038-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:36,124-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:36,126-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 10, 'title': '金融远程开户'}, {'id': 11, 'title': '刷脸闸机通行'}]成功", 'result': 'pass'}
+2019-11-18 11:00:36,427-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_23' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_23_查询页面场景id_6语音识别_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_23' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_23'>通过</button>
+    <div id='div_pt1_23' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_23' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_23'>通过</button>
+    <div id='div_pt1_23' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_23: 2019-11-18 11:00:36,428-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:36,428-[INFO]-logger.py-auto_cases-日志信息:正在执行第23条用例
+2019-11-18 11:00:36,429-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '6'}；sql：{}
+2019-11-18 11:00:36,429-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:36,430-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:36,479-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:36,521-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:36,522-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 12, 'title': '暂无'}]成功", 'result': 'pass'}
+2019-11-18 11:00:36,823-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_24' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_24_查询页面场景id_7声纹活体_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_24' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_24'>通过</button>
+    <div id='div_pt1_24' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_24' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_24'>通过</button>
+    <div id='div_pt1_24' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_24: 2019-11-18 11:00:36,824-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:36,825-[INFO]-logger.py-auto_cases-日志信息:正在执行第24条用例
+2019-11-18 11:00:36,825-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '7'}；sql：{}
+2019-11-18 11:00:36,826-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:36,826-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:36,900-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:36,944-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:36,945-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 12, 'title': '暂无'}]成功", 'result': 'pass'}
+2019-11-18 11:00:37,245-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_25' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_25_查询页面场景id_8声音鉴定_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_25' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_25'>通过</button>
+    <div id='div_pt1_25' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_25' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_25'>通过</button>
+    <div id='div_pt1_25' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_25: 2019-11-18 11:00:37,246-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:37,246-[INFO]-logger.py-auto_cases-日志信息:正在执行第25条用例
+2019-11-18 11:00:37,248-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '8'}；sql：{}
+2019-11-18 11:00:37,248-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:37,249-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:37,323-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:37,368-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:37,368-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 12, 'title': '暂无'}]成功", 'result': 'pass'}
+2019-11-18 11:00:37,669-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_26' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_26_查询页面场景id_9声纹比对_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_26' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_26'>通过</button>
+    <div id='div_pt1_26' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_26' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_26'>通过</button>
+    <div id='div_pt1_26' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_26: 2019-11-18 11:00:37,670-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:37,671-[INFO]-logger.py-auto_cases-日志信息:正在执行第26条用例
+2019-11-18 11:00:37,671-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/scenarioId；method：POST1；data：{'pageId': '9'}；sql：{}
+2019-11-18 11:00:37,672-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:37,672-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:37,749-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:37,794-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:37,795-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 12, 'title': '暂无'}]成功", 'result': 'pass'}
+2019-11-18 11:00:38,096-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_27' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_27_所有应用场景_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_27' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_27'>通过</button>
+    <div id='div_pt1_27' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_27' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_27'>通过</button>
+    <div id='div_pt1_27' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_27: 2019-11-18 11:00:38,097-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:38,097-[INFO]-logger.py-auto_cases-日志信息:正在执行第27条用例
+2019-11-18 11:00:38,098-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/text/allScenarios；method：POST1；data：{}；sql：{}
+2019-11-18 11:00:38,098-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:38,099-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:38,149-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:38,194-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:38,194-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "[{'id': 1, 'title': '人流预警监控', 'content': 'a)\\t通过摄像头等设备，检测到人脸特征，确认人流情况。同时可设置警戒数值，当达到设定的人数，摄像机会自动触发警报，发出语音和字幕提示。同时，警报器联通监控室，一旦触发，保安人员会及时赶到现场进行疏散', 'corpCaseList': []}, {'id': 3, 'title': '实人认证', 'content': '通过当下的采集照片跟公安系统中的身份证照片的人脸进行比对，核实用户身份是否属实，确保用户身份真实性和准确性', 'corpCaseList': ['湖州掌上通App', '健康湖州App', '湖州市民中心医保报销窗口']}, {'id': 4, 'title': '刷脸登录/支付', 'content': '对于已采集用户照片的情况下，可以支持采用人脸进行登录、支付，避免密码账号的记录和反复操作，同时也确保了账号的安全性', 'corpCaseList': ['湖州掌上通App', '健康湖州App']}, {'id': 5, 'title': '门禁考勤', 'content': '对于用户身份真实性较高的行业领域（比如政务办理、金融服务等），通过人证对比，确保用户身份真实性和准确性，保护隐私同时提高办事效率', 'corpCaseList': []}, {'id': 6, 'title': '人脸美颜', 'content': '基于五官及轮廓关键点识别，对人脸特定位置进行修饰加工，实现人脸的特效美颜、特效相机、贴片灯互动娱乐功能', 'corpCaseList': []}, {'id': 7, 'title': '智能相册分类', 'content': '基于人脸识别，自动识别照片库中的人物角色，并进行分类管理，从而提升产品用户体验', 'corpCaseList': []}, {'id': 8, 'title': '情绪反馈', 'content': '实时识别多个对象的面部表情，以辅助预测用户情绪、行为、习惯有关的行为结果', 'corpCaseList': ['杭州银行智能客服']}, {'id': 9, 'title': '情绪互动', 'content': '实时对人脸对象进行持续的情绪识别，监控情绪的变化，以达到动态监控、互动反馈的效果', 'corpCaseList': []}, {'id': 10, 'title': '金融远程开户', 'content': '对于投资理财、保险理赔、证券交易等高风险金融业务，为了防止二次翻拍、扣图、打印件等攻击，让用户按照指令做出动作，完成活体检测，确保用户身份真实性，满足远程开户实名认证的安全性需求', 'corpCaseList': []}, {'id': 11, 'title': '刷脸闸机通行', 'content': '支持人脸注册环节的活体检测，防止不法分子伪造、盗用、冒用他人身份。同时满足不良网络环境下的离线活体检测，高精度抵御作弊行为，保障通行安全', 'corpCaseList': []}, {'id': 12, 'title': '暂无', 'content': '暂无', 'corpCaseList': []}]成功", 'result': 'pass'}
+2019-11-18 11:00:38,496-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_28' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_28_声纹比对_上传声音文件左边_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_28' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_28'>通过</button>
+    <div id='div_pt1_28' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_28' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_28'>通过</button>
+    <div id='div_pt1_28' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_28: 2019-11-18 11:00:38,497-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:38,498-[INFO]-logger.py-auto_cases-日志信息:正在执行第28条用例
+2019-11-18 11:00:38,498-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/uploadCompareVoice；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:38,499-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:38,500-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:38,586-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:38,653-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:38,653-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1574046039841A.wav成功', 'result': 'pass'}
+2019-11-18 11:00:38,954-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_29' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_29_声纹比对_上传声音文件右边_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_29' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_29'>通过</button>
+    <div id='div_pt1_29' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_29' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_29'>通过</button>
+    <div id='div_pt1_29' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_29: 2019-11-18 11:00:38,955-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:38,956-[INFO]-logger.py-auto_cases-日志信息:正在执行第29条用例
+2019-11-18 11:00:38,957-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/uploadCompareVoice；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'yy2.m4a'}
+2019-11-18 11:00:38,957-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:38,958-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy2.m4a
+2019-11-18 11:00:39,034-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:39,077-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:39,078-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1574046040289B.wav成功', 'result': 'pass'}
+2019-11-18 11:00:39,380-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_30' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_30_声纹比对_上传声音文件错我id_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_30' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_30'>失败</button>
+    <div id='div_ft1_30' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_30' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_30'>失败</button>
+    <div id='div_ft1_30' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_30: 2019-11-18 11:00:39,385-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:39,389-[INFO]-logger.py-auto_cases-日志信息:正在执行第30条用例
+2019-11-18 11:00:39,392-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/uploadCompareVoice；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:39,396-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:39,397-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:39,486-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-18 11:00:39,534-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:39,535-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 1 != 0
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_31' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_31_声纹比对_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_31' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_31'>通过</button>
+    <div id='div_pt1_31' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_31' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_31'>通过</button>
+    <div id='div_pt1_31' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_31: 2019-11-18 11:00:39,536-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:39,536-[INFO]-logger.py-auto_cases-日志信息:正在执行第31条用例
+2019-11-18 11:00:39,537-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/compare；method：POST1；data：{'file1': '1574042990616A.wav', 'file2': '1574043028250A.wav'}；sql：{}
+2019-11-18 11:00:39,537-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:39,538-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-18 11:00:40,161-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:40,206-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:40,207-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '71成功', 'result': 'pass'}
+2019-11-18 11:00:40,508-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_32' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_32_声音鉴定_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_32' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_32'>通过</button>
+    <div id='div_pt1_32' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_32' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_32'>通过</button>
+    <div id='div_pt1_32' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_32: 2019-11-18 11:00:40,510-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:40,515-[INFO]-logger.py-auto_cases-日志信息:正在执行第32条用例
+2019-11-18 11:00:40,517-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/identify；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:40,520-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:40,522-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:40,653-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-18 11:00:40,698-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:40,699-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'age': '暂无', 'gender': '男性'}成功", 'result': 'pass'}
+2019-11-18 11:00:41,001-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_33' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_get_33_声纹活体_请求成功</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_ft1_33' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_33'>失败</button>
+    <div id='div_ft1_33' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_ft1_33' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_33'>失败</button>
+    <div id='div_ft1_33' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    ft1_33: 2019-11-18 11:00:41,002-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:41,002-[INFO]-logger.py-auto_cases-日志信息:正在执行第33条用例
+2019-11-18 11:00:41,003-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/livecheck；method：POST_file；data：{'number': '245719360'}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:41,004-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:41,004-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:41,146-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:30006,msg:活体检测失败
+2019-11-18 11:00:41,197-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:41,197-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\ddt.py", line 154, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 59, in test_get
+    raise e
+  File "D:\interface_auto_cases_for_AQHY\public\Unit_test.py", line 52, in test_get
+    self.assertEqual(code, result['code'])
+AssertionError: 0 != 30006
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_34' class='hiddenRow'>
+    <td class='none' width='300px'><div class='testcase'>test_get_34_声纹活体_请求失败</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息  -->
+    <button id='btn_pt1_34' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_34'>通过</button>
+    <div id='div_pt1_34' class="collapse"> 
+    <!-- 默认展开错误信息  
+    <button id='btn_pt1_34' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_34'>通过</button>
+    <div id='div_pt1_34' class="collapse in">-->
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_34: 2019-11-18 11:00:41,198-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-18 11:00:41,199-[INFO]-logger.py-auto_cases-日志信息:正在执行第34条用例
+2019-11-18 11:00:41,200-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/livecheck；method：POST_file；data：{'number': '245719360'}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-18 11:00:41,200-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-18 11:00:41,201-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+file {'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'} D:\interface_auto_cases_for_AQHY/request_file/yy1.m4a
+2019-11-18 11:00:41,338-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:30006
+2019-11-18 11:00:41,384-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-18 11:00:41,384-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 30006, 'data': '活体检测失败', 'result': 'pass'}
+2019-11-18 11:00:41,686-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+    <tr id='total_row' class="text-center active">
+        <td>总计</td>
+        <td>34</td>
+        <td>28</td>
+        <td>6</td>
+        <td>0</td>
+        <td>通过率：82.35%</td>
+        <td> <a href="" target="_blank"></a></td>
+    </tr>
+    </table>
+    
+        <div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+        
+        <script type="text/javascript">
+        var myChartline = echarts.init(document.getElementById('chartline'));
+        var optionline = {
+            title : {
+                text: '近十次情况展示',
+                subtext: '成功表示：验证通过；失败表示：验证失败；错误表示：验证报错。'
+            },
+            color:['#06ff26','#001686','#f31616'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            toolbox: {
+                show : true,
+                feature: {
+                    mark : {show: true},
+                    dataView: {show: true, readOnly: false},
+                    magicType: {show: true, type: ['line', 'bar']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            calculable : true,
+            legend: {
+                data:['错误','成功','失败'],
+                //backgroundColor:['#d63131','#449dd4','#af29e4']
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: ['LAST','九次','八次','七次','六次','五次','四次','三次','两次','最近'],
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '',
+                    min: 0,
+                    max: 300,
+                    interval: 30,
+                    axisLabel: {
+                        formatter: '{value}'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '错误率',
+                    min: 0,
+                    max: 100,
+                    interval: 10,
+                    axisLabel: {
+                        formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name:'成功',
+                    type:'bar',
+                    //data:[['64', '1', '1', '1', '1', '2', '2', '1', '28', '28']]
+                    data:['64', '1', '1', '1', '1', '2', '2', '1', '28', '28']
+                },
+                {
+                    name:'失败',
+                    type:'bar',
+                    //data:[['27', '0', '0', '0', '0', '0', '2', '0', '6', '6']]
+                    data:['27', '0', '0', '0', '0', '0', '2', '0', '6', '6']
+                },
+                {
+                    name:'错误',
+                    type:'line',
+                    yAxisIndex: 1,
+                    //data:[['0', '0', '0', '0', '0', '0', '10', '0', '0', '0']]
+                    data:['0', '0', '0', '0', '0', '0', '71.43', '0', '0', '0']
+                }
+            ]
+        };
+        myChartline.setOption(optionline);
+        console.log(['27', '0', '0', '0', '0', '0', '2', '0', '6', '6'],['64', '1', '1', '1', '1', '2', '2', '1', '28', '28'],['0', '0', '0', '0', '0', '0', '10', '0', '0', '0'])
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('chart'));
+
+            // 指定图表的配置项和数据
+            var option = {
+                color:['#06ff26','#001686','#f31616'],
+                title : {
+                    text: '近十次测试执行情况',
+                    x:'center'
+                },
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    data: ['通过','失败','错误']
+                },
+                series : [
+                    {
+                        name: '近十次测试执行情况',
+                        type: 'pie',
+                        radius : '60%',
+                        center: ['50%', '60%'],
+                        data:[
+                            {value:['64', '1', '1', '1', '1', '2', '2', '1', '28', '28'], name:'通过'},
+                            {value:['27', '0', '0', '0', '0', '0', '2', '0', '6', '6'], name:'失败'},
+                            {value:['0', '0', '0', '0', '0', '0', '10', '0', '0', '0'], name:'错误'}
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    
+
+    </div>
+</body>
+</html>

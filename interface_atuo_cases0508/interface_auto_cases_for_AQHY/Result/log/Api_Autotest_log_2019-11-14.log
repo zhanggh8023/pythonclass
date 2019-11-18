@@ -1,0 +1,136 @@
+2019-11-14 16:36:11,473-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 16:36:57,105-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 16:36:57,106-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 16:36:57,221-[INFO]-logger.py-auto_cases-日志信息:sql写入统计测试记录成功！
+2019-11-14 16:37:41,961-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 16:39:21,281-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 16:39:35,591-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:12:24,121-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:25:43,418-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-14 17:25:43,419-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://testdfind.citydo.com.cn
+2019-11-14 17:25:43,420-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-14 17:25:43,421-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:25:43,812-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-14 17:25:43,896-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:25:43,897-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:25:43,983-[INFO]-logger.py-auto_cases-日志信息:清除excel原始记录成功！
+2019-11-14 17:25:43,985-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:43,985-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-14 17:25:43,986-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/user/login；method：POST1；data：{'windowUserAccount': 'zhanggh@citydo.com.cn', 'windowUserPassword': '123456'}；sql：{}
+2019-11-14 17:25:44,077-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'EF861EDC8114A8CF1C51C2BA253DC599', 'SESSION': 'M2RlYTczZTQtN2Y2MS00ZDFhLTg3YjMtYmM0MTg2OGUzNDgy'}
+2019-11-14 17:25:44,079-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=M2RlYTczZTQtN2Y2MS00ZDFhLTg3YjMtYmM0MTg2OGUzNDgy;JSESSIONID=EF861EDC8114A8CF1C51C2BA253DC599'}
+2019-11-14 17:25:44,080-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-14 17:25:44,245-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:44,306-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:44,307-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'windowUserAccount': 'zhanggh@citydo.com.cn', 'windowUserAdmin': 1, 'windowUserId': 3, 'windowUserName': '章广华', 'windowUserRole': 1}, 'result': 'pass'}
+2019-11-14 17:25:44,609-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:44,610-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:44,611-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-14 17:25:44,611-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 10, 'likeName': 'dwd', 'filter': ['date_flop', 'execute_status'], 'prefixType': 1}；sql：{}
+2019-11-14 17:25:44,665-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '566A29F3FD855093ED28530AFD8F416E', 'SESSION': 'ZDEyZDNjMzctYjIyNC00ZmU4LThmZmItNzM5NjA3YjZjZjYx'}
+2019-11-14 17:25:44,667-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=ZDEyZDNjMzctYjIyNC00ZmU4LThmZmItNzM5NjA3YjZjZjYx;JSESSIONID=566A29F3FD855093ED28530AFD8F416E'}
+2019-11-14 17:25:44,667-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:44,871-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:44,928-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:44,928-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'firstPage': True, 'lastPage': False, 'list': [{'tableComment': 'dwd_acd_dutyresult_ps', 'tableName': 'dwd_acd_dutyresult_ps'}, {'tableComment': '时间信息表二', 'tableName': 'dwd_common'}, {'tableComment': '时间信息表一', 'tableName': 'dwd_commonn'}, {'tableComment': 'dwd_company_profit_tax_mmltb', 'tableName': 'dwd_company_profit_tax_mmltb'}, {'tableComment': 'dwd_company_profit_tax_mmltb_copy1', 'tableName': 'dwd_company_profit_tax_mmltb_copy1'}, {'tableComment': 'dwd_date_test', 'tableName': 'dwd_date_test'}, {'tableComment': 'dwd_date_testone', 'tableName': 'dwd_date_testone'}, {'tableComment': 'dwd_date_testthree', 'tableName': 'dwd_date_testthree'}, {'tableComment': 'dwd_date_testtwo', 'tableName': 'dwd_date_testtwo'}, {'tableComment': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m', 'tableName': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m'}], 'pageNumber': 1, 'pageSize': 10, 'size': 10, 'totalPage': 3, 'totalRow': 28}, 'result': 'pass'}
+2019-11-14 17:25:45,230-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:45,231-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:45,232-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-14 17:25:45,233-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 'null', 'pageSize': 10, 'likeName': 'dwd', 'filter': ['date_flop', 'execute_status'], 'prefixType': 1}；sql：{}
+2019-11-14 17:25:45,285-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'A6C42D266F80BC57EE8957521206DEB4', 'SESSION': 'YTk3OTQxZDAtMGM4Zi00OTU4LTlmMGYtYWU2NTUwZWU4YzI3'}
+2019-11-14 17:25:45,287-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=YTk3OTQxZDAtMGM4Zi00OTU4LTlmMGYtYWU2NTUwZWU4YzI3;JSESSIONID=A6C42D266F80BC57EE8957521206DEB4'}
+2019-11-14 17:25:45,287-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:45,432-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！1
+2019-11-14 17:25:45,491-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:45,492-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 1, 'data': 'pageNumber不可为空', 'result': 'pass'}
+2019-11-14 17:25:45,792-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:45,793-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:45,794-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-14 17:25:45,794-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 'null', 'likeName': 'dwd', 'filter': ['date_flop', 'execute_status'], 'prefixType': 1}；sql：{}
+2019-11-14 17:25:45,855-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '2D4FFA7968913242170B936FA071FEE7', 'SESSION': 'ODVhOTdkM2ItNWI0MS00NWZlLWFjNzktMmIzMjE5NDQ4NGNl'}
+2019-11-14 17:25:45,859-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=ODVhOTdkM2ItNWI0MS00NWZlLWFjNzktMmIzMjE5NDQ4NGNl;JSESSIONID=2D4FFA7968913242170B936FA071FEE7'}
+2019-11-14 17:25:45,861-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:46,006-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！1
+2019-11-14 17:25:46,066-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:46,067-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 1, 'data': 'pageSize不可为空', 'result': 'pass'}
+2019-11-14 17:25:46,368-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:46,369-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:46,369-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-14 17:25:46,369-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'likeName': 'dwd', 'filter': ['date_flop', 'execute_status'], 'prefixType': 1}；sql：{}
+2019-11-14 17:25:46,426-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'B3993465F2FDB3E78AF9858EB3DECA81', 'SESSION': 'NmUwMjUyODYtYjk3Zi00NDRjLWFjNWEtMzNjNzdhMjM5MmJh'}
+2019-11-14 17:25:46,428-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=NmUwMjUyODYtYjk3Zi00NDRjLWFjNWEtMzNjNzdhMjM5MmJh;JSESSIONID=B3993465F2FDB3E78AF9858EB3DECA81'}
+2019-11-14 17:25:46,428-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:46,635-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！请求成功
+2019-11-14 17:25:46,693-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:46,694-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:46,695-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:46,696-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-14 17:25:46,696-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 10, 'filter': ['date_flop', 'execute_status'], 'prefixType': 1}；sql：{}
+2019-11-14 17:25:46,784-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '2AF1CF7BE80D1B2D508E37BE1E10327B', 'SESSION': 'OWE5ZWIxNjAtNDhlOS00ZjRjLTkwNDgtMjBmNGVkZDE4MzBm'}
+2019-11-14 17:25:46,787-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=OWE5ZWIxNjAtNDhlOS00ZjRjLTkwNDgtMjBmNGVkZDE4MzBm;JSESSIONID=2AF1CF7BE80D1B2D508E37BE1E10327B'}
+2019-11-14 17:25:46,788-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:46,998-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:47,078-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:47,079-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'firstPage': True, 'lastPage': False, 'list': [{'tableComment': 'dwd_acd_dutyresult_ps', 'tableName': 'dwd_acd_dutyresult_ps'}, {'tableComment': '时间信息表二', 'tableName': 'dwd_common'}, {'tableComment': '时间信息表一', 'tableName': 'dwd_commonn'}, {'tableComment': 'dwd_company_profit_tax_mmltb', 'tableName': 'dwd_company_profit_tax_mmltb'}, {'tableComment': 'dwd_company_profit_tax_mmltb_copy1', 'tableName': 'dwd_company_profit_tax_mmltb_copy1'}, {'tableComment': 'dwd_date_test', 'tableName': 'dwd_date_test'}, {'tableComment': 'dwd_date_testone', 'tableName': 'dwd_date_testone'}, {'tableComment': 'dwd_date_testthree', 'tableName': 'dwd_date_testthree'}, {'tableComment': 'dwd_date_testtwo', 'tableName': 'dwd_date_testtwo'}, {'tableComment': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m', 'tableName': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m'}], 'pageNumber': 1, 'pageSize': 10, 'size': 10, 'totalPage': 3, 'totalRow': 28}, 'result': 'pass'}
+2019-11-14 17:25:47,380-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:47,383-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:47,385-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-14 17:25:47,387-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 10, 'likeName': 'dwd', 'prefixType': 1}；sql：{}
+2019-11-14 17:25:47,446-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '138564E8CE7597901495AA3C7AECC424', 'SESSION': 'Mzc2OTgwNjAtNzk1Ni00YmVjLWI2MzUtNjI0MDQzMjhkNzQ0'}
+2019-11-14 17:25:47,450-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=Mzc2OTgwNjAtNzk1Ni00YmVjLWI2MzUtNjI0MDQzMjhkNzQ0;JSESSIONID=138564E8CE7597901495AA3C7AECC424'}
+2019-11-14 17:25:47,452-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:47,664-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:47,723-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:47,724-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'firstPage': True, 'lastPage': False, 'list': [{'tableComment': 'dwd_acd_dutyresult_ps', 'tableName': 'dwd_acd_dutyresult_ps'}, {'tableComment': '时间信息表二', 'tableName': 'dwd_common'}, {'tableComment': '时间信息表一', 'tableName': 'dwd_commonn'}, {'tableComment': 'dwd_company_profit_tax_mmltb', 'tableName': 'dwd_company_profit_tax_mmltb'}, {'tableComment': 'dwd_company_profit_tax_mmltb_copy1', 'tableName': 'dwd_company_profit_tax_mmltb_copy1'}, {'tableComment': 'dwd_date_test', 'tableName': 'dwd_date_test'}, {'tableComment': 'dwd_date_testone', 'tableName': 'dwd_date_testone'}, {'tableComment': 'dwd_date_testthree', 'tableName': 'dwd_date_testthree'}, {'tableComment': 'dwd_date_testtwo', 'tableName': 'dwd_date_testtwo'}, {'tableComment': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m', 'tableName': 'dwd_evt_difficult_staff_assistance_mtuf_info_mtuf_m'}], 'pageNumber': 1, 'pageSize': 10, 'size': 10, 'totalPage': 3, 'totalRow': 28}, 'result': 'pass'}
+2019-11-14 17:25:48,026-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:48,028-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:48,032-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-14 17:25:48,036-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 10, 'likeName': 'dwd', 'filter': ['date_flop', 'execute_status']}；sql：{}
+2019-11-14 17:25:48,113-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'AF815CE935BEC5DF8455E19093A819FD', 'SESSION': 'YWQxN2Y2ZTktNWRhZi00NTBiLThlM2MtMTNlYzJiNjA3NWZl'}
+2019-11-14 17:25:48,117-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=YWQxN2Y2ZTktNWRhZi00NTBiLThlM2MtMTNlYzJiNjA3NWZl;JSESSIONID=AF815CE935BEC5DF8455E19093A819FD'}
+2019-11-14 17:25:48,118-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:48,307-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:48,365-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:48,365-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'firstPage': True, 'lastPage': False, 'list': [{'tableComment': '路段维度', 'tableName': 'dim_ldwd'}, {'tableComment': 'dwd_acd_dutyresult_ps', 'tableName': 'dwd_acd_dutyresult_ps'}, {'tableComment': '时间信息表二', 'tableName': 'dwd_common'}, {'tableComment': '时间信息表一', 'tableName': 'dwd_commonn'}, {'tableComment': 'dwd_company_profit_tax_mmltb', 'tableName': 'dwd_company_profit_tax_mmltb'}, {'tableComment': 'dwd_company_profit_tax_mmltb_copy1', 'tableName': 'dwd_company_profit_tax_mmltb_copy1'}, {'tableComment': 'dwd_date_test', 'tableName': 'dwd_date_test'}, {'tableComment': 'dwd_date_testone', 'tableName': 'dwd_date_testone'}, {'tableComment': 'dwd_date_testthree', 'tableName': 'dwd_date_testthree'}, {'tableComment': 'dwd_date_testtwo', 'tableName': 'dwd_date_testtwo'}], 'pageNumber': 1, 'pageSize': 10, 'size': 10, 'totalPage': 4, 'totalRow': 31}, 'result': 'pass'}
+2019-11-14 17:25:48,666-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:48,666-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:48,667-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-14 17:25:48,667-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/odpscachetable/searchtable；method：POST；data：{'pageNumber': 1, 'pageSize': 10, 'likeName': '', 'filter': '', 'prefixType': '@@'}；sql：{}
+2019-11-14 17:25:48,729-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'BE7A9E24EDBFA0FC979C4980BDFF11C1', 'SESSION': 'MDFlMTFiZTAtYzYzMS00ZjZkLTg0ZDAtZTFmMmI2ZTc0Mzc0'}
+2019-11-14 17:25:48,730-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=MDFlMTFiZTAtYzYzMS00ZjZkLTg0ZDAtZTFmMmI2ZTc0Mzc0;JSESSIONID=BE7A9E24EDBFA0FC979C4980BDFF11C1'}
+2019-11-14 17:25:48,731-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-14 17:25:48,873-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！1
+2019-11-14 17:25:48,931-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:48,932-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 1, 'data': '入参不可空', 'result': 'pass'}
+2019-11-14 17:25:49,234-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:25:49,234-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:25:49,234-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-14 17:25:49,235-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/system/previewData；method：POST1；data：{'tableName': 't_19073000000001', 'pageNumber': 1, 'pageSize': 10}；sql：{}
+2019-11-14 17:25:49,452-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '9511C568709E3CBE143AFAF48E528116', 'SESSION': 'MWE2OTg2NzItMWUwMC00YzFmLWJlODctMGZhMWU1ZDI2NjQy'}
+2019-11-14 17:25:49,454-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=MWE2OTg2NzItMWUwMC00YzFmLWJlODctMGZhMWU1ZDI2NjQy;JSESSIONID=9511C568709E3CBE143AFAF48E528116'}
+2019-11-14 17:25:49,455-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-14 17:25:49,665-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:25:49,722-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:25:49,723-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'tableColumn': [{'columnComment': '商品价格', 'columnName': 'c_1', 'columnType': 'STRING', 'isPartitionColumn': 2, 'newColumnType': '', 'timeFormat': ''}, {'columnComment': '季度(计数)', 'columnName': 'c_2', 'columnType': 'STRING', 'isPartitionColumn': 2, 'newColumnType': '', 'timeFormat': ''}], 'tableData': {'firstPage': True, 'lastPage': True, 'list': [{'c_1': '10', 'c_2': '50'}, {'c_1': '19', 'c_2': '30'}, {'c_1': '20', 'c_2': '50'}, {'c_1': '25', 'c_2': '116'}, {'c_1': '30', 'c_2': '172'}], 'pageNumber': 1, 'pageSize': 10, 'size': 5, 'totalPage': 1, 'totalRow': 5}}, 'result': 'pass'}
+2019-11-14 17:26:03,717-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：1
+2019-11-14 17:26:03,717-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://testdfind.citydo.com.cn
+2019-11-14 17:26:03,719-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[1]
+2019-11-14 17:26:03,720-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:26:04,015-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-14 17:26:04,032-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:26:04,033-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:26:04,124-[INFO]-logger.py-auto_cases-日志信息:清除excel原始记录成功！
+2019-11-14 17:26:04,126-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-14 17:26:04,126-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-14 17:26:04,127-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://testdfind.citydo.com.cn/datawindow/os/user/login；method：POST1；data：{'windowUserAccount': 'zhanggh@citydo.com.cn', 'windowUserPassword': '123456'}；sql：{}
+2019-11-14 17:26:04,200-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'C4D356B464C1B8E5B478152382BA303B', 'SESSION': 'OGNhYjg1MmQtYmU1Zi00ZGIzLWI3YzktODJkMTkxNWRmZTFh'}
+2019-11-14 17:26:04,202-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=OGNhYjg1MmQtYmU1Zi00ZGIzLWI3YzktODJkMTkxNWRmZTFh;JSESSIONID=C4D356B464C1B8E5B478152382BA303B'}
+2019-11-14 17:26:04,203-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-14 17:26:04,347-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！0
+2019-11-14 17:26:04,405-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-14 17:26:04,406-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'windowUserAccount': 'zhanggh@citydo.com.cn', 'windowUserAdmin': 1, 'windowUserId': 3, 'windowUserName': '章广华', 'windowUserRole': 1}, 'result': 'pass'}
+2019-11-14 17:26:04,706-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-14 17:26:04,707-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-14 17:26:04,856-[INFO]-logger.py-auto_cases-日志信息:sql写入统计测试记录成功！
+2019-11-14 17:26:04,927-[INFO]-logger.py-auto_cases-日志信息:获取数据库测试结果内容成功：{'testname': '质量保障部—章广华', 'time': '2019-11-14 17:26:04', 'sumtime': '0:00:00.580447', 'testresult': '共 1 条接口用例，通过 1 条', 'tonggl': '100.00%'}
+2019-11-14 17:26:04,930-[INFO]-logger.py-auto_cases-日志信息:本次Python接口自动化框架执行完毕！2019-11-14 17:26:04

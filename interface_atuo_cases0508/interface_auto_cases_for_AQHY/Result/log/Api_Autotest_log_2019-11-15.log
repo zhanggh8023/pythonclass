@@ -1,0 +1,1301 @@
+2019-11-15 09:37:05,198-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'F257435B5DDE72E40A46F591523F3BE3', 'SESSION': 'MjZlNmEyODgtNWJiNS00ZjhmLWI3MGEtMzlkN2YyYTcyNzVh'}
+2019-11-15 09:37:05,201-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=MjZlNmEyODgtNWJiNS00ZjhmLWI3MGEtMzlkN2YyYTcyNzVh;JSESSIONID=F257435B5DDE72E40A46F591523F3BE3'}
+2019-11-15 09:37:05,201-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 09:37:12,097-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'B3F32D9FB70F53027F71568A3FF7CBB6', 'SESSION': 'ZTIwZmYzMjAtYjI2Yi00YWU2LTg4MzQtYmUyNzNmYWNhNGY4'}
+2019-11-15 09:37:12,100-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=ZTIwZmYzMjAtYjI2Yi00YWU2LTg4MzQtYmUyNzNmYWNhNGY4;JSESSIONID=B3F32D9FB70F53027F71568A3FF7CBB6'}
+2019-11-15 09:37:12,101-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 09:37:19,819-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'CB68376E41A7A4295CE5909778126BA4', 'SESSION': 'ZmY5YTUyYzUtYjRiZi00MWVhLWI4MDgtMmYyNzY1MTY2MmJi'}
+2019-11-15 09:37:19,822-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=ZmY5YTUyYzUtYjRiZi00MWVhLWI4MDgtMmYyNzY1MTY2MmJi;JSESSIONID=CB68376E41A7A4295CE5909778126BA4'}
+2019-11-15 09:37:19,823-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 09:37:27,543-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'A47A769C60BB5C8C6F7F2E36A6FD2DB2', 'SESSION': 'Y2Y5OGMyOTItOGU4My00MmJlLTkxOWMtNmRmMTVjYzllNTQ3'}
+2019-11-15 09:37:27,546-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=Y2Y5OGMyOTItOGU4My00MmJlLTkxOWMtNmRmMTVjYzllNTQ3;JSESSIONID=A47A769C60BB5C8C6F7F2E36A6FD2DB2'}
+2019-11-15 09:37:27,547-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 09:38:03,009-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '56234500C8573990F07CEFB7945678F4', 'SESSION': 'YTVhMzUyM2MtYjk2MC00YWViLWFmMWItNTg3M2RiNmU2ZjVh'}
+2019-11-15 09:38:03,011-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=YTVhMzUyM2MtYjk2MC00YWViLWFmMWItNTg3M2RiNmU2ZjVh;JSESSIONID=56234500C8573990F07CEFB7945678F4'}
+2019-11-15 09:38:03,012-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 09:39:47,568-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': 'B44F226F058D1C68AB6AC5CEE547A8DD', 'SESSION': 'MGZjYzNjZTgtOGY2NS00MzA4LTk2ZGYtZmYwMTk0MWMzODgz'}
+2019-11-15 09:39:47,571-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=MGZjYzNjZTgtOGY2NS00MzA4LTk2ZGYtZmYwMTk0MWMzODgz;JSESSIONID=B44F226F058D1C68AB6AC5CEE547A8DD'}
+2019-11-15 09:39:47,572-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post3请求
+2019-11-15 09:39:58,679-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{'JSESSIONID': '5991033BD6FBE7C584B852A23F752763', 'SESSION': 'MTUxZGIzZTMtMWE4NS00YmRiLTg5YTEtOGI5YWExYzMxMjBh'}
+2019-11-15 09:39:58,681-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'Cookie': 'SESSION=MTUxZGIzZTMtMWE4NS00YmRiLTg5YTEtOGI5YWExYzMxMjBh;JSESSIONID=5991033BD6FBE7C584B852A23F752763'}
+2019-11-15 09:39:58,682-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 09:43:01,363-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{}
+2019-11-15 09:43:57,610-[INFO]-logger.py-auto_cases-日志信息:登录请求成功返回cookie：{}
+2019-11-15 09:44:18,831-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:44:18,832-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 09:49:17,722-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:49:17,723-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:50:54,259-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:50:54,260-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:53:17,392-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:53:17,393-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:53:43,778-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:53:43,779-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:54:01,621-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:54:01,622-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:55:33,216-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:55:33,216-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:55:47,329-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:55:47,330-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:56:37,352-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:56:37,353-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:57:58,260-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:57:58,261-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:58:16,589-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:58:16,590-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 09:59:58,222-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/'}
+2019-11-15 09:59:58,222-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:03:23,519-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:03:23,520-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:12:19,422-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:12:19,422-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:17:02,954-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:17:02,955-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:19:32,149-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:19:32,150-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:27:50,420-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:27:50,421-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:28:17,370-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 10:28:17,371-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 10:28:17,372-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 10:28:17,697-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 10:28:17,700-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:28:17,708-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 10:28:17,708-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 10:28:17,709-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:28:17,710-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:28:19,025-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 10:28:19,064-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:28:19,065-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'result': 'pass', 'data': {'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573784899695/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573784899695/1.jpg', 'age': '17', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}}
+2019-11-15 10:28:19,367-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:28:19,368-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:28:19,369-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 10:28:19,370-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 10:28:19,371-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:28:19,372-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:28:19,487-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 10:28:19,522-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:28:19,522-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'result': 'pass', 'data': None}
+2019-11-15 10:28:19,824-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:33:10,006-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 10:33:10,007-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 10:33:10,008-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 10:33:10,400-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 10:33:10,402-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:33:10,410-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 10:33:10,411-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 10:33:10,412-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:33:10,413-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:33:11,267-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 10:33:11,381-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:33:11,389-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573785191967/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573785191967/1.jpg', 'age': '17', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}, 'result': 'pass'}
+2019-11-15 10:33:11,690-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:33:11,692-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:33:11,693-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 10:33:11,695-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 10:33:11,697-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:33:11,698-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:33:11,824-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 10:33:11,876-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:33:11,877-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 10:33:12,179-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:34:27,441-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 10:34:27,442-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 10:34:27,442-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 10:34:27,443-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 10:34:27,786-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 10:34:27,801-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 10:34:27,802-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 10:34:27,842-[INFO]-logger.py-auto_cases-日志信息:清除excel原始记录成功！
+2019-11-15 10:34:27,843-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:34:27,843-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 10:34:27,844-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 10:34:27,845-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:34:27,845-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:34:28,700-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 10:34:28,753-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:34:28,755-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': {'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573785269408/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573785269408/1.jpg', 'age': '17', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}, 'result': 'pass'}
+2019-11-15 10:34:29,057-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:34:29,058-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 10:34:29,059-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 10:34:29,059-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 10:34:29,060-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'testdfind.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://testdfind.citydo.com.cn', 'Referer': 'https://testdfind.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:34:29,061-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:34:29,162-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 10:34:29,196-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 10:34:29,197-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 10:34:29,497-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 10:34:29,500-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 10:34:29,618-[INFO]-logger.py-auto_cases-日志信息:sql写入统计测试记录成功！
+2019-11-15 10:34:29,677-[INFO]-logger.py-auto_cases-日志信息:获取数据库测试结果内容成功：{'testname': '质量保障部—章广华', 'time': '2019-11-15 10:34:27', 'sumtime': '0:00:01.655782', 'testresult': '共 2 条接口用例，通过 2 条', 'tonggl': '100.00%'}
+2019-11-15 10:34:29,679-[INFO]-logger.py-auto_cases-日志信息:本次Python接口自动化框架执行完毕！2019-11-15 10:34:29
+2019-11-15 10:42:30,578-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:42:30,579-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:42:49,836-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:42:49,837-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:43:07,560-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:43:07,561-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:43:23,686-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:43:23,687-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 10:45:36,143-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 10:45:36,144-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:12:06,374-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:12:06,374-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:12:14,300-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:12:14,301-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:12:26,699-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:12:26,699-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:12:47,048-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:12:47,051-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:17:40,633-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld', 'Content-Type': 'text/xml'}
+2019-11-15 11:17:40,634-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:17:52,586-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld', 'Content-Type': 'text/xml'}
+2019-11-15 11:17:52,587-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:21:14,081-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:21:14,082-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:21:37,626-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:21:37,627-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:21:57,916-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:21:57,916-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:22:15,410-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:22:15,411-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:24:28,944-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:24:28,945-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:25:47,249-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:25:47,249-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:30:24,762-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:30:24,763-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:35:36,496-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld', 'Content-Type': 'multipart/form-data'}
+2019-11-15 11:35:36,497-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:41:03,180-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:41:03,181-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:41:36,982-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:41:36,983-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:42:43,102-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:42:43,103-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:44:01,749-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:44:01,750-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:44:08,940-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:44:08,941-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:59:07,373-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:59:07,375-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:59:29,226-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:59:29,227-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 11:59:40,542-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 11:59:40,543-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:00:02,418-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:00:02,419-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:00:16,699-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:00:16,701-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:35:29,763-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:35:29,765-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:35:38,145-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:35:38,146-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:36:50,778-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:36:50,779-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:38:24,512-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:38:24,513-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:39:42,398-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:39:42,399-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:41:01,294-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:41:01,296-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 12:55:53,584-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:55:53,586-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 12:56:04,010-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:56:04,011-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 12:56:48,946-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'MX5a+OQ99YDpS6yVYP9HKQ=='}
+2019-11-15 12:56:48,948-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 12:58:09,437-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:58:09,438-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 12:59:50,286-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 12:59:50,287-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 13:00:13,908-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:00:13,909-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:00:20,844-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:00:20,846-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:00:28,513-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:00:28,514-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post3请求
+2019-11-15 13:00:31,636-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:00:31,637-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post3请求
+2019-11-15 13:17:59,606-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:17:59,608-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:25:01,889-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:25:01,891-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:25:07,740-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:25:07,741-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:25:10,504-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:25:10,505-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:29:36,120-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:29:36,121-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:30:11,476-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:30:11,477-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:31:35,414-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:31:35,415-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post请求
+2019-11-15 13:31:41,801-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:31:41,803-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:32:29,889-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:32:29,891-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:35:44,527-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 13:35:44,528-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 13:35:44,528-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 13:35:44,874-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 13:35:44,879-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:44,890-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 13:35:44,891-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:35:44,892-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:44,893-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:46,000-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:46,004-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:46,005-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 13:35:46,006-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 13:35:46,008-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:46,009-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:46,125-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 13:35:46,208-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:35:46,212-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 13:35:46,514-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:46,516-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:46,517-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 13:35:46,519-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:35:46,520-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:46,522-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:46,864-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:35:46,954-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:35:46,956-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796148039A.jpg成功', 'result': 'pass'}
+2019-11-15 13:35:47,258-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:47,260-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:47,265-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 13:35:47,267-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:35:47,268-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:47,269-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:47,387-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:35:47,461-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:35:47,463-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796148794B.jpg成功', 'result': 'pass'}
+2019-11-15 13:35:47,763-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:47,765-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:47,767-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 13:35:47,768-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:35:47,770-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:47,773-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:47,870-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:35:47,967-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:35:47,968-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:47,972-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:47,974-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 13:35:47,976-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 13:35:47,978-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:47,981-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:35:48,093-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:35:48,182-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:35:48,183-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:48,191-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:48,192-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 13:35:48,194-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 13:35:48,195-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:48,197-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:35:49,334-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:35:49,336-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:35:49,338-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 13:35:49,339-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST2；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 13:35:49,340-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:35:49,341-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 13:35:49,390-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:45,239-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 13:36:45,239-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 13:36:45,240-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 13:36:45,587-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 13:36:45,593-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:45,603-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 13:36:45,604-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:36:45,605-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:45,606-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:46,464-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:36:46,518-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:46,519-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573796207128/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573796207128/1.jpg', 'age': '17', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}成功", 'result': 'pass'}
+2019-11-15 13:36:46,820-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:46,824-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:46,826-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 13:36:46,827-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 13:36:46,829-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:46,830-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:46,938-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 13:36:47,045-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:47,047-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 13:36:47,348-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:47,350-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:47,352-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 13:36:47,355-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:36:47,357-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:47,358-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:47,467-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:36:47,567-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:47,569-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796208874A.jpg成功', 'result': 'pass'}
+2019-11-15 13:36:47,870-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:47,875-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:47,879-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 13:36:47,882-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:36:47,884-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:47,885-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:47,990-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:36:48,151-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:48,155-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796209404B.jpg成功', 'result': 'pass'}
+2019-11-15 13:36:48,457-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:48,459-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:48,461-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 13:36:48,462-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:36:48,466-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:48,469-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:48,574-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:36:48,667-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:48,671-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:48,680-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:48,681-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 13:36:48,683-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 13:36:48,685-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:48,687-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:36:48,806-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:36:48,869-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:48,870-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:48,877-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:48,878-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 13:36:48,880-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 13:36:48,882-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:48,883-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:36:50,031-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:36:50,102-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:36:50,104-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '100成功', 'result': 'pass'}
+2019-11-15 13:36:50,407-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:36:50,409-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:36:50,412-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 13:36:50,414-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST2；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 13:36:50,416-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:36:50,420-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post2请求
+2019-11-15 13:36:50,500-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:07,758-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 13:38:07,759-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 13:38:07,760-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 13:38:08,183-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 13:38:08,189-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:08,199-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 13:38:08,201-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:38:08,202-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:08,204-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:09,202-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:38:09,272-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:09,274-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'catchFaceUrl': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573796289723/0.jpg', 'faceAttributeList': [{'url': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/analyze/output/1573796289723/1.jpg', 'age': '17', 'gender': '女性', 'racial': '白种人', 'expression': '蔑视'}]}成功", 'result': 'pass'}
+2019-11-15 13:38:09,574-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:09,577-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:09,579-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 13:38:09,580-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 13:38:09,582-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:09,584-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:09,716-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 13:38:09,799-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:09,800-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 13:38:10,103-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:10,105-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:10,108-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 13:38:10,111-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:38:10,115-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:10,117-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:10,226-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:38:10,312-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:10,314-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796291640A.jpg成功', 'result': 'pass'}
+2019-11-15 13:38:10,615-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:10,618-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:10,620-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 13:38:10,621-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:38:10,628-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:10,630-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:10,732-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:38:10,849-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:10,851-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573796292147B.jpg成功', 'result': 'pass'}
+2019-11-15 13:38:11,154-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:11,249-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:11,251-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 13:38:11,253-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 13:38:11,254-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:11,256-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:11,368-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:38:11,454-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:11,456-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:11,464-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:11,466-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 13:38:11,467-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 13:38:11,468-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:11,470-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 13:38:11,572-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 13:38:11,635-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:11,636-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:11,642-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:11,644-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 13:38:11,646-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 13:38:11,648-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:11,649-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:38:12,733-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 13:38:12,789-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:12,790-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '100成功', 'result': 'pass'}
+2019-11-15 13:38:13,092-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:38:13,095-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 13:38:13,097-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 13:38:13,098-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 13:38:13,100-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:38:13,102-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:38:14,487-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:31000,msg:检测到有多人脸 无法比对
+2019-11-15 13:38:14,563-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 13:38:14,566-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 13:42:00,624-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:42:00,625-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 13:42:12,699-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 13:42:12,700-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 15:47:36,475-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:47:36,476-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 15:47:46,780-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:47:46,781-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 15:48:32,468-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:48:32,469-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 15:56:19,866-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:56:19,867-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 15:57:02,640-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:57:02,642-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 15:57:45,988-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:57:45,989-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 15:58:35,804-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 15:58:35,805-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:01:42,718-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:01:42,719-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:07:56,659-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:07:56,660-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:12:39,112-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:12:39,114-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:12:49,011-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:12:49,012-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:16:36,418-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:16:36,420-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:16:45,633-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:16:45,634-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:29:11,498-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:29:11,500-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:29:29,698-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:29:29,700-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:33:04,887-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:33:04,888-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:33:31,599-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:33:31,601-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:54:43,140-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:54:43,141-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:55:51,301-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:55:51,303-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 16:57:18,066-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 16:57:18,067-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:01:21,197-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:01:21,198-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:01:47,699-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:01:47,700-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:03:27,953-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:03:27,955-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:16:38,417-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:16:38,418-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:35:44,353-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:35:44,355-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:42:37,056-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:42:37,057-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:44:57,816-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:44:57,817-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:51:25,797-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:51:25,799-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:51:34,720-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:51:34,721-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:51:45,925-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:51:45,927-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:12,447-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 17:59:12,447-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 17:59:12,448-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 17:59:12,449-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 17:59:12,796-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 17:59:12,814-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 17:59:12,816-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 17:59:12,882-[INFO]-logger.py-auto_cases-日志信息:清除excel原始记录成功！
+2019-11-15 17:59:12,884-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:12,886-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 17:59:12,887-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:12,889-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:12,890-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:13,015-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:13,021-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:13,024-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 17:59:13,026-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 17:59:13,028-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:13,031-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:13,142-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:13,143-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:13,144-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 17:59:13,145-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:13,146-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:13,147-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:13,246-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 17:59:13,301-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:13,302-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573811954607A.jpg成功', 'result': 'pass'}
+2019-11-15 17:59:13,604-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:13,606-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:13,607-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 17:59:13,608-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:13,610-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:13,612-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:13,744-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 17:59:13,859-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:13,861-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573811955099B.jpg成功', 'result': 'pass'}
+2019-11-15 17:59:14,163-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,165-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,167-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 17:59:14,169-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:14,171-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,174-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,288-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 17:59:14,378-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:14,379-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,381-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,382-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 17:59:14,383-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 17:59:14,385-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,386-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,492-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 17:59:14,587-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:14,588-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,590-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,593-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 17:59:14,594-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 17:59:14,596-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,597-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 17:59:14,738-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,739-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,741-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 17:59:14,741-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 17:59:14,742-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,743-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 17:59:14,909-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,911-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,911-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 17:59:14,912-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{'name': 'file', 'filename': 'zgh.jpg'}；sql：{}
+2019-11-15 17:59:14,913-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,915-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,915-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,918-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,919-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 17:59:14,920-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{'name': 'file', 'filename': 'zgh.bat'}；sql：{}
+2019-11-15 17:59:14,921-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,922-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,923-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,925-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,926-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 17:59:14,927-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{'name': 'file', 'filename': 'zgh.jpg'}；sql：{}
+2019-11-15 17:59:14,928-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,928-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,929-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,931-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,932-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 17:59:14,933-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{'name': 'file', 'filename': 'zgh.bat'}；sql：{}
+2019-11-15 17:59:14,934-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,935-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,937-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,938-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,940-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 17:59:14,941-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{'name': 'file', 'filename': 'yy1.m4a'}；sql：{}
+2019-11-15 17:59:14,942-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,943-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,944-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,946-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:14,947-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 17:59:14,948-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{'name': 'file', 'filename': 'yy3.wav'}；sql：{}
+2019-11-15 17:59:14,949-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:14,950-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:14,951-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:14,954-[INFO]-logger.py-auto_cases-日志信息:本次数据库调用配置成功！
+2019-11-15 17:59:15,047-[INFO]-logger.py-auto_cases-日志信息:sql写入统计测试记录成功！
+2019-11-15 17:59:15,112-[INFO]-logger.py-auto_cases-日志信息:获取数据库测试结果内容成功：{'testname': '质量保障部—章广华', 'time': '2019-11-15 17:59:12', 'sumtime': '0:00:02.069839', 'testresult': '共 14 条接口用例，通过 2 条，失败 2 条，错误 10 条', 'tonggl': '14.29%'}
+2019-11-15 17:59:15,115-[INFO]-logger.py-auto_cases-日志信息:本次Python接口自动化框架执行完毕！2019-11-15 17:59:15
+2019-11-15 17:59:28,832-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 17:59:28,832-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 17:59:28,834-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 17:59:29,185-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 17:59:29,191-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:29,201-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 17:59:29,203-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:29,204-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:29,206-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:29,356-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:29,360-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:29,361-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 17:59:29,362-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 17:59:29,364-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:29,365-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:29,464-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:29,468-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:29,470-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 17:59:29,471-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:29,473-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:29,474-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:30,043-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 17:59:30,117-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:30,118-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573811970944A.jpg成功', 'result': 'pass'}
+2019-11-15 17:59:30,421-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:30,424-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:30,425-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 17:59:30,432-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:30,435-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:30,438-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:30,581-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 17:59:30,652-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:30,654-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573811971949B.jpg成功', 'result': 'pass'}
+2019-11-15 17:59:30,955-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:30,958-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:30,960-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 17:59:30,962-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 17:59:30,963-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:30,967-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,111-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 17:59:31,207-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:31,208-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,216-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,218-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 17:59:31,219-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 17:59:31,221-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,223-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,374-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 17:59:31,514-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 17:59:31,515-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,521-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,522-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 17:59:31,523-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 17:59:31,525-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,527-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 17:59:31,654-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,657-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,659-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 17:59:31,660-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 17:59:31,662-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,664-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 17:59:31,796-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,801-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,803-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 17:59:31,805-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{'name': 'file', 'filename': 'zgh.jpg'}；sql：{}
+2019-11-15 17:59:31,806-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,807-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,809-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,813-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,814-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 17:59:31,816-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{'name': 'file', 'filename': 'zgh.bat'}；sql：{}
+2019-11-15 17:59:31,817-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,819-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,821-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,825-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,826-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 17:59:31,828-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{'name': 'file', 'filename': 'zgh.jpg'}；sql：{}
+2019-11-15 17:59:31,832-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,834-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,837-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,843-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,845-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 17:59:31,848-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{'name': 'file', 'filename': 'zgh.bat'}；sql：{}
+2019-11-15 17:59:31,849-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,851-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,852-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,857-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,860-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 17:59:31,862-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{'name': 'file', 'filename': 'yy1.m4a'}；sql：{}
+2019-11-15 17:59:31,865-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,866-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,869-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 17:59:31,874-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 17:59:31,876-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 17:59:31,878-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{'name': 'file', 'filename': 'yy3.wav'}；sql：{}
+2019-11-15 17:59:31,882-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 17:59:31,884-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 17:59:31,886-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:54,539-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 18:01:54,540-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 18:01:54,542-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 18:01:54,891-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 18:01:54,898-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:54,909-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 18:01:54,910-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:54,911-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:54,912-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:55,020-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:55,025-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:55,026-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 18:01:55,028-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 18:01:55,029-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:55,030-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:55,111-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:55,114-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:55,115-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 18:01:55,116-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:55,117-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:55,119-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:55,438-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:01:55,543-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:01:55,545-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812116585A.jpg成功', 'result': 'pass'}
+2019-11-15 18:01:55,851-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:55,854-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:55,856-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 18:01:55,858-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:55,860-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:55,861-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:55,986-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:01:56,058-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:01:56,061-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812117338B.jpg成功', 'result': 'pass'}
+2019-11-15 18:01:56,362-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:56,365-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:56,366-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 18:01:56,368-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:56,370-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:56,372-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:56,515-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:01:56,619-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:01:56,620-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:56,626-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:56,627-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 18:01:56,629-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:01:56,630-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:56,632-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:56,730-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:01:56,819-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:01:56,820-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:56,824-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:56,825-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 18:01:56,826-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 18:01:56,828-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:56,831-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:01:56,950-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:56,954-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:56,958-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 18:01:56,960-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 18:01:56,962-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:56,964-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:01:57,078-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:57,082-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:57,083-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 18:01:57,084-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:57,086-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:57,087-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:57,173-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:57,176-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:57,177-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 18:01:57,178-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:01:57,180-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:57,181-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:57,252-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:57,256-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:57,257-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 18:01:57,259-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:01:57,260-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:57,262-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:57,572-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:57,580-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:57,582-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 18:01:57,583-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:01:57,585-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:57,587-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:01:58,124-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:01:58,128-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:01:58,129-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 18:01:58,131-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-15 18:01:58,132-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:01:58,133-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:02:00,103-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:02:00,202-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:02:00,204-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '你 行 了 所 \n成功', 'result': 'pass'}
+2019-11-15 18:02:00,505-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:02:00,507-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:02:00,509-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 18:02:00,512-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy3.wav'}
+2019-11-15 18:02:00,514-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:02:00,516-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:02:00,614-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:10023
+2019-11-15 18:02:00,732-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:02:00,735-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 10023, 'data': '音频格式不正确，必须是M4A格式的文件', 'result': 'pass'}
+2019-11-15 18:02:01,039-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:09,670-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 18:04:09,671-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 18:04:09,672-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 18:04:10,053-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 18:04:10,059-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:10,070-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 18:04:10,071-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:10,072-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:10,073-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:10,938-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:10,943-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:10,945-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 18:04:10,946-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 18:04:10,947-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:10,949-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:11,051-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:04:11,098-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:11,100-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:11,190-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:11,192-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 18:04:11,193-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:11,194-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:11,196-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:11,516-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:11,563-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:11,564-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:11,571-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:11,572-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 18:04:11,574-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:11,576-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:11,579-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:11,909-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:11,972-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:11,974-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:11,980-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:11,982-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 18:04:11,983-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:11,985-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:11,987-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:12,135-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:12,178-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:12,179-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:12,188-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:12,190-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 18:04:12,191-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:12,193-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:12,194-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:13,503-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:13,577-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:13,582-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:13,601-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:13,603-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 18:04:13,606-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 18:04:13,609-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:13,610-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:04:14,745-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:14,788-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:14,790-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:14,794-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:14,795-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 18:04:14,797-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 18:04:14,799-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:14,800-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:04:16,139-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:04:16,185-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:16,187-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:16,191-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:16,193-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 18:04:16,194-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:16,195-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:16,197-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:16,853-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:16,898-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:16,900-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:16,913-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:16,914-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 18:04:16,916-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:16,918-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:16,922-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:17,602-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:17,664-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:17,667-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:17,676-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:17,678-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 18:04:17,682-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:17,685-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:17,689-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:18,343-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:18,380-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:18,381-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:18,389-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:18,390-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 18:04:18,391-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:18,392-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:18,393-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:19,017-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:19,088-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:04:19,091-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:19,101-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:19,104-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 18:04:19,109-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-15 18:04:19,121-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:19,123-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:20,902-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:21,079-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:21,082-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '你 行 了 所 \n成功', 'result': 'pass'}
+2019-11-15 18:04:21,384-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:21,391-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:21,395-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 18:04:21,396-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy3.wav'}
+2019-11-15 18:04:21,400-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:21,402-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:21,516-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:10023
+2019-11-15 18:04:21,754-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:21,757-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 10023, 'data': '音频格式不正确，必须是M4A格式的文件', 'result': 'pass'}
+2019-11-15 18:04:22,076-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:28,064-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 18:04:28,065-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 18:04:28,066-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 18:04:28,601-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 18:04:28,609-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:28,620-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 18:04:28,622-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:28,624-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:28,625-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:29,410-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:29,415-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:29,416-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 18:04:29,418-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 18:04:29,420-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:29,422-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:29,534-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:04:29,660-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:29,662-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 18:04:29,964-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:29,969-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:29,971-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 18:04:29,973-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:29,976-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:29,979-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:30,094-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:30,189-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:30,191-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812271456A.jpg成功', 'result': 'pass'}
+2019-11-15 18:04:30,493-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:30,496-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:30,500-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 18:04:30,503-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:30,505-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:30,508-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:30,623-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:30,761-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:30,764-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812271981B.jpg成功', 'result': 'pass'}
+2019-11-15 18:04:31,066-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:31,070-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:31,072-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 18:04:31,079-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:31,080-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:31,082-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:31,199-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:31,330-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:31,331-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:31,339-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:31,344-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 18:04:31,346-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:31,348-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:31,350-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:31,476-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:31,578-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:31,580-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:31,586-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:31,588-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 18:04:31,590-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 18:04:31,592-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:31,594-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:04:32,724-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:32,812-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:32,814-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '100成功', 'result': 'pass'}
+2019-11-15 18:04:33,116-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:33,118-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:33,120-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 18:04:33,123-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 18:04:33,125-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:33,126-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:04:34,538-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:04:34,611-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:34,612-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '检测到有多人脸 无法比对', 'result': 'pass'}
+2019-11-15 18:04:34,913-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:34,918-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:34,920-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 18:04:34,924-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:34,928-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:34,930-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:35,580-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:35,708-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:35,710-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/landmarks/output/1573812276410/0.jpg成功', 'result': 'pass'}
+2019-11-15 18:04:36,012-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:36,015-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:36,019-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 18:04:36,021-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:36,023-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:36,026-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:36,670-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:36,817-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:36,820-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:36,829-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:36,831-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 18:04:36,833-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:04:36,835-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:36,837-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:37,492-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:37,606-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:37,610-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'expression': '悲伤', 'prob': 73}成功", 'result': 'pass'}
+2019-11-15 18:04:37,914-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:37,915-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:37,916-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 18:04:37,918-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:04:37,920-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:37,921-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:38,600-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:04:38,690-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:38,694-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:38,713-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:38,715-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 18:04:38,722-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-15 18:04:38,725-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:38,731-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:40,510-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:04:40,607-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:40,609-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '你 行 了 所 \n成功', 'result': 'pass'}
+2019-11-15 18:04:40,910-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:04:40,913-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:04:40,915-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 18:04:40,917-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy3.wav'}
+2019-11-15 18:04:40,919-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:04:40,921-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:04:41,050-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:10023
+2019-11-15 18:04:41,166-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:04:41,167-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 10023, 'data': '音频格式不正确，必须是M4A格式的文件', 'result': 'pass'}
+2019-11-15 18:04:41,470-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:05:34,561-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:05:34,562-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:06:59,648-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:06:59,649-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:08,068-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:08,069-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:50,831-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 18:07:50,831-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 18:07:50,832-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 18:07:51,307-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 18:07:51,313-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:51,324-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 18:07:51,327-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:51,329-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:51,330-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:52,175-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:52,179-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:52,180-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 18:07:52,182-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 18:07:52,183-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:52,184-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:52,377-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:07:52,426-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:52,427-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:52,435-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:52,437-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 18:07:52,438-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:52,440-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:52,442-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:52,828-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:07:52,883-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:52,885-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:52,893-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:52,894-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 18:07:52,896-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:52,898-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:52,899-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:53,030-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:07:53,067-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:53,068-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:53,073-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:53,075-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 18:07:53,078-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:53,082-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:53,083-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:53,636-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:07:53,681-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:53,683-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:53,691-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:53,692-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 18:07:53,695-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:07:53,697-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:53,698-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:54,050-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:07:54,137-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:54,139-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:54,147-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:54,149-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 18:07:54,150-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 18:07:54,153-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:54,156-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:07:55,701-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:07:55,746-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:55,748-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:55,753-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:55,754-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 18:07:55,755-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 18:07:55,756-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:55,759-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:07:57,192-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:07:57,227-[INFO]-logger.py-auto_cases-日志信息:数据写入失败！[Errno 13] Permission denied: 'D:\\interface_auto_cases_for_AQHY\\test_data\\interface_cases.xlsx'
+2019-11-15 18:07:57,228-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:57,234-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:57,235-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 18:07:57,241-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:57,243-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:57,244-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:57,868-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:07:57,986-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:07:57,989-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/landmarks/output/1573812478700/0.jpg成功', 'result': 'pass'}
+2019-11-15 18:07:58,290-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:58,294-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:58,300-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 18:07:58,301-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:07:58,303-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:58,305-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:59,034-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:07:59,191-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:07:59,193-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:07:59,202-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:07:59,205-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 18:07:59,207-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:07:59,208-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:07:59,210-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:07:59,896-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:07:59,986-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:07:59,988-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'expression': '悲伤', 'prob': 73}成功", 'result': 'pass'}
+2019-11-15 18:08:00,292-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:00,295-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:00,299-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 18:08:00,304-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:08:00,306-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:00,310-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:01,186-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:08:01,271-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:01,272-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:01,276-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:01,278-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 18:08:01,280-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-15 18:08:01,281-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:01,282-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:07,405-[INFO]-logger.py-auto_cases-日志信息:用例执行模式（0全部执行，1执行指定配置接口）：0
+2019-11-15 18:08:07,406-[INFO]-logger.py-auto_cases-日志信息:服务地址配置：https://aiapplet.citydo.com.cn
+2019-11-15 18:08:07,407-[INFO]-logger.py-auto_cases-日志信息:配置用例列表：[]
+2019-11-15 18:08:07,822-[INFO]-logger.py-auto_cases-日志信息:本次获取测试用例成功，表单：<Worksheet "Sheet1">
+2019-11-15 18:08:07,828-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:07,839-[INFO]-logger.py-auto_cases-日志信息:正在执行第1条用例
+2019-11-15 18:08:07,840-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:07,842-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:07,843-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:08,704-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:08,709-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:08,710-[INFO]-logger.py-auto_cases-日志信息:正在执行第2条用例
+2019-11-15 18:08:08,711-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/analyze；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'lyj.jpg'}
+2019-11-15 18:08:08,713-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:08,714-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:08,815-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:08:08,886-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:08,888-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '图片尺寸过大', 'result': 'pass'}
+2019-11-15 18:08:09,189-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:09,192-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:09,194-[INFO]-logger.py-auto_cases-日志信息:正在执行第3条用例
+2019-11-15 18:08:09,196-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:09,197-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:09,199-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:09,330-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:09,436-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:09,437-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812490695A.jpg成功', 'result': 'pass'}
+2019-11-15 18:08:09,738-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:09,741-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:09,742-[INFO]-logger.py-auto_cases-日志信息:正在执行第4条用例
+2019-11-15 18:08:09,748-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '1'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:09,751-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:09,753-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:09,878-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:10,069-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:10,071-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '1573812491242B.jpg成功', 'result': 'pass'}
+2019-11-15 18:08:10,373-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:10,377-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:10,382-[INFO]-logger.py-auto_cases-日志信息:正在执行第5条用例
+2019-11-15 18:08:10,384-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '2'}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:10,386-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:10,393-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:10,532-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:08:10,707-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:10,709-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:10,716-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:10,718-[INFO]-logger.py-auto_cases-日志信息:正在执行第6条用例
+2019-11-15 18:08:10,720-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/uploadComparePic；method：POST_file；data：{'id': '0'}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:08:10,722-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:10,723-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:10,848-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:08:10,974-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:10,976-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:10,987-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:10,989-[INFO]-logger.py-auto_cases-日志信息:正在执行第7条用例
+2019-11-15 18:08:10,991-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795777681A.jpg'}；sql：{}
+2019-11-15 18:08:10,992-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:10,995-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:08:12,068-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:12,174-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:12,175-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '100成功', 'result': 'pass'}
+2019-11-15 18:08:12,476-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:12,479-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:12,481-[INFO]-logger.py-auto_cases-日志信息:正在执行第8条用例
+2019-11-15 18:08:12,483-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/compare；method：POST1；data：{'file1': '1573795777681A.jpg', 'file2': '1573795813010A.jpg'}；sql：{}
+2019-11-15 18:08:12,486-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:12,488-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post1请求
+2019-11-15 18:08:13,963-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:31000
+2019-11-15 18:08:14,050-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:14,052-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 31000, 'data': '检测到有多人脸 无法比对', 'result': 'pass'}
+2019-11-15 18:08:14,355-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:14,359-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:14,361-[INFO]-logger.py-auto_cases-日志信息:正在执行第9条用例
+2019-11-15 18:08:14,363-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:14,365-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:14,367-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:15,033-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:15,149-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:15,151-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': 'https://citydoface.oss-cn-hangzhou.aliyuncs.com/hall/face/landmarks/output/1573812495857/0.jpg成功', 'result': 'pass'}
+2019-11-15 18:08:15,453-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:15,455-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:15,457-[INFO]-logger.py-auto_cases-日志信息:正在执行第10条用例
+2019-11-15 18:08:15,458-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/landmarks；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:08:15,460-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:15,462-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:16,101-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:08:16,214-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:16,218-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:16,232-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:16,234-[INFO]-logger.py-auto_cases-日志信息:正在执行第11条用例
+2019-11-15 18:08:16,237-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.jpg'}
+2019-11-15 18:08:16,241-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:16,245-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:16,865-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:16,972-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:16,974-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': "{'expression': '悲伤', 'prob': 73}成功", 'result': 'pass'}
+2019-11-15 18:08:17,276-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:17,280-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:17,282-[INFO]-logger.py-auto_cases-日志信息:正在执行第12条用例
+2019-11-15 18:08:17,284-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/face/expression；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'zgh.bat'}
+2019-11-15 18:08:17,287-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:17,289-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:17,917-[INFO]-logger.py-auto_cases-日志信息:用例code比对失败！返回：code:0,msg:成功
+2019-11-15 18:08:17,998-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:18,000-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:18,006-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:18,007-[INFO]-logger.py-auto_cases-日志信息:正在执行第13条用例
+2019-11-15 18:08:18,009-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy1.m4a'}
+2019-11-15 18:08:18,010-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:18,012-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:19,828-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:0
+2019-11-15 18:08:19,927-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:19,928-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 0, 'data': '你 行 了 所 \n成功', 'result': 'pass'}
+2019-11-15 18:08:20,232-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:20,235-[INFO]-logger.py-auto_cases-日志信息:============我要开始测试了===============
+2019-11-15 18:08:20,238-[INFO]-logger.py-auto_cases-日志信息:正在执行第14条用例
+2019-11-15 18:08:20,240-[INFO]-logger.py-auto_cases-日志信息:当前请求内容_URL：https://aiapplet.citydo.com.cn/exploreHall/voice/recognition；method：POST_file；data：{}；sql：{'name': 'file', 'filename': 'yy3.wav'}
+2019-11-15 18:08:20,242-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:20,243-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:08:20,357-[INFO]-logger.py-auto_cases-日志信息:用例code比对成功！返回code:10023
+2019-11-15 18:08:20,514-[INFO]-logger.py-auto_cases-日志信息:执行写入excel成功！
+2019-11-15 18:08:20,516-[INFO]-logger.py-auto_cases-日志信息:返回数据写入excel成功！{'code': 10023, 'data': '音频格式不正确，必须是M4A格式的文件', 'result': 'pass'}
+2019-11-15 18:08:20,819-[INFO]-logger.py-auto_cases-日志信息:===============我要结束测试了！==================
+2019-11-15 18:08:42,424-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:08:42,425-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:10:24,849-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:10:24,850-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:11:31,632-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:11:31,632-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:11:44,852-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:11:44,852-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
+2019-11-15 18:18:49,426-[INFO]-logger.py-auto_cases-日志信息:当前headers配置：{'Host': 'aiapplet.citydo.com.cn', 'Connection': 'keep-alive', 'Origin': 'https://aiapplet.citydo.com.cn', 'Referer': 'https://aiapplet.citydo.com.cn/', 'openid': 'helloworld'}
+2019-11-15 18:18:49,427-[INFO]-logger.py-auto_cases-日志信息:现在开始进行post_file请求
