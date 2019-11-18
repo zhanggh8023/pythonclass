@@ -41,9 +41,9 @@ with open(file_path, 'wb+') as file:
 text=eval(gmi.get_mysql_info("select * from aqhy ORDER BY date DESC LIMIT 10;",1)['restult'])
 logger.info('获取数据库测试结果内容成功：%s' % text)
 #钉钉智能消息机器人智能客服
-# url='https://oapi.dingtalk.com/robot/send?access_token=171c037703a2de989a58465e92cb4108a366de083cda389841f59d40d84980fb'
+# url='https://oapi.dingtalk.com/robot/send?access_token=171c03789a58465e92cb4108a366de083cda389841f59d40d84980fb'
 #测试地址
-# url='https://oapi.dingtalk.com/robot/send?access_token=9abe37c6a640422cb85c9a877bb026b0b9029378890c5f14fcc106be9ab5725e'
+# url='https://oapi.dingtalk.com/robot/send?access_token=9abe322cb85c9a877bb026b0b9029378890c5f14fcc106be9ab5725e'
 headers={"Content-Type":"application/json"}
 data={
      "msgtype": "markdown",
