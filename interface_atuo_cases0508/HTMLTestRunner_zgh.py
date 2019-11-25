@@ -42,10 +42,15 @@ import io
 import datetime
 import sys
 import time
+from conf import Allpath
+from public.get_mysql_info import getMysqlInfo
 import unittest
 from xml.sax import saxutils
 from public.writeExcel import writeexcel
 from public.readExcel import readexcel
+
+gmi=getMysqlInfo(Allpath.db_conf_path,'config1')
+now = time.strftime('%Y-%m-%d_%H_%M_%S')
 
 PY3K = (sys.version_info[0] > 2)
 if PY3K:
@@ -316,7 +321,7 @@ class Template_mixin(object):
             xAxis: [
                 {
                     type: 'category',
-                    data: ['最先','九次','八次','七次','六次','五次','四次','三次','两次','最近'],
+                    data: ['LAST','九次','八次','七次','六次','五次','四次','三次','两次','最近'],
                     axisPointer: {
                         type: 'shadow'
                     }
@@ -337,10 +342,10 @@ class Template_mixin(object):
                     type: 'value',
                     name: '错误率',
                     min: 0,
-                    max: 10,
-                    interval: 1,
+                    max: 100,
+                    interval: 10,
                     axisLabel: {
-                        formatter: '{value} %%'
+                        formatter: '{value}%%'
                     }
                 }
             ],
@@ -852,7 +857,7 @@ class HTMLTestRunner(Template_mixin):
         startTime = str(self.startTime)[:19]
         duration = str(self.stopTime - self.startTime)
         status = []
-        count = {'sum': 0, 'ok': 0, 'fail': 0, 'error': 0,'error_1':0}
+        count = {'restult':'','sum': 0, 'ok': 0, 'fail': 0, 'error': 0,'error_1':0,'date':''}
         status.append('共 %s 条接口用例' % (result.success_count + result.failure_count + result.error_count))
         count['sum'] = result.success_count + result.failure_count + result.error_count
         if result.success_count:
@@ -864,16 +869,18 @@ class HTMLTestRunner(Template_mixin):
         if result.error_count:
             status.append('错误 %s 条' % result.error_count)
             count['error'] = result.error_count
-            count['error_1']=str("%.2f%%" % (float(result.error_count) / float(result.success_count + result.failure_count + result.error_count) * 100))
+            count['error_1']=str("%.2f" % (float(result.error_count) / float(result.success_count + result.failure_count + result.error_count) * 100))
         if status:
             status = '，'.join(status)
             self.passrate = str("%.2f%%" % (float(result.success_count) / float(
                 result.success_count + result.failure_count + result.error_count) * 100))
         else:
             status = 'none'
-        writeexcel(count)
-        writeexcel({"restult": str({'testname': self.tester, 'time': startTime, 'sumtime': duration, 'testresult': status,
-                                'tonggl': self.passrate})})
+        count["restult"]=str({'testname': self.tester, 'time': startTime, 'sumtime': duration, 'testresult': status,
+                                'tonggl': self.passrate})
+        count['date']=now
+        # print(count)
+        gmi.Instert_mysql([count])
 
         return [
             (u'测试人员', self.tester),
@@ -972,7 +979,7 @@ class HTMLTestRunner(Template_mixin):
         return report
 
     def _generate_chart(self, result):
-        redata=readexcel()
+        redata=gmi.get_mysql_info_test("select * from znkf ORDER BY date DESC LIMIT 10;",1)
         chart = self.ECHARTS_SCRIPT % dict(
             Pass=str(redata['ok']),
             fail=str(redata['fail']),

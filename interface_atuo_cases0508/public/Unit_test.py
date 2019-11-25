@@ -9,7 +9,6 @@ from ddt import ddt, data, unpack
 from public.config import config
 from public.readExcel import readExcel
 from public.writeExcel import writeExcel
-from public.get_mysql_info import getMysqlInfo
 from public.httpRequest import httpRequest
 from conf import Allpath
 from public.logger import Log
@@ -38,26 +37,27 @@ class testHttpRequset(unittest.TestCase):
     def test_get(self, id, method, url, data, code, case_name, sql):
         logger.info('正在执行第%s条用例' % id)
         result_dict = {}
-        print(url, method, data, sql)
+        logger.info("当前请求内容_URL：{}；method：{}；data：{}；sql：{}".format(url, method, data, sql))
         result = httpRequest().httpGet(url, method, data, sql)
         result_dict['code'] = result['code']
         #判断请求返回内容是否包含key值：data
         if 'data' in result.keys():
-            logger.info('接口返回data%s' % result['data'])
+            logger.info('接口返回data%s' % result)
             result_dict['data'] = result['data']
         try:
             # 断言对比(期望值，实际返回值)
             self.assertEqual(code, result['code'])
             result_dict['result'] = 'pass'
-            logger.info('用例code比对成功！')
+            logger.info('用例code比对成功！实际返回：%s'% result['code'])
         except Exception as e:
             result_dict['result'] = 'fail'
-            logger.info('用例code比对失败！')
+            logger.info('用例code比对失败！实际返回：%s'% result['code'])
+            t.write_Excel(id + 1, result_dict)
             raise e
 
         logger.info("返回数据写入excel%s" % result_dict)
         t.write_Excel(id + 1, result_dict)
-        time.sleep(0.8)
+        time.sleep(0.3)
 
     def tearDown(self):
         logger.info("===============我要结束测试了！==================")

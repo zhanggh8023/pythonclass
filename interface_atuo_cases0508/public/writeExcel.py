@@ -26,7 +26,6 @@ class writeExcel:
             # sheet.cell(i,9).value = dcit['sql_result']
             sheet.cell(i, 10).value = dict['result']
             if 'data' in dict.keys():
-                print(dict['data'])
                 sheet.cell(i, 11).value = str(dict['data'])
             wb_new.save(self.file)
             logger.info('执行写入excel成功！')
