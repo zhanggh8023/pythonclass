@@ -28,7 +28,6 @@ class LoginForm(FlaskForm):
             "placeholder": "请输入账号!",
             # "required": "required"
         }
-
     )
     pwd = PasswordField(
         label="密码",

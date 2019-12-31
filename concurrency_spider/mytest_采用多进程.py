@@ -2,7 +2,7 @@
 # @Time    : 2019/12/2 16:08
 # @Author  : zgh
 # @Email   : 849080458@qq.com
-# @File    : test.py
+# @File    : test_采用多进程.py
 # @Software: PyCharm
 
 # !/usr/bin/env python2

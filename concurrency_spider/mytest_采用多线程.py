@@ -9,7 +9,7 @@
 # -*- coding=utf-8 -*-
 
 from threading import Thread
-import queue
+from queue import Queue
 import time
 from lxml import etree
 import requests
@@ -71,7 +71,7 @@ class DouBanSpider(Thread):
 
 def main():
     # 创建一个队列用来保存进程获取到的数据
-    q = queue.Queue()
+    q = Queue()
     base_url = 'https://movie.douban.com/top250?start='
     # 构造所有ｕｒｌ
     url_list = [base_url + str(num) for num in range(0, 225 + 1, 25)]

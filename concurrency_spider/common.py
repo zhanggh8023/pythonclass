@@ -5,6 +5,7 @@ from concurrency_spider.logger import logger
 
 
 basepath = os.path.abspath(os.path.dirname(__file__))  # 当前模块文件的根目录
+print(basepath)
 
 
 def setup_down_path():
