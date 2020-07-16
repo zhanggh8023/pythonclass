@@ -7,7 +7,7 @@ import random
 import os
 from captcha.image import ImageCaptcha
 
-import config
+from 验证码识别.captcha_recognize import config
 
 IMAGE_HEIGHT = config.IMAGE_HEIGHT
 IMAGE_WIDTH = config.IMAGE_WIDTH
@@ -24,8 +24,8 @@ def gen(gen_dir, total_size, chars_num):
     os.makedirs(gen_dir)
   image = ImageCaptcha(width=IMAGE_WIDTH, height=IMAGE_HEIGHT,font_sizes=[40])
   # must be subset of config.CHAR_SETS
-  char_sets = 'ABCDEFGHIJKLMNPQRSTUVWXYZ'
-  for i in xrange(total_size):
+  char_sets = 'ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijklmnpqrstuvwxyz123456789'
+  for i in range(total_size):
     label = ''.join(random.sample(char_sets, chars_num))
     image.write(label, os.path.join(gen_dir, label+'_num'+str(i)+'.png'))
 

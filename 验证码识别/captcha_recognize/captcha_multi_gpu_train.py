@@ -9,8 +9,8 @@ import sys
 
 import numpy as np
 from six.moves import xrange 
-import tensorflow as tf
-import captcha_model as captcha
+import tensorflow.compat.v1 as tf
+import 验证码识别.captcha_recognize.captcha_model as captcha
 
 FLAGS = None
 

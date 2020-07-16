@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="D:/Mechanical-insect/Taisite-Platform" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_AIkfpt" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_AQHY" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_DSJSC" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_SJSB" vcs="Git" />
+    <mapping directory="D:/interface_auto_cases_for_XYCP" vcs="Git" />
     <mapping directory="D:/interface_auto_cases_for_ZNKF" vcs="Git" />
   </component>
 </project>

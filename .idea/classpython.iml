@@ -4,8 +4,18 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="interface_auto_cases_for_ZNKF" />
     <orderEntry type="module" module-name="identify_the_animal" />
+    <orderEntry type="module" module-name="auto_testcase" />
+    <orderEntry type="module" module-name="Django_study" />
+    <orderEntry type="module" module-name="python_interface-master" />
+    <orderEntry type="module" module-name="zfjwxt_python_api" />
+    <orderEntry type="module" module-name="zfjwxt_python_api" />
+    <orderEntry type="module" module-name="Taisite-Platform" />
+    <orderEntry type="module" module-name="精品渐变Admin商业后台UI前端系统模板" />
+    <orderEntry type="module" module-name="精品渐变Admin商业后台UI前端系统模板" />
+    <orderEntry type="module" module-name="Taisite-Platform" />
+    <orderEntry type="module" module-name="layuiAdmin.std-v1.0.0" />
+    <orderEntry type="module" module-name="X-admin" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="renderExternalDocumentation" value="true" />

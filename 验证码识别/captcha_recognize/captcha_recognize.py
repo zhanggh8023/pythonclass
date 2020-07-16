@@ -9,11 +9,11 @@ from datetime import datetime
 from PIL import Image
 import numpy as np
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from tensorflow.python.platform import gfile
-import captcha_model as captcha
+import 验证码识别.captcha_recognize.captcha_model as captcha
 
-import config
+from 验证码识别.captcha_recognize import config
 
 IMAGE_WIDTH = config.IMAGE_WIDTH
 IMAGE_HEIGHT = config.IMAGE_HEIGHT
@@ -26,7 +26,7 @@ FLAGS = None
 
 def one_hot_to_texts(recog_result):
   texts = []
-  for i in xrange(recog_result.shape[0]):
+  for i in range(recog_result.shape[0]):
     index = recog_result[i]
     texts.append(''.join([CHAR_SETS[i] for i in index]))
   return texts

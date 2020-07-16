@@ -7,8 +7,8 @@ import argparse
 import sys
 import math
 
-import tensorflow as tf
-import captcha_model as captcha
+import tensorflow.compat.v1 as tf
+from 验证码识别.captcha_recognize import captcha_model as captcha
 
 FLAGS = None
 
@@ -59,13 +59,13 @@ if __name__ == '__main__':
   parser.add_argument(
       '--num_examples',
       type=int,
-      default=20000,
+      default=100,
       help='Number of examples to run validation.'
   )
   parser.add_argument(
       '--batch_size',
       type=int,
-      default=100,
+      default=20000,
       help='Batch size.'
   )
   parser.add_argument(
