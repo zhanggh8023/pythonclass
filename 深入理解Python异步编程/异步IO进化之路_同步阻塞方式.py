@@ -8,8 +8,9 @@
 import time
 import socket
 
+
 def blocking_way():
-    sock  = socket.socket()
+    sock = socket.socket()
     # blocking
     sock.connect(("example.com", 80))
     request = 'GET / HTTP/1.0 \r\nHost: example.com\r\n\r\n'
@@ -22,6 +23,7 @@ def blocking_way():
         chunk = sock.recv(4096)
     return response
 
+
 def sync_way():
     res = []
     time2 = time.time()
@@ -29,8 +31,10 @@ def sync_way():
         time1 = time.time()
         res.append(blocking_way())
         print(time.time() - time1)
-    print(time.time() - time2,(time.time() - time2)/10)
+    print(time.time() - time2, (time.time() - time2) / 10)
     return len(res)
+
+
 '''
 注：总体耗时约为4.5秒。（因网络波动每次测试结果有所变动，本文取多次平均值）
 
@@ -49,7 +53,6 @@ def sync_way():
 
 if __name__ == '__main__':
     sync_way()
-
 
 '''
 1.1 阻塞

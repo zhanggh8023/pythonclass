@@ -8,13 +8,16 @@
 import time
 import socket
 from concurrent import futures
+
 '''
 1/在一个程序内，依次执行10次太耗时，那开10个一样的程序同时执行不就行了。于是我们想到了多进程编程。为什么我们会先想到多进程呢？发展脉络如此。在更早的操作系统（Linux 2.4）及其以前，进程是 OS 调度任务的实体，是面向进程设计的OS。
 
 2/由于线程的数据结构比进程更轻量级，同一个进程可以容纳多个线程，从进程到线程的优化由此展开。后来的OS也把调度单位由进程转为线程，进程只作为线程的容器，用于管理进程所需的资源。而且OS级别的线程是可以被分配到不同的CPU核心同时运行的。
 '''
+
+
 def blocking_way():
-    sock  = socket.socket()
+    sock = socket.socket()
     # blocking
     sock.connect(("example.com", 80))
     request = 'GET / HTTP/1.0 \r\nHost: example.com\r\n\r\n'
@@ -40,6 +43,7 @@ def process_way():
         print(time.time() - time1)
 
     return len([fut.result() for fut in futs])
+
 
 '''
 1/注：总体耗时约为 0.6 秒。

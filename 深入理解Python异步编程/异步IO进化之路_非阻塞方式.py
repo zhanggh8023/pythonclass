@@ -11,8 +11,10 @@ import socket
 '''
 非阻塞解决方案。先来看看最原始的非阻塞如何工作的。
 '''
+
+
 def nonblocking_way():
-    sock  = socket.socket()
+    sock = socket.socket()
     sock.setblocking(False)
 
     try:
@@ -53,6 +55,7 @@ def sync_way():
         print(time.time() - time1)
     print(time.time() - time2, (time.time() - time2) / 10)
     return len(res)
+
 
 '''
 注：总体耗时约4.3秒。
