@@ -1,5 +1,0 @@
-database_host = "127.0.0.1"
-database_username = "root"
-database_password = "root"
-database1 = "1"
-database2 = "2"

@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="默认的">
-      <change afterPath="$PROJECT_DIR$/Django_study/manage.py" afterDir="false" />
+    <list default="true" id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/PPTdownload/2mfo0rmboun.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPTdownload/ppt_down.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPTdownload/ppt_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPTdownload/ppt_unzip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPTdownload/pptlist.bak.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPTdownload/pptlist.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/CUP_time" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/CUP的时间观.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_同步阻塞方式.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_改进方式：多进程.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_非阻塞方式.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/深入理解Python异步编程/深入理解Python异步编程.docx" afterDir="false" />
       <change afterPath="D:/interface_auto_cases_for_AIkfpt/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="D:/interface_auto_cases_for_XYCP/Result/log/Api_Autotest_log_2019-08-26.log" afterDir="false" />
       <change afterPath="D:/interface_auto_cases_for_XYCP/Result/log/Api_Autotest_log_2019-08-27.log" afterDir="false" />
@@ -37,12 +48,6 @@
       <change beforePath="D:/Mechanical-insect/Taisite-Platform/backend/utils/cron/interfaceTestCron.py" beforeDir="false" afterPath="D:/Mechanical-insect/Taisite-Platform/backend/utils/cron/interfaceTestCron.py" afterDir="false" />
       <change beforePath="D:/Mechanical-insect/Taisite-Platform/backend/utils/mango.py" beforeDir="false" afterPath="D:/Mechanical-insect/Taisite-Platform/backend/utils/mango.py" afterDir="false" />
       <change beforePath="D:/Mechanical-insect/Taisite-Platform/dist/static/js/app.cdaaaaeda95fb2a81629.js" beforeDir="false" afterPath="D:/Mechanical-insect/Taisite-Platform/dist/static/js/app.cdaaaaeda95fb2a81629.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/classpython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/classpython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/README.md" beforeDir="false" />
@@ -77,25 +82,18 @@
       <change beforePath="$PROJECT_DIR$/Django_study/config.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/listen_time_task.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/makeTestCase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django_study/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django_study/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django_study/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/run.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Django_study/tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/role_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/role_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/admin/user_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_study/app/templates/home/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_study/app/templates/home/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/classbaidu_xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/classbaidu_xpath.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_alipay/alipay.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_alipay/alipay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qixy_spider/enterprise_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/qixy_spider/enterprise_data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_gen_default.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_gen_default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_multi_gpu_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_multi_gpu_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_recognize.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_recognize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_records.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_records.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/captcha_recognize/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangostart/apps/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangostart/apps/message/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/33HH.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/37wQ.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/4TtA.jpg" beforeDir="false" />
@@ -196,50 +194,30 @@
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/xHFE.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/xT8w.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/xx43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/learn_Img.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/learn_Img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/验证码识别/two_value_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/验证码识别/two_value_image.py" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AIkfpt/.idea/interface_auto_cases_for_AIkfpt.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/.idea/interface_auto_cases_for_AIkfpt.iml" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/.idea/modules.xml" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/.idea/modules.xml" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/.idea/vcs.xml" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/.idea/vcs.xml" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AIkfpt/.idea/workspace.xml" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/Result/htmlreport/report/index.html" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/Result/htmlreport/report/index.html" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/Result/log/Api_Autotest_log_2020-03-30.log" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/Result/log/Api_Autotest_log_2020-03-30.log" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/conf/dbconfig.conf" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/conf/path.conf" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/main.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/main.py" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/public/httpRequest.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/public/httpRequest.py" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/request_file/yy1.m4a" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/request_file/yy2.bat" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/request_file/yy2.m4a" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/request_file/yy3.wav" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_AIkfpt/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_AIkfpt/test_data/interface_cases.xlsx" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_AQHY/.idea/interface_auto_cases_for_AQHY.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/.idea/interface_auto_cases_for_AQHY.iml" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/Result/htmlreport/report/index.html" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/Result/htmlreport/report/index.html" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/Result/log/Api_Autotest_log_2019-11-18.log" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/Result/log/Api_Autotest_log_2019-11-18.log" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/conf/path.conf" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/main.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/main.py" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/public/httpRequest.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/public/httpRequest.py" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_AQHY/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_AQHY/test_data/interface_cases.xlsx" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/Result/htmlreport/2019-11-11_16_21_46.html" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/Result/htmlreport/2019-11-11_16_22_35.html" beforeDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/Result/htmlreport/report/index.html" beforeDir="false" afterPath="D:/interface_auto_cases_for_DSJSC/Result/htmlreport/report/index.html" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/Result/log/Api_Autotest_log_2019-11-11.log" beforeDir="false" afterPath="D:/interface_auto_cases_for_DSJSC/Result/log/Api_Autotest_log_2019-11-11.log" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_DSJSC/conf/path.conf" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_DSJSC/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_DSJSC/test_data/interface_cases.xlsx" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_SJSB/conf/case.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/conf/case.conf" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_DSJSC/.idea/interface_auto_cases_for_DSJSC.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_DSJSC/.idea/interface_auto_cases_for_DSJSC.iml" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_SJSB/.idea/interface_auto_cases_for_SJSB.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/.idea/interface_auto_cases_for_SJSB.iml" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_SJSB/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/conf/path.conf" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_SJSB/main.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/main.py" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_SJSB/public/httpRequest.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/public/httpRequest.py" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_SJSB/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_SJSB/test_data/interface_cases.xlsx" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_XYCP/.idea/interface_auto_cases_for_XYCP.iml" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/.idea/interface_auto_cases_for_XYCP.iml" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_XYCP/.idea/modules.xml" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/.idea/modules.xml" afterDir="false" />
+      <change beforePath="D:/interface_auto_cases_for_XYCP/.idea/workspace.xml" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/Result/htmlreport/report/index.html" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/Result/htmlreport/report/index.html" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/conf/case.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/conf/case.conf" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/conf/path.conf" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/main.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/main.py" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/request_file/原子零件导出.xls" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/request_file/原子零件导出.xls" afterDir="false" />
       <change beforePath="D:/interface_auto_cases_for_XYCP/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_XYCP/test_data/interface_cases.xlsx" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_ZNKF/conf/case.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/conf/case.conf" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_ZNKF/conf/path.conf" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/conf/path.conf" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_ZNKF/main.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/main.py" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_ZNKF/public/httpRequest.py" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/public/httpRequest.py" afterDir="false" />
-      <change beforePath="D:/interface_auto_cases_for_ZNKF/test_data/interface_cases.xlsx" beforeDir="false" afterPath="D:/interface_auto_cases_for_ZNKF/test_data/interface_cases.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +236,7 @@
     <SUITE FILE_PATH="coverage/classpython$PythonWeChat.coverage" NAME="PythonWeChat Coverage Results" MODIFIED="1574995931387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WeChat/08 itchat微信好友个性签名词云图" />
     <SUITE FILE_PATH="coverage/classpython$processpool.coverage" NAME="processpool Coverage Results" MODIFIED="1575098357264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
     <SUITE FILE_PATH="coverage/classpython$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1585549916783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_AIkfpt" />
-    <SUITE FILE_PATH="coverage/classpython$openDoor.coverage" NAME="openDoor Coverage Results" MODIFIED="1577696321650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opendoor" />
+    <SUITE FILE_PATH="coverage/classpython$openDoor.coverage" NAME="openDoor Coverage Results" MODIFIED="1593593304654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/opendoor" />
     <SUITE FILE_PATH="coverage/classpython$spider_mp4.coverage" NAME="spider_mp4 Coverage Results" MODIFIED="1575018981741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$db_migrate.coverage" NAME="db_migrate Coverage Results" MODIFIED="1575362279928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/auto_testcase" />
     <SUITE FILE_PATH="coverage/classpython$baiduDownl.coverage" NAME="baiduDownl Coverage Results" MODIFIED="1571914647183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
@@ -278,19 +256,22 @@
     <SUITE FILE_PATH="coverage/classpython$pytest_in_test__py.coverage" NAME="pytest in test_采用多线程.py Coverage Results" MODIFIED="1575279381435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
     <SUITE FILE_PATH="coverage/classpython$douyin.coverage" NAME="douyin Coverage Results" MODIFIED="1563260653611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/douyin" />
     <SUITE FILE_PATH="coverage/classpython$mytest_.coverage" NAME="mytest_采用协程 Coverage Results" MODIFIED="1575337475864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
+    <SUITE FILE_PATH="coverage/classpython$O_.coverage" NAME="O进化之路_同步阻塞方式 Coverage Results" MODIFIED="1596003559835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/深入理解Python异步编程/异步I" />
     <SUITE FILE_PATH="coverage/classpython$threadpool__1_.coverage" NAME="threadpool (1) Coverage Results" MODIFIED="1575098442217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
+    <SUITE FILE_PATH="coverage/classpython$ppt_spider.coverage" NAME="ppt_spider Coverage Results" MODIFIED="1595831629906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPTdownload" />
     <SUITE FILE_PATH="coverage/classpython$Readingcode.coverage" NAME="Readingcode Coverage Results" MODIFIED="1586420395817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别" />
     <SUITE FILE_PATH="coverage/classpython$face_recognition.coverage" NAME="人脸视频识别face_recognition Coverage Results" MODIFIED="1562128333006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot" />
     <SUITE FILE_PATH="coverage/classpython$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1573206048426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_DSJSC/public" />
     <SUITE FILE_PATH="coverage/classpython$httpRequest__1_.coverage" NAME="httpRequest (1) Coverage Results" MODIFIED="1586937131796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_AIkfpt/public" />
-    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1582180116872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study" />
     <SUITE FILE_PATH="coverage/classpython$main.coverage" NAME="main Coverage Results" MODIFIED="1583405621966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_ZNKF" />
+    <SUITE FILE_PATH="coverage/classpython$manage.coverage" NAME="manage Coverage Results" MODIFIED="1588743320260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
     <SUITE FILE_PATH="coverage/classpython$Flask_____zfjwxt_python_api_startup_py_.coverage" NAME="Flask (../zfjwxt_python_api/startup.py) Coverage Results" MODIFIED="1575358047667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/classpython$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1576654220582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$pytest_for_Unit_test_testHttpRequset.coverage" NAME="pytest for Unit_test.testHttpRequset Coverage Results" MODIFIED="1563328611334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
     <SUITE FILE_PATH="coverage/classpython$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1575856230895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mechanical-insect/Taisite-Platform/backend" />
     <SUITE FILE_PATH="coverage/classpython$learn_Img.coverage" NAME="learn_Img Coverage Results" MODIFIED="1587028755098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别" />
     <SUITE FILE_PATH="coverage/classpython$writeExcel.coverage" NAME="writeExcel Coverage Results" MODIFIED="1563277993981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
+    <SUITE FILE_PATH="coverage/classpython$IO_.coverage" NAME="异步IO进化之路_非阻塞方式 Coverage Results" MODIFIED="1596075362161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/深入理解Python异步编程" />
     <SUITE FILE_PATH="coverage/classpython$classpython.coverage" NAME="classpython Coverage Results" MODIFIED="1564564012054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/classpython$threadpool.coverage" NAME="threadpool Coverage Results" MODIFIED="1575096310134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency-spider" />
     <SUITE FILE_PATH="coverage/classpython$readcode.coverage" NAME="readcode Coverage Results" MODIFIED="1586742895116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别" />
@@ -305,6 +286,7 @@
     <SUITE FILE_PATH="coverage/classpython$two_value_image.coverage" NAME="two_value_image Coverage Results" MODIFIED="1587029285439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别" />
     <SUITE FILE_PATH="coverage/classpython$class1__1_.coverage" NAME="class1 (1) Coverage Results" MODIFIED="1564564158066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/identify_the_animal/fist_part" />
     <SUITE FILE_PATH="coverage/classpython$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1575960987032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flask_study/app" />
+    <SUITE FILE_PATH="coverage/classpython$ppt_down.coverage" NAME="ppt_down Coverage Results" MODIFIED="1595921262671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPTdownload" />
     <SUITE FILE_PATH="coverage/classpython$wenkuDownl.coverage" NAME="wenkuDownl Coverage Results" MODIFIED="1571914814577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$setup__1_.coverage" NAME="setup (1) Coverage Results" MODIFIED="1564470497976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Python37/Lib/site-packages/fastai" />
     <SUITE FILE_PATH="coverage/classpython$captcha_records.coverage" NAME="captcha_records Coverage Results" MODIFIED="1587029782495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别/captcha_recognize" />
@@ -313,7 +295,8 @@
     <SUITE FILE_PATH="coverage/classpython$8AdjZonesDenoise.coverage" NAME="8AdjZonesDenoise Coverage Results" MODIFIED="1586412387088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/验证码识别/Captcha" />
     <SUITE FILE_PATH="coverage/classpython$xycp.coverage" NAME="xycp Coverage Results" MODIFIED="1564112434745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$makesql.coverage" NAME="makesql Coverage Results" MODIFIED="1564106395329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zghmysql" />
-    <SUITE FILE_PATH="coverage/classpython$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1582256667806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/auto_testcase" />
+    <SUITE FILE_PATH="coverage/classpython$ppt_unzip.coverage" NAME="ppt_unzip Coverage Results" MODIFIED="1596069870820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PPTdownload" />
+    <SUITE FILE_PATH="coverage/classpython$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1591665954736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangostart" />
     <SUITE FILE_PATH="coverage/classpython$get_mysql_info.coverage" NAME="get_mysql_info Coverage Results" MODIFIED="1585139780231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_ZNKF/public" />
     <SUITE FILE_PATH="coverage/classpython$sequential.coverage" NAME="sequential Coverage Results" MODIFIED="1575018986698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency-picsSpider" />
     <SUITE FILE_PATH="coverage/classpython$common.coverage" NAME="common Coverage Results" MODIFIED="1575269046347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
@@ -321,6 +304,7 @@
     <SUITE FILE_PATH="coverage/classpython$new_qicc.coverage" NAME="new_qicc Coverage Results" MODIFIED="1574906807176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qixy_spider" />
     <SUITE FILE_PATH="coverage/classpython$Vibrato.coverage" NAME="Vibrato Coverage Results" MODIFIED="1563260644282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/抖音视频爬取/Douyin_one" />
     <SUITE FILE_PATH="coverage/classpython$WeChat_friends.coverage" NAME="WeChat_friends Coverage Results" MODIFIED="1574996738312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/classpython$settings.coverage" NAME="settings Coverage Results" MODIFIED="1588743311590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled/untitled" />
     <SUITE FILE_PATH="coverage/classpython$messagepost.coverage" NAME="messagepost Coverage Results" MODIFIED="1574645270640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/price" />
     <SUITE FILE_PATH="coverage/classpython$createAdminUser.coverage" NAME="createAdminUser Coverage Results" MODIFIED="1575434814598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mechanical insect/Taisite-Platform/backend" />
     <SUITE FILE_PATH="coverage/classpython$toutiao_spider.coverage" NAME="toutiao_spider Coverage Results" MODIFIED="1575250583950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
@@ -330,8 +314,9 @@
     <SUITE FILE_PATH="coverage/classpython$class1.coverage" NAME="class1 Coverage Results" MODIFIED="1564557438193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/identify_the_animal/fist_part" />
     <SUITE FILE_PATH="coverage/classpython$get_mysql_info__1_.coverage" NAME="get_mysql_info (1) Coverage Results" MODIFIED="1573722743476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_AQHY/public" />
     <SUITE FILE_PATH="coverage/classpython$pytest_in_Unit_test_py.coverage" NAME="pytest in Unit_test.py Coverage Results" MODIFIED="1563328912946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface_auto_cases_for_ZNKF/public" />
+    <SUITE FILE_PATH="coverage/classpython$0.coverage" NAME="0 Coverage Results" MODIFIED="1590477364146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$asynchronous.coverage" NAME="asynchronous Coverage Results" MODIFIED="1575096520804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency-spider" />
-    <SUITE FILE_PATH="coverage/classpython$test.coverage" NAME="test Coverage Results" MODIFIED="1575274684069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/concurrency_spider" />
+    <SUITE FILE_PATH="coverage/classpython$test.coverage" NAME="test Coverage Results" MODIFIED="1593742486496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$Cut_image.coverage" NAME="Cut_image Coverage Results" MODIFIED="1579152343209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/classpython$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1583742657576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/interface_auto_cases_for_AQHY" />
   </component>
@@ -356,24 +341,25 @@
     <session id="-402259594">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="59" />
-          <entry key="project.open.time.0" value="8" />
+          <entry key="project.closed" value="74" />
+          <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="5" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.14" value="5" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="6" />
-          <entry key="project.open.time.17" value="5" />
-          <entry key="project.open.time.18" value="11" />
-          <entry key="project.open.time.19" value="6" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.17" value="6" />
+          <entry key="project.open.time.18" value="12" />
+          <entry key="project.open.time.19" value="10" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="5" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="3" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="3" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.30" value="1" />
@@ -381,20 +367,24 @@
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.40" value="3" />
           <entry key="project.open.time.41" value="2" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.7" value="7" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="115" />
+          <entry key="project.opened" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="1" value="1" />
+          <entry key="CUP_time" value="1" />
           <entry key="LICENSE" value="1" />
+          <entry key="Pipfile" value="3" />
           <entry key="actions" value="1" />
           <entry key="alembic_version" value="1" />
           <entry key="caseactions" value="1" />
@@ -423,8 +413,8 @@
           <entry key="parames" value="1" />
           <entry key="png" value="21" />
           <entry key="projects" value="2" />
-          <entry key="py" value="1312" />
-          <entry key="pyi" value="6" />
+          <entry key="py" value="1358" />
+          <entry key="pyi" value="8" />
           <entry key="quanxianusers" value="1" />
           <entry key="registrations" value="1" />
           <entry key="rnc" value="1" />
@@ -451,9 +441,9 @@
           <entry key="Less" value="4" />
           <entry key="Log" value="12" />
           <entry key="Markdown" value="15" />
-          <entry key="PLAIN_TEXT" value="257" />
-          <entry key="Python" value="1312" />
-          <entry key="PythonStub" value="6" />
+          <entry key="PLAIN_TEXT" value="262" />
+          <entry key="Python" value="1358" />
+          <entry key="PythonStub" value="8" />
           <entry key="RNG Compact" value="1" />
           <entry key="SQL" value="4" />
           <entry key="SVG" value="1" />
@@ -469,12 +459,12 @@
           <entry key="conf" value="727" />
           <entry key="css" value="89" />
           <entry key="db" value="13" />
-          <entry key="dummy" value="21" />
+          <entry key="dummy" value="28" />
           <entry key="html" value="615" />
           <entry key="js" value="1" />
           <entry key="less" value="1" />
-          <entry key="py" value="12997" />
-          <entry key="txt" value="2690" />
+          <entry key="py" value="16648" />
+          <entry key="txt" value="2730" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -483,8 +473,8 @@
           <entry key="HTML" value="615" />
           <entry key="JavaScript" value="1" />
           <entry key="Less" value="1" />
-          <entry key="PLAIN_TEXT" value="3451" />
-          <entry key="Python" value="13016" />
+          <entry key="PLAIN_TEXT" value="3498" />
+          <entry key="Python" value="16667" />
           <entry key="Scratch" value="5" />
         </counts>
       </usages-collector>
@@ -1175,10 +1165,46 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_同步阻塞方式.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="34" />
+              <folding>
+                <element signature="e#150#161#0" expanded="true" />
+                <marker date="1596073568930" expanded="true" signature="196:201" ph="..." />
+                <marker date="1596073568930" expanded="true" signature="555:560" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_改进方式：多进程.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+              <folding>
+                <element signature="e#156#167#0" expanded="true" />
+                <marker date="1596073722167" expanded="true" signature="848:853" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Django_study/manage.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_非阻塞方式.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+              <folding>
+                <element signature="e#152#163#0" expanded="true" />
+                <marker date="1596075454331" expanded="true" signature="235:236" ph="..." />
+                <marker date="1596075454331" expanded="true" signature="963:1206" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -1258,23 +1284,13 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/interface_auto_cases_for_SJSB/public/httpRequest.py" />
-        <option value="D:/interface_auto_cases_for_SJSB/HTMLTestRunner_zgh.py" />
-        <option value="D:/interface_auto_cases_for_SJSB/conf/http.conf" />
-        <option value="D:/interface_auto_cases_for_SJSB/conf/smtpconf.conf" />
-        <option value="D:/interface_auto_cases_for_SJSB/main.py" />
-        <option value="D:/interface_auto_cases_for_ZNKF/conf/http.conf" />
-        <option value="D:/interface_auto_cases_for_ZNKF/conf/case.conf" />
-        <option value="D:/interface_auto_cases_for_ZNKF/public/httpRequest.py" />
-        <option value="D:/Mechanical-insect/layuiAdmin.std-v1.0.0/dist/views/component/form/group.html" />
-        <option value="D:/interface_auto_cases_for_ZNKF/public/Unit_test.py" />
-        <option value="D:/interface_auto_cases_for_ZNKF/conf/db.conf" />
-        <option value="D:/interface_auto_cases_for_ZNKF/main.py" />
         <option value="D:/interface_auto_cases_for_AIkfpt/conf/smtpconf.conf" />
         <option value="D:/interface_auto_cases_for_AIkfpt/HTMLTestRunner_zgh.py" />
         <option value="D:/interface_auto_cases_for_AIkfpt/conf/db.txt" />
@@ -1314,6 +1330,18 @@
         <option value="$PROJECT_DIR$/验证码识别/two_value_image.py" />
         <option value="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_eval.py" />
         <option value="$PROJECT_DIR$/Django_study/manage.py" />
+        <option value="$PROJECT_DIR$/untitled/untitled/settings.py" />
+        <option value="$PROJECT_DIR$/0.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/PPTdownload/ppt_spider.py" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/异步I/O进化之路_同步阻塞方式.py" />
+        <option value="$PROJECT_DIR$/PPTdownload/ppt_down.py" />
+        <option value="$PROJECT_DIR$/PPTdownload/ppt_unzip.py" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/CUP_time" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/CUP_time.py" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_同步阻塞方式.py" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_改进方式：多进程.py" />
+        <option value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_非阻塞方式.py" />
       </list>
     </option>
   </component>
@@ -1334,8 +1362,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="912" />
-    <option name="width" value="1015" />
+    <option name="x" value="631" />
+    <option name="width" value="1296" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1374,7 +1402,33 @@
             <path>
               <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
               <item name="classpython" type="462c0819:PsiDirectoryNode" />
-              <item name="Django_study" type="462c0819:PsiDirectoryNode" />
+              <item name="PPTdownload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="PPTdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="PPT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="PPTdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="PPT" type="462c0819:PsiDirectoryNode" />
+              <item name="经典PPT模板" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="PPTdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="PPT" type="462c0819:PsiDirectoryNode" />
+              <item name="经典PPT模板" type="462c0819:PsiDirectoryNode" />
+              <item name="三生三世十里桃花PPT模板" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classpython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classpython" type="462c0819:PsiDirectoryNode" />
+              <item name="深入理解Python异步编程" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1391,22 +1445,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\classpython\PPTdownload\PPT\经典PPT模板\三生三世十里桃花PPT模板" />
+      <recent name="D:\classpython\深入理解Python异步编程" />
       <recent name="D:\classpython\验证码识别\captcha_recognize\data\test_data" />
       <recent name="D:\classpython\验证码识别\captcha_recognize\data\train_data" />
       <recent name="D:\classpython\验证码识别\captcha_recognize\data" />
-      <recent name="D:\classpython\验证码识别\studycode" />
-      <recent name="D:\classpython\验证码识别" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\classpython\深入理解Python异步编程" />
+      <recent name="D:\classpython\PPTdownload\PPT\经典PPT模板\三生三世十里桃花PPT模板" />
+      <recent name="D:\classpython\PPTdownload" />
       <recent name="D:\classpython\验证码识别" />
       <recent name="D:\classpython\验证码识别\captcha_recognize\captcha_train" />
-      <recent name="D:\interface_auto_cases_for_AIkfpt\test_data" />
-      <recent name="D:\interface_auto_cases_for_ZNKF\test_data" />
-      <recent name="D:\interface_auto_cases_for_SJSB\test_data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1421,7 +1475,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.captcha_recognize">
+  <component name="RunManager" selected="Python.异步IO进化之路_非阻塞方式">
     <configuration name="classpython" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1440,6 +1494,94 @@
       <option name="ipnbPort" value="8888" />
       <method v="2" />
     </configuration>
+    <configuration name="异步IO进化之路_改进方式：多进程" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/深入理解Python异步编程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_改进方式：多进程.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="异步IO进化之路_同步阻塞方式" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/深入理解Python异步编程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_同步阻塞方式.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="异步IO进化之路_非阻塞方式" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/深入理解Python异步编程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_非阻塞方式.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="O进化之路_同步阻塞方式" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="classpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/深入理解Python异步编程/异步I" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\classpython\深入理解Python异步编程\异步IO进化之路_同步阻塞方式.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1454,94 +1596,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="captcha_eval" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/验证码识别/captcha_recognize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_eval.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="captcha_recognize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/验证码识别/captcha_recognize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_recognize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="captcha_records" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/验证码识别/captcha_recognize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_records.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="captcha_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="classpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/验证码识别/captcha_recognize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1572,7 +1626,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="two_value_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ppt_unzip" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="classpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1580,12 +1634,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/验证码识别" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PPTdownload" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/验证码识别/two_value_image.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PPTdownload/ppt_unzip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1597,19 +1651,19 @@
     <list>
       <item itemvalue="Jupyter Notebook.classpython" />
       <item itemvalue="Python.httpRequest" />
-      <item itemvalue="Python.two_value_image" />
-      <item itemvalue="Python.captcha_records" />
-      <item itemvalue="Python.captcha_train" />
-      <item itemvalue="Python.captcha_eval" />
-      <item itemvalue="Python.captcha_recognize" />
+      <item itemvalue="Python.O进化之路_同步阻塞方式" />
+      <item itemvalue="Python.ppt_unzip" />
+      <item itemvalue="Python.异步IO进化之路_改进方式：多进程" />
+      <item itemvalue="Python.异步IO进化之路_同步阻塞方式" />
+      <item itemvalue="Python.异步IO进化之路_非阻塞方式" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.captcha_recognize" />
-        <item itemvalue="Python.captcha_eval" />
-        <item itemvalue="Python.captcha_train" />
-        <item itemvalue="Python.captcha_records" />
-        <item itemvalue="Python.two_value_image" />
+        <item itemvalue="Python.异步IO进化之路_非阻塞方式" />
+        <item itemvalue="Python.异步IO进化之路_改进方式：多进程" />
+        <item itemvalue="Python.异步IO进化之路_同步阻塞方式" />
+        <item itemvalue="Python.ppt_unzip" />
+        <item itemvalue="Python.O进化之路_同步阻塞方式" />
       </list>
     </recent_temporary>
   </component>
@@ -2012,23 +2066,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="912" y="0" width="1015" height="1047" extended-state="0" />
+    <frame x="631" y="0" width="1296" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49455675" visible="true" weight="0.25759163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49455675" visible="true" weight="0.25161812" />
       <window_info id="Structure" order="1" sideWeight="0.5054432" side_tool="true" weight="0.25344354" />
       <window_info id="Favorites" order="2" sideWeight="0.5040128" side_tool="true" weight="0.1904762" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48943985" weight="0.35307017" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48943985" weight="0.2752193" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39413682" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="运行" order="7" sideWeight="0.4988086" weight="0.23245615" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.21820176" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.21820176" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.27960527" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49911818" visible="true" weight="0.31798247" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49911818" weight="0.31798247" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.51056015" side_tool="true" weight="0.23684211" />
       <window_info anchor="bottom" id="调试" order="13" weight="0.4133772" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.3267544" />
@@ -2113,8 +2167,6 @@
       <path value="D:/identify_the_animal" />
       <path value="D:/Mechanical insect/Taisite-Platform" />
     </ignored-roots>
-    <MESSAGE value="》更新智能客服虚拟机器人版本信息0.3.5" />
-    <MESSAGE value="》更新数据发现接口测试版本信息v1.1" />
     <MESSAGE value="》新增接口测试用例&#10;》添加1.1版本接口文档&#10;》完成excel读取及区间用例方法修改&#10;》修改邮件内容版本信息" />
     <MESSAGE value="》更新配置文件区间用例" />
     <MESSAGE value="》完成数据发现1.1版本接口用例编写" />
@@ -2138,7 +2190,9 @@
     <MESSAGE value="》同步已完成的接口测试用例" />
     <MESSAGE value="》完成AI开放平台钉钉消息报告&#10;》完成个人认证企业认证接口方法调用&#10;》更新已完成的接口测试用例" />
     <MESSAGE value="默认的" />
-    <option name="LAST_COMMIT_MESSAGE" value="默认的" />
+    <MESSAGE value="》学习异步IO多进程多线程以及非阻塞" />
+    <MESSAGE value="》更新异步io多进程多线程及非阻塞学习内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="》更新异步io多进程多线程及非阻塞学习内容" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2152,148 +2206,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/public/readExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/public/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/public/get_mysql_info.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/image/4mLT.jpg" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/image/33HH.jpg" />
-    <entry file="file://D:/Python37/Lib/site-packages/pycapt/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="2006" column="8" selection-start-line="2006" selection-start-column="8" selection-end-line="2006" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/newimg/33hh.jpg" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/newimg/37wq.jpg" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/newimg/4mlt.jpg" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/1ab2s_num286.jpg" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/CMQVA_num717_1.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/CMQZJ_num908_1.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/CRGEU_num339_1.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/studycode/reading_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/studycode/Readingcode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="306" column="27" lean-forward="true" selection-start-line="304" selection-start-column="4" selection-end-line="306" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/train_data/ABCFM_num4326.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/train_data/ZYTAQ_num4541.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/CHMZD_num619.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/HPBGA_num355.png" />
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/data/test_data/HM84_image43.jpg" />
-    <entry file="file://D:/auto_testcase/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/captcha/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1201333238/tensorflow/python/__init__.py" />
-    <entry file="file://D:/Python37/Lib/site-packages/tensorflow/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/tensorflow_core/_api/v2/train/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/captcha_input.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/README-zhcn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/验证码识别/captcha_recognize/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/public/httpRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/public/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281" />
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/conf/Allpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/conf/case.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/conf/http.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/conf/path.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/interface_auto_cases_for_AIkfpt/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python37/Lib/site-packages/babel/messages/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-158">
@@ -2372,8 +2284,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django_study/manage.py">
+    <entry file="file://$PROJECT_DIR$/Pipfile" />
+    <entry file="file://$PROJECT_DIR$/Django_study/manage.py" />
+    <entry file="file://$PROJECT_DIR$/untitled/manage.py" />
+    <entry file="file://$PROJECT_DIR$/untitled/untitled/urls.py" />
+    <entry file="file://$PROJECT_DIR$/untitled/untitled/settings.py" />
+    <entry file="file://$PROJECT_DIR$/0.py" />
+    <entry file="file://$PROJECT_DIR$/djangostart/manage.py" />
+    <entry file="file://$PROJECT_DIR$/抢红包.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cut_image.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opendoor/openDoor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrency_spider/processpool_多进程下载.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrency_spider/mytest_采用协程.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Python37/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3132">
+          <caret line="173" column="8" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/httpRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qixy_spider/spider_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qixy_spider/qicc_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZhenHunJieCartoon/geturl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZhenHunJieCartoon/Cartoon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/public/readExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qixy_spider/new_qicc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3519" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qixy_spider/qichacha_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPTdownload/1" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/socket.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Python37/Lib/genericpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python37/Lib/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1363" selection-start-line="1363" selection-end-line="1363" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python37/Lib/shutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="527" column="4" selection-start-line="527" selection-start-column="4" selection-end-line="527" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface_atuo_cases0508/interface_auto_cases_for_AQHY/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1177">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1201333238/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="4989" column="29" lean-forward="true" selection-start-line="4989" selection-start-column="29" selection-end-line="4989" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPTdownload/ppt_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding>
+            <element signature="e#148#178#0" expanded="true" />
+            <marker date="1595915012758" expanded="true" signature="2347:2719" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/shutil.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1979" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPTdownload/ppt_down.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="90" column="41" lean-forward="true" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+          <folding>
+            <element signature="e#147#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPTdownload/ppt_unzip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="47" />
+          <folding>
+            <element signature="e#148#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python37/Lib/concurrent/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/CUP_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/CUP_time">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_改进方式：多进程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding>
+            <element signature="e#156#167#0" expanded="true" />
+            <marker date="1596073722167" expanded="true" signature="848:853" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_同步阻塞方式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#150#161#0" expanded="true" />
+            <marker date="1596073568930" expanded="true" signature="196:201" ph="..." />
+            <marker date="1596073568930" expanded="true" signature="555:560" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/深入理解Python异步编程/异步IO进化之路_非阻塞方式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+          <folding>
+            <element signature="e#152#163#0" expanded="true" />
+            <marker date="1596075454331" expanded="true" signature="235:236" ph="..." />
+            <marker date="1596075454331" expanded="true" signature="963:1206" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
