@@ -1,124 +1,91 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/7/27 11:30
+# @Time    : 2020/7/30 16:20
 # @Author  : zgh
 # @Email   : 849080458@qq.com
 # @File    : ppt_down.py
 # @Software: PyCharm
 
-from selenium import webdriver
-import time
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from openpyxl import load_workbook
-import os
+import aiohttp
+import asyncio
+import time, os
+from PPTdownload.ppt_downadr import readExcel, writeExcel
+from PPTdownload.ppt_unzip import pptMove
 
 
-def Downloadphoto(url,name,group):
-    os.makedirs('./'+name+'/', exist_ok=True)
-    from urllib.request import urlretrieve
-    urlretrieve(url, './'+group+'/'+str(name)+'.jpg')
-
-
-
-
-def PptDownUrl(driver,url,id):
-    driver.get(url)
-
-    try:
-        Pdict = {'Pgroup': '', 'Pdownadr': ''}
-        # pptg分组
-        PgroupXpath = '//span[@class="c999 f12"]'
-
-        # ppt下载地址
-        PdownadrXpath = '//div[@id="url"]//a'
-
-        WebDriverWait(driver, 10, 0.5).until(EC.visibility_of_all_elements_located((By.XPATH, PgroupXpath)))
-
-        # pptg分组名称
-        Pgroup = driver.find_element_by_xpath(PgroupXpath).text
-        print(Pgroup.split('：')[1])
-        # ppt下载地址
-        Pdownadr = driver.find_element_by_xpath(PdownadrXpath).get_attribute('href')
-        print(Pdownadr)
-
-        Pdict['Pgroup'] = Pgroup.split('：')[1]
-        Pdict['Pdownadr'] = Pdownadr
-        print(Pdict)
-
-    except Exception as e:
-        print('获取失败！%s' % e)
-        raise e
-
-    writeExcel(id, Pdict)
-
-
-
-
-def readExcel():
-    rb_new = load_workbook('pptlist.xlsx')
-    sheet = rb_new['Sheet1']
-    data_list = []
-    for i in range(sheet.max_row - 1):
-        Pname = sheet.cell(row=i + 2, column=2).value
-        PnameImg = sheet.cell(row=i + 2, column=3).value
-        Pdown = sheet.cell(row=i + 2, column=4).value
-        status = sheet.cell(row=i + 2, column=5).value  # 取值excel中的字典
-        Pgroup = sheet.cell(row=i + 2, column=6).value
-        Pdownadr = sheet.cell(row=i + 2, column=7).value
-        dict = {'id': i + 1, 'Pname': Pname, 'PnameImg': PnameImg, 'Pdown': Pdown, 'status': status, 'Pgroup': Pgroup,
-                'Pdownadr': Pdownadr}
-        data_list.append(dict)
-    return data_list
-
-
-
-def writeExcel(id, dict):
-    for i in range(1, len(dict) + 1):
-        # 写入用例返回结果
-        try:
-            wb_new = load_workbook('pptlist.xlsx')
-            sheet = wb_new['Sheet1']
-            if 'Pgroup' in dict.keys():
-                sheet.cell(id + 1, 6).value = dict['Pgroup']
-                sheet.cell(id + 1, 7).value = dict['Pdownadr']
-            if 'status' in dict.keys():
-                sheet.cell(id + 1, 5).value = dict['status']
-            wb_new.save('pptlist.xlsx')
-        except Exception as e:
-            print('数据写入失败！%s' % e)
-            raise e
-    print('id:{}执行写入excel成功！'.format(id))
-
-
-
-def main():
-    # 打开ppt网站页面
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-
+def list():
     list = readExcel()
+    n = 0
 
-    for k in range(len(list)):
-        pdownUrl = list[k]['Pdown']
-        # pnameImgUrl = list[k]['PnameImg']
-        pdownId = list[k]['id']
-        print(pdownUrl)
+    for i in range(len(list)):
+        # print(i - n, len(list))
+        # print(list[i - n]['status'])
+        if '√' == list[i - n]['status']:
+            list.pop(i - n)
+            n += 1
 
-        PptDownUrl(driver,pdownUrl,pdownId)
-
-    driver.quit()
-
-
-
-
-if __name__ == '__main__':
-    # 根据已有表格中下载页面获取下载地址，并写入表格
-    # 已经获取就不需要执行
-    main()
+        else:
+            pass
+    print(list)
+    return list
 
 
+listDown = list()
+falseDown = []
 
 
+async def job(session, url):
+    # 申明为异步函数
+    try:
+        # 出发到await就切换，等待get到数据
+        img = await session.get(url['PnameImg'])
+        p_zip = await session.get(url['Pdownadr'])
+        # 读取内容
+        imgcode = await img.read()
+        zipcode = await p_zip.read()
+
+        os.makedirs('./PPT/' + url['Pgroup'] + '/' + url['Pname'] + '/', exist_ok=True)
+
+        with open('./PPT/' + url['Pgroup'] + '/' + url['Pname'] + '/' + url['Pname'] + '.jpg', 'wb') as f:
+            # 写入至文件
+            f.write(imgcode)
+            print(url['Pname'] + '.jpg：写入成功！')
+
+        with open('./PPT/' + url['Pgroup'] + '/' + url['Pname'] + '/' + url['Pname'] + '.zip', 'wb') as f:
+            # 写入至文件
+            f.write(zipcode)
+            print(url['Pname'] + '.zip：写入成功！')
+
+        writeExcel(url['id'], eval("{'status':'√'}"))
+        pptMove(url['Pgroup'], url['Pname'])
+
+        print(listDown.index(url), len(listDown))
+        listDown.pop(listDown.index(url))
+
+        return str('图片：' + url['PnameImg'] + ' ---||--- ppt: ' + url['Pdownadr'])
+    except Exception as e:
+        falseDown.append(listDown.pop(listDown.index(url)))
+        print(falseDown, "\n", e)
+        writeExcel(url['id'], eval("{'status':'X'}"))
+        return print(url['Pname'] + "：Zip获取失败！ " + url['Pdownadr'])
 
 
+async def main(loop, URL):
+    async with aiohttp.ClientSession() as session:
+        # 建立会话session
+        tasks = [loop.create_task(job(session, URL[_])) for _ in range(20)]
+        # 建立所有任务
+        finished, unfinished = await asyncio.wait(tasks)
+        # 触发await,等待任务完成
+        # all_results = [r.result() for r in finished]
+        # 获取所有结果
+        # print("ALL RESULT:" + str(all_results))
+
+
+loop = asyncio.get_event_loop()
+
+while len(listDown) > 0:
+    loop.run_until_complete(main(loop, listDown))
+
+loop.run_until_complete(main(loop, falseDown))
+print(falseDown)
+loop.close()

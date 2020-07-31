@@ -9,6 +9,7 @@ import os
 import sys
 import zipfile
 import shutil
+from PPTdownload.ppt_downadr import readExcel
 
 def unzip(filename: str):
     try:
@@ -41,6 +42,7 @@ def rename(pwd: str, filename=''):
     newname = filename.encode('cp437').decode('gbk')
     os.rename(path, f'{pwd}/{newname}')
 
+
 def main():
     """如果指定文件，则解压目标文件，否则解压当前目录下所有文件"""
 
@@ -65,34 +67,54 @@ def file_name(file_dir):
         for file in files:
             if os.path.splitext(file)[1] == '.zip':
                 L.append(os.path.join(root, file))
+            if os.path.splitext(file)[1] == '.rar':
+                L.append(os.path.join(root, file))
+    print(L)
     return L
 
 
 def pptMove(Pgroup,Pname):
-    with zipfile.ZipFile(k[0], 'r') as z:
+    try:
+        with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0], 'a', ) as z:
+            print(z.namelist())
+            # print(z.namelist()[1].split('/', -1)[1])
+
+            f_name = 'PPT/' + Pgroup + '/' + Pname + '/'
+            # 把压缩包里的 文件解压出来
+            z.extractall(f_name)
+            z.close()
+
+            shutil.move(f_name + z.namelist()[1], f_name + Pname + ".pptx")
+            shutil.rmtree(f_name + z.namelist()[1].split('/', -1)[0])
+        print("{}/{}：解压成功！".format(Pgroup, Pname))
+    except:
+        unzip(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0])
+
+
+def pptDel(Pgroup, Pname):
+    with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0], 'r') as z:
         print(z.namelist()[1])
-        print(z.namelist()[1].split('/', -1)[1])
+        # print(z.namelist()[1].split('/', -1)[1])
 
-        f_name = 'PPT/'+ Pgroup + '/' + Pname + '/'
-        # 把压缩包里的 添加数据.png 文件解压出来
-        z.extractall(f_name)
-        z.close()
+        f_name = 'PPT/' + Pgroup + '/' + Pname + '/'
 
-        shutil.move(f_name + z.namelist()[1], f_name + Pname + ".pptx")
-        shutil.rmtree(f_name + z.namelist()[1].split('/', -1)[0])
         os.remove(f_name + z.namelist()[1].split('/', -1)[0] + '.zip')
+
 
 
 
 if __name__ == '__main__':
     # main()
-    k = file_name('./PPT/经典PPT模板/三生三世十里桃花PPT模板')
-    print(k[0])
+    # k = file_name('./PPT/经典PPT模板/三生三世十里桃花PPT模板')
+    # print(k[0])
 
-    pptMove('经典PPT模板','三生三世十里桃花PPT模板')
+    pptMove('古典PPT模板', '古典雅香幻灯片模板下载')
 
-
-
-
-
-
+    # list = readExcel()
+    #
+    # for i in range(len(list)):
+    #     if '√' == list[i]['status']:
+    #         pptDel(list[i]['Pgroup'], list[i]['Pname'])
+    #     else:
+    #         pass
+    # print(list)
