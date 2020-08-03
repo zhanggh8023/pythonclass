@@ -8,6 +8,8 @@
 import os
 import sys
 import zipfile
+import unrar  # 直接pip install unrar
+from unrar import rarfile
 import shutil
 from PPTdownload.ppt_downadr import readExcel
 
@@ -57,25 +59,38 @@ def main():
                 unzip(file.name)
 
 
+def un_rar(filename):  # filename是文件的绝对路径
+    rar = rarfile.RarFile(filename)
+    # 判断是否存在同名文件夹，若不存在则创建同名文件夹：
+    if os.path.isdir(os.path.splitext(filename)[0]):
+        pass
+    else:
+        os.mkdir(os.path.splitext(filename)[0])
+    rar.extractall(os.path.splitext(filename)[0])
 
 
 
 # 路径获取
 def file_name(file_dir):
     L=[]
+    K = []
     for root, dirs, files in os.walk(file_dir):
         for file in files:
             if os.path.splitext(file)[1] == '.zip':
                 L.append(os.path.join(root, file))
-            if os.path.splitext(file)[1] == '.rar':
-                L.append(os.path.join(root, file))
-    print(L)
-    return L
+
+            if os.path.splitext(file)[1] == '.ppt':
+                K.append(os.path.join(root, file))
+
+            if os.path.splitext(file)[1] == '.pptx':
+                K.append(os.path.join(root, file))
+    print(L, K)
+    return L, K
 
 
 def pptMove(Pgroup,Pname):
     try:
-        with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0], 'a', ) as z:
+        with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0][0], 'a', ) as z:
             print(z.namelist())
             # print(z.namelist()[1].split('/', -1)[1])
 
@@ -88,15 +103,21 @@ def pptMove(Pgroup,Pname):
             shutil.rmtree(f_name + z.namelist()[1].split('/', -1)[0])
         print("{}/{}：解压成功！".format(Pgroup, Pname))
     except:
-        unzip(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0])
+        un_rar(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0][0])
+
+        f_name = 'PPT/' + Pgroup + '/' + Pname + '/'
+        print(file_name(f_name)[1][0])
+        shutil.move(file_name(f_name)[1][0], f_name + Pname + ".pptx")
+        shutil.rmtree(f_name + '/' + Pname)
+        print("{}/{}：解压成功！".format(Pgroup, Pname))
 
 
 def pptDel(Pgroup, Pname):
-    with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname + '/')[0], 'r') as z:
+    with zipfile.ZipFile(file_name('./PPT/' + Pgroup + '/' + Pname.replace(':', '') + '/')[0], 'r') as z:
         print(z.namelist()[1])
         # print(z.namelist()[1].split('/', -1)[1])
 
-        f_name = 'PPT/' + Pgroup + '/' + Pname + '/'
+        f_name = 'PPT/' + Pgroup + '/' + Pname.replace(':', '') + '/'
 
         os.remove(f_name + z.namelist()[1].split('/', -1)[0] + '.zip')
 
@@ -108,7 +129,7 @@ if __name__ == '__main__':
     # k = file_name('./PPT/经典PPT模板/三生三世十里桃花PPT模板')
     # print(k[0])
 
-    pptMove('古典PPT模板', '古典雅香幻灯片模板下载')
+    pptMove('中秋节PPT模板', '淡雅月亮牡丹中秋节动态PPT封面')
 
     # list = readExcel()
     #
