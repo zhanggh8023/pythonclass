@@ -129,7 +129,7 @@ if __name__ == '__main__':
     # k = file_name('./PPT/经典PPT模板/三生三世十里桃花PPT模板')
     # print(k[0])
 
-    pptMove('中秋节PPT模板', '淡雅月亮牡丹中秋节动态PPT封面')
+    pptMove('社会生活PPT模板', '蓝色公司简介PPT模板下载')
 
     # list = readExcel()
     #
