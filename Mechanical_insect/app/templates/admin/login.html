@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>用户登录</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/style1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+{% import "ul/message.html" as message %}
+{% for msg in get_flashed_messages(category_filter=["err"]) %}
+{{ message.message('err',msg) }}
+{% endfor %}
+<body>
+
+<div id="particles-js">
+    <div id="login_wrap" class="login">
+        <p align="center" style="font-size: 25px;color: rgb(252,149,60);">Mechanical Insect</p>
+        <div align="center" style="font-size: 5px;color: rgba(0,0,0,0.27);">智 能 机 械 虫 质 量 监 控 平 台</div>
+        <hr class="hr20">
+        <div class="message">管理登录</div>
+        <div id="darkbannerwrap"></div>
+        <span>
+            <form method="POST" id="form-data" novalidate>
+                {% for err in form.account.errors %}
+                    <div class="col-md-12"><p style="color:#fc0739;font-weight:bold">{{ err }}</p></div>
+                {% endfor %}
+                <p class="form">{{ form.account }}</p>
+                {% for err in form.pwd.errors %}
+                    <div class="col-md-12"><p style="color:#fc0739;font-weight:bold">{{ err }}</p></div>
+                {% endfor %}
+                <p class="form">{{ form.pwd }}</p>
+                <hr class="hr20">
+                {{ form.submit }}
+                {{ form.csrf_token }}
+            </form>
+        </span>
+    </div>
+
+</div>
+
+<!-- scripts -->
+<script src="{{ url_for('static',filename='js/particles.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/app.js') }}"></script>
+
+</body>
+</html>

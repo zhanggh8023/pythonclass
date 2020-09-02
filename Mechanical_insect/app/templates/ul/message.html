@@ -1,0 +1,59 @@
+{% macro message(hh,msg) -%}
+
+<head>
+    <meta charset="utf-8"/>
+    <title>🕷 Mechanical Insectd</title>
+    <script crossorigin src="{{ url_for('static',filename='js/react.production.min.js') }}"></script>
+    <script crossorigin src="{{ url_for('static',filename='js/react-dom.production.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/babel.min.js') }}/"></script>
+    <script src="{{ url_for('static',filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/antd.js') }}"></script>
+    <link href="{{ url_for('static',filename='css/antd.min.css') }}" rel="stylesheet">
+</head>
+
+<body>
+{% if hh=='ok' %}
+<script type="text/babel">
+    class MessageBox extends React.Component {
+        renderMessage = () => {
+            antd.message.config({
+                top: 75,
+            })
+            antd.message.success('{{ msg }}');
+        }
+        render = () => {
+            return (<div>{this.renderMessage()}</div>)
+        }
+    }
+
+    document.getElementById("app")
+    ReactDOM.render(<MessageBox/>,
+        document.getElementById('app'),
+    )
+</script>
+
+{% else %}
+<script type="text/babel">
+    class MessageBox extends React.Component {
+        renderMessage = () => {
+            antd.message.config({
+                top: 75,
+            })
+            antd.message.error('{{ msg }}');
+        }
+        render = () => {
+            return (<div>{this.renderMessage()}</div>)
+        }
+    }
+
+    document.getElementById("app")
+    ReactDOM.render(<MessageBox/>,
+        document.getElementById('app'),
+    )
+</script>
+{% endif %}
+
+<div id="app"></div>
+</body>
+
+{%- endmacro %}
