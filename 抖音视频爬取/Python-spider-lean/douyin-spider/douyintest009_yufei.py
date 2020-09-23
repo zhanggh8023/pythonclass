@@ -445,7 +445,7 @@ def hello():
 if __name__ == '__main__':
     hello()
     start_time = time.time()    # 开始时间
-    user_id = input('请输入抖音用户UID:')
+    user_id = 73481112430 #input('请输入抖音用户UID:')
     user_id = user_id.strip() if user_id else '98554035339'
 
     save_dir = 'D:/Download/'#input('保存路径 (例如"E:/Download/", 默认"./Download/"):')

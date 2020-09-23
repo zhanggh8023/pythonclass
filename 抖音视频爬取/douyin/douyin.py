@@ -44,9 +44,11 @@ class DouYin(object):
         i = 0
         share_user_url = 'https://www.douyin.com/share/user/%s' % user_id
         share_user = requests.get(share_user_url, headers=self.headers)
+        print(share_user)
         while share_user.status_code != 200:
             share_user = requests.get(share_user_url, headers=self.headers)
         _dytk_re = re.compile(r"dytk\s*:\s*'(.+)'")
+        print(share_user.text)
         dytk = _dytk_re.search(share_user.text).group(1)
         _nickname_re = re.compile(r'<p class="nickname">(.+?)<\/p>')
         nickname = _nickname_re.search(share_user.text).group(1)
@@ -231,6 +233,9 @@ if __name__ == '__main__':
 
 #未通过
 '''
+73481112430
+
+
 68567413397
 67126621684
 72156383532
