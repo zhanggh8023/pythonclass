@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46f3f2aa-346e-42f5-b3cd-144fd12765c4" name="默认的" comment="默认的">
-      <change beforePath="$PROJECT_DIR$/Mechanical_insect/app/templates/admin/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mechanical_insect/app/templates/admin/grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -275,15 +275,16 @@
     <session id="1067635458">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="1" />
           <entry key="py" value="4" />
         </counts>
@@ -291,7 +292,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="4" />
         </counts>
       </usages-collector>
@@ -1146,7 +1147,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
-    <option name="y" value="9" />
+    <option name="y" value="4" />
     <option name="width" value="1442" />
     <option name="height" value="1047" />
   </component>
@@ -1194,7 +1195,7 @@
     <property name="ToolWindowPython Console.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="D:/HttpRunnerManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -1819,9 +1820,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="9" width="1442" height="1047" extended-state="0" />
+    <frame x="10" y="4" width="1442" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49319214" visible="true" weight="0.23878437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49319214" visible="true" weight="0.24602026" />
       <window_info id="Structure" order="1" sideWeight="0.50680786" side_tool="true" weight="0.22330096" />
       <window_info id="Favorites" order="2" sideWeight="0.5040128" side_tool="true" weight="0.1904762" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2183,7 +2184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/Mechanical_insect/app/templates/admin/grid.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -2197,6 +2197,9 @@
           <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
