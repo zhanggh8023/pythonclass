@@ -1,0 +1,243 @@
+2021-02-04 15:18:59,404-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:18:59,408-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:19:00,011-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:19:00,697-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:19:53,241-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:19:53,245-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:19:53,790-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:19:54,543-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:19:54,548-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:19:54,551-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:19:54,554-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.confirm；method：POST；data：{}；sql：{}
+2021-02-04 15:19:54,647-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:19:54,650-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:19:54,653-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:19:54,722-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '', 'message': '保存阿里订单失败', 'responseCode': '-1'}
+2021-02-04 15:19:54,725-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.167902s
+2021-02-04 15:19:54,728-[INFO]-logger.py-Unit_test-日志信息:接口返回message:保存阿里订单失败
+2021-02-04 15:19:54,730-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：-1
+2021-02-04 15:19:56,933-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:19:56,935-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:20:47,801-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:20:47,804-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:20:48,323-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:20:48,981-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:20:48,987-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:20:48,989-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:20:48,991-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state；method：POST；data：{}；sql：{}
+2021-02-04 15:20:49,071-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:20:49,073-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:20:49,076-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:20:49,179-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'message': '操作失败', 'responseCode': '-1'}
+2021-02-04 15:20:49,181-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.187823s
+2021-02-04 15:20:49,184-[INFO]-logger.py-Unit_test-日志信息:接口返回message:操作失败
+2021-02-04 15:20:49,186-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：-1
+2021-02-04 15:20:51,355-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:20:51,357-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:26:57,920-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:26:57,923-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:26:58,453-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:26:59,124-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:26:59,131-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:26:59,133-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:26:59,136-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:26:59,221-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:26:59,223-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:26:59,225-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:26:59,303-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:26:59,306-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.167171s
+2021-02-04 15:26:59,308-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:26:59,310-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.167171, 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:27:01,466-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:27:01,468-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:29:16,027-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:29:16,030-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:29:16,564-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:29:17,814-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:29:17,820-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:29:17,822-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:29:17,825-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:29:17,916-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:29:17,918-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:29:17,920-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:29:17,965-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:29:17,967-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.140156s
+2021-02-04 15:29:17,970-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:29:17,972-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.140156, 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:29:20,628-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:29:20,630-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:30:24,965-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:30:24,969-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:30:25,513-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:30:26,206-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:30:26,212-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:30:26,214-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:30:26,217-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:30:26,316-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:30:26,318-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:30:26,320-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:30:26,382-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:30:26,385-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.166611s
+2021-02-04 15:30:26,387-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:30:26,389-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.166611, 'data': '操作成功', 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:30:28,586-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:30:28,588-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:31:16,466-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:31:16,471-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1],区间[143, 247]
+2021-02-04 15:31:17,077-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:31:18,677-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:31:18,685-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:31:18,688-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:31:18,690-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:31:18,867-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:31:18,869-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:31:18,872-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:31:18,912-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:31:18,914-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.222124s
+2021-02-04 15:31:18,916-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:31:18,919-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.222124, 'data': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:31:21,756-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:31:21,767-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:41:52,256-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:41:52,260-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1, 2],区间[143, 247]
+2021-02-04 15:41:52,797-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:41:53,495-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:41:53,500-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:41:53,502-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:41:53,505-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:41:54,602-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:41:54,604-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:41:54,607-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:41:54,692-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:41:54,695-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 1.187872s
+2021-02-04 15:41:54,697-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:41:54,699-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 1.187872, 'data': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:41:56,806-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:41:56,808-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:41:56,811-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:41:56,813-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:体检机构对接_体检报告查询
+2021-02-04 15:41:56,816-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.report&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:41:56,860-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:41:56,863-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:41:56,865-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:41:56,896-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'reportData': '', 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:41:56,899-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.081034s
+2021-02-04 15:41:56,903-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：200
+2021-02-04 15:41:59,532-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:41:59,535-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:44:19,909-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:44:19,912-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[1, 2],区间[143, 247]
+2021-02-04 15:44:20,430-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:44:21,108-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:44:21,114-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:44:21,117-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:体检机构对接_体检状态查询
+2021-02-04 15:44:21,119-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.state&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:44:21,194-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:44:21,196-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:44:21,199-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:44:21,244-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'cooperationOrderInfo': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:44:21,247-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.124912s
+2021-02-04 15:44:21,249-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:44:21,251-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.124912, 'data': {'certNumber': '110101199007166631', 'certType': '0', 'checkDate': '2021-02-05', 'checkNo': '10.78.17', 'gender': '0', 'married': '0', 'name': '测试zgh', 'phone': '18767137391', 'reportstatus': 'exam_not', 'reserveNumber': '2020102978', 'uniqReserveCode': '20210203205655227330'}, 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:44:23,405-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:44:23,407-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:44:23,409-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:44:23,412-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:体检机构对接_体检报告查询
+2021-02-04 15:44:23,414-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.report&merchantCode=10.78.17&reserveNumber=2020102978&uniq_reserve_code=20210203205655227330；method：POST；data：{}；sql：{}
+2021-02-04 15:44:23,460-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:44:23,462-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:44:23,465-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:44:23,500-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'reportData': '', 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:44:23,502-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.086016s
+2021-02-04 15:44:23,505-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:44:23,507-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.086016, 'data': '操作成功', 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:44:26,123-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:44:26,125-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 15:48:56,261-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 15:48:56,265-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 15:48:56,809-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-02-04 15:48:57,507-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-02-04 15:48:57,513-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-02-04 15:48:57,515-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:体检机构对接_体检套餐库存查询
+2021-02-04 15:48:57,518-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.stock.query；method：POST；data：{}；sql：{}
+2021-02-04 15:48:57,657-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-02-04 15:48:57,659-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'a443f22b38bfcdc39ff8e6d154acc4a4', 'uid': '17200000090'}
+2021-02-04 15:48:57,661-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 15:48:57,718-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'storageList': [], 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 15:48:57,720-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.199085s
+2021-02-04 15:48:57,722-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:200
+2021-02-04 15:48:57,725-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.199085, 'data': '操作成功', 'code': '200', 'result': 'pass', 'sql_result': 'pass'}
+2021-02-04 15:48:59,859-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-02-04 15:48:59,861-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-02-04 16:25:10,031-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:25:10,035-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:25:10,085-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:25:10,130-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:25:10,132-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:25:10,922-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': 0, 'data': {'orderCountPrice': 1000000, 'orderId': '2488', 'orderPrice': 0, 'receiptNo': '2488'}, 'message': '成功'}
+2021-02-04 16:26:26,810-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:26:26,814-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:26:26,863-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:26:26,897-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:26:26,899-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:26:27,385-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': 0, 'data': {}, 'message': '成功'}
+2021-02-04 16:27:47,445-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:27:47,448-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:27:47,495-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:27:47,564-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:27:47,567-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:27:47,703-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': 0, 'data': {'orderCountPrice': 1000000, 'orderId': '2489', 'orderPrice': 0, 'receiptNo': '2489'}, 'message': '成功'}
+2021-02-04 16:29:59,819-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:29:59,823-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:29:59,868-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:29:59,912-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:29:59,914-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:30:01,779-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': 0, 'data': {}, 'message': '成功'}
+2021-02-04 16:31:36,226-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:31:36,230-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:31:36,275-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:31:36,323-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:31:36,326-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:31:37,450-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': 0, 'data': {}, 'message': '成功'}
+2021-02-04 16:37:46,255-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 16:37:46,261-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 16:37:46,310-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 16:37:46,345-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 16:37:46,347-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 16:37:47,887-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '20210204163744797229', 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 17:10:36,936-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 17:10:36,940-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 17:10:36,988-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 17:10:37,034-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 17:10:37,036-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 17:10:37,177-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '20210204171035451138', 'message': '保存阿里订单失败', 'responseCode': '-1'}
+2021-02-04 17:10:55,920-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 17:10:55,924-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 17:10:55,972-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 17:10:56,022-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 17:10:56,024-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 17:10:56,492-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '20210204171054427261', 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 17:16:52,591-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 17:16:52,595-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 17:16:52,649-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 17:16:52,685-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 17:16:52,687-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 17:16:52,820-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '20210204171651093663', 'message': '保存阿里订单失败', 'responseCode': '-1'}
+2021-02-04 17:17:08,202-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 17:17:08,205-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 17:17:08,251-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 17:17:08,306-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 17:17:08,308-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 17:17:08,785-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'uniqReserveCode': '20210204171706704766', 'message': '操作成功', 'responseCode': '200'}
+2021-02-04 18:39:41,116-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 18:39:41,120-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 18:39:41,167-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 18:39:41,200-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 18:39:41,203-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 18:39:41,744-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'response_code': '200', 'revision_info': {'uniq_reserve_code': '20210204171706704766', 'reserve_date': '2021-02-18'}, 'message': '操作成功'}
+2021-02-04 18:40:23,357-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-02-04 18:40:23,360-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[143, 247]
+2021-02-04 18:40:23,408-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-02-04,1612443600000
+2021-02-04 18:40:23,444-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-02-04 18:40:23,446-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-02-04 18:40:23,565-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'response_code': '200', 'revision_info': {'uniq_reserve_code': '20210204171054427261', 'reserve_date': '2021-02-18'}, 'message': '操作成功'}

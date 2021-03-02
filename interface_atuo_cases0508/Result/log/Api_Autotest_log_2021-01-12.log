@@ -1,0 +1,581 @@
+2021-01-12 20:23:08,534-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:23:08,537-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 8]
+2021-01-12 20:23:08,949-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:23:09,681-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:23:09,689-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:09,692-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:【4.0体检单位】1-创建团检单位-成功
+2021-01-12 20:23:09,694-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/company/add；method：POST；data：{"companyName":"%s","contactName":"zgh","contactPhone":"17681829051"}；sql：{}
+2021-01-12 20:23:09,705-[INFO]-logger.py-all_method-日志信息:调用随机名称获取替换字段返回值成功：{"companyName":"接口测试2021-01-12 20-23-09","contactName":"zgh","contactPhone":"17681829051"}
+2021-01-12 20:23:09,710-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:09,760-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:09,763-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:09,803-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:09,806-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:23:09,992-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 3468, 'success': True}
+2021-01-12 20:23:09,994-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.287223s
+2021-01-12 20:23:09,996-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:09,999-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.287223, 'data': 3468, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:12,395-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:12,397-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:12,399-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:12,402-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:【4.0体检单位】2-创建团检单位批次-成功
+2021-01-12 20:23:12,405-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/save；method：POST；data：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"%s","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}；sql：{}
+2021-01-12 20:23:13,729-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3468
+2021-01-12 20:23:13,731-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result'}
+获取指定返回值成功：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"3468","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}
+2021-01-12 20:23:13,736-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:13,797-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:13,799-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:13,828-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:13,831-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:23:13,933-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'batchId': 3488}, 'success': True}
+2021-01-12 20:23:13,935-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.200895s
+2021-01-12 20:23:13,937-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:13,939-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.200895, 'data': {'batchId': 3488}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:16,836-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:16,837-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:16,840-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:16,843-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:【4.0体检单位】3-获取创建单位id及批次id-成功
+2021-01-12 20:23:16,845-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/batch/branch/get；method：GET；data：{"stationId":"HL99997","batchId":%s}；sql：{}
+2021-01-12 20:23:17,981-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3488}
+2021-01-12 20:23:17,984-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"stationId":"HL99997","batchId":3488}
+2021-01-12 20:23:17,987-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:18,051-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:18,053-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:18,082-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:18,084-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:23:18,119-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [], 'success': True}
+2021-01-12 20:23:18,121-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.13494s
+2021-01-12 20:23:18,123-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:18,125-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.13494, 'data': [], 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:20,620-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:20,622-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:20,624-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:20,627-[INFO]-logger.py-Unit_test-日志信息:正在执行第4条用例:【4.0体检单位】4-创建团检单位(新)批次性别不限分组-成功
+2021-01-12 20:23:20,630-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/group/save；method：POST；data：{"list":[{"companyId":"%s","batchId":"%s","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}；sql：{}
+2021-01-12 20:23:21,766-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3468
+2021-01-12 20:23:22,923-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3488}
+2021-01-12 20:23:22,924-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"list":[{"companyId":"3468","batchId":"3488","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}
+2021-01-12 20:23:22,927-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:22,994-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:22,996-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:23,024-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:23,026-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:23:23,152-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:23:23,154-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.227588s
+2021-01-12 20:23:23,156-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:23,158-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.227588, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:25,874-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:25,877-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:25,880-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:25,882-[INFO]-logger.py-Unit_test-日志信息:正在执行第5条用例:【4.0体检单位】5-分组上传文件-成功
+2021-01-12 20:23:25,884-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/uploadUserData；method：POST；data：{"batchId":%s}；sql：{'name': 'file', 'filename': 'group_exam_user_v5-2.xlsx'}
+2021-01-12 20:23:27,114-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3488}
+2021-01-12 20:23:27,116-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"batchId":3488}
+2021-01-12 20:23:27,119-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:27,245-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:27,246-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:27,277-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:27,279-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post_file请求
+2021-01-12 20:23:27,536-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202326345', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'success': True}
+2021-01-12 20:23:27,539-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.419832s
+2021-01-12 20:23:27,541-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:27,543-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.419832, 'data': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202326345', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:30,191-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:30,193-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:30,195-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:30,197-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:【4.0体检单位】6-分组保存团检信息-成功
+2021-01-12 20:23:30,199-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/saveUploadData；method：POST；data：{"batchId":"%s","importData":[{"age":"","bigBitchId":"%s","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}；sql：{}
+2021-01-12 20:23:31,390-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3488}
+2021-01-12 20:23:32,490-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第5条测试用例返回结果成功：{'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202326345', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}
+2021-01-12 20:23:32,493-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']", '5': "result['normalData'][0]['bigBitchId']"}
+获取指定返回值成功：{"batchId":"3488","importData":[{"age":"","bigBitchId":"default_20210112202326345","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}
+2021-01-12 20:23:32,496-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:23:32,562-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:23:32,564-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:23:32,603-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:23:32,605-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:23:32,732-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:23:32,734-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.238859s
+2021-01-12 20:23:32,736-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:23:32,738-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.238859, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:23:35,320-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:23:35,322-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:35,325-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:35,327-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:23:35,329-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：POST；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1","pageSize":10}；sql：{}
+2021-01-12 20:23:36,464-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3468
+2021-01-12 20:23:37,640-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3488}
+2021-01-12 20:23:37,642-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3468,"batchId":3488,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1","pageSize":10}
+2021-01-12 20:23:37,644-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:23:37,650-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:23:37,652-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:23:37,654-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":%s,"sectionName":"全面信息同步分组","userCardId":%s,"id":%s,"vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":%s},"userName":"小七1"}；sql：{}
+2021-01-12 20:23:38,907-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:24:43,346-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:24:43,349-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 8]
+2021-01-12 20:24:43,828-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:24:44,723-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:24:44,729-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:24:44,731-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:【4.0体检单位】1-创建团检单位-成功
+2021-01-12 20:24:44,734-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/company/add；method：POST；data：{"companyName":"%s","contactName":"zgh","contactPhone":"17681829051"}；sql：{}
+2021-01-12 20:24:44,738-[INFO]-logger.py-all_method-日志信息:调用随机名称获取替换字段返回值成功：{"companyName":"接口测试2021-01-12 20-24-44","contactName":"zgh","contactPhone":"17681829051"}
+2021-01-12 20:24:44,741-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:24:44,842-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:24:44,845-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:24:44,900-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:24:44,903-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:24:45,098-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 3469, 'success': True}
+2021-01-12 20:24:45,100-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.360399s
+2021-01-12 20:24:45,102-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:24:45,104-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.360399, 'data': 3469, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:24:47,363-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:24:47,365-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:24:47,378-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:24:47,384-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:【4.0体检单位】2-创建团检单位批次-成功
+2021-01-12 20:24:47,387-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/save；method：POST；data：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"%s","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}；sql：{}
+2021-01-12 20:24:48,924-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3469
+2021-01-12 20:24:48,926-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result'}
+获取指定返回值成功：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"3469","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}
+2021-01-12 20:24:48,931-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:24:48,988-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:24:48,991-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:24:49,025-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:24:49,027-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:24:49,135-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'batchId': 3489}, 'success': True}
+2021-01-12 20:24:49,137-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.208414s
+2021-01-12 20:24:49,140-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:24:49,143-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.208414, 'data': {'batchId': 3489}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:24:52,110-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:24:52,113-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:24:52,115-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:24:52,118-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:【4.0体检单位】3-获取创建单位id及批次id-成功
+2021-01-12 20:24:52,120-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/batch/branch/get；method：GET；data：{"stationId":"HL99997","batchId":%s}；sql：{}
+2021-01-12 20:24:53,815-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:24:53,818-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"stationId":"HL99997","batchId":3489}
+2021-01-12 20:24:53,821-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:24:53,880-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:24:53,882-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:24:53,929-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:24:53,932-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:24:53,973-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [], 'success': True}
+2021-01-12 20:24:53,975-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.154926s
+2021-01-12 20:24:53,977-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:24:53,979-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.154926, 'data': [], 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:24:57,131-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:24:57,133-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:24:57,136-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:24:57,137-[INFO]-logger.py-Unit_test-日志信息:正在执行第4条用例:【4.0体检单位】4-创建团检单位(新)批次性别不限分组-成功
+2021-01-12 20:24:57,140-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/group/save；method：POST；data：{"list":[{"companyId":"%s","batchId":"%s","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}；sql：{}
+2021-01-12 20:24:58,388-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3469
+2021-01-12 20:24:59,806-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:24:59,809-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"list":[{"companyId":"3469","batchId":"3489","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}
+2021-01-12 20:24:59,814-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:24:59,868-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:24:59,870-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:24:59,902-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:24:59,905-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:25:00,026-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:25:00,029-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.215876s
+2021-01-12 20:25:00,032-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:25:00,034-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.215876, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:25:02,739-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:25:02,741-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:25:02,744-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:25:02,746-[INFO]-logger.py-Unit_test-日志信息:正在执行第5条用例:【4.0体检单位】5-分组上传文件-成功
+2021-01-12 20:25:02,748-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/uploadUserData；method：POST；data：{"batchId":%s}；sql：{'name': 'file', 'filename': 'group_exam_user_v5-2.xlsx'}
+2021-01-12 20:25:04,020-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:25:04,022-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"batchId":3489}
+2021-01-12 20:25:04,025-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:25:04,090-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:25:04,092-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:25:04,136-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:25:04,138-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post_file请求
+2021-01-12 20:25:04,374-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202503181', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'success': True}
+2021-01-12 20:25:04,381-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.354487s
+2021-01-12 20:25:04,384-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:25:04,386-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.354487, 'data': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202503181', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:25:07,000-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:25:07,002-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:25:07,004-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:25:07,006-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:【4.0体检单位】6-分组保存团检信息-成功
+2021-01-12 20:25:07,008-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/saveUploadData；method：POST；data：{"batchId":"%s","importData":[{"age":"","bigBitchId":"%s","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}；sql：{}
+2021-01-12 20:25:08,207-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:25:09,394-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第5条测试用例返回结果成功：{'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112202503181', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}
+2021-01-12 20:25:09,397-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']", '5': "result['normalData'][0]['bigBitchId']"}
+获取指定返回值成功：{"batchId":"3489","importData":[{"age":"","bigBitchId":"default_20210112202503181","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}
+2021-01-12 20:25:09,400-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:25:09,462-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:25:09,464-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:25:09,492-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:25:09,495-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:25:09,641-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:25:09,643-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.242448s
+2021-01-12 20:25:09,645-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:25:09,647-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.242448, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:25:12,368-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:25:12,370-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:25:12,373-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:25:12,375-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:25:12,377-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：GET；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1","pageSize":10}；sql：{}
+2021-01-12 20:25:13,571-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3469
+2021-01-12 20:25:14,812-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:25:14,814-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3469,"batchId":3489,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1","pageSize":10}
+2021-01-12 20:25:14,817-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:25:14,825-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:25:14,827-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:25:14,830-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":%s,"sectionName":"全面信息同步分组","userCardId":%s,"id":%s,"vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":%s},"userName":"小七1"}；sql：{}
+2021-01-12 20:25:16,123-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:28:53,758-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:28:53,761-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[7, 10]
+2021-01-12 20:28:54,133-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:28:54,841-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:28:54,847-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:28:54,850-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:28:54,852-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：GET；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}；sql：{}
+2021-01-12 20:28:55,735-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3469
+2021-01-12 20:28:56,469-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:28:56,471-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3469,"batchId":3489,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}
+2021-01-12 20:28:56,474-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:28:56,539-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:28:56,541-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:28:56,584-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:28:56,586-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:28:56,691-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46114, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': None, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '', 'sendStatus': 0, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56096, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'success': True}
+2021-01-12 20:28:56,693-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.219932s
+2021-01-12 20:28:56,695-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：0
+2021-01-12 20:28:58,842-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:28:58,844-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:28:58,852-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:28:58,855-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:28:58,858-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":%s,"sectionName":"全面信息同步分组","userCardId":%s,"id":%s,"vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":%s},"userName":"小七1"}；sql：{}
+2021-01-12 20:29:00,110-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:29:00,115-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:29:00,118-[INFO]-logger.py-Unit_test-日志信息:正在执行第9条用例:【4.0体检单位】7-团检信息自动分组-成功
+2021-01-12 20:29:00,120-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/autogroup；method：POST；data：{"companyId":"%s","batchId":"%s"}；sql：{}
+2021-01-12 20:29:01,451-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3469
+2021-01-12 20:29:02,569-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:29:02,571-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":"3469","batchId":"3489"}
+2021-01-12 20:29:02,574-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:29:02,634-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:29:02,636-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:29:02,666-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:29:02,668-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:29:02,812-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorNum': 0, 'successNum': 1}, 'success': True}
+2021-01-12 20:29:02,815-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.242042s
+2021-01-12 20:29:02,817-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:29:02,819-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.242042, 'data': {'errorNum': 0, 'successNum': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:29:05,615-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:29:05,618-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:29:05,621-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:29:05,623-[INFO]-logger.py-Unit_test-日志信息:正在执行第10条用例:【4.0体检单位】8-团检信息自动发放-成功
+2021-01-12 20:29:05,626-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/audit；method：POST；data：{"adminId":"726","stationId":"HL99997","batchId":"%s","smsSwitch":0}；sql：{}
+2021-01-12 20:29:07,019-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3489}
+2021-01-12 20:29:07,021-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"adminId":"726","stationId":"HL99997","batchId":"3489","smsSwitch":0}
+2021-01-12 20:29:07,024-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:29:07,089-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:29:07,092-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:29:07,145-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:29:07,147-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:29:08,241-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:29:08,244-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 1.22003s
+2021-01-12 20:29:08,246-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:29:08,248-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 1.22003, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:29:11,921-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:29:11,923-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:15,002-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:32:15,005-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 10]
+2021-01-12 20:32:15,391-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:32:16,312-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:32:16,320-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:16,323-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:【4.0体检单位】1-创建团检单位-成功
+2021-01-12 20:32:16,325-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/company/add；method：POST；data：{"companyName":"%s","contactName":"zgh","contactPhone":"17681829051"}；sql：{}
+2021-01-12 20:32:16,330-[INFO]-logger.py-all_method-日志信息:调用随机名称获取替换字段返回值成功：{"companyName":"接口测试2021-01-12 20-32-16","contactName":"zgh","contactPhone":"17681829051"}
+2021-01-12 20:32:16,333-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:16,404-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:16,406-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:16,436-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:16,438-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:16,590-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 3470, 'success': True}
+2021-01-12 20:32:16,593-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.260663s
+2021-01-12 20:32:16,595-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:16,597-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.260663, 'data': 3470, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:18,783-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:18,785-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:18,788-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:18,790-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:【4.0体检单位】2-创建团检单位批次-成功
+2021-01-12 20:32:18,792-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/save；method：POST；data：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"%s","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}；sql：{}
+2021-01-12 20:32:20,303-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:32:20,305-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result'}
+获取指定返回值成功：{"batchId":"","batchName":"项目验收标准批次","employeesProvided":"1","bindTypes":"1","dateJson":[{"date":1610294400000,"examCount":1000},{"date":1610380800000,"examCount":1000},{"date":1610467200000,"examCount":1000},{"date":1610553600000,"examCount":1000},{"date":1610640000000,"examCount":1000},{"date":1610726400000,"examCount":1000},{"date":1610812800000,"examCount":0},{"date":1610899200000,"examCount":1000},{"date":1610985600000,"examCount":1000},{"date":1611072000000,"examCount":1000},{"date":1611158400000,"examCount":1000},{"date":1611244800000,"examCount":1000},{"date":1611331200000,"examCount":1000},{"date":1611417600000,"examCount":0},{"date":1611504000000,"examCount":1000},{"date":1611590400000,"examCount":1000},{"date":1611676800000,"examCount":1000},{"date":1611763200000,"examCount":1000},{"date":1611849600000,"examCount":1000},{"date":1611936000000,"examCount":1000},{"date":1612022400000,"examCount":0},{"date":1612108800000,"examCount":1000},{"date":1612195200000,"examCount":1000},{"date":1612281600000,"examCount":1000},{"date":1612368000000,"examCount":1000},{"date":1612454400000,"examCount":1000},{"date":1612540800000,"examCount":1000},{"date":1612627200000,"examCount":0},{"date":1612713600000,"examCount":1000},{"date":1612800000000,"examCount":1000},{"date":1612886400000,"examCount":1000},{"date":1612972800000,"examCount":1000},{"date":1613059200000,"examCount":1000},{"date":1613145600000,"examCount":1000},{"date":1613232000000,"examCount":0},{"date":1613318400000,"examCount":1000},{"date":1613404800000,"examCount":1000},{"date":1613491200000,"examCount":1000},{"date":1613577600000,"examCount":1000},{"date":1613664000000,"examCount":1000},{"date":1613750400000,"examCount":1000},{"date":1613836800000,"examCount":0},{"date":1613923200000,"examCount":1000},{"date":1614009600000,"examCount":1000},{"date":1614096000000,"examCount":1000},{"date":1614182400000,"examCount":1000},{"date":1614268800000,"examCount":1000},{"date":1614355200000,"examCount":1000},{"date":1614441600000,"examCount":0}],"examEndTime":1638460800000,"examStartTime":1607097600000,"companyId":"3470","deadlineTime":"","batchTimeAppointStatus":0,"branchRatioList":[],"intervalList":[],"enableSyncHos":1,"stationId":"HL99997"}
+2021-01-12 20:32:20,312-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:20,366-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:20,368-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:20,399-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:20,401-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:20,502-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'batchId': 3490}, 'success': True}
+2021-01-12 20:32:20,505-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.194888s
+2021-01-12 20:32:20,507-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:20,509-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.194888, 'data': {'batchId': 3490}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:23,097-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:23,099-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:23,102-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:23,104-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:【4.0体检单位】3-获取创建单位id及批次id-成功
+2021-01-12 20:32:23,106-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/batch/branch/get；method：GET；data：{"stationId":"HL99997","batchId":%s}；sql：{}
+2021-01-12 20:32:24,476-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:24,478-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"stationId":"HL99997","batchId":3490}
+2021-01-12 20:32:24,482-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:24,535-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:24,537-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:24,574-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:24,577-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:32:24,621-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [], 'success': True}
+2021-01-12 20:32:24,623-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.14314s
+2021-01-12 20:32:24,626-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:24,628-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.14314, 'data': [], 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:27,425-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:27,428-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:27,431-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:27,433-[INFO]-logger.py-Unit_test-日志信息:正在执行第4条用例:【4.0体检单位】4-创建团检单位(新)批次性别不限分组-成功
+2021-01-12 20:32:27,436-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v3/group/save；method：POST；data：{"list":[{"companyId":"%s","batchId":"%s","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}；sql：{}
+2021-01-12 20:32:28,635-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:32:29,840-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:29,842-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"list":[{"companyId":"3470","batchId":"3490","stationId":"HL99997","itemType":1,"addFeeitemDiscount":"1","selfDiscount":"1","addFeeitems":[],"editable":-1,"groupName":"项目验收标准分组","suitId":21509,"pkgId":"","optionalItemsBos":[],"optionalPkgsBos":[],"upgradePkgBos":[],"cardFamilySuiteExtendDoList":[],"agePros":2,"gender":0,"married":2,"selFamilyIds":[],"cardType":3,"reserveCardId":"null","cardValue":1,"ageMin":"","ageMax":"","mutualExclusion":"0","addFeeitemIds":""}]}
+2021-01-12 20:32:29,845-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:29,899-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:29,901-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:29,930-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:29,933-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:30,063-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:32:30,065-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.219872s
+2021-01-12 20:32:30,067-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:30,069-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.219872, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:32,631-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:32,633-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:32,635-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:32,638-[INFO]-logger.py-Unit_test-日志信息:正在执行第5条用例:【4.0体检单位】5-分组上传文件-成功
+2021-01-12 20:32:32,640-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/uploadUserData；method：POST；data：{"batchId":%s}；sql：{'name': 'file', 'filename': 'group_exam_user_v5-2.xlsx'}
+2021-01-12 20:32:33,817-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:33,819-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"batchId":3490}
+2021-01-12 20:32:33,822-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:33,886-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:33,892-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:33,920-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:33,923-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post_file请求
+2021-01-12 20:32:34,103-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112203232916', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'success': True}
+2021-01-12 20:32:34,105-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.284119s
+2021-01-12 20:32:34,107-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:34,109-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.284119, 'data': {'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112203232916', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:36,651-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:36,652-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:36,655-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:36,657-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:【4.0体检单位】6-分组保存团检信息-成功
+2021-01-12 20:32:36,659-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/saveUploadData；method：POST；data：{"batchId":"%s","importData":[{"age":"","bigBitchId":"%s","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}；sql：{}
+2021-01-12 20:32:37,783-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:38,880-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第5条测试用例返回结果成功：{'errorData': None, 'normalData': [{'age': None, 'bigBitchId': 'default_20210112203232916', 'deptName': '', 'gender': 0, 'idNumber': '', 'married': None, 'name': '小七1', 'phone': '', 'reserveCardId': None, 'sectionName': '', 'vip': 0}]}
+2021-01-12 20:32:38,883-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']", '5': "result['normalData'][0]['bigBitchId']"}
+获取指定返回值成功：{"batchId":"3490","importData":[{"age":"","bigBitchId":"default_20210112203232916","deptName":"","gender":0,"idNumber":"","married":"","name":"小七1","phone":"","reserveCardId":"","sectionName":"","vip":0}]}
+2021-01-12 20:32:38,886-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:38,947-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:38,949-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:38,988-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:38,991-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:39,111-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:32:39,113-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.228972s
+2021-01-12 20:32:39,115-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:39,118-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.228972, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:41,631-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:41,633-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:41,635-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:41,637-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:32:41,639-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：GET；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}；sql：{}
+2021-01-12 20:32:42,749-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:32:43,880-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:43,882-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3470,"batchId":3490,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}
+2021-01-12 20:32:43,887-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:43,937-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:43,939-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:43,967-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:43,969-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:32:44,038-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': None, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '', 'sendStatus': 0, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'success': True}
+2021-01-12 20:32:44,041-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.154549s
+2021-01-12 20:32:44,042-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:44,045-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.154549, 'data': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': None, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '', 'sendStatus': 0, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:46,620-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:46,622-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:46,624-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:46,626-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:32:46,628-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":%s,"sectionName":"全面信息同步分组","userCardId":%s,"id":%s,"vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":%s},"userName":"小七1"}；sql：{}
+2021-01-12 20:32:47,782-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:47,790-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:47,792-[INFO]-logger.py-Unit_test-日志信息:正在执行第9条用例:【4.0体检单位】7-团检信息自动分组-成功
+2021-01-12 20:32:47,795-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/autogroup；method：POST；data：{"companyId":"%s","batchId":"%s"}；sql：{}
+2021-01-12 20:32:48,975-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:32:50,202-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:50,204-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":"3470","batchId":"3490"}
+2021-01-12 20:32:50,207-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:50,260-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:50,262-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:50,299-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:50,302-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:50,430-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorNum': 0, 'successNum': 1}, 'success': True}
+2021-01-12 20:32:50,432-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.225882s
+2021-01-12 20:32:50,433-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:50,435-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.225882, 'data': {'errorNum': 0, 'successNum': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:52,960-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:52,962-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:32:52,964-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:32:52,966-[INFO]-logger.py-Unit_test-日志信息:正在执行第10条用例:【4.0体检单位】8-团检信息自动发放-成功
+2021-01-12 20:32:52,968-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/audit；method：POST；data：{"adminId":"726","stationId":"HL99997","batchId":"%s","smsSwitch":0}；sql：{}
+2021-01-12 20:32:54,151-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:32:54,155-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"adminId":"726","stationId":"HL99997","batchId":"3490","smsSwitch":0}
+2021-01-12 20:32:54,158-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:32:54,205-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:32:54,207-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:32:54,252-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:32:54,255-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:32:55,013-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:32:55,015-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.858652s
+2021-01-12 20:32:55,017-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:32:55,019-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.858652, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:32:57,719-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:32:57,721-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:34:07,034-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:34:07,037-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[7, 10]
+2021-01-12 20:34:07,400-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:34:08,545-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:34:08,552-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:34:08,556-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:34:08,558-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：GET；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}；sql：{}
+2021-01-12 20:34:09,744-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:34:10,926-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:34:10,928-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3470,"batchId":3490,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}
+2021-01-12 20:34:10,931-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:34:10,992-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:34:10,994-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:34:11,034-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:34:11,036-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:34:11,137-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': 4353, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '项目验收标准分组', 'sendStatus': 1, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'success': True}
+2021-01-12 20:34:11,140-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.2089s
+2021-01-12 20:34:11,142-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:34:11,144-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.2089, 'data': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': 4353, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '项目验收标准分组', 'sendStatus': 1, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:34:13,758-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:34:13,760-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:34:13,762-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:34:13,764-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:34:13,767-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":%s,"sectionName":"全面信息同步分组","userCardId":%s,"id":%s,"vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":%s},"userName":"小七1"}；sql：{}
+2021-01-12 20:34:14,886-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:34:14,894-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:34:14,896-[INFO]-logger.py-Unit_test-日志信息:正在执行第9条用例:【4.0体检单位】7-团检信息自动分组-成功
+2021-01-12 20:34:14,900-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/autogroup；method：POST；data：{"companyId":"%s","batchId":"%s"}；sql：{}
+2021-01-12 20:34:16,108-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:34:17,382-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:34:17,384-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":"3470","batchId":"3490"}
+2021-01-12 20:34:17,388-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:34:17,436-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:34:17,438-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:34:17,480-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:34:17,482-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:34:17,592-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorNum': 0, 'successNum': 0}, 'success': True}
+2021-01-12 20:34:17,594-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.207863s
+2021-01-12 20:34:17,596-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:34:17,598-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.207863, 'data': {'errorNum': 0, 'successNum': 0}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:34:20,679-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:34:20,682-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:34:20,685-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:34:20,688-[INFO]-logger.py-Unit_test-日志信息:正在执行第10条用例:【4.0体检单位】8-团检信息自动发放-成功
+2021-01-12 20:34:20,690-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/audit；method：POST；data：{"adminId":"726","stationId":"HL99997","batchId":"%s","smsSwitch":0}；sql：{}
+2021-01-12 20:34:23,144-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:34:23,149-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"adminId":"726","stationId":"HL99997","batchId":"3490","smsSwitch":0}
+2021-01-12 20:34:23,152-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:34:23,206-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:34:23,208-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:34:23,246-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:34:23,249-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:34:23,319-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:34:23,321-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.169902s
+2021-01-12 20:34:23,323-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:34:23,325-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.169902, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:34:25,986-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:34:25,988-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:36:54,227-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-12 20:36:54,230-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[7, 10]
+2021-01-12 20:36:54,594-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet5
+2021-01-12 20:36:55,329-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet5">
+2021-01-12 20:36:55,337-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:36:55,339-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:【4.0体检单位】7-获取批次列表-成功
+2021-01-12 20:36:55,341-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/batchReserveList；method：GET；data：{"companyId":%s,"batchId":%s,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}；sql：{}
+2021-01-12 20:36:56,069-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:36:56,810-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:36:56,812-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":3470,"batchId":3490,"keyword":"","sendStatus":"","gender":"","married":"","reserveCardId":"","pageNo":1,"pageSize":10}
+2021-01-12 20:36:56,816-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:36:56,881-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:36:56,883-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:36:56,926-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:36:56,927-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-01-12 20:36:57,032-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': 4353, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '项目验收标准分组', 'sendStatus': 1, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'success': True}
+2021-01-12 20:36:57,034-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.220889s
+2021-01-12 20:36:57,036-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:36:57,038-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.220889, 'data': {'list': [{'additionNames': None, 'age': None, 'batchName': None, 'branchId': None, 'branchName': None, 'checkTime': None, 'companyId': None, 'companyName': None, 'deptName': '', 'gmtSyncHosp': None, 'gmtSyncHospStr': '', 'id': 46115, 'idNumber': '', 'lockStatus': 0, 'married': None, 'msisdn': None, 'phone': '', 'pkgName': None, 'qrCode': None, 'reserveCardId': 4353, 'reserveDay': None, 'reserveDayStr': '', 'reserveId': None, 'reserveType': None, 'sectionName': '项目验收标准分组', 'sendStatus': 1, 'sex': 0, 'stationId': 'HL99997', 'stationName': None, 'status': 0, 'subTradeTitle': None, 'syncHosp': 0, 'tradeId': None, 'userCardId': 56097, 'userName': '小七1', 'vip': 0}], 'total': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:36:59,138-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:36:59,140-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:36:59,143-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:36:59,146-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:【4.0体检单位】8-编辑发卡人信息-成功
+2021-01-12 20:36:59,148-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/reserve/v3/modifyGroupUserCard；method：POST；data：{"age":23,"deptName":"测试","gender":2,"idNumber":"330184199805016406","married":1,"name":"小七1","phone":"15258814180","reserveCardId":"%s","sectionName":"全面信息同步分组","userCardId":"%s","id":"%s","vip":1,"group":{"examinationPassword":"null","groupName":"项目验收标准分组","pkgName":"项目验收套餐","reserveCardId":"%s"},"userName":"小七1"}；sql：{}
+2021-01-12 20:37:00,363-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:37:00,370-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:37:00,371-[INFO]-logger.py-Unit_test-日志信息:正在执行第9条用例:【4.0体检单位】7-团检信息自动分组-成功
+2021-01-12 20:37:00,373-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-hospital/admin/card/v2/autogroup；method：POST；data：{"companyId":"%s","batchId":"%s"}；sql：{}
+2021-01-12 20:37:01,574-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第1条测试用例返回结果成功：3470
+2021-01-12 20:37:02,701-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:37:02,703-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'1': 'result', '2': "result['batchId']"}
+获取指定返回值成功：{"companyId":"3470","batchId":"3490"}
+2021-01-12 20:37:02,707-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:37:02,771-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:37:02,773-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:37:02,813-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:37:02,816-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:37:02,916-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorNum': 0, 'successNum': 0}, 'success': True}
+2021-01-12 20:37:02,919-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.212931s
+2021-01-12 20:37:02,921-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:37:02,923-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.212931, 'data': {'errorNum': 0, 'successNum': 0}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:37:05,616-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:37:05,619-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-12 20:37:05,621-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-12 20:37:05,623-[INFO]-logger.py-Unit_test-日志信息:正在执行第10条用例:【4.0体检单位】8-团检信息自动发放-成功
+2021-01-12 20:37:05,625-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthcheck-web-hospital/admin/card/v4/batch/audit；method：POST；data：{"adminId":"726","stationId":"HL99997","batchId":"%s","smsSwitch":0}；sql：{}
+2021-01-12 20:37:06,828-[INFO]-logger.py-readExcel-日志信息:获取Sheet5表单第2条测试用例返回结果成功：{'batchId': 3490}
+2021-01-12 20:37:06,831-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'2': "result['batchId']"}
+获取指定返回值成功：{"adminId":"726","stationId":"HL99997","batchId":"3490","smsSwitch":0}
+2021-01-12 20:37:06,834-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-01-12 20:37:06,882-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-01-12 20:37:06,884-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-01-12 20:37:06,927-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99997', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-01-12 20:37:06,930-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-12 20:37:06,991-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-12 20:37:06,993-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.159912s
+2021-01-12 20:37:06,996-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-01-12 20:37:06,998-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.159912, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-01-12 20:37:09,585-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-01-12 20:37:09,587-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================

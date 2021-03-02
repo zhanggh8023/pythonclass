@@ -1,0 +1,139 @@
+2021-01-20 10:49:19,471-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 10:49:19,492-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:49:21,163-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 10:49:22,022-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 10:49:22,030-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:49:22,032-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 10:49:22,035-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:49:22,796-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:07,157-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 10:51:07,160-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:51:07,703-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 10:51:08,414-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 10:51:08,420-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:08,423-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 10:51:08,425-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:51:08,917-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:37,352-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-20 10:51:37,356-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:51:37,950-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 10:51:38,684-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 10:51:38,733-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:38,735-[INFO]-logger.py-Unit_test-日志信息:正在执行第1条用例:登录接口-成功
+2021-01-20 10:51:38,738-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/login/accountLogin；method：POST；data：{'cellnumber':15258814180,'password':'99fa72c8a55321a225c0a5abf0955585'}；sql：{}
+2021-01-20 10:51:39,223-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:39,238-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:39,240-[INFO]-logger.py-Unit_test-日志信息:正在执行第2条用例:健康问卷列表-成功
+2021-01-20 10:51:39,242-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/groupList；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:51:39,683-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:39,693-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:39,695-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功
+2021-01-20 10:51:39,698-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-01-20 10:51:40,154-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:40,169-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:40,172-[INFO]-logger.py-Unit_test-日志信息:正在执行第4条用例:获取家庭问卷-成功
+2021-01-20 10:51:40,176-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/resume；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:51:40,731-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:40,740-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:40,743-[INFO]-logger.py-Unit_test-日志信息:正在执行第5条用例:获取下一问卷-成功
+2021-01-20 10:51:40,745-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/next；method：POST；data：{"groupId":5,"memberId":"907","userId":"17200000090","questionAnswerList":[{"questionId":14,"result":["是"]},{"questionId":15,"result":["长期服用激素类药物","曾经接受过输血","药物过敏","从未接种过乙肝疫苗","食物过敏"]},{"questionId":16,"result":["经常感受到压力很大或抑郁","每日的睡眠时长小于6小时或入睡超过30分钟"]}]}；sql：{}
+2021-01-20 10:51:41,271-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:41,282-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:41,285-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 10:51:41,288-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:51:41,792-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:41,802-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:41,805-[INFO]-logger.py-Unit_test-日志信息:正在执行第7条用例:家庭信息列表-成功
+2021-01-20 10:51:41,809-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/list；method：GET；data：{}；sql：{}
+2021-01-20 10:51:42,237-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:42,250-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:42,252-[INFO]-logger.py-Unit_test-日志信息:正在执行第8条用例:获取用户信息-成功
+2021-01-20 10:51:42,254-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/user/msg/info；method：GET；data：{}；sql：{}
+2021-01-20 10:51:42,704-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:42,714-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:42,717-[INFO]-logger.py-Unit_test-日志信息:正在执行第9条用例:获取家庭信息列表-成功
+2021-01-20 10:51:42,719-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/list；method：GET；data：{'uid':17200000090}；sql：{}
+2021-01-20 10:51:43,128-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:43,137-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:43,140-[INFO]-logger.py-Unit_test-日志信息:正在执行第10条用例:家庭基本信息保存-成功
+2021-01-20 10:51:43,143-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/save；method：POST；data：{"age":30,"avatar":"","birthday":"1990/01/01","bloodRelations":[{"memberId":832,"memberName":"太阳","relationId":7,"relationName":"女儿"}],"bloodType":"A型","bmi":22.4,"gender":1,"height":183,"id":822,"idCardNo":'',"liveWith":'',"married":1,"mobile":'',"name":"记得接电话","relation":1,"relationName":"本人","userId":"17200000090","weight":75}；sql：{'my_sql': 'select blood_type from family_member_info where  `user_id`= %s ORDER BY gmt_modify desc;', 'condition': '17200000090', 'code': 0, 'result': 'A型'}
+2021-01-20 10:51:43,572-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:43,584-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:43,587-[INFO]-logger.py-Unit_test-日志信息:正在执行第11条用例:家庭号码列表-成功
+2021-01-20 10:51:43,590-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/list；method：GET；data：{'uid':17200149839}；sql：{}
+2021-01-20 10:51:44,035-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:44,047-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:44,049-[INFO]-logger.py-Unit_test-日志信息:正在执行第12条用例:退出登录-成功
+2021-01-20 10:51:44,052-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/login/logout；method：POST；data：{}；sql：{}
+2021-01-20 10:51:44,505-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:44,516-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:44,518-[INFO]-logger.py-Unit_test-日志信息:正在执行第13条用例:获取公众号信息-成功
+2021-01-20 10:51:44,519-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/wx/api/getJsapiSignature；method：GET；data：{"url":"http://wxtest.xiaohehealth.com/mall/groupexam-card-bind.html"}；sql：{}
+2021-01-20 10:51:44,945-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:44,955-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:44,958-[INFO]-logger.py-Unit_test-日志信息:正在执行第14条用例:微信登录手机号绑定-成功
+2021-01-20 10:51:44,961-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/wx/api/public/login；method：GET；data：{"valicode":68806,"openid": "oh02_51bmvLF6-P4z9mwUfEyMCFg","cellphone": "15258814180"}；sql：{}
+2021-01-20 10:51:45,415-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:51:45,425-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:51:45,426-[INFO]-logger.py-Unit_test-日志信息:正在执行第15条用例:上传微信文件
+2021-01-20 10:51:45,429-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/wx/api/file/uploadByMediaId；method：GET；data：{"mediaId": "1.png"}；sql：{}
+2021-01-20 10:51:45,858-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:53:04,568-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-20 10:53:04,571-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:53:58,436-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-20 10:53:58,439-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:55:48,770-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 10:55:48,774-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:55:49,293-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 10:55:49,969-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 10:55:49,978-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:55:49,980-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 10:55:49,982-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:55:50,447-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:57:00,812-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 10:57:00,815-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 10:57:01,361-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 10:57:02,128-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 10:57:02,136-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 10:57:02,138-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 10:57:02,140-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 10:57:02,215-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 10:58:54,952-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 10:58:54,956-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:00:46,745-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:00:46,749-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:04:45,422-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:04:45,426-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:05:10,466-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:05:10,470-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:07:18,950-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:07:18,956-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:10:24,397-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:10:24,400-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:12:02,607-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:12:02,610-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:12:03,159-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet1
+2021-01-20 11:12:03,891-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-01-20 11:12:03,898-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 11:12:03,901-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:家庭问卷-成功
+2021-01-20 11:12:03,904-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：https://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/questionnaire/finish；method：GET；data：{'memberId':822}；sql：{}
+2021-01-20 11:12:04,425-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-01-20 11:15:41,459-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：1
+2021-01-20 11:15:41,463-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[6],区间[1, 15]
+2021-01-20 11:15:42,027-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet3
+2021-01-20 11:15:42,774-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet3">
+2021-01-20 11:15:42,781-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-01-20 11:15:42,783-[INFO]-logger.py-Unit_test-日志信息:正在执行第6条用例:【企业直销体检】6-修改分组套餐-成功
+2021-01-20 11:15:42,785-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://b2htest.helianhealth.com/healthmanage-admin/admin/enterprise/group/modify；method：PUT；data：{"groupId":%s,"batchId":"%s","companyId":"%s","groupName":"1","cardValue":99999.99,"cardType":3,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"hasCard":'true',"enterpriseGroupInstPkgDTOList":[{"id":"","groupId":"%s","batchId":%s,"companyId":%s,"pkgSpuId":14633,"stationId":"HL99998"}]}；sql：{}
+2021-01-20 11:15:43,559-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第4条测试用例返回结果成功：{'errorData': None, 'normalData': [{'age': None, 'batchId': 417, 'beginTime': 1607961600000, 'bindTime': None, 'birthday': None, 'cardType': 3, 'companyId': 3381, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639583999000, 'gender': 0, 'groupId': 413, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '15258814180', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七2'}, {'age': None, 'batchId': 417, 'beginTime': 1607961600000, 'bindTime': None, 'birthday': None, 'cardType': 3, 'companyId': 3381, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639583999000, 'gender': 0, 'groupId': 413, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '17681829051', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七3'}, {'age': None, 'batchId': 417, 'beginTime': 1607961600000, 'bindTime': None, 'birthday': None, 'cardType': 3, 'companyId': 3381, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639583999000, 'gender': 0, 'groupId': 413, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '13429666593', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七4'}]}
+2021-01-20 11:15:43,563-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 4, 'groupId': "result['normalData'][0]['groupId']", 'batchId': "result['normalData'][0]['batchId']", 'companyId': "result['normalData'][0]['companyId']", 'groupId1': "result['normalData'][0]['groupId']", 'batchId1': "result['normalData'][0]['batchId']", 'companyId1': "result['normalData'][0]['companyId']"}
+获取指定返回值成功：{"groupId":413,"batchId":"417","companyId":"3381","groupName":"1","cardValue":99999.99,"cardType":3,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"hasCard":'true',"enterpriseGroupInstPkgDTOList":[{"id":"","groupId":"413","batchId":417,"companyId":3381,"pkgSpuId":14633,"stationId":"HL99998"}]}
+2021-01-20 11:15:43,629-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-01-20,1611147600000
+2021-01-20 11:15:43,691-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-01-20 11:15:43,694-[INFO]-logger.py-httpRequest-日志信息:现在开始进行put请求
+2021-01-20 11:15:43,987-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20000', 'errorMsg': '新增默认套餐已存在！', 'result': None, 'success': False}
+2021-01-20 11:15:43,989-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.42377s
+2021-01-20 11:15:43,992-[INFO]-logger.py-Unit_test-日志信息:接口返回message:新增默认套餐已存在！
+2021-01-20 11:15:43,995-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20000
+2021-01-20 11:15:44,788-[INFO]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\interface_cases.xlsx'
+2021-01-20 11:15:44,790-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================

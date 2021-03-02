@@ -1,0 +1,179 @@
+2020-12-20 20:24:39,309-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2020-12-20 20:24:39,311-[INFO]-logger.py-readExcel-日志信息:当前使用临时配置用例列表：[156, 157]
+2020-12-20 20:24:39,561-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet3
+2020-12-20 20:24:39,932-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet3">
+2020-12-20 20:24:39,936-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:39,937-[INFO]-logger.py-Unit_test-日志信息:正在执行第146条用例:【企业直销体检】1-创建单位-成功
+2020-12-20 20:24:39,938-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/company/add；method：POST；data：{"enableHealthManagement":1,"companyName":"%s","contactName":"zgh","contactPhone":"15258814180"}；sql：{}
+2020-12-20 20:24:39,939-[INFO]-logger.py-all_method-日志信息:调用随机名称获取替换字段返回值成功：{"enableHealthManagement":1,"companyName":"接口测试2020-12-20 20-24-39","contactName":"zgh","contactPhone":"15258814180"}
+2020-12-20 20:24:39,948-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:39,974-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:39,976-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:24:40,214-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 3059, 'success': True}
+2020-12-20 20:24:40,216-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.274843s
+2020-12-20 20:24:40,218-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:24:40,219-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.274843, 'data': 3059, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:24:40,706-[INFO]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\interface_cases.xlsx'
+2020-12-20 20:24:40,707-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:24:40,713-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:40,714-[INFO]-logger.py-Unit_test-日志信息:正在执行第147条用例:【企业直销体检】2-创建金额卡批次-成功
+2020-12-20 20:24:40,715-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/batch/add；method：POST；data：{"batchName":"单次卡批次","examDate":[1608220800000,1639756800000],"companyId":"%s","examEndTime":1639756800000,"examStartTime":1608220800000,"enterpriseBatchInstDTOS":[{"batchId":"","companyId":"3039","isDeleted":'false',"instId":1072,"instName":"杭州-禾连内网测试医院98","stationId":"HL99998","disabled":'false',"isDefaultInst":'true',"enterpriseBatchInstPkgDTOS":[{"pkgSpuId":14617,"pkgPrice":"50","pkgName":"界面自动化回归套餐","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14525,"pkgPrice":"80","pkgName":"个检男","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14660,"pkgPrice":"10000","pkgName":"接口套餐优惠券【勿动】","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14655,"pkgPrice":"0.01","pkgName":"自动化优惠券套餐【勿动】","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14643,"pkgPrice":"0.01","pkgName":"自动化身份非必填男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14644,"pkgPrice":"0.01","pkgName":"自动化性别不限身份非必填（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14634,"pkgPrice":"0.01","pkgName":"自动化套餐升级男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14635,"pkgPrice":"0.01","pkgName":"自动化套餐升级女（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14633,"pkgPrice":"0.01","pkgName":"自动化性别不限（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14574,"pkgPrice":"0.01","pkgName":"身份证必填","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14587,"pkgPrice":"100","pkgName":"疾病女","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""}],"pkgDiscount":"0.9","additionItemDiscount":"0.9"}]}；sql：{}
+2020-12-20 20:24:41,117-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第146条测试用例返回结果成功：3057
+2020-12-20 20:24:41,119-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 146, 'companyId': 'result', 'companyId2': 'result', 'companyId3': 'result', 'companyId4': 'result', 'companyId5': 'result', 'companyId6': 'result', 'companyId7': 'result', 'companyId8': 'result', 'companyId9': 'result', 'companyId10': 'result', 'companyId11': 'result', 'companyId12': 'result'}
+获取指定返回值成功：{"batchName":"单次卡批次","examDate":[1608220800000,1639756800000],"companyId":"3057","examEndTime":1639756800000,"examStartTime":1608220800000,"enterpriseBatchInstDTOS":[{"batchId":"","companyId":"3039","isDeleted":'false',"instId":1072,"instName":"杭州-禾连内网测试医院98","stationId":"HL99998","disabled":'false',"isDefaultInst":'true',"enterpriseBatchInstPkgDTOS":[{"pkgSpuId":14617,"pkgPrice":"50","pkgName":"界面自动化回归套餐","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14525,"pkgPrice":"80","pkgName":"个检男","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14660,"pkgPrice":"10000","pkgName":"接口套餐优惠券【勿动】","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14655,"pkgPrice":"0.01","pkgName":"自动化优惠券套餐【勿动】","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14643,"pkgPrice":"0.01","pkgName":"自动化身份非必填男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14644,"pkgPrice":"0.01","pkgName":"自动化性别不限身份非必填（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14634,"pkgPrice":"0.01","pkgName":"自动化套餐升级男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14635,"pkgPrice":"0.01","pkgName":"自动化套餐升级女（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14633,"pkgPrice":"0.01","pkgName":"自动化性别不限（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14574,"pkgPrice":"0.01","pkgName":"身份证必填","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""},{"pkgSpuId":14587,"pkgPrice":"100","pkgName":"疾病女","disabled":'false',"stationId":"HL99998","companyId":"3057","batchId":""}],"pkgDiscount":"0.9","additionItemDiscount":"0.9"}]}
+2020-12-20 20:24:41,123-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:41,151-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:41,153-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:24:41,300-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20291', 'errorMsg': '同名批次已存在，请修改批次名称', 'result': None, 'success': False}
+2020-12-20 20:24:41,302-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.180898s
+2020-12-20 20:24:41,303-[INFO]-logger.py-Unit_test-日志信息:接口返回message:同名批次已存在，请修改批次名称
+2020-12-20 20:24:41,304-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20291
+2020-12-20 20:24:41,727-[INFO]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\interface_cases.xlsx'
+2020-12-20 20:24:41,728-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:24:41,735-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:41,736-[INFO]-logger.py-Unit_test-日志信息:正在执行第148条用例:【企业直销体检】3-创建无默认套餐分组666元卡-成功
+2020-12-20 20:24:41,737-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/group/add；method：POST；data：{"batchId":"%s","companyId":"%s","cardType":1,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"groupName":"1","cardValue":"99999.99","enterpriseGroupInstPkgDTOList":[]}；sql：{}
+2020-12-20 20:24:42,083-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：248
+2020-12-20 20:24:42,445-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第146条测试用例返回结果成功：3057
+2020-12-20 20:24:42,446-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result', '146': 'result'}
+获取指定返回值成功：{"batchId":"248","companyId":"3057","cardType":1,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"groupName":"1","cardValue":"99999.99","enterpriseGroupInstPkgDTOList":[]}
+2020-12-20 20:24:42,447-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:42,470-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:42,471-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:24:42,579-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20293', 'errorMsg': '同名分组已存在，请修改分组名称', 'result': None, 'success': False}
+2020-12-20 20:24:42,580-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.132922s
+2020-12-20 20:24:42,581-[INFO]-logger.py-Unit_test-日志信息:接口返回message:同名分组已存在，请修改分组名称
+2020-12-20 20:24:42,582-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20293
+2020-12-20 20:24:42,915-[INFO]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\interface_cases.xlsx'
+2020-12-20 20:24:42,916-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:24:42,923-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:42,925-[INFO]-logger.py-Unit_test-日志信息:正在执行第149条用例:【企业直销体检】4-批量上传-成功
+2020-12-20 20:24:42,926-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/uploadUserData；method：POST；data：{"batchId":%s}；sql：{'name': 'file', 'filename': 'group_exam_company_user.xlsx'}
+2020-12-20 20:24:43,332-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：248
+2020-12-20 20:24:43,333-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result'}
+获取指定返回值成功：{"batchId":248}
+2020-12-20 20:24:43,335-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:43,358-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:43,359-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post_file请求
+2020-12-20 20:24:43,461-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '10001', 'errorMsg': '系统错误,请稍后再试！', 'result': {'errorData': {'批次内已有该手机号-15258814180': [{'errorMsg': '批次内已有该手机号-15258814180', 'lineNum': 2}]}, 'normalData': None}, 'success': False}
+2020-12-20 20:24:43,463-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.127926s
+2020-12-20 20:24:43,463-[INFO]-logger.py-Unit_test-日志信息:接口返回message:系统错误,请稍后再试！
+2020-12-20 20:24:43,464-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：10001
+2020-12-20 20:24:43,770-[INFO]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\interface_cases.xlsx'
+2020-12-20 20:24:43,771-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:24:43,776-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:43,777-[INFO]-logger.py-Unit_test-日志信息:正在执行第150条用例:【企业直销体检】5-发放体检卡-成功
+2020-12-20 20:24:43,781-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/issue；method：PUT；data：{"smsSwitch":0,"sendFlag":"2","sendTimeStamp":"","batchId":"%s","adminId":121,"content":"{companyName}的客户{clientName}，贵单位体检开始线上预约啦！请登录体检预约系统完成预约后再体检，预约方式：关注“禾健康企业服务号”点击“团检预约”开启体检服务。"}；sql：{}
+2020-12-20 20:24:44,145-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：248
+2020-12-20 20:24:44,147-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result'}
+获取指定返回值成功：{"smsSwitch":0,"sendFlag":"2","sendTimeStamp":"","batchId":"248","adminId":121,"content":"{companyName}的客户{clientName}，贵单位体检开始线上预约啦！请登录体检预约系统完成预约后再体检，预约方式：关注“禾健康企业服务号”点击“团检预约”开启体检服务。"}
+2020-12-20 20:24:44,148-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:44,171-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:44,172-[INFO]-logger.py-httpRequest-日志信息:现在开始进行put请求
+2020-12-20 20:24:44,275-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.127907s
+2020-12-20 20:24:44,276-[INFO]-logger.py-Unit_test-日志信息:接口返回message:没有未发放的卡
+2020-12-20 20:24:44,278-[INFO]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20259
+2020-12-20 20:24:58,215-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2020-12-20 20:24:58,217-[INFO]-logger.py-readExcel-日志信息:当前使用临时配置用例列表：[156, 157]
+2020-12-20 20:24:58,441-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例表单：Sheet3
+2020-12-20 20:24:58,926-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet3">
+2020-12-20 20:24:58,930-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:58,931-[INFO]-logger.py-Unit_test-日志信息:正在执行第146条用例:【企业直销体检】1-创建单位-成功
+2020-12-20 20:24:58,933-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/company/add；method：POST；data：{"enableHealthManagement":1,"companyName":"%s","contactName":"zgh","contactPhone":"15258814180"}；sql：{}
+2020-12-20 20:24:58,934-[INFO]-logger.py-all_method-日志信息:调用随机名称获取替换字段返回值成功：{"enableHealthManagement":1,"companyName":"接口测试2020-12-20 20-24-58","contactName":"zgh","contactPhone":"15258814180"}
+2020-12-20 20:24:58,941-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:24:58,969-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:24:58,971-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:24:59,092-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 3060, 'success': True}
+2020-12-20 20:24:59,093-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.157908s
+2020-12-20 20:24:59,094-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:24:59,095-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.157908, 'data': 3060, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:24:59,872-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:24:59,873-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:24:59,874-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:24:59,875-[INFO]-logger.py-Unit_test-日志信息:正在执行第147条用例:【企业直销体检】2-创建金额卡批次-成功
+2020-12-20 20:24:59,876-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/batch/add；method：POST；data：{"batchName":"单次卡批次","examDate":[1608220800000,1639756800000],"companyId":"%s","examEndTime":1639756800000,"examStartTime":1608220800000,"enterpriseBatchInstDTOS":[{"batchId":"","companyId":"3039","isDeleted":'false',"instId":1072,"instName":"杭州-禾连内网测试医院98","stationId":"HL99998","disabled":'false',"isDefaultInst":'true',"enterpriseBatchInstPkgDTOS":[{"pkgSpuId":14617,"pkgPrice":"50","pkgName":"界面自动化回归套餐","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14525,"pkgPrice":"80","pkgName":"个检男","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14660,"pkgPrice":"10000","pkgName":"接口套餐优惠券【勿动】","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14655,"pkgPrice":"0.01","pkgName":"自动化优惠券套餐【勿动】","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14643,"pkgPrice":"0.01","pkgName":"自动化身份非必填男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14644,"pkgPrice":"0.01","pkgName":"自动化性别不限身份非必填（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14634,"pkgPrice":"0.01","pkgName":"自动化套餐升级男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14635,"pkgPrice":"0.01","pkgName":"自动化套餐升级女（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14633,"pkgPrice":"0.01","pkgName":"自动化性别不限（勿动）","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14574,"pkgPrice":"0.01","pkgName":"身份证必填","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""},{"pkgSpuId":14587,"pkgPrice":"100","pkgName":"疾病女","disabled":'false',"stationId":"HL99998","companyId":"%s","batchId":""}],"pkgDiscount":"0.9","additionItemDiscount":"0.9"}]}；sql：{}
+2020-12-20 20:25:00,404-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第146条测试用例返回结果成功：3060
+2020-12-20 20:25:00,406-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 146, 'companyId': 'result', 'companyId2': 'result', 'companyId3': 'result', 'companyId4': 'result', 'companyId5': 'result', 'companyId6': 'result', 'companyId7': 'result', 'companyId8': 'result', 'companyId9': 'result', 'companyId10': 'result', 'companyId11': 'result', 'companyId12': 'result'}
+获取指定返回值成功：{"batchName":"单次卡批次","examDate":[1608220800000,1639756800000],"companyId":"3060","examEndTime":1639756800000,"examStartTime":1608220800000,"enterpriseBatchInstDTOS":[{"batchId":"","companyId":"3039","isDeleted":'false',"instId":1072,"instName":"杭州-禾连内网测试医院98","stationId":"HL99998","disabled":'false',"isDefaultInst":'true',"enterpriseBatchInstPkgDTOS":[{"pkgSpuId":14617,"pkgPrice":"50","pkgName":"界面自动化回归套餐","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14525,"pkgPrice":"80","pkgName":"个检男","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14660,"pkgPrice":"10000","pkgName":"接口套餐优惠券【勿动】","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14655,"pkgPrice":"0.01","pkgName":"自动化优惠券套餐【勿动】","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14643,"pkgPrice":"0.01","pkgName":"自动化身份非必填男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14644,"pkgPrice":"0.01","pkgName":"自动化性别不限身份非必填（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14634,"pkgPrice":"0.01","pkgName":"自动化套餐升级男（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14635,"pkgPrice":"0.01","pkgName":"自动化套餐升级女（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14633,"pkgPrice":"0.01","pkgName":"自动化性别不限（勿动）","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14574,"pkgPrice":"0.01","pkgName":"身份证必填","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""},{"pkgSpuId":14587,"pkgPrice":"100","pkgName":"疾病女","disabled":'false',"stationId":"HL99998","companyId":"3060","batchId":""}],"pkgDiscount":"0.9","additionItemDiscount":"0.9"}]}
+2020-12-20 20:25:00,408-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:25:00,430-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:25:00,432-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:25:00,665-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 249, 'success': True}
+2020-12-20 20:25:00,666-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.258851s
+2020-12-20 20:25:00,668-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:00,669-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.258851, 'data': 249, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:01,609-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:01,610-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:25:01,612-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:25:01,613-[INFO]-logger.py-Unit_test-日志信息:正在执行第148条用例:【企业直销体检】3-创建无默认套餐分组666元卡-成功
+2020-12-20 20:25:01,614-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/group/add；method：POST；data：{"batchId":"%s","companyId":"%s","cardType":1,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"groupName":"1","cardValue":"99999.99","enterpriseGroupInstPkgDTOList":[]}；sql：{}
+2020-12-20 20:25:02,076-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：249
+2020-12-20 20:25:02,564-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第146条测试用例返回结果成功：3060
+2020-12-20 20:25:02,565-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result', '146': 'result'}
+获取指定返回值成功：{"batchId":"249","companyId":"3060","cardType":1,"enableRecommendSurvey":'true',"enableFamilyModule":'true',"groupName":"1","cardValue":"99999.99","enterpriseGroupInstPkgDTOList":[]}
+2020-12-20 20:25:02,567-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:25:02,589-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:25:02,590-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2020-12-20 20:25:02,706-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': 248, 'success': True}
+2020-12-20 20:25:02,707-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.139918s
+2020-12-20 20:25:02,708-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:02,709-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.139918, 'data': 248, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:03,608-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:03,610-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:25:03,613-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:25:03,615-[INFO]-logger.py-Unit_test-日志信息:正在执行第149条用例:【企业直销体检】4-批量上传-成功
+2020-12-20 20:25:03,616-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/uploadUserData；method：POST；data：{"batchId":%s}；sql：{'name': 'file', 'filename': 'group_exam_company_user.xlsx'}
+2020-12-20 20:25:04,242-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：249
+2020-12-20 20:25:04,243-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result'}
+获取指定返回值成功：{"batchId":249}
+2020-12-20 20:25:04,245-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:25:04,268-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:25:04,269-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post_file请求
+2020-12-20 20:25:04,375-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorData': None, 'normalData': [{'age': None, 'batchId': 249, 'beginTime': 1608220800000, 'bindTime': None, 'birthday': None, 'cardType': 1, 'companyId': 3060, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639843199000, 'gender': 0, 'groupId': 248, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '15258814180', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七2'}]}, 'success': True}
+2020-12-20 20:25:04,376-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.131923s
+2020-12-20 20:25:04,377-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:04,378-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.131923, 'data': {'errorData': None, 'normalData': [{'age': None, 'batchId': 249, 'beginTime': 1608220800000, 'bindTime': None, 'birthday': None, 'cardType': 1, 'companyId': 3060, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639843199000, 'gender': 0, 'groupId': 248, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '15258814180', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七2'}]}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:05,273-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:05,274-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:25:05,277-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:25:05,279-[INFO]-logger.py-Unit_test-日志信息:正在执行第150条用例:【企业直销体检】5-发放体检卡-成功
+2020-12-20 20:25:05,281-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/issue；method：PUT；data：{"smsSwitch":0,"sendFlag":"2","sendTimeStamp":"","batchId":"%s","adminId":121,"content":"{companyName}的客户{clientName}，贵单位体检开始线上预约啦！请登录体检预约系统完成预约后再体检，预约方式：关注“禾健康企业服务号”点击“团检预约”开启体检服务。"}；sql：{}
+2020-12-20 20:25:05,743-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第147条测试用例返回结果成功：249
+2020-12-20 20:25:05,744-[INFO]-logger.py-all_method-日志信息:多字段不同用例返回调用id和返回字段{'147': 'result'}
+获取指定返回值成功：{"smsSwitch":0,"sendFlag":"2","sendTimeStamp":"","batchId":"249","adminId":121,"content":"{companyName}的客户{clientName}，贵单位体检开始线上预约啦！请登录体检预约系统完成预约后再体检，预约方式：关注“禾健康企业服务号”点击“团检预约”开启体检服务。"}
+2020-12-20 20:25:05,746-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:25:05,771-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:25:05,772-[INFO]-logger.py-httpRequest-日志信息:现在开始进行put请求
+2020-12-20 20:25:05,879-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.133921s
+2020-12-20 20:25:05,881-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:05,882-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.133921, 'data': None, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:06,906-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:06,908-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:25:06,909-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:25:06,911-[INFO]-logger.py-Unit_test-日志信息:正在执行第151条用例:【企业直销体检】6-分组卡列表-成功
+2020-12-20 20:25:06,913-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/list/%s/%s/1/10；method：GET；data：{}；sql：{}
+2020-12-20 20:25:07,386-[INFO]-logger.py-readExcel-日志信息:获取Sheet3表单第149条测试用例返回结果成功：{'errorData': None, 'normalData': [{'age': None, 'batchId': 249, 'beginTime': 1608220800000, 'bindTime': None, 'birthday': None, 'cardType': 1, 'companyId': 3060, 'deptName': '', 'enableFamilyModule': None, 'enableRecommendSurvey': None, 'endTime': 1639843199000, 'gender': 0, 'groupId': 248, 'groupName': '1', 'id': None, 'idNumber': '', 'married': None, 'originValue': 99999.99, 'phone': '15258814180', 'resValue': 99999.99, 'sendStatus': None, 'status': None, 'tmpResValue': None, 'totalCardValue': None, 'userId': None, 'userName': '小七2'}]}
+2020-12-20 20:25:07,387-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'path': 149, 'batchId': "result['normalData'][0]['batchId']", 'companyId': "result['normalData'][0]['companyId']"}
+获取指定返回值成功：http://h2btest.helianhealth.com/healthmanage-admin/admin/enterprise/card/list/249/3060/1/10
+2020-12-20 20:25:07,389-[INFO]-logger.py-all_method-日志信息:今天时间戳：2020-12-20,1608469200000
+2020-12-20 20:25:07,415-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '929f949bebd360b3892ad3942a6be7ff143'}
+2020-12-20 20:25:07,416-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2020-12-20 20:25:07,488-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'list': [{'age': None, 'batchId': 249, 'cardValue': 99999.99, 'companyId': 3060, 'deptName': '', 'gender': 0, 'groupId': 248, 'groupName': '1', 'id': 318, 'idNumber': '', 'married': None, 'phone': '15258814180', 'sendStatus': 1, 'userName': '小七2'}], 'total': 1}, 'success': True}
+2020-12-20 20:25:07,489-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.100942s
+2020-12-20 20:25:07,490-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:07,491-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.100942, 'data': {'list': [{'age': None, 'batchId': 249, 'cardValue': 99999.99, 'companyId': 3060, 'deptName': '', 'gender': 0, 'groupId': 248, 'groupName': '1', 'id': 318, 'idNumber': '', 'married': None, 'phone': '15258814180', 'sendStatus': 1, 'userName': '小七2'}], 'total': 1}, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:08,351-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:08,352-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2020-12-20 20:25:08,354-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-12-20 20:25:08,355-[INFO]-logger.py-Unit_test-日志信息:正在执行第152条用例:【企业直销体检】7-移动端-单次卡列表详情进行绑卡-成功
+2020-12-20 20:25:08,356-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/wx/api/card/v2/uniform/list；method：GET；data：{}；sql：{}
+2020-12-20 20:25:08,608-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '7ee3ce6a2d496613cb063a64bd355276', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2020-12-20 20:25:08,609-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '7ee3ce6a2d496613cb063a64bd355276', 'uid': '17200000090'}
+2020-12-20 20:25:08,611-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2020-12-20 20:25:08,985-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [{'bindTime': 1608467108474, 'cardType': 1, 'companyId': 3060, 'companyName': '接口测试2020-12-20 20-24-58', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': None, 'groupUserCardId': 318, 'htbCardVo': None, 'instName': None, 'rangeEndDays': 364, 'resValueStr': '99999.99', 'reserveDay': None, 'showFamily': True, 'status': 1, 'userName': '小七2'}, {'bindTime': 1608359284000, 'cardType': 1, 'companyId': 3057, 'companyName': '接口测试2020-12-19 14-27-54', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': None, 'groupUserCardId': 317, 'htbCardVo': None, 'instName': None, 'rangeEndDays': 364, 'resValueStr': '99999.99', 'reserveDay': None, 'showFamily': True, 'status': 1, 'userName': '小七2'}, {'bindTime': 1608342428000, 'cardType': 1, 'companyId': 3056, 'companyName': '接口测试2020-12-19 09-46-57', 'examEndTimeStr': '2020/12/19', 'examStartTimeStr': '2020/12/19', 'groupCardType': 2, 'groupReserveId': 14295, 'groupUserCardId': 316, 'htbCardVo': None, 'instName': '杭州-禾连内网测试医院98', 'rangeEndDays': 0, 'resValueStr': '99999.98', 'reserveDay': '2021/01/19 21:00', 'showFamily': False, 'status': 3, 'userName': '小七2'}, {'bindTime': 1608299032000, 'cardType': 1, 'companyId': 3053, 'companyName': '接口测试2020-12-18 21-43-41', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': 14294, 'groupUserCardId': 315, 'htbCardVo': None, 'instName': '杭州-禾连内网测试医院98', 'rangeEndDays': 364, 'resValueStr': '99999.98', 'reserveDay': '2021/12/15 21:00', 'showFamily': True, 'status': 2, 'userName': '小七2'}], 'success': True}
+2020-12-20 20:25:08,986-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.628651s
+2020-12-20 20:25:08,987-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-12-20 20:25:08,989-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'time': 0.628651, 'data': [{'bindTime': 1608467108474, 'cardType': 1, 'companyId': 3060, 'companyName': '接口测试2020-12-20 20-24-58', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': None, 'groupUserCardId': 318, 'htbCardVo': None, 'instName': None, 'rangeEndDays': 364, 'resValueStr': '99999.99', 'reserveDay': None, 'showFamily': True, 'status': 1, 'userName': '小七2'}, {'bindTime': 1608359284000, 'cardType': 1, 'companyId': 3057, 'companyName': '接口测试2020-12-19 14-27-54', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': None, 'groupUserCardId': 317, 'htbCardVo': None, 'instName': None, 'rangeEndDays': 364, 'resValueStr': '99999.99', 'reserveDay': None, 'showFamily': True, 'status': 1, 'userName': '小七2'}, {'bindTime': 1608342428000, 'cardType': 1, 'companyId': 3056, 'companyName': '接口测试2020-12-19 09-46-57', 'examEndTimeStr': '2020/12/19', 'examStartTimeStr': '2020/12/19', 'groupCardType': 2, 'groupReserveId': 14295, 'groupUserCardId': 316, 'htbCardVo': None, 'instName': '杭州-禾连内网测试医院98', 'rangeEndDays': 0, 'resValueStr': '99999.98', 'reserveDay': '2021/01/19 21:00', 'showFamily': False, 'status': 3, 'userName': '小七2'}, {'bindTime': 1608299032000, 'cardType': 1, 'companyId': 3053, 'companyName': '接口测试2020-12-18 21-43-41', 'examEndTimeStr': '2021/12/18', 'examStartTimeStr': '2020/12/18', 'groupCardType': 2, 'groupReserveId': 14294, 'groupUserCardId': 315, 'htbCardVo': None, 'instName': '杭州-禾连内网测试医院98', 'rangeEndDays': 364, 'resValueStr': '99999.98', 'reserveDay': '2021/12/15 21:00', 'showFamily': True, 'status': 2, 'userName': '小七2'}], 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2020-12-20 20:25:09,818-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-12-20 20:25:09,819-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================

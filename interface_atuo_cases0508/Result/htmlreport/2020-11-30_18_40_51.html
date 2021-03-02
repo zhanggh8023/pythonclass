@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>建管自动化报告【Python】</title>
+    <meta name="generator" content="HTMLTestRunner 1.0.0.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <style type="text/css" media="screen">
+        body {
+            font-family: Microsoft YaHei, Tahoma, arial, helvetica, sans-serif;
+            font-size: 80%;
+        }
+
+        table {
+            font-size: 100%;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* -- heading ---------------------------------------------------------------------- */
+        h1 {
+            font-size: 16pt;
+            color: gray;
+        }
+
+        .heading {
+            margin-top: 0ex;
+            margin-bottom: 1ex;
+        }
+
+        .heading .attribute {
+            margin-top: 1ex;
+            margin-bottom: 0;
+        }
+
+        .heading .description {
+            margin-top: 2ex;
+            margin-bottom: 3ex;
+        }
+
+        /* -- css div popup ------------------------------------------------------------------------ */
+        a.popup_link {
+        }
+
+        a.popup_link:hover {
+            color: red;
+        }
+
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            /*border: solid #627173 1px; */
+            padding: 10px;
+            /* */
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 8pt;
+            /* width: 500px;*/
+        }
+
+        }
+        /* -- report ------------------------------------------------------------------------ */
+        #show_detail_line {
+            margin-top: 3ex;
+            margin-bottom: 1ex;
+        }
+
+        #result_table {
+            width: 99%;
+        }
+
+        #header_row {
+            font-weight: bold;
+            color: #303641;
+
+        }
+
+        #total_row {
+            font-weight: bold;
+        }
+
+        .passClass {
+        }
+
+        .failClass {
+            background-color: #ffefa4;
+        }
+
+        .errorClass {
+        }
+
+        .passCase {
+            color: #6c6;
+        }
+
+        .failCase {
+            color: #FF6600;
+            font-weight: bold;
+        }
+
+        .errorCase {
+            color: #c00;
+            font-weight: bold;
+        }
+
+        .hiddenRow {
+            display: none;
+        }
+
+        .testcase {
+            margin-left: 2em;
+        }
+
+        /* -- ending ---------------------------------------------------------------------- */
+        #ending {
+        }
+
+        #div_base {
+            position: absolute;
+            top: 0%;
+            left: 5%;
+            right: 5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+        }
+    </style>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    output_list = Array();
+
+    /*level 调整增加只显示通过用例的分类
+    0:Summary //all hiddenRow
+    1:Failed  //pt hiddenRow, ft none
+    2:Pass    //pt none, ft hiddenRow
+    3:All     //pt none, ft none
+    4:Error
+    */
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+
+            if (id.substr(0, 2) == 'ft' || id.substr(0, 2) == 'pt') {
+                if (level == 0) {
+                    tr.className = 'hiddenRow';
+                }
+                else if (level == 1) {
+                    button = tr.children[1].children[0].innerText;
+                    if (button == "失败") {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                else if (level == 2) {
+                    button = tr.children[1].children[0].innerText;
+                    if (button == "通过") {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                else if (level == 3) {
+                    tr.className = '';
+                }
+                else if (level == 4) {
+                    button = tr.children[1].children[0].innerText;
+                    if (button == "错误") {
+                        tr.className = '';
+                    } else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+            }
+        }
+        //加入【详细】切换文字变化 
+        detail_class = document.getElementsByClassName('detail');
+        //console.log(detail_class.length)
+        if (level == 3) {
+            for (var i = 0; i < detail_class.length; i++) {
+                detail_class[i].innerHTML = "收起"
+            }
+        }
+        else {
+            for (var i = 0; i < detail_class.length; i++) {
+                detail_class[i].innerHTML = "详细"
+            }
+        }
+    }
+
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            //ID修改 点 为 下划线 -Findyou
+            tid0 = 't' + cid.substr(1) + '_' + (i + 1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            //修改点击无法收起的BUG，加入【详细】切换文字变化 
+            if (toHide) {
+                document.getElementById('div_' + tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+                document.getElementById(cid).innerText = "详细"
+            }
+            else {
+                document.getElementById(tid).className = '';
+                document.getElementById(cid).innerText = "收起"
+            }
+        }
+    }
+
+    function showTestDetail(div_id) {
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block') {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+
+    function html_escape(s) {
+        s = s.replace(/&/g, '&amp;');
+        s = s.replace(/</g, '&lt;');
+        s = s.replace(/>/g, '&gt;');
+        return s;
+    }
+</script>
+
+<div id="div_base">
+
+    <div class='page-header'>
+        <h1>建管自动化报告【Python】</h1>
+        <p class='attribute'><strong>测试人员:</strong> 测试组自动化报告</p>
+        <p class='attribute'><strong>开始时间:</strong> 2020-11-30 18:40:51</p>
+        <p class='attribute'><strong>合计耗时:</strong> 0:00:00.790562</p>
+        <p class='attribute'><strong>本次结果:</strong> 共 1 条接口用例，通过 1 条，通过率= 100.00%</p>
+
+        <div style="float: left;width:50%;"><p class='description'>该测试报告仅体现某接口请求以及参数值验证情况。</p></div>
+    </div>
+    <div id="chartline" style="width:50%;height:400px;float:left;"></div>
+    <div id="chart" style="width:50%;height:400px;float:right;"></div>
+
+
+    <div class="btn-group btn-group-sm">
+        <!-- <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button> -->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>-->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>-->
+        <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 100.00% </a>
+        <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 1 </a>
+        <a class="btn btn-warning" onclick='javascript:showCase(1)'>失败 0 </a>
+        <a class="btn btn-danger" onclick='javascript:showCase(4)'>错误 0 </a>
+        <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 1 </a>
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-condensed table-bordered table-hover">
+        <colgroup>
+            <col align='left'/>
+            <col align='right'/>
+            <col align='right'/>
+            <col align='right'/>
+            <col align='right'/>
+            <col align='right'/>
+            <col align='right'/>
+        </colgroup>
+        <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+            <td>用例集/测试用例</td>
+            <td>总计</td>
+            <td>通过</td>
+            <td>失败</td>
+            <td>错误</td>
+            <td>详细</td>
+            <td>截图</td>
+        </tr>
+
+        <tr class='passClass warning'>
+            <td>public.Unit_test.testHttpRequset</td>
+            <td class="text-center">1</td>
+            <td class="text-center">1</td>
+            <td class="text-center">0</td>
+            <td class="text-center">0</td>
+            <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+            <td class="text-center">Assert or Error Image</td>
+        </tr>
+
+        <tr id='pt1_1' class='hiddenRow'>
+            <td class='none' width='300px'>
+                <div class='testcase'>test_jkgl_1_单独加项预约下单信息</div>
+            </td>
+            <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+                <!--默认收起错误信息  -->
+                <button id='btn_pt1_1' type="button" class="btn btn-danger btn-xs collapsed" data-toggle="collapse"
+                        data-target='#div_pt1_1'>通过
+                </button>
+                <div id='div_pt1_1' class="collapse">
+                    <!-- 默认展开错误信息
+                    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+                    <div id='div_pt1_1' class="collapse in">-->
+                    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:auto; margin:auto; border:1px solid #e1e1e1;">
+    pt1_1: 2020-11-30 18:40:51,717-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2020-11-30 18:40:51,718-[INFO]-logger.py-Unit_test-日志信息:正在执行第156条用例:单独加项预约下单信息
+2020-11-30 18:40:51,719-[INFO]-logger.py-Unit_test-日志信息:当前请求内容_URL：http://family.xiaohehealth.com/healthmanage-web/app/market/ddjx/getTradeReserveTimeList；method：GET；data：{'branchId': '', 'stationId': 'HL00082'}；sql：{}
+2020-11-30 18:40:51,789-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '17681829051', 'img_url': 'https://file.helianhealth.com/homepage_category/2016/09/08/63d0acbb51e9470a86bc5e9af5838d30.jpg', 'nick_name': '高良姜9051', 'real_name': '高良姜', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '86611e65f7d2b04369f0672209ed30f0', 'user_level': None, 'userid': '17200000312'}, 'success': True}
+2020-11-30 18:40:51,790-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51bmvLF6-P4z9mwUfEyMCFg', 'token': '86611e65f7d2b04369f0672209ed30f0', 'uid': '17200000312'}
+2020-11-30 18:40:51,791-[INFO]-logger.py-httpRequest-日志信息:现在开始进行get请求
+2020-11-30 18:40:51,832-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [{'intervalCount': 0, 'reserveCount': 100, 'time': 1607011200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607270400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607356800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607443200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607529600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607616000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607875200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607961600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608048000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608134400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608220800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608480000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608566400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608652800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608739200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608825600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609084800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609171200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609257600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609344000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609430400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609689600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609776000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609862400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609948800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610035200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610294400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610380800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610467200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610553600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610640000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610899200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610985600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611072000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611158400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611244800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611504000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611590400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611676800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611763200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611849600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612108800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612195200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612281600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612368000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612454400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612713600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612800000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612886400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612972800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613059200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613318400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613404800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613491200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613577600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613664000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613923200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614009600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614096000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614182400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614268800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614528000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614614400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614700800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614787200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614873600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615132800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615219200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615305600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615392000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615478400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615737600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615824000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615910400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615996800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616083200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616342400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616428800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616515200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616601600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616688000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616947200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617033600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617120000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617206400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617292800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617552000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617638400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617724800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617811200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617897600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618156800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618243200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618329600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618416000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618502400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618761600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618848000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618934400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619020800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619107200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619366400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619452800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619539200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619625600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619712000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619971200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620057600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620144000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620230400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620316800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620576000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620662400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620748800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620835200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620921600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621180800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621267200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621353600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621440000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621526400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621785600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621872000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621958400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622044800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622131200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622390400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622476800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622563200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622649600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622736000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622995200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623081600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623168000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623254400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623340800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623600000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623686400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623772800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623859200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623945600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624204800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624291200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624377600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624464000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624550400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624809600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624896000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624982400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625068800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625155200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625414400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625500800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625587200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625673600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625760000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626019200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626105600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626192000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626278400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626364800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626624000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626710400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626796800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626883200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626969600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627228800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627315200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627401600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627488000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627574400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627833600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627920000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628006400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628092800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628179200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628438400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628524800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628611200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628697600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628784000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629043200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629129600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629216000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629302400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629388800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629648000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629734400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629820800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629907200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629993600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630252800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630339200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630425600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630512000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630598400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630857600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630944000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631030400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631116800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631203200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631462400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631548800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631635200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631721600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631808000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632067200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632153600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632240000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632326400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632412800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632672000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632758400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632844800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632931200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633017600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633276800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633363200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633449600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633536000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633622400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633881600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633968000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634054400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634140800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634227200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634486400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634572800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634659200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634745600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634832000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635091200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635177600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635264000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635350400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635436800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635696000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635782400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635868800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635955200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636041600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636300800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636387200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636473600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636560000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636646400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636905600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636992000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637078400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637164800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637251200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637510400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637596800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637683200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637769600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637856000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1638115200000}], 'success': True}
+2020-11-30 18:40:51,833-[INFO]-logger.py-Unit_test-日志信息:接口返回data:{'code': '0', 'errorMsg': '', 'result': [{'intervalCount': 0, 'reserveCount': 100, 'time': 1607011200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607270400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607356800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607443200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607529600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607616000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607875200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607961600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608048000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608134400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608220800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608480000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608566400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608652800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608739200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608825600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609084800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609171200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609257600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609344000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609430400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609689600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609776000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609862400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609948800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610035200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610294400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610380800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610467200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610553600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610640000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610899200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610985600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611072000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611158400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611244800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611504000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611590400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611676800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611763200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611849600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612108800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612195200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612281600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612368000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612454400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612713600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612800000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612886400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612972800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613059200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613318400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613404800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613491200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613577600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613664000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613923200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614009600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614096000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614182400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614268800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614528000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614614400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614700800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614787200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614873600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615132800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615219200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615305600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615392000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615478400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615737600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615824000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615910400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615996800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616083200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616342400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616428800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616515200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616601600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616688000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616947200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617033600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617120000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617206400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617292800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617552000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617638400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617724800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617811200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617897600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618156800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618243200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618329600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618416000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618502400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618761600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618848000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618934400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619020800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619107200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619366400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619452800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619539200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619625600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619712000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619971200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620057600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620144000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620230400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620316800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620576000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620662400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620748800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620835200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620921600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621180800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621267200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621353600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621440000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621526400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621785600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621872000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621958400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622044800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622131200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622390400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622476800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622563200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622649600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622736000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622995200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623081600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623168000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623254400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623340800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623600000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623686400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623772800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623859200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623945600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624204800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624291200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624377600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624464000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624550400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624809600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624896000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624982400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625068800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625155200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625414400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625500800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625587200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625673600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625760000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626019200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626105600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626192000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626278400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626364800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626624000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626710400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626796800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626883200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626969600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627228800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627315200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627401600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627488000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627574400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627833600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627920000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628006400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628092800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628179200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628438400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628524800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628611200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628697600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628784000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629043200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629129600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629216000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629302400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629388800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629648000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629734400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629820800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629907200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629993600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630252800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630339200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630425600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630512000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630598400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630857600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630944000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631030400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631116800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631203200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631462400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631548800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631635200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631721600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631808000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632067200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632153600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632240000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632326400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632412800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632672000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632758400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632844800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632931200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633017600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633276800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633363200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633449600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633536000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633622400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633881600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633968000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634054400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634140800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634227200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634486400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634572800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634659200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634745600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634832000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635091200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635177600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635264000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635350400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635436800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635696000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635782400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635868800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635955200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636041600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636300800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636387200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636473600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636560000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636646400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636905600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636992000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637078400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637164800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637251200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637510400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637596800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637683200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637769600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637856000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1638115200000}], 'success': True}
+2020-11-30 18:40:51,835-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2020-11-30 18:40:51,836-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel{'code': '0', 'data': [{'intervalCount': 0, 'reserveCount': 100, 'time': 1607011200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607270400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607356800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607443200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607529600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607616000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607875200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1607961600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608048000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608134400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608220800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608480000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608566400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608652800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608739200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1608825600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609084800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609171200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609257600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609344000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609430400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609689600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609776000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609862400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1609948800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610035200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610294400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610380800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610467200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610553600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610640000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610899200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1610985600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611072000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611158400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611244800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611504000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611590400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611676800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611763200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1611849600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612108800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612195200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612281600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612368000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612454400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612713600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612800000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612886400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1612972800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613059200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613318400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613404800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613491200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613577600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613664000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1613923200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614009600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614096000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614182400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614268800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614528000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614614400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614700800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614787200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1614873600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615132800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615219200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615305600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615392000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615478400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615737600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615824000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615910400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1615996800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616083200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616342400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616428800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616515200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616601600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616688000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1616947200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617033600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617120000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617206400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617292800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617552000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617638400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617724800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617811200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1617897600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618156800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618243200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618329600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618416000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618502400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618761600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618848000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1618934400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619020800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619107200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619366400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619452800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619539200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619625600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619712000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1619971200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620057600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620144000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620230400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620316800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620576000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620662400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620748800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620835200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1620921600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621180800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621267200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621353600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621440000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621526400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621785600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621872000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1621958400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622044800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622131200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622390400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622476800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622563200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622649600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622736000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1622995200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623081600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623168000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623254400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623340800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623600000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623686400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623772800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623859200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1623945600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624204800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624291200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624377600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624464000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624550400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624809600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624896000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1624982400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625068800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625155200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625414400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625500800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625587200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625673600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1625760000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626019200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626105600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626192000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626278400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626364800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626624000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626710400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626796800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626883200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1626969600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627228800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627315200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627401600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627488000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627574400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627833600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1627920000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628006400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628092800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628179200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628438400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628524800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628611200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628697600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1628784000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629043200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629129600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629216000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629302400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629388800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629648000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629734400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629820800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629907200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1629993600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630252800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630339200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630425600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630512000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630598400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630857600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1630944000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631030400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631116800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631203200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631462400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631548800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631635200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631721600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1631808000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632067200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632153600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632240000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632326400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632412800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632672000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632758400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632844800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1632931200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633017600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633276800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633363200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633449600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633536000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633622400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633881600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1633968000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634054400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634140800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634227200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634486400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634572800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634659200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634745600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1634832000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635091200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635177600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635264000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635350400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635436800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635696000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635782400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635868800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1635955200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636041600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636300800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636387200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636473600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636560000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636646400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636905600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1636992000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637078400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637164800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637251200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637510400000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637596800000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637683200000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637769600000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1637856000000}, {'intervalCount': 0, 'reserveCount': 100, 'time': 1638115200000}], 'result': 'pass', 'sql_result': 'pass'}
+2020-11-30 18:40:52,504-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2020-11-30 18:40:52,505-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+
+    </pre>
+                </div>
+            </td>
+            <td align="right">
+                <a hidden="hidden" href="">
+                    <img src="" height="200px" width="400px"/>
+                </a>
+            </td>
+        </tr>
+
+
+        <tr id='total_row' class="text-center active">
+            <td>总计</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>通过率：100.00%</td>
+            <td><a href="" target="_blank"></a></td>
+        </tr>
+    </table>
+
+    <div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+        <a href="#"><span class="glyphicon glyphicon-eject" style="font-size:30px;" aria-hidden="true">
+    </span></a></div>
+
+
+    <script type="text/javascript">
+        var myChartline = echarts.init(document.getElementById('chartline'));
+        var optionline = {
+            title: {
+                text: '近十次情况展示',
+                subtext: '成功表示：验证通过；失败表示：验证失败；错误表示：验证报错。'
+            },
+            color: ['#06ff26', '#001686', '#f31616'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    mark: {show: true},
+                    dataView: {show: true, readOnly: false},
+                    magicType: {show: true, type: ['line', 'bar']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            calculable: true,
+            legend: {
+                data: ['错误', '成功', '失败'],
+                //backgroundColor:['#d63131','#449dd4','#af29e4']
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: ['LAST', '九次', '八次', '七次', '六次', '五次', '四次', '三次', '两次', '最近'],
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '',
+                    min: 0,
+                    max: 600,
+                    interval: 30,
+                    axisLabel: {
+                        formatter: '{value}'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '错误率',
+                    min: 0,
+                    max: 100,
+                    interval: 10,
+                    axisLabel: {
+                        formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '成功',
+                    type: 'bar',
+                    //data:[['29', '34', '32', '29', '30', '35', '233', '296', '216', '1']]
+                    data: ['29', '34', '32', '29', '30', '35', '233', '296', '216', '1']
+                },
+                {
+                    name: '失败',
+                    type: 'bar',
+                    //data:[['8', '3', '5', '8', '6', '2', '4', '10', '12', '0']]
+                    data: ['8', '3', '5', '8', '6', '2', '4', '10', '12', '0']
+                },
+                {
+                    name: '错误',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    //data:[['0', '0', '0', '0', '1', '0', '1', '3', '10', '0']]
+                    data: ['0', '0', '0', '0', '2.70', '0', '0.42', '0.97', '4.20', '0']
+                }
+            ]
+        };
+        myChartline.setOption(optionline);
+        console.log(['8', '3', '5', '8', '6', '2', '4', '10', '12', '0'], ['29', '34', '32', '29', '30', '35', '233', '296', '216', '1'], ['0', '0', '0', '0', '1', '0', '1', '3', '10', '0'])
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            color: ['#06ff26', '#001686', '#f31616'],
+            title: {
+                text: '近十次测试执行情况',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['通过', '失败', '错误']
+            },
+            series: [
+                {
+                    name: '近十次测试执行情况',
+                    type: 'pie',
+                    radius: '60%',
+                    center: ['50%', '60%'],
+                    data: [
+                        {value: ['29', '34', '32', '29', '30', '35', '233', '296', '216', '1'], name: '通过'},
+                        {value: ['8', '3', '5', '8', '6', '2', '4', '10', '12', '0'], name: '失败'},
+                        {value: ['0', '0', '0', '0', '1', '0', '1', '3', '10', '0'], name: '错误'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+2021-02-23 09:27:17,430-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-02-23 09:27:17,432-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[104],区间[105, 114]
+2021-02-23 09:27:17,456-[INFO]-logger.py-all_method-日志信息:当前在线报告地址调用成功：http://10.20.255.35:8502/
+2021-02-23 09:27:18,615-[INFO]-logger.py-all_method-日志信息:钉钉机器人消息请求内容{'msgtype': 'markdown', 'markdown': {'title': '企业直签逻辑接口自动化测试报告', 'text': '#### 企业直签逻辑接口自动化测试报告\n> 【测试人员】:测试组自动化报告\n\n> 【开始时间】:2021-01-27 08:45:59\n\n> 【合计耗时】:0:00:02.676459\n\n> 【本次结果】:共 281 条接口用例，通过 277 条，错误 4 条\n\n> 【通过率】:98.58%\n> ![screenshot](http://autotest-report.oss-cn-hangzhou.aliyuncs.com/report/18.jpg)\n> ###### 2021-02-23 发布 [在线查看报告详情](http://10.20.255.35:8502/) \n'}, 'at': {'atMobiles': ['17681829051'], 'isAtAll': 'true'}}
+2021-02-23 09:27:18,619-[INFO]-logger.py-all_method-日志信息:钉钉机器人消息请求成功{'errcode': 0, 'errmsg': 'ok'}

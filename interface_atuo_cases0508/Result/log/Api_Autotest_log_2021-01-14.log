@@ -1,0 +1,18 @@
+2021-01-14 14:43:58,777-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-14 14:43:58,779-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 8]
+2021-01-14 14:43:58,799-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-01-14,1610629200000
+2021-01-14 14:43:58,882-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-01-14 14:43:58,883-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-14 14:44:00,263-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-14 15:21:22,796-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-14 15:21:22,798-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 8]
+2021-01-14 15:21:22,817-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-01-14,1610629200000
+2021-01-14 15:21:22,858-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-01-14 15:21:22,860-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-14 15:21:23,876-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-01-14 17:31:34,167-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-01-14 17:31:34,170-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[150],区间[1, 8]
+2021-01-14 17:31:34,212-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-01-14,1610629200000
+2021-01-14 17:31:34,254-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-01-14 17:31:34,256-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-01-14 17:31:35,546-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}

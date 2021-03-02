@@ -1,0 +1,34 @@
+2021-03-02 13:58:58,939-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 13:58:58,958-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 13:58:59,279-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-03-02 13:58:59,281-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'uid': '17200000090'}
+2021-03-02 13:58:59,283-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 13:59:39,752-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 13:59:39,757-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 13:59:39,856-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-03-02 13:59:39,858-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'uid': '17200000090'}
+2021-03-02 13:59:39,860-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 14:00:09,267-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 14:00:09,272-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 14:00:09,362-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-03-02 14:00:09,364-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'uid': '17200000090'}
+2021-03-02 14:00:09,366-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 14:01:57,683-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 14:01:57,686-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 14:01:57,789-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-03-02 14:01:57,792-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'uid': '17200000090'}
+2021-03-02 14:01:57,793-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 14:06:43,339-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 14:06:43,343-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 14:06:43,468-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'user_level': None, 'userid': '17200000090'}, 'success': True}
+2021-03-02 14:06:43,470-[INFO]-logger.py-all_method-日志信息:请求获取公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '4bef4fa598005c8918dda8ba4a3f2cf7', 'uid': '17200000090'}
+2021-03-02 14:06:43,472-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 14:06:43,963-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': ['HL99997', 'HL999981', 'HL99990'], 'success': True}
+2021-03-02 15:07:21,749-[INFO]-logger.py-readExcel-日志信息:用例执行模式（0全部执行，1指定接口，2区间接口）：2
+2021-03-02 15:07:21,753-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[10],区间[277, 281]
+2021-03-02 15:07:21,795-[INFO]-logger.py-get_mysql_info-日志信息:本次数据库调用配置成功！
+2021-03-02 15:07:21,859-[INFO]-logger.py-get_mysql_info-日志信息:查询数据库调用成功！(726,)
+2021-03-02 15:07:21,861-[INFO]-logger.py-all_method-日志信息:手机15258814180:id获取成功返回:726
+2021-03-02 15:07:21,884-[INFO]-logger.py-all_method-日志信息:手机15258814180:header获取返回:{'optimisticLockVersion': '', 'optimisticLockId': '', 'adminId': '726', 'stationId': 'HL99998', 'token': 'ee5c9f64a2569bb88f8aa23d38afc16f'}
+2021-03-02 15:07:21,886-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-03-02 15:07:22,298-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': [{'batchId': 4474, 'branchId': 184, 'branchName': '院区1', 'companyId': 5147, 'id': 4719, 'ratioNum': 50, 'stationId': 'HL99997'}, {'batchId': 4474, 'branchId': 185, 'branchName': '院区2', 'companyId': 5147, 'id': 4720, 'ratioNum': 50, 'stationId': 'HL99997'}], 'success': True}

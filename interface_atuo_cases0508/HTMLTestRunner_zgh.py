@@ -2,6 +2,10 @@
 
 """
 Change History
+Version 1.2.0.0 -zhanggh
+*新增数据库存储测试记录方法
+*修正百分比占比
+
 Version 1.1.0.0 -zhanggh
 *新增历史十次的测试结果展示
 *修改excel读取写入方法
@@ -46,8 +50,9 @@ from conf import Allpath
 from public.get_mysql_info import getMysqlInfo
 import unittest
 from xml.sax import saxutils
-from public.writeExcel import writeexcel
-from public.readExcel import readexcel
+from public.logger import Log
+
+logger = Log('HTMLTestRunner', Allpath.log_path)
 
 gmi=getMysqlInfo(Allpath.db_conf_path,'config1')
 now = time.strftime('%Y-%m-%d_%H_%M_%S')
@@ -332,8 +337,8 @@ class Template_mixin(object):
                     type: 'value',
                     name: '',
                     min: 0,
-                    max: 300,
-                    interval: 30,
+                    max: 1000,
+                    interval: 50,
                     axisLabel: {
                         formatter: '{value}'
                     }
@@ -544,8 +549,8 @@ class Template_mixin(object):
         <!--<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>-->
         <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 %(passrate)s </a>
         <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 %(Pass)s </a>
-        <a class="btn btn-danger" onclick='javascript:showCase(1)'>失败  %(fail)s </a>
-        <a class="btn btn-warning" onclick='javascript:showCase(4)'>错误 %(error)s </a>  
+        <a class="btn btn-warning" onclick='javascript:showCase(1)'>失败  %(fail)s </a>
+        <a class="btn btn-danger" onclick='javascript:showCase(4)'>错误 %(error)s </a>  
         <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 %(count)s </a>
     </div>
     <p></p>
@@ -979,7 +984,8 @@ class HTMLTestRunner(Template_mixin):
         return report
 
     def _generate_chart(self, result):
-        redata=gmi.get_mysql_info_test("select * from znkf ORDER BY date DESC LIMIT 10;",1)
+        redata = gmi.get_mysql_info_test("select * from jkgl ORDER BY date DESC LIMIT 10;", 1)
+        logger.info("本次报告获取测试结果数据成功！")
         chart = self.ECHARTS_SCRIPT % dict(
             Pass=str(redata['ok']),
             fail=str(redata['fail']),
