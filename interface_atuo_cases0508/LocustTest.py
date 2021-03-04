@@ -13,12 +13,11 @@
 
 from locust import HttpUser, TaskSet, task
 
+
 """
 创建后台管理站点压测类，需要继承TaskSet
 可以添加多个测试任务
 """
-
-
 class AdminLoadTest(TaskSet):
 
     # 用户执行task前调用
@@ -37,7 +36,6 @@ class AdminLoadTest(TaskSet):
         data = {"uid": "32", "spuId": "14651", "enterpriseUserCardId": "128", "useType": "4"}
         self.client.get('/envk8s/healthmanage-web/app/marketV2/goodsPkg/detail', params=data, headers=header)
 
-
 class RunLoadTests(HttpUser):
     """
     创建运行压测类
@@ -49,5 +47,4 @@ class RunLoadTests(HttpUser):
 
 if __name__ == "__main__":
     import os
-
     os.system("locust -f LocustTest.py --host=http://management-fed-gray.helianhealth.com --web-host=127.0.0.1")

@@ -47,6 +47,7 @@ class writeExcel:
         wb_new.save(self.file)
         logger.info('清除excel原始记录成功！')
 
+
     def write_time (self, i, dict):
         try:
             wb_new = load_workbook(self.file)

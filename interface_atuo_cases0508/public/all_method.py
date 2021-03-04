@@ -427,10 +427,27 @@ def order_time_init ():
     return request, request1
 
 
+# 腾讯健康报告 Base64转PDF
+def report_detail ():
+    import base64
+
+    path = "../request_file/体检报告.pdf"
+    with open("../request_file/base64.txt", "r") as f:  # 打开文件
+        data = f.read()  # 读取文件
+
+    print("读取base64：%s" % data)
+
+    with open(path, 'wb') as f:
+        f.write(base64.b64decode(data))
+        print("体检报告解析成功！")
+
+
+
 if __name__ == '__main__':
     '''2725,2768,2755'''
     # get_f_login_cookie()
-    message_code()
+    # message_code()
+    report_detail()
 
     assert_value = {"329": "result['batchId']", "332": "result['normalData'][0]['bigBitchId']"}
     code = {'testname': '测试组自动化报告', 'time': '2021-01-27 08:45:59', 'sumtime': '0:00:02.676459',

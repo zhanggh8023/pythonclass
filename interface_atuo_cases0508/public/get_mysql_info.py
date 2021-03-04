@@ -128,8 +128,16 @@ class getMysqlInfo:
 
 
 if __name__ == '__main__':
-    sql_result = getMysqlInfo(Allpath.db_conf_path, 'config').del_cardid_info()
+    # sql_result = getMysqlInfo(Allpath.db_conf_path, 'config').del_cardid_info()
 
+    sql = {
+        "my_sql": "select msg_content from `msg_send_log` where mobile_no in ('13429666593','17681829051','15258814180') and msg_content like '%%小七%%' ORDER BY id DESC LIMIT %s;",
+        "condition": 3, "code": 0,
+        'result': "【禾连健康】接口测试2021-02-25 14-29-15的客户小七2，贵单位体检开始线上预约啦！请登录体检预约系统完成预约后再体检，预约方式：关注“禾健康企业服务号”点击“团检预约”开启体检服务。",
+        "sql": 0}
+
+    sql_result = getMysqlInfo(Allpath.db_conf_path, 'config').get_mysql_info(sql['my_sql'], sql['condition'],
+                                                                             sql['code'])
     # data = [{
     #     'restult': "{'testname': '质量保障部—章广华', 'time': '2019-11-11 11:55:14', 'sumtime': '0:00:00.125677', 'testresult': '共 1 条接口用例，错误 1 条', 'tonggl': '0.00%'}",
     #     'sum': 1, 'ok': 0, 'fail': 0, 'error': 1, 'error_1': '100.00%', 'date': '2019-11-11_11_55_13'}]

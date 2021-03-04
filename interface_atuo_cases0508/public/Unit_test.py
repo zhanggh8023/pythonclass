@@ -134,7 +134,7 @@ class testHttpRequset(unittest.TestCase):
                 if 'sql' in sql.keys() and sql['sql'] == 0:
                     # 短信内容进行相似度匹配值
                     similarity = Levenshtein.ratio(str(sql_result[0]), str(sql['result']))
-                    if similarity > 0.8:
+                    if similarity > 0.9:
                         logger.info('实际值对比期望值的相似度：{}'.format(similarity))
                     else:
                         self.assertEqual(sql_result[0], sql['result'])

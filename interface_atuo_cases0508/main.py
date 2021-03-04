@@ -10,6 +10,7 @@ from public.logger import Log
 from public.smtp import massageMail
 from public.all_method import ding_msg, order_time_init, ding_report_url
 
+
 logger = Log('main', Allpath.log_path)
 
 data_t = time.strftime('%Y-%m-%d')
@@ -60,3 +61,4 @@ logger.info('本次Python接口自动化框架执行完毕！%s' % time.strftime
 # # 清理短信发送记录,初始化用户卡列表
 # del_Husercard=getMysqlInfo(Allpath.db_conf_path, 'config').del_cardid_info()
 # logger.info('清理短信发送记录成功！初始化用户卡列表成功！')
+

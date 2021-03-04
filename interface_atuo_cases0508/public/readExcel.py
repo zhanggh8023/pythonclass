@@ -126,7 +126,6 @@ class readExcel:
         # print(data_list)
         return data_list
 
-
 # 根据id获取单行接口请求返回结果值
 def read_test_result (id):
     file = Allpath.test_data_path

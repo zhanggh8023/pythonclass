@@ -24,7 +24,6 @@ t = writeExcel(Allpath.test_data_path, s)
 mode = config().read_config(Allpath.case_conf_path, 'FLAG', 'mode')
 ID = config().read_config(Allpath.case_conf_path, 'FLAG', 'case_list')
 
-
 # 数据处理
 def run (pool, num):
     for i in range(len(data2)):
